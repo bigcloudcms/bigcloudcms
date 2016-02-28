@@ -3,7 +3,7 @@
 /**
  * Enqueue CSS & JS
  */
-function kadence_admin_scripts($hook) {
+function bigcloudcms_admin_scripts($hook) {
 
 	wp_register_style('kad_adminstyles', get_template_directory_uri() . '/assets/css/kad_adminstyles.css', false, 348);
 	  wp_enqueue_style('kad_adminstyles');
@@ -16,4 +16,4 @@ function kadence_admin_scripts($hook) {
 
 }
 
-add_action('admin_enqueue_scripts', 'kadence_admin_scripts');
+add_action('admin_enqueue_scripts', 'bigcloudcms_admin_scripts');

@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-global $woocommerce_loop, $virtue_premium;
+global $woocommerce_loop, $bigcloudcms_premium;
 
 
 // Store loop count we're currently on
@@ -22,8 +22,8 @@ if ( empty( $woocommerce_loop['loop'] ) ) {
 }
 
 if(is_shop() || is_product_category() || is_product_tag()) {
-	if(isset($virtue_premium['product_cat_layout']) && !empty($virtue_premium['product_cat_layout'])) {
-		$product_cat_column = $virtue_premium['product_cat_layout'];
+	if(isset($bigcloudcms_premium['product_cat_layout']) && !empty($bigcloudcms_premium['product_cat_layout'])) {
+		$product_cat_column = $bigcloudcms_premium['product_cat_layout'];
 	} else {
 		$product_cat_column = 4;
 	}
@@ -45,8 +45,8 @@ else {$itemsize = 'tcol-md-3 tcol-sm-4 tcol-xs-4 tcol-ss-6'; $catimgwidth = 300;
 if(!is_shop() && !is_product_category() && !is_product_tag()) {
 		$woocommerce_loop['columns'] = $product_cat_column;
 }
-if(isset($virtue_premium['product_cat_img_ratio'])) {
-	$img_ratio = $virtue_premium['product_cat_img_ratio'];
+if(isset($bigcloudcms_premium['product_cat_img_ratio'])) {
+	$img_ratio = $bigcloudcms_premium['product_cat_img_ratio'];
 } else {
 	$img_ratio = 'widelandscape';
 }
@@ -96,7 +96,7 @@ $woocommerce_loop['loop']++;
 				if(empty($cat_image)) {
 					$cat_image = $image_cat_url;}
 			    } else {
-			        $cat_image = virtue_img_placeholder_cat();
+			        $cat_image = bigcloudcms_img_placeholder_cat();
 			   	}
 			 	if ( $cat_image ) {
 			            echo '<img src="' . esc_url($cat_image) . '" width="'.esc_attr($catimgwidth).'" height="'.esc_attr($catimgheight).'" alt="' . esc_attr($category->name) . '" />';

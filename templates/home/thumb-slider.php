@@ -2,15 +2,15 @@
 if ( ! defined( 'ABSPATH' ) ) {
   exit; // Exit if accessed directly
 }
-global $virtue_premium; 
-      if(isset($virtue_premium['slider_size'])) {$slideheight = $virtue_premium['slider_size'];} else { $slideheight = 400; }
-      if(isset($virtue_premium['slider_size_width'])) {$slidewidth = $virtue_premium['slider_size_width'];} else { $slidewidth = 1140; }
-      if(isset($virtue_premium['slider_captions'])) { $captions = $virtue_premium['slider_captions']; } else {$captions = '';}
-      if(isset($virtue_premium['home_slider'])) {$slides = $virtue_premium['home_slider']; } else {$slides = '';}
-      $transtype = $virtue_premium['trans_type']; if ($transtype == '') $transtype = 'slide';
-      $transtime = $virtue_premium['slider_transtime']; if ($transtime == '') $transtime = '300'; 
-      $autoplay = $virtue_premium['slider_autoplay']; if ($autoplay == '') $autoplay = 'true'; 
-      $pausetime = $virtue_premium['slider_pausetime']; if ($pausetime == '') $pausetime = '7000';
+global $bigcloudcms_premium; 
+      if(isset($bigcloudcms_premium['slider_size'])) {$slideheight = $bigcloudcms_premium['slider_size'];} else { $slideheight = 400; }
+      if(isset($bigcloudcms_premium['slider_size_width'])) {$slidewidth = $bigcloudcms_premium['slider_size_width'];} else { $slidewidth = 1140; }
+      if(isset($bigcloudcms_premium['slider_captions'])) { $captions = $bigcloudcms_premium['slider_captions']; } else {$captions = '';}
+      if(isset($bigcloudcms_premium['home_slider'])) {$slides = $bigcloudcms_premium['home_slider']; } else {$slides = '';}
+      $transtype = $bigcloudcms_premium['trans_type']; if ($transtype == '') $transtype = 'slide';
+      $transtime = $bigcloudcms_premium['slider_transtime']; if ($transtime == '') $transtime = '300'; 
+      $autoplay = $bigcloudcms_premium['slider_autoplay']; if ($autoplay == '') $autoplay = 'true'; 
+      $pausetime = $bigcloudcms_premium['slider_pausetime']; if ($pausetime == '') $pausetime = '7000';
       ?>
     <div class="sliderclass">
       <div id="imageslider" class="container">

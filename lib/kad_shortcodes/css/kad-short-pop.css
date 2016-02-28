@@ -431,7 +431,7 @@ img.mfp-img {
   -webkit-box-shadow: 0 0 26px rgba(0, 0, 0, 0.4);
   -o-box-shadow: 0 0 26px rgba(0, 0, 0, 0.4);
 }
-#kadence-shortcode-innercontainer {
+#bigcloudcms-shortcode-innercontainer {
   width: 600px;
   position: relative;
   margin: 55px auto 20px auto;
@@ -448,7 +448,7 @@ img.mfp-img {
   -webkit-box-shadow: 0 0 26px rgba(0, 0, 0, 0.4);
   -o-box-shadow: 0 0 26px rgba(0, 0, 0, 0.4);
 }
-#kadence-shortcode-container {
+#bigcloudcms-shortcode-container {
   z-index: 100105;
 }
 .wp-admin .mfp-wrap {
@@ -485,11 +485,11 @@ img.mfp-img {
 .wp-customizer .select2-drop {
   z-index: 999999 !important;
 }
-#kadence-shortcode-innercontainer .select2-container {
+#bigcloudcms-shortcode-innercontainer .select2-container {
   width: 100%;
   margin-top: 8px;
 }
-#kadence-shortcode-innercontainer .shortcode-options {
+#bigcloudcms-shortcode-innercontainer .shortcode-options {
   clear: both;
   display: none;
 }
@@ -511,17 +511,17 @@ img.mfp-img {
   background: #000;
   color: #fff;
 }
-.kadenceshortcode-content div.label {
+.bigcloudcmsshortcode-content div.label {
   display: inline-block;
   width: 30%;
   float: left;
   margin: 10px 0px;
 }
-.kadenceshortcode-content div.content {
+.bigcloudcmsshortcode-content div.content {
   display: inline-block;
   width: 69%;
 }
-.kadenceshortcode-content input[type="text"],
+.bigcloudcmsshortcode-content input[type="text"],
 textarea {
   width: 100%;
   box-sizing: border-box;
@@ -529,39 +529,39 @@ textarea {
   -webkit-box-sizing: border-box;
   -o-box-sizing: border-box;
 }
-.kadenceshortcode-content .content > input[type="text"],
-.kadenceshortcode-content textarea,
-.kadenceshortcode-content select {
+.bigcloudcmsshortcode-content .content > input[type="text"],
+.bigcloudcmsshortcode-content textarea,
+.bigcloudcmsshortcode-content select {
   padding: 8px;
 }
-.kadenceshortcode-content .wp-picker-container {
+.bigcloudcmsshortcode-content .wp-picker-container {
   margin-top: 6px;
 }
-.kadenceshortcode-content input[type=checkbox] {
+.bigcloudcmsshortcode-content input[type=checkbox] {
   margin-top: 12px;
 }
-.kadenceshortcode-content .clear {
+.bigcloudcmsshortcode-content .clear {
   padding: 10px 0 0;
 }
-.kadenceshortcode-content #options-columns label {
+.bigcloudcmsshortcode-content #options-columns label {
   width: 100%;
   padding-left: 5px;
   display: block;
   line-height: 45px;
   vertical-align: middle;
 }
-.kadenceshortcode-content #options-columns label img {
+.bigcloudcmsshortcode-content #options-columns label img {
   vertical-align: middle;
   margin-right: 10px;
   border: 3px solid transparent;
 }
-.kadenceshortcode-content #options-columns .input_hidden {
+.bigcloudcmsshortcode-content #options-columns .input_hidden {
   position: absolute;
   left: -9999px;
 }
-.kadenceshortcode-content #options-columns label.selected {
+.bigcloudcmsshortcode-content #options-columns label.selected {
   background-color: #ccc;
 }
-.kadenceshortcode-content #options-columns label.selected img {
+.bigcloudcmsshortcode-content #options-columns label.selected img {
   border-color: #fff;
 }

@@ -1,7 +1,7 @@
- <?php global $post, $virtue_premium; $headcontent = get_post_meta( $post->ID, '_kad_blog_head', true );
+ <?php global $post, $bigcloudcms_premium; $headcontent = get_post_meta( $post->ID, '_kad_blog_head', true );
  if(empty($headcontent) || $headcontent == 'default') {
-        if(!empty($virtue_premium['post_head_default'])) {
-            $headcontent = $virtue_premium['post_head_default'];
+        if(!empty($bigcloudcms_premium['post_head_default'])) {
+            $headcontent = $bigcloudcms_premium['post_head_default'];
         } else {
             $headcontent = 'none';
         }
@@ -133,22 +133,22 @@
     </header>
     <div class="entry-content clearfix" itemprop="articleBody">
     <?php global $more; $more = 0; ?>
-       <?php  global $virtue_premium; if(!empty($virtue_premium['post_readmore_text'])) {$readmore = $virtue_premium['post_readmore_text'];} else { $readmore =  __('Read More', 'virtue') ;}
+       <?php  global $bigcloudcms_premium; if(!empty($bigcloudcms_premium['post_readmore_text'])) {$readmore = $bigcloudcms_premium['post_readmore_text'];} else { $readmore =  __('Read More', 'bigcloudcms') ;}
       the_content($readmore); ?>
     </div>
     <footer class="single-footer">
       <?php $tags = get_the_tags(); if ($tags) { ?> <span class="posttags color_gray"><i class="icon-tag"></i> <?php the_tags('', ', ', ''); ?> </span><?php } ?>
       
-      <?php wp_link_pages(array('before' => '<nav class="page-nav"><p>' . __('Pages:', 'virtue'), 'after' => '</p></nav>')); ?>
+      <?php wp_link_pages(array('before' => '<nav class="page-nav"><p>' . __('Pages:', 'bigcloudcms'), 'after' => '</p></nav>')); ?>
         <?php
   if ( comments_open() ) :
     echo '<p class="kad_comments_link">';
       comments_popup_link( 
-        __( 'Leave a Reply', 'virtue' ), 
-        __( '1 Comment', 'virtue' ), 
-        __( '% Comments', 'virtue' ),
+        __( 'Leave a Reply', 'bigcloudcms' ), 
+        __( '1 Comment', 'bigcloudcms' ), 
+        __( '% Comments', 'bigcloudcms' ),
         'comments-link',
-        __( 'Comments are Closed', 'virtue' )
+        __( 'Comments are Closed', 'bigcloudcms' )
     );
     echo '</p>';
   endif;

@@ -11,12 +11,12 @@ Template Name: Staff Grid
 	
     <div id="content" class="container">
    		<div class="row">
-      <div class="main <?php echo esc_attr(kadence_main_class()); ?>" id="ktmain" role="main">
+      <div class="main <?php echo esc_attr(bigcloudcms_main_class()); ?>" id="ktmain" role="main">
 			<div class="entry-content" itemprop="mainContentOfPage">
 					<?php get_template_part('templates/content', 'page'); ?>
 			</div>
-      	<?php global $post, $virtue_premium; 
-      		if(isset($virtue_premium['virtue_animate_in']) && $virtue_premium['virtue_animate_in'] == 1) {
+      	<?php global $post, $bigcloudcms_premium; 
+      		if(isset($bigcloudcms_premium['bigcloudcms_animate_in']) && $bigcloudcms_premium['bigcloudcms_animate_in'] == 1) {
       			$animate = 1;
       		} else {
       			$animate = 0;
@@ -82,15 +82,15 @@ Template Name: Staff Grid
 	  		if ($staff_filter == 'yes') {
 	  		$sft = "true"; ?>
       			<section id="options" class="clearfix">
-			<?php 	if(!empty($virtue_premium['filter_all_text'])) {
-						$alltext = $virtue_premium['filter_all_text'];
+			<?php 	if(!empty($bigcloudcms_premium['filter_all_text'])) {
+						$alltext = $bigcloudcms_premium['filter_all_text'];
 					} else {
-						$alltext = __('All', 'virtue');
+						$alltext = __('All', 'bigcloudcms');
 					}
-					if(!empty($virtue_premium['portfolio_filter_text'])) {
-						$stafffiltertext = $virtue_premium['portfolio_filter_text'];
+					if(!empty($bigcloudcms_premium['portfolio_filter_text'])) {
+						$stafffiltertext = $bigcloudcms_premium['portfolio_filter_text'];
 					} else {
-						$stafffiltertext = __('Filter Staff', 'virtue');
+						$stafffiltertext = __('Filter Staff', 'bigcloudcms');
 					}
 					$termtypes  = array( 'child_of' => $staff_cat_ID,);
 					$categories = get_terms('staff-group', $termtypes);
@@ -166,7 +166,7 @@ Template Name: Staff Grid
                 </div>
 					<?php endwhile; else: ?>
 					 
-					<li class="error-not-found"><?php _e('Sorry, no staff entries found.', 'virtue');?></li>
+					<li class="error-not-found"><?php _e('Sorry, no staff entries found.', 'bigcloudcms');?></li>
 						
 				<?php endif; ?>
                 </div> <!--portfoliowrapper-->
@@ -179,5 +179,5 @@ Template Name: Staff Grid
                       $wp_query = $temp;  // Reset
                     ?>
                     <?php wp_reset_query(); ?>
-                    <?php global $virtue_premium; if(isset($virtue_premium['page_comments']) && $virtue_premium['page_comments'] == '1') { comments_template('/templates/comments.php');} ?>
+                    <?php global $bigcloudcms_premium; if(isset($bigcloudcms_premium['page_comments']) && $bigcloudcms_premium['page_comments'] == '1') { comments_template('/templates/comments.php');} ?>
 </div><!-- /.main -->

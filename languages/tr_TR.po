@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Virtue Premium\n"
+"Project-Id-Version: BigCloudCMS\n"
 "POT-Creation-Date: 2016-02-10 00:14-0700\n"
-"PO-Revision-Date: 2016-02-10 00:15-0700\n"
+"PO-Revision-Date: 2016-02-28 20:41+0530\n"
 "Last-Translator: Coaex Precious Metals <info@coaex.com>\n"
 "Language-Team: \n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.6\n"
+"X-Generator: Poedit 1.8.7\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;esc_attr__;esc_attr_e\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -167,8 +167,8 @@ msgstr ""
 #: ../lib/class-tgm-plugin-activation.php:402
 #, php-format
 msgid ""
-"Plugin not activated. A higher version of %s is needed for this theme. "
-"Please update the plugin."
+"Plugin not activated. A higher version of %s is needed for this theme. Please "
+"update the plugin."
 msgstr ""
 
 #: ../lib/class-tgm-plugin-activation.php:403
@@ -363,8 +363,8 @@ msgid ""
 "The installation process is starting. This process may take a while on some "
 "hosts, so please be patient."
 msgstr ""
-"Kurulum işlemi başlıyor. Bu işlem, bazı ana bilgisayarlarda zaman alabilir, "
-"bu yüzden sabırlı olunuz."
+"Kurulum işlemi başlıyor. Bu işlem, bazı ana bilgisayarlarda zaman alabilir, bu "
+"yüzden sabırlı olunuz."
 
 #: ../lib/class-tgm-plugin-activation.php:3382
 msgid "All installations have been completed."
@@ -380,8 +380,7 @@ msgstr "Eklenti %1$s (%2$d/%3$d) Kuruluyor"
 #: ../lib/kad_shortcodes/carousel_shortcodes.php:178
 #: ../lib/kad_shortcodes/testimonial_shortcodes.php:15 ../lib/widgets.php:725
 #: ../lib/widgets.php:731 ../page-testimonial-grid.php:62
-#: ../templates/content-fullpost.php:135
-#: ../templates/content-fullpostfull.php:135
+#: ../templates/content-fullpost.php:135 ../templates/content-fullpostfull.php:135
 #: ../templates/home/blog-home-onecolumn.php:126
 #: ../templates/home/blog-home.php:117
 msgid "Read More"
@@ -392,8 +391,8 @@ msgid "Insert Shortcode"
 msgstr ""
 
 #: ../lib/cleanup.php:202 ../lib/kad_shortcodes.php:907
-msgid "Virtue Shortcodes"
-msgstr "Virtue Kısa Kodları"
+msgid "BigCloudCMS Shortcodes"
+msgstr "BigCloudCMS Kısa Kodları"
 
 #: ../lib/cmb/helpers/cmb_Meta_Box_ajax.php:47
 msgid "Please Try Again"
@@ -462,8 +461,8 @@ msgstr ""
 
 #: ../lib/cmb/init.php:259 ../lib/kad_shortcodes.php:314
 #: ../lib/kad_shortcodes.php:324 ../lib/kad_shortcodes.php:825
-#: ../lib/kad_shortcodes.php:835 ../lib/metaboxes.php:215
-#: ../lib/metaboxes.php:232 ../lib/metaboxes.php:243 ../lib/metaboxes.php:524
+#: ../lib/kad_shortcodes.php:835 ../lib/metaboxes.php:215 ../lib/metaboxes.php:232
+#: ../lib/metaboxes.php:243 ../lib/metaboxes.php:524
 msgid "Default"
 msgstr "Varsayılan"
 
@@ -523,7 +522,7 @@ msgstr ""
 #: ../lib/custom-nav.php:197 ../lib/custom-nav.php:199
 #, fuzzy
 msgid "Edit Menu Item"
-msgstr "Virtue: Resim"
+msgstr "BigCloudCMS: Resim"
 
 #: ../lib/custom-nav.php:208
 msgid "URL"
@@ -560,8 +559,7 @@ msgstr "Açıklama"
 
 #: ../lib/custom-nav.php:247
 msgid ""
-"The description will be displayed in the menu if the current theme supports "
-"it."
+"The description will be displayed in the menu if the current theme supports it."
 msgstr ""
 
 #: ../lib/custom-nav.php:256
@@ -762,8 +760,7 @@ msgstr ""
 #: ../lib/custom.php:1359
 msgid "Please enter your Google Plus url. (be sure to include http://)"
 msgstr ""
-"Google Plus bağlantınızı giriniz. (http:// 'yi dahil ettiğinizden emin "
-"olunuz)"
+"Google Plus bağlantınızı giriniz. (http:// 'yi dahil ettiğinizden emin olunuz)"
 
 #: ../lib/custom.php:1366
 msgid "Please enter your YouTube url. (be sure to include http://)"
@@ -771,13 +768,11 @@ msgstr ""
 
 #: ../lib/custom.php:1373
 msgid "Please enter your Flickr url. (be sure to include http://)"
-msgstr ""
-"Flickr bağlantınızı giriniz. (http:// 'yi dahil ettiğinizden emin olunuz)"
+msgstr "Flickr bağlantınızı giriniz. (http:// 'yi dahil ettiğinizden emin olunuz)"
 
 #: ../lib/custom.php:1380
 msgid "Please enter your Vimeo url. (be sure to include http://)"
-msgstr ""
-"Vimeo bağlantınızı giriniz. (http:// 'yi dahil ettiğinizden emin olunuz)"
+msgstr "Vimeo bağlantınızı giriniz. (http:// 'yi dahil ettiğinizden emin olunuz)"
 
 #: ../lib/custom.php:1387
 msgid "Please enter your Linkedin url. (be sure to include http://)"
@@ -1237,9 +1232,9 @@ msgstr "Vurgu İkonu/Yazı Tipi Rengi"
 msgid "Hover Background Color"
 msgstr "Vurgu Arka Plan Rengi"
 
-#: ../lib/kad_shortcodes.php:667 ../lib/metaboxes.php:473
-#: ../lib/metaboxes.php:602 ../lib/metaboxes.php:865
-#: ../themeoptions/options.php:1250 ../themeoptions/options.php:1392
+#: ../lib/kad_shortcodes.php:667 ../lib/metaboxes.php:473 ../lib/metaboxes.php:602
+#: ../lib/metaboxes.php:865 ../themeoptions/options.php:1250
+#: ../themeoptions/options.php:1392
 msgid "Title"
 msgstr "Başlık"
 
@@ -1324,24 +1319,21 @@ msgstr "Blog Yazıları"
 msgid "Order By"
 msgstr "Sırala"
 
-#: ../lib/kad_shortcodes.php:785 ../lib/metaboxes.php:474
-#: ../lib/metaboxes.php:603 ../lib/metaboxes.php:866
-#: ../lib/premium_widgets.php:218 ../themeoptions/options.php:1250
-#: ../themeoptions/options.php:1392
+#: ../lib/kad_shortcodes.php:785 ../lib/metaboxes.php:474 ../lib/metaboxes.php:603
+#: ../lib/metaboxes.php:866 ../lib/premium_widgets.php:218
+#: ../themeoptions/options.php:1250 ../themeoptions/options.php:1392
 msgid "Date"
 msgstr "Tarih"
 
-#: ../lib/kad_shortcodes.php:786 ../lib/metaboxes.php:475
-#: ../lib/metaboxes.php:604 ../lib/metaboxes.php:867
-#: ../lib/premium_widgets.php:218 ../themeoptions/options.php:1250
-#: ../themeoptions/options.php:1392
+#: ../lib/kad_shortcodes.php:786 ../lib/metaboxes.php:475 ../lib/metaboxes.php:604
+#: ../lib/metaboxes.php:867 ../lib/premium_widgets.php:218
+#: ../themeoptions/options.php:1250 ../themeoptions/options.php:1392
 msgid "Random"
 msgstr "Rastgele"
 
-#: ../lib/kad_shortcodes.php:787 ../lib/metaboxes.php:472
-#: ../lib/metaboxes.php:601 ../lib/metaboxes.php:864
-#: ../lib/premium_widgets.php:218 ../themeoptions/options.php:1250
-#: ../themeoptions/options.php:1392
+#: ../lib/kad_shortcodes.php:787 ../lib/metaboxes.php:472 ../lib/metaboxes.php:601
+#: ../lib/metaboxes.php:864 ../lib/premium_widgets.php:218
+#: ../themeoptions/options.php:1250 ../themeoptions/options.php:1392
 msgid "Menu Order"
 msgstr "Menü Sırası"
 
@@ -1450,8 +1442,8 @@ msgstr ""
 
 #: ../lib/kad_shortcodes.php:897
 msgid ""
-"Default: Thank you for submitting your testimonial! It is now awaiting "
-"approval from the site admnistator. Thank you!"
+"Default: Thank you for submitting your testimonial! It is now awaiting approval "
+"from the site admnistator. Thank you!"
 msgstr ""
 
 #: ../lib/kad_shortcodes.php:908
@@ -1489,8 +1481,7 @@ msgstr "Üzgünüz, hiçbir yazı girdisi bulunamadı."
 #: ../lib/metaboxes.php:613 ../lib/metaboxes.php:699 ../lib/metaboxes.php:783
 #: ../lib/metaboxes.php:883 ../lib/metaboxes.php:1034 ../lib/metaboxes.php:1103
 #: ../page-portfolio.php:60 ../page-staff-grid.php:88
-#: ../templates/home/portfolio-full.php:87
-#: ../woocommerce/archive-product.php:101
+#: ../templates/home/portfolio-full.php:87 ../woocommerce/archive-product.php:101
 msgid "All"
 msgstr "Tümü"
 
@@ -1499,13 +1490,13 @@ msgstr "Tümü"
 msgid "Filter Projects"
 msgstr "Projeleri Filtrele"
 
-#: ../lib/kad_shortcodes/shortcodes.php:95
-#: ../woocommerce/archive-product.php:63 ../woocommerce/archive-product.php:69
+#: ../lib/kad_shortcodes/shortcodes.php:95 ../woocommerce/archive-product.php:63
+#: ../woocommerce/archive-product.php:69
 msgid "Grid View"
 msgstr ""
 
-#: ../lib/kad_shortcodes/shortcodes.php:95
-#: ../woocommerce/archive-product.php:60 ../woocommerce/archive-product.php:72
+#: ../lib/kad_shortcodes/shortcodes.php:95 ../woocommerce/archive-product.php:60
+#: ../woocommerce/archive-product.php:72
 msgid "List View"
 msgstr ""
 
@@ -1529,8 +1520,8 @@ msgid "Sorry, no staff entries found."
 msgstr "Üzgünüz, hiçbir çalışan girdisi bulunamadı."
 
 #: ../lib/kad_shortcodes/testimonial_form_shortcode.php:10
-#: ../lib/kad_shortcodes/testimonial_form_shortcode.php:86
-#: ../page-contact.php:152 ../templates/comments.php:52
+#: ../lib/kad_shortcodes/testimonial_form_shortcode.php:86 ../page-contact.php:152
+#: ../templates/comments.php:52
 msgid "Name"
 msgstr "İsim"
 
@@ -1562,13 +1553,11 @@ msgstr "Resim tekrarı seçenekleri"
 msgid "Submit"
 msgstr "Gönder"
 
-#: ../lib/kad_shortcodes/testimonial_form_shortcode.php:17
-#: ../page-contact.php:108
+#: ../lib/kad_shortcodes/testimonial_form_shortcode.php:17 ../page-contact.php:108
 msgid "Check your math."
 msgstr "Matematiğinizi gözden geçirin."
 
-#: ../lib/kad_shortcodes/testimonial_form_shortcode.php:18
-#: ../page-contact.php:113
+#: ../lib/kad_shortcodes/testimonial_form_shortcode.php:18 ../page-contact.php:113
 msgid "Please enter your name."
 msgstr "Lütfen adınızı giriniz."
 
@@ -1576,8 +1565,7 @@ msgstr "Lütfen adınızı giriniz."
 msgid "Please add testimonial content."
 msgstr ""
 
-#: ../lib/kad_shortcodes/testimonial_form_shortcode.php:20
-#: ../page-contact.php:199
+#: ../lib/kad_shortcodes/testimonial_form_shortcode.php:20 ../page-contact.php:199
 msgid "Sorry, an error occured."
 msgstr "Üzgünüz, bir hata oluştu."
 
@@ -1588,17 +1576,15 @@ msgstr "Bir yorum göndermek için <a href=\"%s\">giriş yapmış</a> olmalısı
 
 #: ../lib/kad_shortcodes/testimonial_form_shortcode.php:22
 msgid ""
-"Thank you for submitting your testimonial! It is now awaiting approval from "
-"the site admnistator. Thank you!"
+"Thank you for submitting your testimonial! It is now awaiting approval from the "
+"site admnistator. Thank you!"
 msgstr ""
 
-#: ../lib/kad_shortcodes/testimonial_form_shortcode.php:30
-#: ../page-contact.php:17
+#: ../lib/kad_shortcodes/testimonial_form_shortcode.php:30 ../page-contact.php:17
 msgid "This field is required."
 msgstr "Bu alan gereklidir."
 
-#: ../lib/kad_shortcodes/testimonial_form_shortcode.php:31
-#: ../page-contact.php:17
+#: ../lib/kad_shortcodes/testimonial_form_shortcode.php:31 ../page-contact.php:17
 msgid "Please enter a valid email address."
 msgstr "Lütfen geçerli bir eposta adresi giriniz."
 
@@ -1607,13 +1593,11 @@ msgstr "Lütfen geçerli bir eposta adresi giriniz."
 msgid " Testimonial Post"
 msgstr "Görüşler"
 
-#: ../lib/kad_shortcodes/testimonial_form_shortcode.php:85
-#: ../page-contact.php:151
+#: ../lib/kad_shortcodes/testimonial_form_shortcode.php:85 ../page-contact.php:151
 msgid "From "
 msgstr "Yazarı:"
 
-#: ../lib/kad_shortcodes/testimonial_form_shortcode.php:87
-#: ../page-contact.php:153
+#: ../lib/kad_shortcodes/testimonial_form_shortcode.php:87 ../page-contact.php:153
 msgid "From"
 msgstr "Yazarı:"
 
@@ -1666,9 +1650,8 @@ msgstr "Resim Kaydırıcı"
 msgid "Carousel Slider - (Caroufedsel Slider)"
 msgstr ""
 
-#: ../lib/metaboxes.php:153 ../lib/metaboxes.php:288
-#: ../lib/premium_widgets.php:63 ../themeoptions/options.php:632
-#: ../themeoptions/options.php:2214
+#: ../lib/metaboxes.php:153 ../lib/metaboxes.php:288 ../lib/premium_widgets.php:63
+#: ../themeoptions/options.php:632 ../themeoptions/options.php:2214
 msgid "Image Carousel"
 msgstr "Resim Karuseli"
 
@@ -1701,8 +1684,8 @@ msgstr "Maks. Resim/Kaydırıcı Genişliği"
 
 #: ../lib/metaboxes.php:167
 msgid ""
-"Default is: 770 or 1140 on fullwidth posts (Note: just input number, "
-"example: 650, does not apply to carousel slider)"
+"Default is: 770 or 1140 on fullwidth posts (Note: just input number, example: "
+"650, does not apply to carousel slider)"
 msgstr ""
 "Varsayılan: 770 veya tam genişlik yazılarda 1140 <b>(Not: sadece sayı girin, "
 "örneğin: 650, karusel kaydırıcıya uygulanamaz)</b>"
@@ -1766,9 +1749,8 @@ msgstr "Yerleşim, tam genişlikli veya kenar çubuklu ise seçin"
 #: ../lib/metaboxes.php:453 ../lib/metaboxes.php:526 ../lib/metaboxes.php:584
 #: ../lib/metaboxes.php:636 ../lib/metaboxes.php:665 ../lib/metaboxes.php:722
 #: ../lib/metaboxes.php:774 ../lib/metaboxes.php:806 ../lib/metaboxes.php:999
-#: ../lib/metaboxes.php:1068 ../lib/metaboxes.php:1139
-#: ../lib/metaboxes.php:1165 ../lib/metaboxes.php:1181
-#: ../lib/metaboxes.php:1192 ../lib/metaboxes.php:1289
+#: ../lib/metaboxes.php:1068 ../lib/metaboxes.php:1139 ../lib/metaboxes.php:1165
+#: ../lib/metaboxes.php:1181 ../lib/metaboxes.php:1192 ../lib/metaboxes.php:1289
 msgid "Yes"
 msgstr "Evet"
 
@@ -1776,16 +1758,14 @@ msgstr "Evet"
 #: ../lib/metaboxes.php:337 ../lib/metaboxes.php:452 ../lib/metaboxes.php:525
 #: ../lib/metaboxes.php:585 ../lib/metaboxes.php:637 ../lib/metaboxes.php:664
 #: ../lib/metaboxes.php:723 ../lib/metaboxes.php:773 ../lib/metaboxes.php:807
-#: ../lib/metaboxes.php:1000 ../lib/metaboxes.php:1069
-#: ../lib/metaboxes.php:1138 ../lib/metaboxes.php:1166
-#: ../lib/metaboxes.php:1182 ../lib/metaboxes.php:1191
+#: ../lib/metaboxes.php:1000 ../lib/metaboxes.php:1069 ../lib/metaboxes.php:1138
+#: ../lib/metaboxes.php:1166 ../lib/metaboxes.php:1182 ../lib/metaboxes.php:1191
 #: ../lib/metaboxes.php:1290
 msgid "No"
 msgstr "Hayır"
 
 #: ../lib/metaboxes.php:221 ../lib/metaboxes.php:530 ../lib/metaboxes.php:1073
-#: ../lib/metaboxes.php:1143 ../lib/metaboxes.php:1294
-#: ../lib/metaboxes.php:1312
+#: ../lib/metaboxes.php:1143 ../lib/metaboxes.php:1294 ../lib/metaboxes.php:1312
 msgid "Choose Sidebar"
 msgstr "Kenar Çubuğu Seç"
 
@@ -1860,8 +1840,8 @@ msgstr "Rev Kaydırıcı"
 
 #: ../lib/metaboxes.php:290 ../lib/metaboxes.php:949
 #: ../themeoptions/options.php:632
-msgid "Kadence Slider"
-msgstr "Kadence Kaydırıcı"
+msgid "BigCloudCMS Slider"
+msgstr "BigCloudCMS Kaydırıcı"
 
 #: ../lib/metaboxes.php:291 ../lib/metaboxes.php:950
 msgid "Cyclone Slider"
@@ -1915,8 +1895,8 @@ msgid "Six Column"
 msgstr "Altı Sütun"
 
 #: ../lib/metaboxes.php:313
-msgid "If Revolution, Cyclone or Kadence Slider"
-msgstr "Eğer Revolution, Cyclone veya Kadence Kaydırıcı varsa"
+msgid "If Revolution, Cyclone or BigCloudCMS Slider"
+msgstr "Eğer Revolution, Cyclone veya BigCloudCMS Kaydırıcı varsa"
 
 #: ../lib/metaboxes.php:314
 msgid "Paste Slider Shortcode here"
@@ -1928,11 +1908,11 @@ msgstr "Varsayılan: 450 <b>(Not: sadece sayı girin, örneğin: 350)</b>"
 
 #: ../lib/metaboxes.php:326
 msgid ""
-"Default is: 670 or 1140 on above or three row layouts (Note: just input "
-"number, example: 650)"
+"Default is: 670 or 1140 on above or three row layouts (Note: just input number, "
+"example: 650)"
 msgstr ""
-"Varsayılan: Üstünde yerleşim veya üç satır yerleşimlerinde 670 veya 1140 "
-"(Not: sadece sayı girin, örn: 650)"
+"Varsayılan: Üstünde yerleşim veya üç satır yerleşimlerinde 670 veya 1140 (Not: "
+"sadece sayı girin, örn: 650)"
 
 #: ../lib/metaboxes.php:331
 msgid "Auto Play Slider?"
@@ -2065,8 +2045,8 @@ msgstr "Alt Portföy Karuseli"
 #: ../lib/metaboxes.php:448
 msgid "Display a carousel with portfolio items below project?"
 msgstr ""
-"Projenin altında benzer portföy ögeleriyle birlikte bir karusel "
-"görüntülensin mi?"
+"Projenin altında benzer portföy ögeleriyle birlikte bir karusel görüntülensin "
+"mi?"
 
 #: ../lib/metaboxes.php:457
 msgid "Carousel Items"
@@ -2312,19 +2292,16 @@ msgstr "Revolution Kaydırıcı kullanılıyorsa"
 
 #: ../lib/metaboxes.php:957
 msgid "Paste Revolution slider alias here (example: slider1)"
-msgstr ""
-"Revolution kaydırıcı takma isimlerini buraya yapıştır (örn: kaydırıcı1)"
+msgstr "Revolution kaydırıcı takma isimlerini buraya yapıştır (örn: kaydırıcı1)"
 
 #: ../lib/metaboxes.php:962
-msgid "If Cyclone or Kadence Slider"
-msgstr "Eğer Cyclone veya Kadence Kaydırıcı varsa"
+msgid "If Cyclone or BigCloudCMS Slider"
+msgstr "Eğer Cyclone veya BigCloudCMS Kaydırıcı varsa"
 
 #: ../lib/metaboxes.php:963
-msgid ""
-"Paste the slider shortcode here (example: [cycloneslider id=\"slider1\"])"
+msgid "Paste the slider shortcode here (example: [cycloneslider id=\"slider1\"])"
 msgstr ""
-"Kaydırıcı kısa kodunu buraya yapıştır (örn: [cycloneslider id="
-"\"kaydırıcı1\"])"
+"Kaydırıcı kısa kodunu buraya yapıştır (örn: [cycloneslider id=\"kaydırıcı1\"])"
 
 #: ../lib/metaboxes.php:968
 msgid "Display Shortcode Slider above Header"
@@ -2347,8 +2324,7 @@ msgid "Use Lightbox for Feature Image"
 msgstr "Öne Çıkan Resim için Işık Kutusu Kullan"
 
 #: ../lib/metaboxes.php:995
-msgid ""
-"If feature option is set to image, choose to use lightbox link with image."
+msgid "If feature option is set to image, choose to use lightbox link with image."
 msgstr ""
 "Eğer öne çıkan özellik olarak resim kullanırsa, resimle ışık kutusu "
 "bağlantısını kullanmayı tercih edin."
@@ -2442,8 +2418,7 @@ msgstr "21 (Sokak Görünümü)"
 msgid "Default is 300"
 msgstr "Varsayılan 300'dür"
 
-#: ../lib/metaboxes.php:1257 ../lib/metaboxes.php:1263
-#: ../lib/metaboxes.php:1269
+#: ../lib/metaboxes.php:1257 ../lib/metaboxes.php:1263 ../lib/metaboxes.php:1269
 msgid "Enter a Location"
 msgstr "Bir Konum Girin"
 
@@ -2472,46 +2447,40 @@ msgid "Optimal Length: Roughly 155 Characters"
 msgstr "Optimum Uzunluk: Kabaca 155 Karakter"
 
 #: ../lib/metaboxes.php:1347
-msgid "Virtue Custom Tab 01"
-msgstr "Virtue Özel Sekme 01"
+msgid "BigCloudCMS Custom Tab 01"
+msgstr "BigCloudCMS Özel Sekme 01"
 
-#: ../lib/metaboxes.php:1354 ../lib/metaboxes.php:1386
-#: ../lib/metaboxes.php:1418
+#: ../lib/metaboxes.php:1354 ../lib/metaboxes.php:1386 ../lib/metaboxes.php:1418
 msgid "Tab Title"
 msgstr "Sekme Başlığı"
 
-#: ../lib/metaboxes.php:1355 ../lib/metaboxes.php:1387
-#: ../lib/metaboxes.php:1419
+#: ../lib/metaboxes.php:1355 ../lib/metaboxes.php:1387 ../lib/metaboxes.php:1419
 msgid "This will show on the tab"
 msgstr "Bu, sekme üzerinde gösterilecektir"
 
-#: ../lib/metaboxes.php:1360 ../lib/metaboxes.php:1392
-#: ../lib/metaboxes.php:1424
+#: ../lib/metaboxes.php:1360 ../lib/metaboxes.php:1392 ../lib/metaboxes.php:1424
 msgid "Tab Content"
 msgstr "Sekme İçeriği"
 
-#: ../lib/metaboxes.php:1361 ../lib/metaboxes.php:1393
-#: ../lib/metaboxes.php:1425
+#: ../lib/metaboxes.php:1361 ../lib/metaboxes.php:1393 ../lib/metaboxes.php:1425
 msgid "Add Tab Content"
 msgstr "Sekme İçeriği Ekle"
 
-#: ../lib/metaboxes.php:1367 ../lib/metaboxes.php:1399
-#: ../lib/metaboxes.php:1431
+#: ../lib/metaboxes.php:1367 ../lib/metaboxes.php:1399 ../lib/metaboxes.php:1431
 msgid "Tab priority"
 msgstr "Sekme önceliği"
 
-#: ../lib/metaboxes.php:1368 ../lib/metaboxes.php:1400
-#: ../lib/metaboxes.php:1432
+#: ../lib/metaboxes.php:1368 ../lib/metaboxes.php:1400 ../lib/metaboxes.php:1432
 msgid "This will determine where the tab is shown (e.g. 20)"
 msgstr "Bu, sekmenin nerede gösterileceğini belirler (örn: 20)"
 
 #: ../lib/metaboxes.php:1379
-msgid "Virtue Custom Tab 02"
-msgstr "Virtue Özel Sekme 02"
+msgid "BigCloudCMS Custom Tab 02"
+msgstr "BigCloudCMS Özel Sekme 02"
 
 #: ../lib/metaboxes.php:1411
-msgid "Virtue Custom Tab 03"
-msgstr "Virtue Özel Sekme 03"
+msgid "BigCloudCMS Custom Tab 03"
+msgstr "BigCloudCMS Özel Sekme 03"
 
 #: ../lib/post-types.php:5 ../lib/post-types.php:17 ../lib/widgets.php:1021
 msgid "Portfolio"
@@ -2702,8 +2671,8 @@ msgstr "Yeni Grup Ekle"
 msgid "New Group Name"
 msgstr "Yeni Grup Adı"
 
-#: ../lib/post-types.php:145 ../lib/post-types.php:146
-#: ../lib/post-types.php:157 ../lib/post-types.php:178
+#: ../lib/post-types.php:145 ../lib/post-types.php:146 ../lib/post-types.php:157
+#: ../lib/post-types.php:178
 msgid "Staff"
 msgstr "Çalışanlar"
 
@@ -2749,8 +2718,8 @@ msgid "Adds a gallery to any widget area."
 msgstr "Herhangi bir bileşen alanına bir galeri ekler"
 
 #: ../lib/premium_widgets.php:11
-msgid "Virtue: Gallery"
-msgstr "Virtue: Galeri"
+msgid "BigCloudCMS: Gallery"
+msgstr "BigCloudCMS: Galeri"
 
 #: ../lib/premium_widgets.php:63
 msgid "Standard"
@@ -2871,8 +2840,8 @@ msgid "Adds a carousel to any widget area"
 msgstr "Herhangi bir bileşen alanına bir karusel ekler"
 
 #: ../lib/premium_widgets.php:149
-msgid "Virtue: Carousel"
-msgstr "Virtue: Karusel"
+msgid "BigCloudCMS: Carousel"
+msgstr "BigCloudCMS: Karusel"
 
 #: ../lib/premium_widgets.php:208 ../themeoptions/options.php:3639
 msgid "Portfolio Posts"
@@ -2946,8 +2915,8 @@ msgid "Adds a info box with icon options"
 msgstr "İkon seçenekleriyle bir bilgi kutusu ekler"
 
 #: ../lib/premium_widgets.php:317
-msgid "Virtue: Info Box"
-msgstr "Virtue: Bilgi Kutusu"
+msgid "BigCloudCMS: Info Box"
+msgstr "BigCloudCMS: Bilgi Kutusu"
 
 #: ../lib/premium_widgets.php:386 ../lib/premium_widgets.php:673
 #: ../lib/premium_widgets.php:814 ../lib/premium_widgets.php:932
@@ -3004,8 +2973,8 @@ msgid "Adds a google map to a widget area"
 msgstr "Bir bileşen alanına Google haritası ekler"
 
 #: ../lib/premium_widgets.php:466
-msgid "Virtue: Google Map"
-msgstr "Virtue: Google Harita"
+msgid "BigCloudCMS: Google Map"
+msgstr "BigCloudCMS: Google Harita"
 
 #: ../lib/premium_widgets.php:523
 msgid "True"
@@ -3057,8 +3026,8 @@ msgstr "Harita Merkezi (ilk adres, varsayılan olur)"
 
 #: ../lib/premium_widgets.php:590
 msgid ""
-"Load Core Google Scripts? (Only turn this off if this is the second+ map on "
-"a page)"
+"Load Core Google Scripts? (Only turn this off if this is the second+ map on a "
+"page)"
 msgstr ""
 
 #: ../lib/premium_widgets.php:601
@@ -3066,8 +3035,8 @@ msgid "Adds a simple call to action"
 msgstr "Basit bir eyleme çağrı ekler"
 
 #: ../lib/premium_widgets.php:602
-msgid "Virtue: Call to Action"
-msgstr "Virtue: Eyleme Çağrı"
+msgid "BigCloudCMS: Call to Action"
+msgstr "BigCloudCMS: Eyleme Çağrı"
 
 #: ../lib/premium_widgets.php:671
 msgid "h1"
@@ -3123,8 +3092,8 @@ msgstr ""
 
 #: ../lib/premium_widgets.php:750
 #, fuzzy
-msgid "Virtue: Image Menu Item"
-msgstr "Virtue: Resim"
+msgid "BigCloudCMS: Image Menu Item"
+msgstr "BigCloudCMS: Resim"
 
 #: ../lib/premium_widgets.php:813
 msgid "Height setting Above"
@@ -3153,7 +3122,7 @@ msgid "Adds an column with an image beside a content field."
 msgstr ""
 
 #: ../lib/premium_widgets.php:867
-msgid "Virtue: Split Content"
+msgid "BigCloudCMS: Split Content"
 msgstr ""
 
 #: ../lib/premium_widgets.php:946
@@ -3228,15 +3197,13 @@ msgid ""
 "Sorry, no products matched your selection. Please choose a different "
 "combination."
 msgstr ""
-"Üzgünüz, seçiminize uygun ürün bulunamadı. Lütfen farklı bir kombinasyon "
-"tercih ediniz."
+"Üzgünüz, seçiminize uygun ürün bulunamadı. Lütfen farklı bir kombinasyon tercih "
+"ediniz."
 
 #: ../lib/scripts.php:45
-msgid ""
-"Sorry, this product is unavailable. Please choose a different combination."
+msgid "Sorry, this product is unavailable. Please choose a different combination."
 msgstr ""
-"Üzgünüz, bu ürün mevcut değildir. Lütfen farklı bir kombinasyon tercih "
-"ediniz."
+"Üzgünüz, bu ürün mevcut değildir. Lütfen farklı bir kombinasyon tercih ediniz."
 
 #: ../lib/taxonomy-meta-class.php:133 ../lib/taxonomy-meta-class.php:174
 #: ../lib/taxonomy-meta-class.php:388 ../lib/taxonomy-meta-class.php:415
@@ -3322,8 +3289,8 @@ msgid "Use this widget to add a Vcard to your site"
 msgstr "Sitenize bir Vcard eklemek için bu bileşeni kullanın"
 
 #: ../lib/widgets.php:206
-msgid "Virtue: Contact/Vcard"
-msgstr "Virtue: İletişim/Vcard"
+msgid "BigCloudCMS: Contact/Vcard"
+msgstr "BigCloudCMS: İletişim/Vcard"
 
 #: ../lib/widgets.php:286
 msgid "Company Name:"
@@ -3368,8 +3335,8 @@ msgid "Simple way to add Social Icons"
 msgstr "Sosyal Simgeler eklemenin basit yolu"
 
 #: ../lib/widgets.php:331
-msgid "Virtue: Social Links"
-msgstr "Virtue: Sosyal Bağlantılar"
+msgid "BigCloudCMS: Social Links"
+msgstr "BigCloudCMS: Sosyal Bağlantılar"
 
 #: ../lib/widgets.php:446
 msgid "Facebook:"
@@ -3448,8 +3415,8 @@ msgid "This shows the most recent posts on your site with a thumbnail"
 msgstr "Bu, sitenizdeki en son yazıları küçük bir resimle gösterir"
 
 #: ../lib/widgets.php:530
-msgid "Virtue: Recent Posts"
-msgstr "Virtue: Son Yazılar"
+msgid "BigCloudCMS: Recent Posts"
+msgstr "BigCloudCMS: Son Yazılar"
 
 #: ../lib/widgets.php:543 ../templates/recentblog-carousel.php:8
 msgid "Recent Posts"
@@ -3472,8 +3439,8 @@ msgid "This shows a slider with your testimonials"
 msgstr "Bu, kullanıcı görüşleri ile bir kaydırıcı gösterir"
 
 #: ../lib/widgets.php:635
-msgid "Virtue: Testimonial Carousel"
-msgstr "Virtue: Görüş Karuseli"
+msgid "BigCloudCMS: Testimonial Carousel"
+msgstr "BigCloudCMS: Görüş Karuseli"
 
 #: ../lib/widgets.php:802
 msgid "none"
@@ -3523,15 +3490,14 @@ msgid "Conditional read more link if more content:"
 msgstr ""
 
 #: ../lib/widgets.php:911
-msgid ""
-"This shows a grid of featured images from recent posts or portfolio items"
+msgid "This shows a grid of featured images from recent posts or portfolio items"
 msgstr ""
-"Bu, son yazılardaki veya portföy ögelerindeki öne çıkan resimleri bir "
-"karelaj olarak gösterir"
+"Bu, son yazılardaki veya portföy ögelerindeki öne çıkan resimleri bir karelaj "
+"olarak gösterir"
 
 #: ../lib/widgets.php:912
-msgid "Virtue: Post Grid"
-msgstr "Virtue: Yazı Karelajı"
+msgid "BigCloudCMS: Post Grid"
+msgstr "BigCloudCMS: Yazı Karelajı"
 
 #: ../lib/widgets.php:1018
 msgid "Grid Choice:"
@@ -3554,8 +3520,8 @@ msgid "This allows for an image and a simple about text."
 msgstr "Bu, bir resmi ve basit bir metni sağlar."
 
 #: ../lib/widgets.php:1042
-msgid "Virtue: Image"
-msgstr "Virtue: Resim"
+msgid "BigCloudCMS: Image"
+msgstr "BigCloudCMS: Resim"
 
 #: ../lib/widgets.php:1101
 msgid "Lightbox"
@@ -3684,26 +3650,22 @@ msgstr "%s kullanıcısına bir Cevap Yazın"
 msgid "Submit Comment"
 msgstr "Yorum Gönder"
 
-#: ../templates/content-fullpost.php:141
-#: ../templates/content-fullpostfull.php:141
+#: ../templates/content-fullpost.php:141 ../templates/content-fullpostfull.php:141
 #: ../templates/content-singleportfolio.php:305
 msgid "Pages:"
 msgstr "Sayfalar:"
 
-#: ../templates/content-fullpost.php:147
-#: ../templates/content-fullpostfull.php:147
+#: ../templates/content-fullpost.php:147 ../templates/content-fullpostfull.php:147
 #, fuzzy
 msgid "1 Comment"
 msgstr "Yorum"
 
-#: ../templates/content-fullpost.php:148
-#: ../templates/content-fullpostfull.php:148
+#: ../templates/content-fullpost.php:148 ../templates/content-fullpostfull.php:148
 #, fuzzy
 msgid "% Comments"
 msgstr "Yorum"
 
-#: ../templates/content-fullpost.php:150
-#: ../templates/content-fullpostfull.php:150
+#: ../templates/content-fullpost.php:150 ../templates/content-fullpostfull.php:150
 #, fuzzy
 msgid "Comments are Closed"
 msgstr "Yorumlar kapalıdır."
@@ -3722,8 +3684,7 @@ msgstr "Gönderildiği yer:"
 msgid "Menu"
 msgstr "Menü"
 
-#: ../templates/home/blog-home-onecolumn.php:13
-#: ../templates/home/blog-home.php:9
+#: ../templates/home/blog-home-onecolumn.php:13 ../templates/home/blog-home.php:9
 msgid "Latest from the Blog"
 msgstr "Blog'dan Son Yazılar"
 
@@ -3745,19 +3706,19 @@ msgstr "Tema Ayarları"
 
 #: ../themeoptions/options.php:74
 msgid ""
-"Thank you for using the Virtue Theme by <a href=\"http://kadencethemes.com/"
-"\" target=\"_blank\">Kadence Themes</a>."
+"Thank you for using the BigCloudCMS Theme by <a href=\"http://bigcloudcms.com/"
+"\" target=\"_blank\">BigCloudCMS</a>."
 msgstr ""
-"<a href=\"http://kadencethemes.com/\" target=\"_blank\">Kadence Themes</a> "
-"tarafından hazırlanan Virtue Teması'nı kullandığınız için teşekkür ederiz."
+"<a href=\"http://bigcloudcms.com/\" target=\"_blank\">BigCloudCMS</a> "
+"tarafından hazırlanan BigCloudCMS Teması'nı kullandığınız için teşekkür ederiz."
 
 #: ../themeoptions/options.php:127
 msgid "Main Settings"
 msgstr "Ana Ayarlar"
 
 #: ../themeoptions/options.php:130
-msgid "Welcome to Virtue Theme Options"
-msgstr "Virtue Tema Ayarlarına Hoş Geldiniz"
+msgid "Welcome to BigCloudCMS Theme Options"
+msgstr "BigCloudCMS Tema Ayarlarına Hoş Geldiniz"
 
 #: ../themeoptions/options.php:131
 msgid "This theme was developed by"
@@ -3807,8 +3768,8 @@ msgstr "Taraf başına kaç adet menü ögesi olacağını seçin"
 
 #: ../themeoptions/options.php:188
 msgid ""
-"This determines how many menu items fit on each side of the logo, each menu "
-"is set in the appernace > menus page."
+"This determines how many menu items fit on each side of the logo, each menu is "
+"set in the appernace > menus page."
 msgstr ""
 
 #: ../themeoptions/options.php:199
@@ -3818,8 +3779,7 @@ msgstr "Yapışkan Üst Bilgi etkinleştirilsin mi?"
 #: ../themeoptions/options.php:200
 msgid "Choose to enable fixed header. Automatically off for mobile"
 msgstr ""
-"Sabit üst bilgiyi etkinleştirmeyi seçin. Mobil için otomatik olarak "
-"kapalıdır."
+"Sabit üst bilgiyi etkinleştirmeyi seçin. Mobil için otomatik olarak kapalıdır."
 
 #: ../themeoptions/options.php:207
 msgid "Enable Shrink with Center Header?"
@@ -3875,8 +3835,7 @@ msgstr "Site Adı Logo Yazı Tipi"
 
 #: ../themeoptions/options.php:286
 msgid "Choose size and style your sitename, if you don't use an image logo."
-msgstr ""
-"Bir logo resmi kullanmıyorsanız, site adınızın boyutunu ve stilini seçin."
+msgstr "Bir logo resmi kullanmıyorsanız, site adınızın boyutunu ve stilini seçin."
 
 #: ../themeoptions/options.php:298
 msgid "Site Tagline - Below Logo\""
@@ -3949,8 +3908,8 @@ msgstr ""
 
 #: ../themeoptions/options.php:429
 msgid ""
-"This will convert your menu to a mobile friendly layout and move the search "
-"box into the menu."
+"This will convert your menu to a mobile friendly layout and move the search box "
+"into the menu."
 msgstr ""
 
 #: ../themeoptions/options.php:436
@@ -4107,12 +4066,12 @@ msgid "Choose your Revolution Slider Here"
 msgstr "Buradan Revolution Kaydırıcınızı Seçin"
 
 #: ../themeoptions/options.php:649
-msgid "If Kadence Slider"
-msgstr "Eğer Kadence Kaydırıcı varsa"
+msgid "If BigCloudCMS Slider"
+msgstr "Eğer BigCloudCMS Kaydırıcı varsa"
 
 #: ../themeoptions/options.php:650
-msgid "Choose your Kadence Slider Here"
-msgstr "Buradan Kadence Kaydırıcınızı Seçin"
+msgid "Choose your BigCloudCMS Slider Here"
+msgstr "Buradan BigCloudCMS Kaydırıcınızı Seçin"
 
 #: ../themeoptions/options.php:660
 msgid "Move Slider above Header"
@@ -4247,8 +4206,8 @@ msgstr "Bu özelliği kullanmak ister misiniz?"
 
 #: ../themeoptions/options.php:770
 msgid ""
-"Choose if you would like to show a different slider on your home page for "
-"your mobile visitors."
+"Choose if you would like to show a different slider on your home page for your "
+"mobile visitors."
 msgstr ""
 "Anasayfanızda mobil ziyaretçileriniz için farklı bir kaydırıcı göstermek "
 "isterseniz, bunu tercih edin."
@@ -4267,8 +4226,7 @@ msgstr "Mobil için bir Kaydırıcı Seç"
 
 #: ../themeoptions/options.php:785
 msgid "Choose which slider you would like to show for mobile viewers."
-msgstr ""
-"Mobilden görüntüleyenler için hangi kaydırıcının gösterileceğini seçin."
+msgstr "Mobilden görüntüleyenler için hangi kaydırıcının gösterileceğini seçin."
 
 #: ../themeoptions/options.php:804 ../themeoptions/options.php:1739
 msgid "If Cyclone Slider"
@@ -4572,8 +4530,8 @@ msgstr "İkon Menü Kutusu Arka Plan Rengi"
 
 #: ../themeoptions/options.php:1340
 msgid ""
-"Choose the background color for icon menu boxes. * Note the hover color is "
-"set by your primary color in basic styling."
+"Choose the background color for icon menu boxes. * Note the hover color is set "
+"by your primary color in basic styling."
 msgstr ""
 "İkon menü kutuları için arka plan rengini seçin. * Vurgu renginin, temel "
 "biçemlendirmedeki birincil renginiz ile ayarlandığını dikkate alın."
@@ -4584,8 +4542,8 @@ msgstr "İkon Menü Yazı Tipi ve İkon Rengi"
 
 #: ../themeoptions/options.php:1348
 msgid ""
-"Choose the color for icon menu font and icon. * Note the hover color is set "
-"to white and background is set to primary color."
+"Choose the color for icon menu font and icon. * Note the hover color is set to "
+"white and background is set to primary color."
 msgstr ""
 "İkon menüsü ve ikon için rengi seçin. * Vurgu renginin beyaza ve arka planın "
 "birincil renge ayarlandığını dikkate alın."
@@ -4689,8 +4647,7 @@ msgstr "Mağaza Sayfasında kenar çubuğu görüntülensin mi?"
 
 #: ../themeoptions/options.php:1489
 msgid "This determines if there is a sidebar on the shop page."
-msgstr ""
-"Bu, mağaza sayfalarında bir kenar çubuğunun olup olmayacağını belirler."
+msgstr "Bu, mağaza sayfalarında bir kenar çubuğunun olup olmayacağını belirler."
 
 #: ../themeoptions/options.php:1499
 msgid "Choose a Sidebar for your shop page"
@@ -4703,8 +4660,7 @@ msgstr "Mağaza Kategori Sayfasında kenar çubuğu görüntülensin mi?"
 #: ../themeoptions/options.php:1509
 msgid "This determines if there is a sidebar on the product category pages."
 msgstr ""
-"Bu, ürün kategori sayfalarında bir kenar çubuğunun olup olmayacağını "
-"belirler."
+"Bu, ürün kategori sayfalarında bir kenar çubuğunun olup olmayacağını belirler."
 
 #: ../themeoptions/options.php:1519
 msgid "Choose a Sidebar for your Product Category Pages"
@@ -4728,9 +4684,9 @@ msgstr "Mağaza Sayfasında Kategori Filtresini Göster"
 
 #: ../themeoptions/options.php:1544
 msgid ""
-"This adds an dynamic filter to the shop page. NOTE this filter is only "
-"designed to filter what is visible on the page. It does not act as a menu "
-"and query products from multiple pages."
+"This adds an dynamic filter to the shop page. NOTE this filter is only designed "
+"to filter what is visible on the page. It does not act as a menu and query "
+"products from multiple pages."
 msgstr ""
 
 #: ../themeoptions/options.php:1550
@@ -4740,8 +4696,8 @@ msgstr "Kategori Sayfalarında Kategori Filtresini Göster"
 #: ../themeoptions/options.php:1551
 msgid ""
 "This adds an dynamic filter to Category pages. NOTE this filter is only "
-"designed to filter what is visible on the page. It does not act as a menu "
-"and query products from multiple pages."
+"designed to filter what is visible on the page. It does not act as a menu and "
+"query products from multiple pages."
 msgstr ""
 
 #: ../themeoptions/options.php:1557
@@ -4757,8 +4713,7 @@ msgid "Show toggle buttons for list/grid on shop page"
 msgstr ""
 
 #: ../themeoptions/options.php:1565
-msgid ""
-"Adds two icons for toggling between a grid and list layout on shop page."
+msgid "Adds two icons for toggling between a grid and list layout on shop page."
 msgstr ""
 
 #: ../themeoptions/options.php:1571
@@ -4784,8 +4739,7 @@ msgstr "Ürün, stokta yoksa Tükendi etiketini göster"
 
 #: ../themeoptions/options.php:1586
 msgid ""
-"This determines if a sold tag is displayed on the top right of the product "
-"image"
+"This determines if a sold tag is displayed on the top right of the product image"
 msgstr ""
 "Bu, ürün resminin üst sağında bir Tükendi etiketinin görüntülenip "
 "görüntülenmeyeceğini belirler"
@@ -4796,8 +4750,8 @@ msgstr "Fareyle Üzerinde Gezininceye Kadar Sepete Ekleyi Gizle"
 
 #: ../themeoptions/options.php:1593
 msgid ""
-"This determines if add to cart button will be hidden till the mouse hovers "
-"over the product"
+"This determines if add to cart button will be hidden till the mouse hovers over "
+"the product"
 msgstr ""
 "Bu, ürünün üzerinde fareyle gezininceye kadar sepete ekle butonun gizlenip "
 "gizlenmeyeceğini belirler"
@@ -4808,8 +4762,8 @@ msgstr "Ürün Resmi Döndürme"
 
 #: ../themeoptions/options.php:1600
 msgid ""
-"This allows your product image to flip to the first gallery image when "
-"hovered over on shop page. *Note only works in newer browsers."
+"This allows your product image to flip to the first gallery image when hovered "
+"over on shop page. *Note only works in newer browsers."
 msgstr ""
 "Bu, mağaza sayfasında üzerinde gezinince ürün resminin, ilk galeri resmine "
 "döndürülmesini sağlar. *Not: sadece yeni tarayıcılarda çalışır."
@@ -4820,8 +4774,8 @@ msgstr ""
 
 #: ../themeoptions/options.php:1607
 msgid ""
-"Turn this off if you would like to use browser added plus and minus for "
-"number boxes"
+"Turn this off if you would like to use browser added plus and minus for number "
+"boxes"
 msgstr ""
 
 #: ../themeoptions/options.php:1613
@@ -4896,11 +4850,10 @@ msgid "Product title Min Height"
 msgstr "Ürün Başlığı Minimum Yükseklik"
 
 #: ../themeoptions/options.php:1672
-msgid ""
-"If your titles are long increase this to help align your products height."
+msgid "If your titles are long increase this to help align your products height."
 msgstr ""
-"Eğer başlıklarınız uzunsa, bu, ürünlerinizin yüksekliğini hizalamaya "
-"yardımcı olur."
+"Eğer başlıklarınız uzunsa, bu, ürünlerinizin yüksekliğini hizalamaya yardımcı "
+"olur."
 
 #: ../themeoptions/options.php:1681
 msgid "Product Image Sizes"
@@ -4911,8 +4864,7 @@ msgid "Product Image Aspect Ratio"
 msgstr "Ürün Resmi Çerçeve Oranı"
 
 #: ../themeoptions/options.php:1687
-msgid ""
-"If enabled below this sets how you want your product images to be cropped."
+msgid "If enabled below this sets how you want your product images to be cropped."
 msgstr ""
 "Eğer etkinleştirilirse bu, ürün resimlerinizin ne şekilde kırpılacağını "
 "belirler."
@@ -4926,8 +4878,8 @@ msgid ""
 "If turned off image dimensions are set by woocommerce settings - recommended "
 "width: 270px for Catalog Images"
 msgstr ""
-"Eğer bu kapatılırsa, resim ebatları, WooCommerce ayarları tarafından "
-"belirlenir - Tavsiye edilen genişlik: Katalog Resimleri için 270px"
+"Eğer bu kapatılırsa, resim ebatları, WooCommerce ayarları tarafından belirlenir "
+"- Tavsiye edilen genişlik: Katalog Resimleri için 270px"
 
 #: ../themeoptions/options.php:1702
 msgid "Enable Product Image Aspect Ratio on product Page"
@@ -4938,8 +4890,8 @@ msgid ""
 "If turned off image dimensions are set by woocommerce settings - recommended "
 "width: 468px for Single Product Image"
 msgstr ""
-"Eğer bu kapatılırsa, resim ebatları, WooCommerce ayarları tarafından "
-"belirlenir - Tavsiye edilen genişlik: Tekil Ürün Resimleri için 468px"
+"Eğer bu kapatılırsa, resim ebatları, WooCommerce ayarları tarafından belirlenir "
+"- Tavsiye edilen genişlik: Tekil Ürün Resimleri için 468px"
 
 #: ../themeoptions/options.php:1709
 msgid "Shop Slider"
@@ -4960,8 +4912,7 @@ msgstr "Cyclone Kaydırıcı"
 
 #: ../themeoptions/options.php:1765
 msgid ""
-"Note: does not work if images are smaller than max. If using sidebar set to "
-"770"
+"Note: does not work if images are smaller than max. If using sidebar set to 770"
 msgstr ""
 "Not: Resimler, maksimumdan küçükse çalışmaz. Kenar çubuğu kullanıyorsanız, "
 "770'e ayarlayın."
@@ -4980,8 +4931,7 @@ msgstr "Tekil Ürün Yerleşimi"
 
 #: ../themeoptions/options.php:1833
 msgid ""
-"This determines if the image and product title layout on single product "
-"pages."
+"This determines if the image and product title layout on single product pages."
 msgstr ""
 "Bu, resim ve ürün başlığının, tekil ürün sayfalarında yerleşimini belirler."
 
@@ -5005,8 +4955,7 @@ msgstr "Tekil ürün sayfalarınızda varsayılan bir kenar çubuğu seçin"
 
 #: ../themeoptions/options.php:1859
 msgid "Display variations as radio buttons instead of select box?"
-msgstr ""
-"Değişkenler, seçim kutusu yerine radyo butonları olarak gösterilsin mi?"
+msgstr "Değişkenler, seçim kutusu yerine radyo butonları olarak gösterilsin mi?"
 
 #: ../themeoptions/options.php:1860
 msgid "This will display product varations in a box form."
@@ -5140,15 +5089,13 @@ msgstr "Portföy Kategori Sayfaları"
 #: ../themeoptions/options.php:2010
 msgid "Choose how many portfolio columns to show on portfolio catagory pages."
 msgstr ""
-"Portföy kategori sayfalarında kaç adet portföy sütununun gösterileceğini "
-"seçin"
+"Portföy kategori sayfalarında kaç adet portföy sütununun gösterileceğini seçin"
 
 #: ../themeoptions/options.php:2019
 #, fuzzy
 msgid "Choose how many portfolio items show on portfolio catagory pages."
 msgstr ""
-"Portföy kategori sayfalarında kaç adet portföy sütununun gösterileceğini "
-"seçin"
+"Portföy kategori sayfalarında kaç adet portföy sütununun gösterileceğini seçin"
 
 #: ../themeoptions/options.php:2047
 msgid "Show Types under Title"
@@ -5189,8 +5136,8 @@ msgstr "Yorumlar Kapalı yazısı gösterilsin mi?"
 #: ../themeoptions/options.php:2122
 msgid "Choose to show or hide comments closed alert below posts."
 msgstr ""
-"Yazıların altında yorumlar kapalı uyarısının gösterilmesini veya "
-"gizlenmesini seçin."
+"Yazıların altında yorumlar kapalı uyarısının gösterilmesini veya gizlenmesini "
+"seçin."
 
 #: ../themeoptions/options.php:2128
 msgid "Show Author Icon with posts?"
@@ -5199,8 +5146,7 @@ msgstr "Yazılarda Yazar İkonu gösterilsin mi?"
 #: ../themeoptions/options.php:2129
 msgid "Choose to show or hide author icon under post title."
 msgstr ""
-"Yazı başlığının altında yazar ikonunun gösterilmesini veya gizlenmesini "
-"seçin."
+"Yazı başlığının altında yazar ikonunun gösterilmesini veya gizlenmesini seçin."
 
 #: ../themeoptions/options.php:2135
 msgid "Show \"posted in\" categories with posts?"
@@ -5219,8 +5165,7 @@ msgstr "Yazılarda Yazar İkonu gösterilsin mi?"
 #: ../themeoptions/options.php:2143
 msgid "Choose to show or hide comment icon under post title."
 msgstr ""
-"Yazı başlığının altında yorum ikonunun gösterilmesini veya gizlenmesini "
-"seçin."
+"Yazı başlığının altında yorum ikonunun gösterilmesini veya gizlenmesini seçin."
 
 #: ../themeoptions/options.php:2149
 msgid "Show Date with posts?"
@@ -5228,8 +5173,7 @@ msgstr "Yazılarda tarih gösterilsin mi?"
 
 #: ../themeoptions/options.php:2150
 msgid "Choose to show or hide date with post title."
-msgstr ""
-"Yazı başlığının altında tarihin gösterilmesini veya gizlenmesini seçin."
+msgstr "Yazı başlığının altında tarihin gösterilmesini veya gizlenmesini seçin."
 
 #: ../themeoptions/options.php:2156
 msgid "Show Previous and Next posts links?"
@@ -5237,8 +5181,8 @@ msgstr "Önceki ve Sonraki yazı bağlantıları gösterilsin mi?"
 
 #: ../themeoptions/options.php:2157
 msgid ""
-"Choose to show or hide previous and next post links in the footer of a "
-"single post."
+"Choose to show or hide previous and next post links in the footer of a single "
+"post."
 msgstr ""
 "Tekil bir yazının alt bilgisinde önceki ve sonraki yazı bağlantılarının "
 "gösterilmesini veya gizlenmesini seçin."
@@ -5257,8 +5201,8 @@ msgstr "Blog sayfalarında sonsuz kaydırmayı kullan"
 
 #: ../themeoptions/options.php:2172 ../themeoptions/options.php:2179
 msgid ""
-"Remove Pagination and creates infinite scroll instead. Note does not work "
-"with slider post summaries"
+"Remove Pagination and creates infinite scroll instead. Note does not work with "
+"slider post summaries"
 msgstr ""
 "Sayfa numaralandırmayı kaldırır ve yerine sonsuz kaydırmayı yaratır. Not: "
 "Kaydırıcı yazı özetleriyle çalışmaz"
@@ -5335,8 +5279,7 @@ msgstr "Blog arşivlerinde kenar çubuğu görüntülensin mi?"
 #: ../themeoptions/options.php:2277
 msgid "This determines if there is a sidebar on the blog category pages."
 msgstr ""
-"Bu, blog kategori sayfalarında bir kenar çubuğunun olup olmayacağını "
-"belirler."
+"Bu, blog kategori sayfalarında bir kenar çubuğunun olup olmayacağını belirler."
 
 #: ../themeoptions/options.php:2287
 msgid "Choose a Sidebar for your Category/Archive Pages"
@@ -5959,8 +5902,8 @@ msgstr ""
 msgid ""
 "Choose to show or hide breadcrumbs on your Woocommerce pages and Categories"
 msgstr ""
-"WooCommerce sayfalarınız ve kategorilerinizde ekmek kırıntılarının "
-"gösterilmesi veya gizlenmesini seçin"
+"WooCommerce sayfalarınız ve kategorilerinizde ekmek kırıntılarının gösterilmesi "
+"veya gizlenmesini seçin"
 
 #: ../themeoptions/options.php:3300
 msgid "Show Breadcrumbs on Products?"
@@ -5969,8 +5912,8 @@ msgstr "Ürünlerde ekmek kırıntıları gösterilsin mi?"
 #: ../themeoptions/options.php:3301
 msgid "Choose to show or hide breadcrumbs on your Woocommerce products"
 msgstr ""
-"WooCommerce ürünlerinizde ekmek kırıntılarının gösterilmesi veya "
-"gizlenmesini seçin"
+"WooCommerce ürünlerinizde ekmek kırıntılarının gösterilmesi veya gizlenmesini "
+"seçin"
 
 #: ../themeoptions/options.php:3307
 msgid "Show Breadcrumbs on Blog Post?"
@@ -5989,8 +5932,8 @@ msgstr "Portföy yazılarında ekmek kırıntıları gösterilsin mi?"
 #: ../themeoptions/options.php:3315
 msgid "Choose to show or hide breadcrumbs on your single portfolio posts"
 msgstr ""
-"Tekil portföy yazılarınızda ekmek kırıntılarının gösterilmesi veya "
-"gizlenmesini seçin"
+"Tekil portföy yazılarınızda ekmek kırıntılarının gösterilmesi veya gizlenmesini "
+"seçin"
 
 #: ../themeoptions/options.php:3321
 msgid "Show Breadcrumbs on Pages & Categories?"
@@ -6016,11 +5959,11 @@ msgstr "Tüm Blog Yazıları Sayfası"
 
 #: ../themeoptions/options.php:3337
 msgid ""
-"This sets the link for your main blog page, for breadcrumbs. Use only if "
-"your blog page is not your home page."
+"This sets the link for your main blog page, for breadcrumbs. Use only if your "
+"blog page is not your home page."
 msgstr ""
-"Bu, ekmek kırıntıları için ana blog sayfanızda bağlantıyı ayarlar. Sadece "
-"blog sayfanız, ana sayfanız değilse kullanın."
+"Bu, ekmek kırıntıları için ana blog sayfanızda bağlantıyı ayarlar. Sadece blog "
+"sayfanız, ana sayfanız değilse kullanın."
 
 #: ../themeoptions/options.php:3342
 msgid "Show Shop page in breadcrumbs?"
@@ -6077,8 +6020,7 @@ msgstr "Özel Site İkonu"
 
 #: ../themeoptions/options.php:3396
 msgid ""
-"Upload a 16px x 16px png/gif/ico image that will represent your website "
-"favicon."
+"Upload a 16px x 16px png/gif/ico image that will represent your website favicon."
 msgstr ""
 "Websitenizin ikonunu temsil edecek olan bir 16px x 16px png/gif/ico resmi "
 "yükleyin."
@@ -6192,9 +6134,9 @@ msgid "Wordpress Galleries"
 msgstr "Wordpress Galerileri"
 
 #: ../themeoptions/options.php:3493
-msgid "Enable Virtue Galleries to override Wordpress"
+msgid "Enable BigCloudCMS Galleries to override Wordpress"
 msgstr ""
-"Wordpress Galerilerini geçersiz kılmak için Virtue Galerilerini etkinleştir"
+"Wordpress Galerilerini geçersiz kılmak için BigCloudCMS Galerilerini etkinleştir"
 
 #: ../themeoptions/options.php:3494
 msgid ""
@@ -6205,16 +6147,15 @@ msgstr ""
 "eklenti kullanıyorsanız bunu devre dışı bırakın."
 
 #: ../themeoptions/options.php:3500
-msgid "Use Masonry Feature on Virtue Galleries"
-msgstr "Virtue Galerinde Duvar Özelliğini Kullan"
+msgid "Use Masonry Feature on BigCloudCMS Galleries"
+msgstr "BigCloudCMS Galerinde Duvar Özelliğini Kullan"
 
 #: ../themeoptions/options.php:3501
 msgid "This allows for dynamic gallery grids with images of different height"
-msgstr ""
-"Bu, farklı yükseklikteki resimlerle dinamik galeri karelajına izin verir."
+msgstr "Bu, farklı yükseklikteki resimlerle dinamik galeri karelajına izin verir."
 
 #: ../themeoptions/options.php:3507
-msgid "Show captions on Virtue Galleries"
+msgid "Show captions on BigCloudCMS Galleries"
 msgstr ""
 
 #: ../themeoptions/options.php:3508
@@ -6263,19 +6204,18 @@ msgstr "Google Analytics İzleme Kodu"
 
 #: ../themeoptions/options.php:3550
 msgid "Paste your Google Analytics Tracking ID Here. (example: UA-########-#)"
-msgstr ""
-"Google Analytics izleme kodunu buraya yapıştırın (örnek: UA-########-#)"
+msgstr "Google Analytics izleme kodunu buraya yapıştırın (örnek: UA-########-#)"
 
 #: ../themeoptions/options.php:3555
-msgid "Turn on Virtue SEO?"
-msgstr "Virtue SEO etkin olsun mu?"
+msgid "Turn on BigCloudCMS SEO?"
+msgstr "BigCloudCMS SEO etkin olsun mu?"
 
 #: ../themeoptions/options.php:3556
 msgid ""
-"Choose if you would like to use Virtue Theme SEO options, for full seo "
+"Choose if you would like to use BigCloudCMS Theme SEO options, for full seo "
 "support use a plugin"
 msgstr ""
-"Virtue Teması SEO seçeneklerini kullanmak isterseniz bunu seçin. Tam SEO "
+"BigCloudCMS Teması SEO seçeneklerini kullanmak isterseniz bunu seçin. Tam SEO "
 "desteği için bir eklenti kullanın."
 
 #: ../themeoptions/options.php:3562
@@ -6395,8 +6335,7 @@ msgstr ""
 msgid "Filter Products"
 msgstr "Ürünleri Filtrele"
 
-#: ../woocommerce/archive-product.php:116
-#: ../woocommerce/archive-product.php:139
+#: ../woocommerce/archive-product.php:116 ../woocommerce/archive-product.php:139
 msgid "Show"
 msgstr ""
 
@@ -6439,8 +6378,7 @@ msgid "You may also like&hellip;"
 msgstr ""
 
 #~ msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
-#~ msgstr ""
-#~ "Bir yorum göndermek için <a href=\"%s\">giriş yapmış</a> olmalısınız."
+#~ msgstr "Bir yorum göndermek için <a href=\"%s\">giriş yapmış</a> olmalısınız."
 
 #~ msgid "Logged in as <a href=\"%s/wp-admin/profile.php\">%s</a>."
 #~ msgstr "<a href=\"%s/wp-admin/profile.php\">%s</a> olarak giriş yapıldı."
@@ -6489,8 +6427,7 @@ msgstr ""
 #~ msgid "Install package not available."
 #~ msgstr "Kurulum paketi mevcut değildir."
 
-#~ msgid ""
-#~ "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+#~ msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
 #~ msgstr ""
 #~ "<span class=\"code\">%s</span>&#8230; alanından kurulum paketi indiriliyor"
 
@@ -6525,8 +6462,7 @@ msgstr ""
 #~ msgstr "Logo Yerleşimi"
 
 #~ msgid "This determines how many menu items fit on each side of the logo"
-#~ msgstr ""
-#~ "Bu, logonun her iki tarafına kaç adet menü ögesi sığacağını belirler"
+#~ msgstr "Bu, logonun her iki tarafına kaç adet menü ögesi sığacağını belirler"
 
 #~ msgid "Slider Settings"
 #~ msgstr "Kaydırıcı Ayarları"
@@ -6719,12 +6655,12 @@ msgstr ""
 #~ msgstr "Tema Güncelleme İçeri Aktar"
 
 #~ msgid ""
-#~ "<p class=\"description\">If updating from version 1.7.4 or earlier use "
-#~ "this script to update your theme options.</p>"
+#~ "<p class=\"description\">If updating from version 1.7.4 or earlier use this "
+#~ "script to update your theme options.</p>"
 #~ msgstr ""
 #~ "<p class=\"description\">Versiyon 1.7.4 veya öncesinden güncelleme "
-#~ "yapıyorsanız, tema ayarlarınızı güncellemek için bu komut dizisini "
-#~ "kullanın.</p>"
+#~ "yapıyorsanız, tema ayarlarınızı güncellemek için bu komut dizisini kullanın."
+#~ "</p>"
 
 #~ msgid "Turn on and save to start script"
 #~ msgstr "Komut dizisini başlatmak için aç ve kaydet"

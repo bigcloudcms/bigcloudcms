@@ -12,9 +12,9 @@ Template Name: Blog Grid
 	
     <div id="content" class="container">
    		<div class="row">
-   			<?php global $post, $virtue_premium;
-   			if(isset($virtue_premium['virtue_animate_in']) && $virtue_premium['virtue_animate_in'] == 1) {$animate = 1;} else {$animate = 0;} 
-   			if(isset($virtue_premium['blog_infinitescroll']) && $virtue_premium['blog_infinitescroll'] == 1) {$infinitescroll = true;} else {$infinitescroll = false;}
+   			<?php global $post, $bigcloudcms_premium;
+   			if(isset($bigcloudcms_premium['bigcloudcms_animate_in']) && $bigcloudcms_premium['bigcloudcms_animate_in'] == 1) {$animate = 1;} else {$animate = 0;} 
+   			if(isset($bigcloudcms_premium['blog_infinitescroll']) && $bigcloudcms_premium['blog_infinitescroll'] == 1) {$infinitescroll = true;} else {$infinitescroll = false;}
    			$blog_grid_column = get_post_meta( $post->ID, '_kad_blog_columns', true );
    			if ($blog_grid_column == 'twocolumn') {$itemsize = 'tcol-md-6 tcol-sm-6 tcol-xs-12 tcol-ss-12';} 
 		    else if ($blog_grid_column == 'threecolumn'){ $itemsize = 'tcol-md-4 tcol-sm-4 tcol-xs-6 tcol-ss-12';} 
@@ -30,7 +30,7 @@ Template Name: Blog Grid
 					$blog_items = get_post_meta( $post->ID, '_kad_blog_items', true ); 
 					if($blog_items == 'all') {$blog_items = '-1';} 
 					?>
-      <div class="main <?php echo kadence_main_class();?>" id="ktmain" role="main">
+      <div class="main <?php echo bigcloudcms_main_class();?>" id="ktmain" role="main">
       	<div class="entry-content" itemprop="mainContentOfPage">
 					<?php get_template_part('templates/content', 'page'); ?>
 		</div>
@@ -54,7 +54,7 @@ Template Name: Blog Grid
 							</div>
 						<?php }
                     endwhile; else: ?>
-						<li class="error-not-found"><?php _e('Sorry, no blog entries found.', 'virtue'); ?></li>
+						<li class="error-not-found"><?php _e('Sorry, no blog entries found.', 'bigcloudcms'); ?></li>
 					<?php endif; ?>
                 
 
@@ -94,5 +94,5 @@ $('#kad-blog-grid').infinitescroll({
 <?php } ?>
 				});
 </script>
-<?php global $virtue_premium; if(isset($virtue_premium['page_comments']) && $virtue_premium['page_comments'] == '1') { comments_template('/templates/comments.php');} ?>
+<?php global $bigcloudcms_premium; if(isset($bigcloudcms_premium['page_comments']) && $bigcloudcms_premium['page_comments'] == '1') { comments_template('/templates/comments.php');} ?>
 </div><!-- /.main -->

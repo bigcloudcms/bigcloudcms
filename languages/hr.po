@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Lite Virtue\n"
+"Project-Id-Version: Lite BigCloudCMS\n"
 "POT-Creation-Date: 2015-10-21 15:32-0600\n"
 "PO-Revision-Date: 2015-10-21 15:32-0600\n"
 "Last-Translator: \n"
@@ -396,7 +396,7 @@ msgid "Insert Shortcode"
 msgstr ""
 
 #: ../lib/cleanup.php:244 ../lib/kad_shortcodes.php:877
-msgid "Virtue Shortcodes"
+msgid "BigCloudCMS Shortcodes"
 msgstr ""
 
 #: ../lib/cmb/helpers/cmb_Meta_Box_ajax.php:47
@@ -1788,7 +1788,7 @@ msgstr ""
 
 #: ../lib/metaboxes.php:290 ../lib/metaboxes.php:924
 #: ../themeoptions/options.php:632
-msgid "Kadence Slider"
+msgid "BigCloudCMS Slider"
 msgstr ""
 
 #: ../lib/metaboxes.php:291 ../lib/metaboxes.php:925
@@ -1809,7 +1809,7 @@ msgid "Image List Style 2"
 msgstr ""
 
 #: ../lib/metaboxes.php:300
-msgid "If Revolution, Cyclone or Kadence Slider"
+msgid "If Revolution, Cyclone or BigCloudCMS Slider"
 msgstr ""
 
 #: ../lib/metaboxes.php:301
@@ -2218,7 +2218,7 @@ msgid "Paste Revolution slider alias here (example: slider1)"
 msgstr ""
 
 #: ../lib/metaboxes.php:937
-msgid "If Cyclone or Kadence Slider"
+msgid "If Cyclone or BigCloudCMS Slider"
 msgstr ""
 
 #: ../lib/metaboxes.php:938
@@ -2368,7 +2368,7 @@ msgid "Optimal Length: Roughly 155 Characters"
 msgstr ""
 
 #: ../lib/metaboxes.php:1322
-msgid "Virtue Custom Tab 01"
+msgid "BigCloudCMS Custom Tab 01"
 msgstr ""
 
 #: ../lib/metaboxes.php:1329 ../lib/metaboxes.php:1361
@@ -2402,11 +2402,11 @@ msgid "This will determine where the tab is shown (e.g. 20)"
 msgstr ""
 
 #: ../lib/metaboxes.php:1354
-msgid "Virtue Custom Tab 02"
+msgid "BigCloudCMS Custom Tab 02"
 msgstr ""
 
 #: ../lib/metaboxes.php:1386
-msgid "Virtue Custom Tab 03"
+msgid "BigCloudCMS Custom Tab 03"
 msgstr ""
 
 #: ../lib/post-types.php:5 ../lib/post-types.php:17 ../lib/widgets.php:1097
@@ -2604,7 +2604,7 @@ msgid "Adds a gallery to any widget area."
 msgstr ""
 
 #: ../lib/premium_widgets.php:10
-msgid "Virtue: Gallery"
+msgid "BigCloudCMS: Gallery"
 msgstr ""
 
 #: ../lib/premium_widgets.php:67
@@ -2720,7 +2720,7 @@ msgid "Adds a carousel to any widget area"
 msgstr ""
 
 #: ../lib/premium_widgets.php:152
-msgid "Virtue: Carousel"
+msgid "BigCloudCMS: Carousel"
 msgstr ""
 
 #: ../lib/premium_widgets.php:216 ../themeoptions/options.php:3616
@@ -2791,7 +2791,7 @@ msgid "Adds a info box with icon options"
 msgstr ""
 
 #: ../lib/premium_widgets.php:324
-msgid "Virtue: Info Box"
+msgid "BigCloudCMS: Info Box"
 msgstr ""
 
 #: ../lib/premium_widgets.php:402 ../lib/premium_widgets.php:692
@@ -2847,7 +2847,7 @@ msgid "Adds a google map to a widget area"
 msgstr ""
 
 #: ../lib/premium_widgets.php:481
-msgid "Virtue: Google Map"
+msgid "BigCloudCMS: Google Map"
 msgstr ""
 
 #: ../lib/premium_widgets.php:543
@@ -2909,7 +2909,7 @@ msgid "Adds a simple call to action"
 msgstr ""
 
 #: ../lib/premium_widgets.php:621
-msgid "Virtue: Call to Action"
+msgid "BigCloudCMS: Call to Action"
 msgstr ""
 
 #: ../lib/premium_widgets.php:709
@@ -2949,7 +2949,7 @@ msgid "Adds an image background with text, link and hover effect."
 msgstr ""
 
 #: ../lib/premium_widgets.php:760
-msgid "Virtue: Image Menu Item"
+msgid "BigCloudCMS: Image Menu Item"
 msgstr ""
 
 #: ../lib/premium_widgets.php:829
@@ -3083,7 +3083,7 @@ msgid "Use this widget to add a Vcard to your site"
 msgstr ""
 
 #: ../lib/widgets.php:204
-msgid "Virtue: Contact/Vcard"
+msgid "BigCloudCMS: Contact/Vcard"
 msgstr ""
 
 #: ../lib/widgets.php:311
@@ -3127,7 +3127,7 @@ msgid "Simple way to add Social Icons"
 msgstr ""
 
 #: ../lib/widgets.php:355
-msgid "Virtue: Social Links"
+msgid "BigCloudCMS: Social Links"
 msgstr ""
 
 #: ../lib/widgets.php:497
@@ -3207,7 +3207,7 @@ msgid "This shows the most recent posts on your site with a thumbnail"
 msgstr ""
 
 #: ../lib/widgets.php:580
-msgid "Virtue: Recent Posts"
+msgid "BigCloudCMS: Recent Posts"
 msgstr ""
 
 #: ../lib/widgets.php:605 ../templates/recentblog-carousel.php:8
@@ -3231,7 +3231,7 @@ msgid "This shows a slider with your testimonials"
 msgstr ""
 
 #: ../lib/widgets.php:706
-msgid "Virtue: Testimonial Carousel"
+msgid "BigCloudCMS: Testimonial Carousel"
 msgstr ""
 
 #: ../lib/widgets.php:878
@@ -3276,7 +3276,7 @@ msgid ""
 msgstr ""
 
 #: ../lib/widgets.php:969
-msgid "Virtue: Post Grid"
+msgid "BigCloudCMS: Post Grid"
 msgstr ""
 
 #: ../lib/widgets.php:1094
@@ -3300,7 +3300,7 @@ msgid "This allows for an image and a simple about text."
 msgstr ""
 
 #: ../lib/widgets.php:1118
-msgid "Virtue: Image"
+msgid "BigCloudCMS: Image"
 msgstr ""
 
 #: ../lib/widgets.php:1182
@@ -3509,8 +3509,8 @@ msgstr ""
 
 #: ../themeoptions/options.php:74
 msgid ""
-"Thank you for using the Virtue Theme by <a href=\"http://kadencethemes.com/"
-"\" target=\"_blank\">Kadence Themes</a>."
+"Thank you for using the BigCloudCMS Theme by <a href=\"http://bigcloudcms.com/"
+"\" target=\"_blank\">BigCloudCMS</a>."
 msgstr ""
 
 #: ../themeoptions/options.php:127
@@ -3518,7 +3518,7 @@ msgid "Main Settings"
 msgstr ""
 
 #: ../themeoptions/options.php:130
-msgid "Welcome to Virtue Theme Options"
+msgid "Welcome to BigCloudCMS Theme Options"
 msgstr ""
 
 #: ../themeoptions/options.php:131
@@ -3864,11 +3864,11 @@ msgid "Choose your Revolution Slider Here"
 msgstr ""
 
 #: ../themeoptions/options.php:649
-msgid "If Kadence Slider"
+msgid "If BigCloudCMS Slider"
 msgstr ""
 
 #: ../themeoptions/options.php:650
-msgid "Choose your Kadence Slider Here"
+msgid "Choose your BigCloudCMS Slider Here"
 msgstr ""
 
 #: ../themeoptions/options.php:660
@@ -5829,7 +5829,7 @@ msgid "Wordpress Galleries"
 msgstr ""
 
 #: ../themeoptions/options.php:3470
-msgid "Enable Virtue Galleries to override Wordpress"
+msgid "Enable BigCloudCMS Galleries to override Wordpress"
 msgstr ""
 
 #: ../themeoptions/options.php:3471
@@ -5839,7 +5839,7 @@ msgid ""
 msgstr ""
 
 #: ../themeoptions/options.php:3477
-msgid "Use Masonry Feature on Virtue Galleries"
+msgid "Use Masonry Feature on BigCloudCMS Galleries"
 msgstr ""
 
 #: ../themeoptions/options.php:3478
@@ -5847,7 +5847,7 @@ msgid "This allows for dynamic gallery grids with images of different height"
 msgstr ""
 
 #: ../themeoptions/options.php:3484
-msgid "Show captions on Virtue Galleries"
+msgid "Show captions on BigCloudCMS Galleries"
 msgstr ""
 
 #: ../themeoptions/options.php:3485
@@ -5899,12 +5899,12 @@ msgid "Paste your Google Analytics Tracking ID Here. (example: UA-########-#)"
 msgstr ""
 
 #: ../themeoptions/options.php:3532
-msgid "Turn on Virtue SEO?"
+msgid "Turn on BigCloudCMS SEO?"
 msgstr ""
 
 #: ../themeoptions/options.php:3533
 msgid ""
-"Choose if you would like to use Virtue Theme SEO options, for full seo "
+"Choose if you would like to use BigCloudCMS Theme SEO options, for full seo "
 "support use a plugin"
 msgstr ""
 

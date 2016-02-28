@@ -64,8 +64,8 @@ function kad_portfolio_shortcode_function( $atts, $content) {
 	if(!empty($width)){
 		$slidewidth = $width;
 	}
-	global $virtue_premium, $kt_portfolio_loop; 
-	if(isset($virtue_premium['virtue_animate_in']) && $virtue_premium['virtue_animate_in'] == 1) {
+	global $bigcloudcms_premium, $kt_portfolio_loop; 
+	if(isset($bigcloudcms_premium['bigcloudcms_animate_in']) && $bigcloudcms_premium['bigcloudcms_animate_in'] == 1) {
 		$animate = 1;
 	} else {
 		$animate = 0;
@@ -80,16 +80,16 @@ function kad_portfolio_shortcode_function( $atts, $content) {
 ob_start(); ?>
 	<?php if ($filter == "true") { ?>
       	<section id="options" class="clearfix">
-			<?php global $virtue_premium; 
-			if(!empty($virtue_premium['filter_all_text'])) {
-				$alltext = $virtue_premium['filter_all_text'];
+			<?php global $bigcloudcms_premium; 
+			if(!empty($bigcloudcms_premium['filter_all_text'])) {
+				$alltext = $bigcloudcms_premium['filter_all_text'];
 			} else {
-				$alltext = __('All', 'virtue');
+				$alltext = __('All', 'bigcloudcms');
 			}
-			if(!empty($virtue_premium['portfolio_filter_text'])) {
-				$portfoliofiltertext = $virtue_premium['portfolio_filter_text'];
+			if(!empty($bigcloudcms_premium['portfolio_filter_text'])) {
+				$portfoliofiltertext = $bigcloudcms_premium['portfolio_filter_text'];
 			} else {
-				$portfoliofiltertext = __('Filter Projects', 'virtue');
+				$portfoliofiltertext = __('Filter Projects', 'bigcloudcms');
 			}
 			$termtypes = array( 'child_of' => $portfolio_cat_ID,);
 			$categories= get_terms('portfolio-type', $termtypes);
@@ -137,13 +137,13 @@ ob_start(); ?>
 						?>
 				
 				<div class="<?php echo esc_attr($itemsize);?> <?php echo strtolower($tax); ?> all p-item">
-                	<?php do_action('kadence_portfolio_loop_start');
+                	<?php do_action('bigcloudcms_portfolio_loop_start');
 								get_template_part('templates/content', 'loop-portfolio'); 
-						  		do_action('kadence_portfolio_loop_end');
+						  		do_action('bigcloudcms_portfolio_loop_end');
 							?>
             </div>
 			<?php endwhile; else: ?>
-				<li class="error-not-found"><?php _e('Sorry, no portfolio entries found.', 'virtue');?></li>
+				<li class="error-not-found"><?php _e('Sorry, no portfolio entries found.', 'bigcloudcms');?></li>
 			<?php endif; ?>
           	</div> <!-- portfoliowrapper -->
             <?php $wp_query = null; wp_reset_query(); ?>

@@ -1,55 +1,55 @@
 <?php
-function virtue_author_box() { ?>
+function bigcloudcms_author_box() { ?>
 <div class="author-box">
 	<ul class="nav nav-tabs" id="authorTab">
-  <li class="active"><a href="#about"><?php _e('About Author', 'virtue'); ?></a></li>
-  <li><a href="#latest"><?php _e('Latest Posts', 'virtue'); ?></a></li>
+  <li class="active"><a href="#about"><?php _e('About Author', 'bigcloudcms'); ?></a></li>
+  <li><a href="#latest"><?php _e('Latest Posts', 'bigcloudcms'); ?></a></li>
 </ul>
  
 <div class="tab-content postclass">
   <div class="tab-pane clearfix active" id="about">
   	<div class="author-profile vcard">
 		<?php echo get_avatar( get_the_author_meta('ID'), 80 ); ?>
-        <div class="author-follow"><span class="followtext"><?php _e('Follow', 'virtue'); ?> <?php the_author_meta( 'display_name' ); ?>:</span>
+        <div class="author-follow"><span class="followtext"><?php _e('Follow', 'bigcloudcms'); ?> <?php the_author_meta( 'display_name' ); ?>:</span>
         <?php if ( get_the_author_meta( 'facebook' ) ) { ?>
 			<span class="facebooklink">
-				<a href="<?php the_author_meta( 'facebook' ); ?>" target="_blank" title="<?php _e('Follow', 'virtue'); ?>  <?php the_author_meta( 'display_name' ); ?> <?php _e('on Facebook', 'virtue');?>"><i class="icon-facebook"></i></a>
+				<a href="<?php the_author_meta( 'facebook' ); ?>" target="_blank" title="<?php _e('Follow', 'bigcloudcms'); ?>  <?php the_author_meta( 'display_name' ); ?> <?php _e('on Facebook', 'bigcloudcms');?>"><i class="icon-facebook"></i></a>
 			</span>
             <?php } if ( get_the_author_meta( 'twitter' ) ) { ?>
             <span class="twitterlink">
-				<a href="http://twitter.com/<?php the_author_meta( 'twitter' ); ?>" target="_blank" title="<?php _e('Follow', 'virtue'); ?>  <?php the_author_meta( 'display_name' ); ?> <?php _e('on Twitter', 'virtue');?>"><i class="icon-twitter"></i></a>
+				<a href="http://twitter.com/<?php the_author_meta( 'twitter' ); ?>" target="_blank" title="<?php _e('Follow', 'bigcloudcms'); ?>  <?php the_author_meta( 'display_name' ); ?> <?php _e('on Twitter', 'bigcloudcms');?>"><i class="icon-twitter"></i></a>
 			</span>
             <?php } if ( get_the_author_meta( 'google' ) ) { ?>
             <span class="googlepluslink">
-				<a href="<?php the_author_meta( 'google' ); ?>" target="_blank" title="<?php _e('Follow', 'virtue'); ?>  <?php the_author_meta( 'display_name' ); ?> <?php _e('on Google Plus', 'virtue');?>"><i class="icon-google-plus"></i></a>
+				<a href="<?php the_author_meta( 'google' ); ?>" target="_blank" title="<?php _e('Follow', 'bigcloudcms'); ?>  <?php the_author_meta( 'display_name' ); ?> <?php _e('on Google Plus', 'bigcloudcms');?>"><i class="icon-google-plus"></i></a>
 			</span>
             <?php } if ( get_the_author_meta( 'youtube' ) ) { ?>
             <span class="youtubelink">
-        <a href="<?php the_author_meta( 'youtube' ); ?>" target="_blank" title="<?php _e('Follow', 'virtue'); ?>  <?php the_author_meta( 'display_name' ); ?> <?php _e('on YouTube', 'virtue');?>"><i class="icon-youtube"></i></a>
+        <a href="<?php the_author_meta( 'youtube' ); ?>" target="_blank" title="<?php _e('Follow', 'bigcloudcms'); ?>  <?php the_author_meta( 'display_name' ); ?> <?php _e('on YouTube', 'bigcloudcms');?>"><i class="icon-youtube"></i></a>
       </span>
             <?php } if ( get_the_author_meta( 'flickr' ) ) { ?>
             <span class="flickrlink">
-				<a href="<?php the_author_meta( 'flickr' ); ?>" target="_blank" title="<?php _e('Follow', 'virtue'); ?>  <?php the_author_meta( 'display_name' ); ?> <?php _e('on Flickr', 'virtue');?>"><i class="icon-flickr2"></i></a>
+				<a href="<?php the_author_meta( 'flickr' ); ?>" target="_blank" title="<?php _e('Follow', 'bigcloudcms'); ?>  <?php the_author_meta( 'display_name' ); ?> <?php _e('on Flickr', 'bigcloudcms');?>"><i class="icon-flickr2"></i></a>
 			</span>
             <?php } if ( get_the_author_meta( 'vimeo' ) ) { ?>
             <span class="vimeolink">
-				<a href="<?php the_author_meta( 'vimeo' ); ?>" target="_blank" title="<?php _e('Follow', 'virtue'); ?>  <?php the_author_meta( 'display_name' ); ?> <?php _e('on Vimeo', 'virtue');?>"><i class="icon-vimeo"></i></a>
+				<a href="<?php the_author_meta( 'vimeo' ); ?>" target="_blank" title="<?php _e('Follow', 'bigcloudcms'); ?>  <?php the_author_meta( 'display_name' ); ?> <?php _e('on Vimeo', 'bigcloudcms');?>"><i class="icon-vimeo"></i></a>
 			</span>
             <?php } if ( get_the_author_meta( 'linkedin' ) ) { ?>
             <span class="linkedinlink">
-				<a href="<?php the_author_meta( 'linkedin' ); ?>" target="_blank" title="<?php _e('Follow', 'virtue'); ?>  <?php the_author_meta( 'display_name' ); ?> <?php _e('on linkedin', 'virtue');?>"><i class="icon-linkedin"></i></a>
+				<a href="<?php the_author_meta( 'linkedin' ); ?>" target="_blank" title="<?php _e('Follow', 'bigcloudcms'); ?>  <?php the_author_meta( 'display_name' ); ?> <?php _e('on linkedin', 'bigcloudcms');?>"><i class="icon-linkedin"></i></a>
 			</span>
             <?php } if ( get_the_author_meta( 'dribbble' ) ) { ?>
             <span class="dribbblelink">
-				<a href="<?php the_author_meta( 'dribbble' ); ?>" target="_blank" title="<?php _e('Follow', 'virtue'); ?>  <?php the_author_meta( 'display_name' ); ?> <?php _e('on Dribbble', 'virtue');?>"><i class="icon-dribbble"></i></a>
+				<a href="<?php the_author_meta( 'dribbble' ); ?>" target="_blank" title="<?php _e('Follow', 'bigcloudcms'); ?>  <?php the_author_meta( 'display_name' ); ?> <?php _e('on Dribbble', 'bigcloudcms');?>"><i class="icon-dribbble"></i></a>
 			</span>
       <?php } if ( get_the_author_meta( 'pinterest' ) ) { ?>
             <span class="pinterestlink">
-				<a href="<?php the_author_meta( 'pinterest' ); ?>" target="_blank" title="<?php _e('Follow', 'virtue'); ?>  <?php the_author_meta( 'display_name' ); ?> <?php _e('on Pinterest', 'virtue');?>"><i class="icon-pinterest"></i></a>
+				<a href="<?php the_author_meta( 'pinterest' ); ?>" target="_blank" title="<?php _e('Follow', 'bigcloudcms'); ?>  <?php the_author_meta( 'display_name' ); ?> <?php _e('on Pinterest', 'bigcloudcms');?>"><i class="icon-pinterest"></i></a>
 			</span>
       <?php } if ( get_the_author_meta( 'instagram' ) ) { ?>
       <span class="instagramlink">
-        <a href="<?php the_author_meta( 'instagram' ); ?>" target="_blank" title="<?php _e('Follow', 'virtue'); ?>  <?php the_author_meta( 'display_name' ); ?> <?php _e('on Instagram', 'virtue');?>"><i class="icon-instagram"></i></a>
+        <a href="<?php the_author_meta( 'instagram' ); ?>" target="_blank" title="<?php _e('Follow', 'bigcloudcms'); ?>  <?php the_author_meta( 'display_name' ); ?> <?php _e('on Instagram', 'bigcloudcms');?>"><i class="icon-instagram"></i></a>
       </span>
 		<?php } ?>
         </div><!--Author Follow-->
@@ -66,7 +66,7 @@ function virtue_author_box() { ?>
   <div class="tab-pane clearfix" id="latest">
   <div class="author-latestposts">
   <?php echo get_avatar( get_the_author_meta('ID'), 80 ); ?>
-  <h5><?php _e('Latest posts from', 'virtue'); ?> <?php the_author_posts_link(); ?></h5>
+  <h5><?php _e('Latest posts from', 'bigcloudcms'); ?> <?php the_author_posts_link(); ?></h5>
   			<ul>
 			<?php
           global $authordata, $post;

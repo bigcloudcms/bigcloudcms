@@ -176,7 +176,7 @@ if(!class_exists('Aq_Resize')) {
                 }
 
                 // RETINA Support ---------------------------------------------------------------> 
-                    if ( apply_filters( 'kadence_retina_support', true ) ) : 
+                    if ( apply_filters( 'bigcloudcms_retina_support', true ) ) : 
                     $retina_w = $dst_w*2;
                     $retina_h = $dst_h*2;
                     

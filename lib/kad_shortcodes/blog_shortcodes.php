@@ -31,7 +31,7 @@ function kad_blog_shortcode_function( $atts, $content) {
 
 ob_start(); ?>
 		<div class="sliderclass">
-  <?php  global $virtue_premium; 
+  <?php  global $bigcloudcms_premium; 
          if(!empty($height)) {$slideheight = $height;} else { $slideheight = 400; }
          if(!empty($width)) {$slidewidth = $width;} else { $slidewidth = 1140; }
           if(empty($speed)) {$speed = '7000';}
@@ -49,7 +49,7 @@ ob_start(); ?>
                               $image = aq_resize($thumbnailURL, $slidewidth, $slideheight, true);
                               if(empty($image)) { $image = $thumbnailURL; } 
                   	} else {
-                               $thumbnailURL = virtue_post_default_placeholder();
+                               $thumbnailURL = bigcloudcms_post_default_placeholder();
                                   $image = aq_resize($thumbnailURL, $slidewidth, $slideheight, true);
                                   if(empty($image)) { $image = $thumbnailURL; } ?>
                   <?php  } ?>
@@ -62,7 +62,7 @@ ob_start(); ?>
                         </a>
                       </li>
                   <?php endwhile; else: ?>
-            <li class="error-not-found"><?php _e('Sorry, no blog entries found.', 'virtue'); ?></li>
+            <li class="error-not-found"><?php _e('Sorry, no blog entries found.', 'bigcloudcms'); ?></li>
           <?php endif; ?>
         <?php $wp_query = null; // Reset ?>
         <?php wp_reset_query(); ?>
@@ -81,7 +81,7 @@ ob_start(); ?>
                 	$home_sidebar = false;
                 	$articleclass = 'home-blog-one-column';
                 } else {
-                	if(kadence_display_sidebar()) {
+                	if(bigcloudcms_display_sidebar()) {
 						$home_sidebar = true; 
 						$img_width = 407; 
 						$postwidthclass = 'col-md-6 col-sm-6 home-sidebar';
@@ -113,8 +113,8 @@ ob_start(); ?>
 						<div class="<?php echo esc_attr($postwidthclass); ?> blog-home-shortcode-single-post clearclass<?php echo ($xyz++%2); ?>">
 				  		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	                    <div class="rowtight">
-	                    <?php global $post, $virtue_premium; 
-	                    if(isset($virtue_premium['post_summery_default']) && ($virtue_premium['post_summery_default'] != 'text')) {
+	                    <?php global $post, $bigcloudcms_premium; 
+	                    if(isset($bigcloudcms_premium['post_summery_default']) && ($bigcloudcms_premium['post_summery_default'] != 'text')) {
 							if($home_sidebar == true) {
 								$textsize = 'tcol-md-12 tcol-sm-12 tcol-ss-12';
 								$imagesize = 'tcol-md-12 tcol-sm-12 tcol-ss-12';
@@ -129,7 +129,7 @@ ob_start(); ?>
 										$image = aq_resize($thumbnailURL, $img_width, 270, true);
 										if(empty($image)) { $image = $thumbnailURL; }
 									} else {
-								 		$thumbnailURL = virtue_post_default_placeholder();
+								 		$thumbnailURL = bigcloudcms_post_default_placeholder();
 										$image = aq_resize($thumbnailURL, $img_width, 270, true);
 										if(empty($image)) { $image = $thumbnailURL; }
 							 		} ?>
@@ -200,12 +200,12 @@ ob_start(); ?>
 			                        </div>
 			                        </header>
 		                        	<div class="entry-content">
-		                          		<p><?php echo virtue_excerpt($word_count); ?> 
+		                          		<p><?php echo bigcloudcms_excerpt($word_count); ?> 
 			                          		<a href="<?php the_permalink() ?>">
-			                          			<?php if(!empty($virtue_premium['post_readmore_text'])) {
-			                          				$readmore = $virtue_premium['post_readmore_text'];
+			                          			<?php if(!empty($bigcloudcms_premium['post_readmore_text'])) {
+			                          				$readmore = $bigcloudcms_premium['post_readmore_text'];
 			                          			} else {
-			                          				$readmore = __('Read More', 'virtue');
+			                          				$readmore = __('Read More', 'bigcloudcms');
 			                          			} echo $readmore; ?>
 			                          		</a>
 		                          		</p>
@@ -217,7 +217,7 @@ ob_start(); ?>
                     </article>
                 </div>
                     <?php endwhile; else: ?>
-						<li class="error-not-found"><?php _e('Sorry, no blog entries found.', 'virtue');?></li>
+						<li class="error-not-found"><?php _e('Sorry, no blog entries found.', 'bigcloudcms');?></li>
 					<?php endif; ?>
 				<?php $wp_query = null; wp_reset_query(); ?>
 
@@ -251,7 +251,7 @@ function kad_blog_simple_shortcode_function( $atts, $content) {
 	} 
 	if(empty($cat)) {$cat = '';}
 ob_start(); ?>
-	<?php if(kadence_display_sidebar()) {$display_sidebar = true; $fullclass = '';} else {$display_sidebar = false; $fullclass = 'fullwidth';}
+	<?php if(bigcloudcms_display_sidebar()) {$display_sidebar = true; $fullclass = '';} else {$display_sidebar = false; $fullclass = 'fullwidth';}
    		  if($fullpost) {$summery = 'full'; $postclass = "single-article fullpost";} else {$summery = 'normal'; $postclass = 'postlist';} ?>
       <div class="<?php echo esc_attr($postclass) .' '. esc_attr($fullclass); ?>">
 				<?php  
@@ -280,7 +280,7 @@ ob_start(); ?>
 						 }
 						} 
                     endwhile; else: ?>
-						<li class="error-not-found"><?php _e('Sorry, no blog entries found.', 'virtue'); ?></li>
+						<li class="error-not-found"><?php _e('Sorry, no blog entries found.', 'bigcloudcms'); ?></li>
 					<?php endif; ?>
                
 				<?php $wp_query = null; 
@@ -322,8 +322,8 @@ function kad_blog_grid_shortcode_function( $atts, $content) {
 	} else {
 		$itemsize = 'tcol-md-3 tcol-sm-4 tcol-xs-6 tcol-ss-12';
 	}
-	global $virtue_premium;
-	if(isset($virtue_premium['virtue_animate_in']) && $virtue_premium['virtue_animate_in'] == 1) {$animate = 1;} else {$animate = 0;}
+	global $bigcloudcms_premium;
+	if(isset($bigcloudcms_premium['bigcloudcms_animate_in']) && $bigcloudcms_premium['bigcloudcms_animate_in'] == 1) {$animate = 1;} else {$animate = 0;}
 ob_start(); ?>
 <div id="kad-blog-grid" class="shortcode_blog_grid_content rowtight init-isotope" data-fade-in="<?php echo esc_attr($animate);?>" data-iso-selector=".b_item" data-iso-style="masonry"> 
 				<?php  
@@ -347,7 +347,7 @@ ob_start(); ?>
 						</div>
 					<?php }
                     endwhile; else: ?>
-						<li class="error-not-found"><?php _e('Sorry, no blog entries found.', 'virtue'); ?></li>
+						<li class="error-not-found"><?php _e('Sorry, no blog entries found.', 'bigcloudcms'); ?></li>
 					<?php endif; ?>
                
 				<?php $wp_query = null; 

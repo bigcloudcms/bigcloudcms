@@ -1,6 +1,6 @@
 <?php
 if ( class_exists( 'Redux' ) ) {
-	$opt_name = 'virtue_premium';
+	$opt_name = 'bigcloudcms_premium';
     Redux::setExtensions( $opt_name, dirname( __FILE__ ) . '/extensions/' );
 }
 // Just keep from getting errors.

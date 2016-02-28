@@ -24,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
 <form role="search" method="get" id="searchform" class="form-search" action="<?php echo esc_url( home_url( '/'  ) ); ?>">
-	<input type="text" value="<?php echo esc_attr( get_search_query() ); ?>" name="s" id="s" class="search-query" placeholder="<?php _e( 'Search for products', 'virtue' ); ?>" />
+	<input type="text" value="<?php echo esc_attr( get_search_query() ); ?>" name="s" id="s" class="search-query" placeholder="<?php _e( 'Search for products', 'bigcloudcms' ); ?>" />
 	<button type="submit" id="searchsubmit" class="search-icon"><i class="icon-search"></i></button>
 	<input type="hidden" name="post_type" value="product" />
 </form>

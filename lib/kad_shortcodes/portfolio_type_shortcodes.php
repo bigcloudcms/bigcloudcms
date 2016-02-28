@@ -20,7 +20,7 @@ function kad_portfolio_type_shortcode_function( $atts, $content) {
 		                   else if ($columns == '5'){ $itemsize = 'tcol-md-25 tcol-sm-3 tcol-xs-4 tcol-ss-6'; $slidewidth = 240; $slideheight = 240; $md = 5; $sm = 4; $xs = 3; $ss = 2;} 
 		                   else {$itemsize = 'tcol-md-3 tcol-sm-4 tcol-xs-6 tcol-ss-12'; $slidewidth = 270; $slideheight = 270; $md = 4; $sm = 3; $xs = 2; $ss = 1;}
 		                	if(!empty($height) && $height == 'none') {$slideheight = null;} else if(!empty($height)) {$slideheight = $height;}
-		global $virtue_premium; if(isset($virtue_premium['virtue_animate_in']) && $virtue_premium['virtue_animate_in'] == 1) {$animate = 1;} else {$animate = 0;}
+		global $bigcloudcms_premium; if(isset($bigcloudcms_premium['bigcloudcms_animate_in']) && $bigcloudcms_premium['bigcloudcms_animate_in'] == 1) {$animate = 1;} else {$animate = 0;}
 ob_start(); ?>
 		<div id="portfoliowrapper-<?php echo $id;?>" class="rowtight init-isotope" data-fade-in="<?php echo $animate;?>" data-iso-selector=".p-item" data-iso-style="masonry" data-iso-filter="false"> 
             <?php 	$meta = get_option('portfolio_cat_image');

@@ -1,9 +1,9 @@
 <div class="sliderclass">
-  <?php global $virtue_premium; 
-                if( isset( $virtue_premium['shop_slider_size']))  { $slideheight =  $virtue_premium['shop_slider_size']; } else { $slideheight = 400; }
-                if( isset( $virtue_premium['shop_slider_size_width']))  {$slidewidth = $virtue_premium['shop_slider_size_width']; } else { $slidewidth = 1170; }
-                $captions = $virtue_premium['shop_slider_captions'];
-                $slides = $virtue_premium['shop_slider_images'];
+  <?php global $bigcloudcms_premium; 
+                if( isset( $bigcloudcms_premium['shop_slider_size']))  { $slideheight =  $bigcloudcms_premium['shop_slider_size']; } else { $slideheight = 400; }
+                if( isset( $bigcloudcms_premium['shop_slider_size_width']))  {$slidewidth = $bigcloudcms_premium['shop_slider_size_width']; } else { $slidewidth = 1170; }
+                $captions = $bigcloudcms_premium['shop_slider_captions'];
+                $slides = $bigcloudcms_premium['shop_slider_images'];
                 ?>
     <div id="imageslider" class="container">
     <div class="flexslider loading" style="max-width:<?php echo $slidewidth;?>px;">
@@ -27,11 +27,11 @@
       </div> <!--Flex Slides-->
 
 
-      <?php  global $virtue_premium; 
-          $transtype = $virtue_premium['shop_trans_type']; if ($transtype == '') $transtype = 'slide';
-          $transtime = $virtue_premium['shop_slider_transtime']; if ($transtime == '') $transtime = '300'; 
-          $autoplay = $virtue_premium['shop_slider_autoplay']; if ($autoplay == '') $autoplay = 'true'; 
-          $pausetime = $virtue_premium['shop_slider_pausetime']; if ($pausetime == '') $pausetime = '7000'; 
+      <?php  global $bigcloudcms_premium; 
+          $transtype = $bigcloudcms_premium['shop_trans_type']; if ($transtype == '') $transtype = 'slide';
+          $transtime = $bigcloudcms_premium['shop_slider_transtime']; if ($transtime == '') $transtime = '300'; 
+          $autoplay = $bigcloudcms_premium['shop_slider_autoplay']; if ($autoplay == '') $autoplay = 'true'; 
+          $pausetime = $bigcloudcms_premium['shop_slider_pausetime']; if ($pausetime == '') $pausetime = '7000'; 
       ?>
       <script type="text/javascript">
             jQuery(window).load(function () {

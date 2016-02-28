@@ -11,13 +11,13 @@ Template Name: Portfolio Category Grid
 	
     <div id="content" class="container">
    		<div class="row">
-      <div class="main <?php echo kadence_main_class(); ?>" id="ktmain" role="main">
+      <div class="main <?php echo bigcloudcms_main_class(); ?>" id="ktmain" role="main">
       	  <?php if ( ! post_password_required() ) { ?>
 			<div class="entry-content" itemprop="mainContentOfPage">
 					<?php get_template_part('templates/content', 'page'); ?>
 			</div>
-      	<?php global $post, $virtue_premium; 
-      	if(isset($virtue_premium['virtue_animate_in']) && $virtue_premium['virtue_animate_in'] == 1) {$animate = 1;} else {$animate = 0;}
+      	<?php global $post, $bigcloudcms_premium; 
+      	if(isset($bigcloudcms_premium['bigcloudcms_animate_in']) && $bigcloudcms_premium['bigcloudcms_animate_in'] == 1) {$animate = 1;} else {$animate = 0;}
 			   	$portfolio_items = get_post_meta( $post->ID, '_kad_portfolio_items', true );
 							if($portfolio_items == 'all') { $portfolio_items = '-1'; }
 
@@ -70,7 +70,7 @@ Template Name: Portfolio Category Grid
 					    <?php }
 					 } ?>
                 </div> <!--portfoliowrapper-->
-<?php global $virtue_premium; if(isset($virtue_premium['page_comments']) && $virtue_premium['page_comments'] == '1') { comments_template('/templates/comments.php');} ?>
+<?php global $bigcloudcms_premium; if(isset($bigcloudcms_premium['page_comments']) && $bigcloudcms_premium['page_comments'] == '1') { comments_template('/templates/comments.php');} ?>
 <?php } else { ?>
       <?php echo get_the_password_form();
     }?>

@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Virtue\n"
+"Project-Id-Version: BigCloudCMS\n"
 "POT-Creation-Date: 2016-02-10 00:14-0700\n"
-"PO-Revision-Date: 2016-02-10 00:14-0700\n"
+"PO-Revision-Date: 2016-02-28 20:41+0530\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: se\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.6\n"
+"X-Generator: Poedit 1.8.7\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;esc_attr_e;esc_attr__\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -168,8 +168,8 @@ msgstr ""
 #: ../lib/class-tgm-plugin-activation.php:402
 #, php-format
 msgid ""
-"Plugin not activated. A higher version of %s is needed for this theme. "
-"Please update the plugin."
+"Plugin not activated. A higher version of %s is needed for this theme. Please "
+"update the plugin."
 msgstr ""
 
 #: ../lib/class-tgm-plugin-activation.php:403
@@ -392,7 +392,7 @@ msgid "Insert Shortcode"
 msgstr ""
 
 #: ../lib/cleanup.php:202 ../lib/kad_shortcodes.php:907
-msgid "Virtue Shortcodes"
+msgid "BigCloudCMS Shortcodes"
 msgstr ""
 
 #: ../lib/cmb/helpers/cmb_Meta_Box_ajax.php:47
@@ -1467,13 +1467,13 @@ msgstr "All"
 msgid "Filter Projects"
 msgstr "Filtrera Projekt"
 
-#: ../lib/kad_shortcodes/shortcodes.php:95
-#: ../woocommerce/archive-product.php:63 ../woocommerce/archive-product.php:69
+#: ../lib/kad_shortcodes/shortcodes.php:95 ../woocommerce/archive-product.php:63
+#: ../woocommerce/archive-product.php:69
 msgid "Grid View"
 msgstr ""
 
-#: ../lib/kad_shortcodes/shortcodes.php:95
-#: ../woocommerce/archive-product.php:60 ../woocommerce/archive-product.php:72
+#: ../lib/kad_shortcodes/shortcodes.php:95 ../woocommerce/archive-product.php:60
+#: ../woocommerce/archive-product.php:72
 msgid "List View"
 msgstr ""
 
@@ -1666,8 +1666,8 @@ msgstr ""
 
 #: ../lib/metaboxes.php:167
 msgid ""
-"Default is: 770 or 1140 on fullwidth posts (Note: just input number, "
-"example: 650, does not apply to carousel slider)"
+"Default is: 770 or 1140 on fullwidth posts (Note: just input number, example: "
+"650, does not apply to carousel slider)"
 msgstr ""
 
 #: ../lib/metaboxes.php:172
@@ -1729,9 +1729,8 @@ msgstr ""
 #: ../lib/metaboxes.php:453 ../lib/metaboxes.php:526 ../lib/metaboxes.php:584
 #: ../lib/metaboxes.php:636 ../lib/metaboxes.php:665 ../lib/metaboxes.php:722
 #: ../lib/metaboxes.php:774 ../lib/metaboxes.php:806 ../lib/metaboxes.php:999
-#: ../lib/metaboxes.php:1068 ../lib/metaboxes.php:1139
-#: ../lib/metaboxes.php:1165 ../lib/metaboxes.php:1181
-#: ../lib/metaboxes.php:1192 ../lib/metaboxes.php:1289
+#: ../lib/metaboxes.php:1068 ../lib/metaboxes.php:1139 ../lib/metaboxes.php:1165
+#: ../lib/metaboxes.php:1181 ../lib/metaboxes.php:1192 ../lib/metaboxes.php:1289
 msgid "Yes"
 msgstr ""
 
@@ -1739,16 +1738,14 @@ msgstr ""
 #: ../lib/metaboxes.php:337 ../lib/metaboxes.php:452 ../lib/metaboxes.php:525
 #: ../lib/metaboxes.php:585 ../lib/metaboxes.php:637 ../lib/metaboxes.php:664
 #: ../lib/metaboxes.php:723 ../lib/metaboxes.php:773 ../lib/metaboxes.php:807
-#: ../lib/metaboxes.php:1000 ../lib/metaboxes.php:1069
-#: ../lib/metaboxes.php:1138 ../lib/metaboxes.php:1166
-#: ../lib/metaboxes.php:1182 ../lib/metaboxes.php:1191
+#: ../lib/metaboxes.php:1000 ../lib/metaboxes.php:1069 ../lib/metaboxes.php:1138
+#: ../lib/metaboxes.php:1166 ../lib/metaboxes.php:1182 ../lib/metaboxes.php:1191
 #: ../lib/metaboxes.php:1290
 msgid "No"
 msgstr ""
 
 #: ../lib/metaboxes.php:221 ../lib/metaboxes.php:530 ../lib/metaboxes.php:1073
-#: ../lib/metaboxes.php:1143 ../lib/metaboxes.php:1294
-#: ../lib/metaboxes.php:1312
+#: ../lib/metaboxes.php:1143 ../lib/metaboxes.php:1294 ../lib/metaboxes.php:1312
 msgid "Choose Sidebar"
 msgstr ""
 
@@ -1823,7 +1820,7 @@ msgstr ""
 
 #: ../lib/metaboxes.php:290 ../lib/metaboxes.php:949
 #: ../themeoptions/options.php:632
-msgid "Kadence Slider"
+msgid "BigCloudCMS Slider"
 msgstr ""
 
 #: ../lib/metaboxes.php:291 ../lib/metaboxes.php:950
@@ -1878,7 +1875,7 @@ msgid "Six Column"
 msgstr ""
 
 #: ../lib/metaboxes.php:313
-msgid "If Revolution, Cyclone or Kadence Slider"
+msgid "If Revolution, Cyclone or BigCloudCMS Slider"
 msgstr ""
 
 #: ../lib/metaboxes.php:314
@@ -2263,7 +2260,7 @@ msgid "Paste Revolution slider alias here (example: slider1)"
 msgstr ""
 
 #: ../lib/metaboxes.php:962
-msgid "If Cyclone or Kadence Slider"
+msgid "If Cyclone or BigCloudCMS Slider"
 msgstr ""
 
 #: ../lib/metaboxes.php:963
@@ -2383,8 +2380,7 @@ msgstr ""
 msgid "Default is 300"
 msgstr ""
 
-#: ../lib/metaboxes.php:1257 ../lib/metaboxes.php:1263
-#: ../lib/metaboxes.php:1269
+#: ../lib/metaboxes.php:1257 ../lib/metaboxes.php:1263 ../lib/metaboxes.php:1269
 msgid "Enter a Location"
 msgstr ""
 
@@ -2413,45 +2409,39 @@ msgid "Optimal Length: Roughly 155 Characters"
 msgstr ""
 
 #: ../lib/metaboxes.php:1347
-msgid "Virtue Custom Tab 01"
+msgid "BigCloudCMS Custom Tab 01"
 msgstr ""
 
-#: ../lib/metaboxes.php:1354 ../lib/metaboxes.php:1386
-#: ../lib/metaboxes.php:1418
+#: ../lib/metaboxes.php:1354 ../lib/metaboxes.php:1386 ../lib/metaboxes.php:1418
 msgid "Tab Title"
 msgstr ""
 
-#: ../lib/metaboxes.php:1355 ../lib/metaboxes.php:1387
-#: ../lib/metaboxes.php:1419
+#: ../lib/metaboxes.php:1355 ../lib/metaboxes.php:1387 ../lib/metaboxes.php:1419
 msgid "This will show on the tab"
 msgstr ""
 
-#: ../lib/metaboxes.php:1360 ../lib/metaboxes.php:1392
-#: ../lib/metaboxes.php:1424
+#: ../lib/metaboxes.php:1360 ../lib/metaboxes.php:1392 ../lib/metaboxes.php:1424
 msgid "Tab Content"
 msgstr ""
 
-#: ../lib/metaboxes.php:1361 ../lib/metaboxes.php:1393
-#: ../lib/metaboxes.php:1425
+#: ../lib/metaboxes.php:1361 ../lib/metaboxes.php:1393 ../lib/metaboxes.php:1425
 msgid "Add Tab Content"
 msgstr ""
 
-#: ../lib/metaboxes.php:1367 ../lib/metaboxes.php:1399
-#: ../lib/metaboxes.php:1431
+#: ../lib/metaboxes.php:1367 ../lib/metaboxes.php:1399 ../lib/metaboxes.php:1431
 msgid "Tab priority"
 msgstr ""
 
-#: ../lib/metaboxes.php:1368 ../lib/metaboxes.php:1400
-#: ../lib/metaboxes.php:1432
+#: ../lib/metaboxes.php:1368 ../lib/metaboxes.php:1400 ../lib/metaboxes.php:1432
 msgid "This will determine where the tab is shown (e.g. 20)"
 msgstr ""
 
 #: ../lib/metaboxes.php:1379
-msgid "Virtue Custom Tab 02"
+msgid "BigCloudCMS Custom Tab 02"
 msgstr ""
 
 #: ../lib/metaboxes.php:1411
-msgid "Virtue Custom Tab 03"
+msgid "BigCloudCMS Custom Tab 03"
 msgstr ""
 
 #: ../lib/post-types.php:5 ../lib/post-types.php:17 ../lib/widgets.php:1021
@@ -2643,8 +2633,8 @@ msgstr ""
 msgid "New Group Name"
 msgstr ""
 
-#: ../lib/post-types.php:145 ../lib/post-types.php:146
-#: ../lib/post-types.php:157 ../lib/post-types.php:178
+#: ../lib/post-types.php:145 ../lib/post-types.php:146 ../lib/post-types.php:157
+#: ../lib/post-types.php:178
 msgid "Staff"
 msgstr ""
 
@@ -2689,7 +2679,7 @@ msgid "Adds a gallery to any widget area."
 msgstr ""
 
 #: ../lib/premium_widgets.php:11
-msgid "Virtue: Gallery"
+msgid "BigCloudCMS: Gallery"
 msgstr ""
 
 #: ../lib/premium_widgets.php:63
@@ -2810,7 +2800,7 @@ msgid "Adds a carousel to any widget area"
 msgstr ""
 
 #: ../lib/premium_widgets.php:149
-msgid "Virtue: Carousel"
+msgid "BigCloudCMS: Carousel"
 msgstr ""
 
 #: ../lib/premium_widgets.php:208 ../themeoptions/options.php:3639
@@ -2882,7 +2872,7 @@ msgid "Adds a info box with icon options"
 msgstr ""
 
 #: ../lib/premium_widgets.php:317
-msgid "Virtue: Info Box"
+msgid "BigCloudCMS: Info Box"
 msgstr ""
 
 #: ../lib/premium_widgets.php:386 ../lib/premium_widgets.php:673
@@ -2939,7 +2929,7 @@ msgid "Adds a google map to a widget area"
 msgstr ""
 
 #: ../lib/premium_widgets.php:466
-msgid "Virtue: Google Map"
+msgid "BigCloudCMS: Google Map"
 msgstr ""
 
 #: ../lib/premium_widgets.php:523
@@ -2992,8 +2982,8 @@ msgstr ""
 
 #: ../lib/premium_widgets.php:590
 msgid ""
-"Load Core Google Scripts? (Only turn this off if this is the second+ map on "
-"a page)"
+"Load Core Google Scripts? (Only turn this off if this is the second+ map on a "
+"page)"
 msgstr ""
 
 #: ../lib/premium_widgets.php:601
@@ -3001,7 +2991,7 @@ msgid "Adds a simple call to action"
 msgstr ""
 
 #: ../lib/premium_widgets.php:602
-msgid "Virtue: Call to Action"
+msgid "BigCloudCMS: Call to Action"
 msgstr ""
 
 #: ../lib/premium_widgets.php:671
@@ -3057,7 +3047,7 @@ msgid "Adds an image background with text, link and hover effect."
 msgstr ""
 
 #: ../lib/premium_widgets.php:750
-msgid "Virtue: Image Menu Item"
+msgid "BigCloudCMS: Image Menu Item"
 msgstr ""
 
 #: ../lib/premium_widgets.php:813
@@ -3085,7 +3075,7 @@ msgid "Adds an column with an image beside a content field."
 msgstr ""
 
 #: ../lib/premium_widgets.php:867
-msgid "Virtue: Split Content"
+msgid "BigCloudCMS: Split Content"
 msgstr ""
 
 #: ../lib/premium_widgets.php:946
@@ -3248,7 +3238,7 @@ msgid "Use this widget to add a Vcard to your site"
 msgstr ""
 
 #: ../lib/widgets.php:206
-msgid "Virtue: Contact/Vcard"
+msgid "BigCloudCMS: Contact/Vcard"
 msgstr ""
 
 #: ../lib/widgets.php:286
@@ -3292,7 +3282,7 @@ msgid "Simple way to add Social Icons"
 msgstr ""
 
 #: ../lib/widgets.php:331
-msgid "Virtue: Social Links"
+msgid "BigCloudCMS: Social Links"
 msgstr ""
 
 #: ../lib/widgets.php:446
@@ -3372,7 +3362,7 @@ msgid "This shows the most recent posts on your site with a thumbnail"
 msgstr ""
 
 #: ../lib/widgets.php:530
-msgid "Virtue: Recent Posts"
+msgid "BigCloudCMS: Recent Posts"
 msgstr ""
 
 #: ../lib/widgets.php:543 ../templates/recentblog-carousel.php:8
@@ -3396,7 +3386,7 @@ msgid "This shows a slider with your testimonials"
 msgstr ""
 
 #: ../lib/widgets.php:635
-msgid "Virtue: Testimonial Carousel"
+msgid "BigCloudCMS: Testimonial Carousel"
 msgstr ""
 
 #: ../lib/widgets.php:802
@@ -3450,7 +3440,7 @@ msgid ""
 msgstr ""
 
 #: ../lib/widgets.php:912
-msgid "Virtue: Post Grid"
+msgid "BigCloudCMS: Post Grid"
 msgstr ""
 
 #: ../lib/widgets.php:1018
@@ -3474,7 +3464,7 @@ msgid "This allows for an image and a simple about text."
 msgstr ""
 
 #: ../lib/widgets.php:1042
-msgid "Virtue: Image"
+msgid "BigCloudCMS: Image"
 msgstr ""
 
 #: ../lib/widgets.php:1101
@@ -3661,8 +3651,8 @@ msgstr ""
 
 #: ../themeoptions/options.php:74
 msgid ""
-"Thank you for using the Virtue Theme by <a href=\"http://kadencethemes.com/"
-"\" target=\"_blank\">Kadence Themes</a>."
+"Thank you for using the BigCloudCMS Theme by <a href=\"http://bigcloudcms.com/"
+"\" target=\"_blank\">BigCloudCMS</a>."
 msgstr ""
 
 #: ../themeoptions/options.php:127
@@ -3670,7 +3660,7 @@ msgid "Main Settings"
 msgstr ""
 
 #: ../themeoptions/options.php:130
-msgid "Welcome to Virtue Theme Options"
+msgid "Welcome to BigCloudCMS Theme Options"
 msgstr ""
 
 #: ../themeoptions/options.php:131
@@ -4016,11 +4006,11 @@ msgid "Choose your Revolution Slider Here"
 msgstr ""
 
 #: ../themeoptions/options.php:649
-msgid "If Kadence Slider"
+msgid "If BigCloudCMS Slider"
 msgstr ""
 
 #: ../themeoptions/options.php:650
-msgid "Choose your Kadence Slider Here"
+msgid "Choose your BigCloudCMS Slider Here"
 msgstr ""
 
 #: ../themeoptions/options.php:660
@@ -4623,8 +4613,8 @@ msgstr ""
 #: ../themeoptions/options.php:1544
 msgid ""
 "This adds an dynamic filter to the shop page. NOTE this filter is only "
-"designed to filter what is visible on the page. It does not act as a menu "
-"and query products from multiple pages."
+"designed to filter what is visible on the page. It does not act as a menu and "
+"query products from multiple pages."
 msgstr ""
 
 #: ../themeoptions/options.php:1550
@@ -4634,8 +4624,8 @@ msgstr ""
 #: ../themeoptions/options.php:1551
 msgid ""
 "This adds an dynamic filter to Category pages. NOTE this filter is only "
-"designed to filter what is visible on the page. It does not act as a menu "
-"and query products from multiple pages."
+"designed to filter what is visible on the page. It does not act as a menu and "
+"query products from multiple pages."
 msgstr ""
 
 #: ../themeoptions/options.php:1557
@@ -4651,8 +4641,7 @@ msgid "Show toggle buttons for list/grid on shop page"
 msgstr ""
 
 #: ../themeoptions/options.php:1565
-msgid ""
-"Adds two icons for toggling between a grid and list layout on shop page."
+msgid "Adds two icons for toggling between a grid and list layout on shop page."
 msgstr ""
 
 #: ../themeoptions/options.php:1571
@@ -4851,8 +4840,7 @@ msgstr ""
 
 #: ../themeoptions/options.php:1833
 msgid ""
-"This determines if the image and product title layout on single product "
-"pages."
+"This determines if the image and product title layout on single product pages."
 msgstr ""
 
 #: ../themeoptions/options.php:1843
@@ -5086,8 +5074,8 @@ msgstr ""
 
 #: ../themeoptions/options.php:2157
 msgid ""
-"Choose to show or hide previous and next post links in the footer of a "
-"single post."
+"Choose to show or hide previous and next post links in the footer of a single "
+"post."
 msgstr ""
 
 #: ../themeoptions/options.php:2163
@@ -5842,8 +5830,8 @@ msgstr ""
 
 #: ../themeoptions/options.php:3337
 msgid ""
-"This sets the link for your main blog page, for breadcrumbs. Use only if "
-"your blog page is not your home page."
+"This sets the link for your main blog page, for breadcrumbs. Use only if your "
+"blog page is not your home page."
 msgstr ""
 
 #: ../themeoptions/options.php:3342
@@ -6008,7 +5996,7 @@ msgid "Wordpress Galleries"
 msgstr ""
 
 #: ../themeoptions/options.php:3493
-msgid "Enable Virtue Galleries to override Wordpress"
+msgid "Enable BigCloudCMS Galleries to override Wordpress"
 msgstr ""
 
 #: ../themeoptions/options.php:3494
@@ -6018,7 +6006,7 @@ msgid ""
 msgstr ""
 
 #: ../themeoptions/options.php:3500
-msgid "Use Masonry Feature on Virtue Galleries"
+msgid "Use Masonry Feature on BigCloudCMS Galleries"
 msgstr ""
 
 #: ../themeoptions/options.php:3501
@@ -6026,7 +6014,7 @@ msgid "This allows for dynamic gallery grids with images of different height"
 msgstr ""
 
 #: ../themeoptions/options.php:3507
-msgid "Show captions on Virtue Galleries"
+msgid "Show captions on BigCloudCMS Galleries"
 msgstr ""
 
 #: ../themeoptions/options.php:3508
@@ -6078,12 +6066,12 @@ msgid "Paste your Google Analytics Tracking ID Here. (example: UA-########-#)"
 msgstr ""
 
 #: ../themeoptions/options.php:3555
-msgid "Turn on Virtue SEO?"
+msgid "Turn on BigCloudCMS SEO?"
 msgstr ""
 
 #: ../themeoptions/options.php:3556
 msgid ""
-"Choose if you would like to use Virtue Theme SEO options, for full seo "
+"Choose if you would like to use BigCloudCMS Theme SEO options, for full seo "
 "support use a plugin"
 msgstr ""
 
@@ -6204,8 +6192,7 @@ msgstr ""
 msgid "Filter Products"
 msgstr ""
 
-#: ../woocommerce/archive-product.php:116
-#: ../woocommerce/archive-product.php:139
+#: ../woocommerce/archive-product.php:116 ../woocommerce/archive-product.php:139
 msgid "Show"
 msgstr ""
 

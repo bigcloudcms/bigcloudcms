@@ -1,13 +1,13 @@
-            <?php global $post, $virtue_premium; 
+            <?php global $post, $bigcloudcms_premium; 
 
             $postsummery = get_post_meta( $post->ID, '_kad_post_summery', true );
             $image_size = 364;
-            $image_height = apply_filters('kadence_blog_grid_image_height', null);
+            $image_height = apply_filters('bigcloudcms_blog_grid_image_height', null);
             if($image_height == null) {$image_slider_height = $image_size;} else {$image_slider_height = $image_height;}
 
             if(empty($postsummery) || $postsummery == 'default') {
-                  if(!empty($virtue_premium['post_summery_default'])) {
-                            $postsummery = $virtue_premium['post_summery_default'];
+                  if(!empty($bigcloudcms_premium['post_summery_default'])) {
+                            $postsummery = $bigcloudcms_premium['post_summery_default'];
                             } else {
                               $postsummery = 'img_portrait';
                             }
@@ -18,7 +18,7 @@
                                   $image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' ); 
                                   $thumbnailURL = $image_url[0];
                               } else {
-                                  $thumbnailURL = virtue_post_default_placeholder();
+                                  $thumbnailURL = bigcloudcms_post_default_placeholder();
                               }
                               $image = aq_resize($thumbnailURL, $image_size, $image_height, true, false);
                               if(empty($image[0])) {$image[0] = $thumbnailURL; $image[1] = null; $image[2] = null;}
