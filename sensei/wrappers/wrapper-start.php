@@ -12,4 +12,4 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 ?>
 <div id="content" class="container">
    		<div class="row">
-     		<div class="main <?php echo kadence_main_class(); ?>" role="main">
+     		<div class="main <?php echo bigcloudcms_main_class(); ?>" role="main">

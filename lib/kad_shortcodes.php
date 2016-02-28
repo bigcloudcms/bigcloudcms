@@ -1,5 +1,5 @@
 <?php 
-// Virtue Shortcode Generator 
+// BigCloudCMS Shortcode Generator 
 
 // Enqueue scripts
 
@@ -15,7 +15,7 @@ add_action('admin_enqueue_scripts','kad_shortcode_button_scripts');
 
 add_action('admin_footer','kad_shortcode_content');
 
-function virtue_shortcode_option( $name, $attr_option, $shortcode ){
+function bigcloudcms_shortcode_option( $name, $attr_option, $shortcode ){
 	
 	$kad_option_element = null;
 	
@@ -100,39 +100,39 @@ function virtue_shortcode_option( $name, $attr_option, $shortcode ){
 function kad_shortcode_content(){
 
 	//Columns
-$virtue_shortcodes['columns'] = array( 
-	'title'=>__('Columns', 'virtue'), 
+$bigcloudcms_shortcodes['columns'] = array( 
+	'title'=>__('Columns', 'bigcloudcms'), 
 	'attr'=>array(
 		'columns'=>array(
 			'type'=>'radio', 
-			'title'=>__('Columns','virtue'),
+			'title'=>__('Columns','bigcloudcms'),
 			'values' => array(
-				"span6" => '<img src="'. get_template_directory_uri().'/assets/img/twocolumn.jpg" />' . __("Two Columns", "virtue"),
-				"span4right" => '<img src="'. get_template_directory_uri().'/assets/img/twocolumnright.jpg" />' . __("Two Columns offset Right", "virtue"),
-				"span4left" => '<img src="'. get_template_directory_uri().'/assets/img/twocolumnleft.jpg" />' . __("Two Columns offset Left", "virtue"),
-				"span4" => '<img src="'. get_template_directory_uri().'/assets/img/threecolumn.jpg" />' . __("Three Columns", "virtue"),
-				"span3" => '<img src="'. get_template_directory_uri().'/assets/img/fourcolumn.jpg" />' . __("Four Columns", "virtue"),
+				"span6" => '<img src="'. get_template_directory_uri().'/assets/img/twocolumn.jpg" />' . __("Two Columns", "bigcloudcms"),
+				"span4right" => '<img src="'. get_template_directory_uri().'/assets/img/twocolumnright.jpg" />' . __("Two Columns offset Right", "bigcloudcms"),
+				"span4left" => '<img src="'. get_template_directory_uri().'/assets/img/twocolumnleft.jpg" />' . __("Two Columns offset Left", "bigcloudcms"),
+				"span4" => '<img src="'. get_template_directory_uri().'/assets/img/threecolumn.jpg" />' . __("Three Columns", "bigcloudcms"),
+				"span3" => '<img src="'. get_template_directory_uri().'/assets/img/fourcolumn.jpg" />' . __("Four Columns", "bigcloudcms"),
 				)
 		),
 	) 
 );
 	// Divider 
-$virtue_shortcodes['hr'] = array( 
-	'title'=>__('Divider', 'virtue'), 
+$bigcloudcms_shortcodes['hr'] = array( 
+	'title'=>__('Divider', 'bigcloudcms'), 
 	'attr'=>array(
 		'style'=>array(
 			'type'=>'select', 
-			'title'=>__('Style', 'virtue'),
+			'title'=>__('Style', 'bigcloudcms'),
 			'default' => 'line',
 			'values' => array(
-				"line" => __("Line", "virtue"),
-				"dots" => __("Dots", "virtue"),
-				"gradient" => __("Gradient", "virtue"),
+				"line" => __("Line", "bigcloudcms"),
+				"dots" => __("Dots", "bigcloudcms"),
+				"gradient" => __("Gradient", "bigcloudcms"),
 				)
 		),
 		'size'=>array(
 			'type'=>'select', 
-			'title'=>__('Size','virtue'),
+			'title'=>__('Size','bigcloudcms'),
 			'default' => '1px',
 			'values' => array(
 				"1px" => "1px",
@@ -144,17 +144,17 @@ $virtue_shortcodes['hr'] = array(
 		),
 		'color'=>array(
 			'type'=>'color', 
-			'title'  => __('Color','virtue'),
+			'title'  => __('Color','bigcloudcms'),
 		)
 	) 
 );
 // Spacer
-$virtue_shortcodes['space'] = array( 
-	'title'=>__('Spacing', 'virtue'), 
+$bigcloudcms_shortcodes['space'] = array( 
+	'title'=>__('Spacing', 'bigcloudcms'), 
 	'attr'=>array(
 		'size'=>array(
 			'type'=>'select', 
-			'title'=>__('Size','virtue'),
+			'title'=>__('Size','bigcloudcms'),
 			'default' => '10px',
 			'values' => array(
 				"10px" => "10px",
@@ -167,191 +167,191 @@ $virtue_shortcodes['space'] = array(
 	) 
 );
 // Spacer
-$virtue_shortcodes['tabs'] = array( 
-	'title'=>__('Tabs', 'virtue'), 
+$bigcloudcms_shortcodes['tabs'] = array( 
+	'title'=>__('Tabs', 'bigcloudcms'), 
 );
-$virtue_shortcodes['accordion'] = array( 
-	'title'=>__('Accordion', 'virtue'),
+$bigcloudcms_shortcodes['accordion'] = array( 
+	'title'=>__('Accordion', 'bigcloudcms'),
 );
-$virtue_shortcodes['pullquote'] = array( 
-	'title'=>__('Pull-Quotes', 'virtue'), 
+$bigcloudcms_shortcodes['pullquote'] = array( 
+	'title'=>__('Pull-Quotes', 'bigcloudcms'), 
 	'attr'=>array(
 		'align'=>array(
 			'type'=>'select', 
-			'title'=>__('Align', 'virtue'),
+			'title'=>__('Align', 'bigcloudcms'),
 			'default' => 'center',
 			'values' => array(
-				"center" => __('Center','virtue'),
-				"left" => __('Left','virtue'),
-				"right" => __('Right','virtue'),
+				"center" => __('Center','bigcloudcms'),
+				"left" => __('Left','bigcloudcms'),
+				"right" => __('Right','bigcloudcms'),
 				)
 		),
 		'content'=>array(
 			'type'=>'textarea', 
-			'title'=>__('Pull-Quote Text', 'virtue')
+			'title'=>__('Pull-Quote Text', 'bigcloudcms')
 		)
 	) 
 );
-$virtue_shortcodes['blockquote'] = array( 
-	'title'=>__('Block-Quotes', 'virtue'), 
+$bigcloudcms_shortcodes['blockquote'] = array( 
+	'title'=>__('Block-Quotes', 'bigcloudcms'), 
 	'attr'=>array(
 		'align'=>array(
 			'type'=>'select', 
-			'title'=>__('Align', 'virtue'),
+			'title'=>__('Align', 'bigcloudcms'),
 			'default' => 'center',
 			'values' => array(
-				"center" => __('Center','virtue'),
-				"left" => __('Left','virtue'),
-				"right" => __('Right','virtue'),
+				"center" => __('Center','bigcloudcms'),
+				"left" => __('Left','bigcloudcms'),
+				"right" => __('Right','bigcloudcms'),
 				)
 		),
 		'content'=>array(
 			'type'=>'textarea', 
-			'title'=>__('Block-Quote Text', 'virtue')
+			'title'=>__('Block-Quote Text', 'bigcloudcms')
 		)
 	) 
 );
-$virtue_shortcodes['kt_box'] = array( 
-	'title'=>__('Simple Box', 'virtue'), 
+$bigcloudcms_shortcodes['kt_box'] = array( 
+	'title'=>__('Simple Box', 'bigcloudcms'), 
 	'attr'=>array(
 		'padding_top'=>array(
 			'type'=>'text', 
-			'title'=>__('Padding Top (just a number)', 'virtue'),
+			'title'=>__('Padding Top (just a number)', 'bigcloudcms'),
 			'default' => '15',
 		),
 		'padding_bottom'=>array(
 			'type'=>'text', 
-			'title'=>__('Padding Bottom (just a number)', 'virtue'),
+			'title'=>__('Padding Bottom (just a number)', 'bigcloudcms'),
 			'default' => '15',
 		),
 		'padding_left'=>array(
 			'type'=>'text', 
-			'title'=>__('Padding Left (just a number)', 'virtue'),
+			'title'=>__('Padding Left (just a number)', 'bigcloudcms'),
 			'default' => '15',
 		),
 		'padding_right'=>array(
 			'type'=>'text', 
-			'title'=>__('Padding Right (just a number)', 'virtue'),
+			'title'=>__('Padding Right (just a number)', 'bigcloudcms'),
 			'default' => '15',
 		),
 		'min_height'=>array(
 			'type'=>'text', 
-			'title'=>__('Min Height (just a number)', 'virtue'),
+			'title'=>__('Min Height (just a number)', 'bigcloudcms'),
 			'default' => '0',
 		),
 		'background'=>array(
 			'type'=>'color', 
-			'title'  => __('Background Color','virtue'),
+			'title'  => __('Background Color','bigcloudcms'),
 			'default' => '',
 		),
 		'opacity'=>array(
 			'type'=>'select', 
-			'title'=>__('Background Color Opacity', 'virtue'),
+			'title'=>__('Background Color Opacity', 'bigcloudcms'),
 			'default' => '1',
 			'values' => array(
-				"1" => __('1.0','virtue'),
-				"0.9" => __('0.9','virtue'),
-				"0.8" => __('0.8','virtue'),
-				"0.7" => __('0.7','virtue'),
-				"0.6" => __('0.6','virtue'),
-				"0.5" => __('0.5','virtue'),
-				"0.4" => __('0.4','virtue'),
-				"0.3" => __('0.3','virtue'),
-				"0.2" => __('0.2','virtue'),
-				"0.1" => __('0.1','virtue'),
-				"0.0" => __('0.0','virtue'),
+				"1" => __('1.0','bigcloudcms'),
+				"0.9" => __('0.9','bigcloudcms'),
+				"0.8" => __('0.8','bigcloudcms'),
+				"0.7" => __('0.7','bigcloudcms'),
+				"0.6" => __('0.6','bigcloudcms'),
+				"0.5" => __('0.5','bigcloudcms'),
+				"0.4" => __('0.4','bigcloudcms'),
+				"0.3" => __('0.3','bigcloudcms'),
+				"0.2" => __('0.2','bigcloudcms'),
+				"0.1" => __('0.1','bigcloudcms'),
+				"0.0" => __('0.0','bigcloudcms'),
 				)
 		),
 		'content'=>array(
 			'type'=>'textarea', 
-			'title'=>__('Content Text', 'virtue')
+			'title'=>__('Content Text', 'bigcloudcms')
 		)
 	) 
 );
 $icons = kad_icon_list();
 
 	//Button
-$virtue_shortcodes['btn'] = array( 
-	'title'=>__('Button', 'virtue'), 
+$bigcloudcms_shortcodes['btn'] = array( 
+	'title'=>__('Button', 'bigcloudcms'), 
 	'attr'=>array(
 		'text'=>array(
 			'type'=>'text', 
-			'title'=>__('Button Text', 'virtue')
+			'title'=>__('Button Text', 'bigcloudcms')
 		),
 		'target'=>array(
 			'type'=>'checkbox', 
-			'title'=>__('Open Link In New Tab?','virtue')
+			'title'=>__('Open Link In New Tab?','bigcloudcms')
 		),
 		'tcolor'=>array(
 			'type'=>'color', 
-			'title'  => __('Font Color','virtue'),
+			'title'  => __('Font Color','bigcloudcms'),
 			'default' => '#ffffff',
 		),
 		'bcolor'=>array(
 			'type'=>'color', 
-			'title'  => __('Button Background Color','virtue'),
+			'title'  => __('Button Background Color','bigcloudcms'),
 			'default' => '',
 		),
 		'thovercolor'=>array(
 			'type'=>'color', 
-			'title'  => __('Font Hover Color','virtue'),
+			'title'  => __('Font Hover Color','bigcloudcms'),
 			'default' => '#ffffff',
 		),
 		'bhovercolor'=>array(
 			'type'=>'color', 
-			'title'  => __('Button Background Hover Color','virtue'),
+			'title'  => __('Button Background Hover Color','bigcloudcms'),
 			'default' => '',
 		),
 		'link'=>array(
 			'type'=>'text', 
-			'title'=>__('Link URL', 'virtue')
+			'title'=>__('Link URL', 'bigcloudcms')
 		),
 		'size'=>array(
 			'type'=>'select', 
-			'title'=>__('Button Size', 'virtue'),
+			'title'=>__('Button Size', 'bigcloudcms'),
 			'default' => '',
 			'values' => array(
-				"" => __('Default', 'virtue'),
-				"large" => __('Large', 'virtue'),
-				"small" => __('Small', 'virtue'),
+				"" => __('Default', 'bigcloudcms'),
+				"large" => __('Large', 'bigcloudcms'),
+				"small" => __('Small', 'bigcloudcms'),
 				)
 		),
 		'font'=>array(
 			'type'=>'select', 
-			'title'=>__('Font Family', 'virtue'),
+			'title'=>__('Font Family', 'bigcloudcms'),
 			'default' => '',
 			'values' => array(
-				"" => __('Default', 'virtue'),
-				"h1-family" => __('H1 Family', 'virtue'),
+				"" => __('Default', 'bigcloudcms'),
+				"h1-family" => __('H1 Family', 'bigcloudcms'),
 				)
 		),
 		'icon'=>array(
 			'type'=>'icon-select', 
-			'title'=>__('Choose an Icon (optional)', 'virtue'),
+			'title'=>__('Choose an Icon (optional)', 'bigcloudcms'),
 			'values' => $icons
 		),
 	) 
 );
-$virtue_shortcodes['gmap'] = array( 
-	'title'=>__('Google Map', 'virtue'), 
+$bigcloudcms_shortcodes['gmap'] = array( 
+	'title'=>__('Google Map', 'bigcloudcms'), 
 	'attr'=>array(
 		'address'=>array(
 			'type'=>'text', 
-			'title'=>__('Address One', 'virtue')
+			'title'=>__('Address One', 'bigcloudcms')
 		),
 		'title'=>array(
 			'type'=>'text', 
-			'title'=>__('Address Title One','virtue'),
-			'desc'=>__('Displays in Popup e.g. = Business Name', 'virtue')
+			'title'=>__('Address Title One','bigcloudcms'),
+			'desc'=>__('Displays in Popup e.g. = Business Name', 'bigcloudcms')
 		),
 		'height'=>array(
 			'type'=>'text', 
-			'title'=>__('Map Height', 'virtue'),
-			'desc'=>__('Just a number e.g. = 400', 'virtue'), 
+			'title'=>__('Map Height', 'bigcloudcms'),
+			'desc'=>__('Just a number e.g. = 400', 'bigcloudcms'), 
 		),
 		'zoom'=>array(
 			'type'=>'select', 
-			'title'=>__('Map Zoom','virtue'),
+			'title'=>__('Map Zoom','bigcloudcms'),
 			'default' => '15',
 			'values' => array(
 				"1" => "1",
@@ -378,61 +378,61 @@ $virtue_shortcodes['gmap'] = array(
 		),
 		'maptype'=>array(
 			'type'=>'select', 
-			'title'=>__('Map Type','virtue'),
+			'title'=>__('Map Type','bigcloudcms'),
 			'default' => 'ROADMAP',
 			'values' => array(
-				"ROADMAP" => __('ROADMAP', 'virtue'),
-				"HYBRID" => __('HYBRID', 'virtue'),
-				"TERRAIN" => __('TERRAIN', 'virtue'),
-				"SATELLITE" => __('SATELLITE', 'virtue'),
+				"ROADMAP" => __('ROADMAP', 'bigcloudcms'),
+				"HYBRID" => __('HYBRID', 'bigcloudcms'),
+				"TERRAIN" => __('TERRAIN', 'bigcloudcms'),
+				"SATELLITE" => __('SATELLITE', 'bigcloudcms'),
 				)
 		),
 		'address2'=>array(
 			'type'=>'text', 
-			'title'=>__('Address Two', 'virtue')
+			'title'=>__('Address Two', 'bigcloudcms')
 		),
 		'title2'=>array(
 			'type'=>'text', 
-			'title'=>__('Address Title Two','virtue'),
-			'desc'=>__('Displays in Popup e.g. = Business Name', 'virtue')
+			'title'=>__('Address Title Two','bigcloudcms'),
+			'desc'=>__('Displays in Popup e.g. = Business Name', 'bigcloudcms')
 		),
 		'address3'=>array(
 			'type'=>'text', 
-			'title'=>__('Address Three', 'virtue')
+			'title'=>__('Address Three', 'bigcloudcms')
 		),
 		'title3'=>array(
 			'type'=>'text', 
-			'title'=>__('Address Title Three','virtue'),
-			'desc'=>__('Displays in Popup e.g. = Business Name', 'virtue')
+			'title'=>__('Address Title Three','bigcloudcms'),
+			'desc'=>__('Displays in Popup e.g. = Business Name', 'bigcloudcms')
 		),
 		'address4'=>array(
 			'type'=>'text', 
-			'title'=>__('Address Four', 'virtue')
+			'title'=>__('Address Four', 'bigcloudcms')
 		),
 		'title4'=>array(
 			'type'=>'text', 
-			'title'=>__('Address Title Four','virtue'),
-			'desc'=>__('Displays in Popup e.g. = Business Name', 'virtue')
+			'title'=>__('Address Title Four','bigcloudcms'),
+			'desc'=>__('Displays in Popup e.g. = Business Name', 'bigcloudcms')
 		),
 		'center'=>array(
 			'type'=>'text', 
-			'title'=>__('Map Center','virtue'),
-			'desc'=>__('Defaults to Address One', 'virtue')
+			'title'=>__('Map Center','bigcloudcms'),
+			'desc'=>__('Defaults to Address One', 'bigcloudcms')
 		)
 	) 
 );
 
-$virtue_shortcodes['icon'] = array( 
-	'title'=>__('Icon', 'virtue'), 
+$bigcloudcms_shortcodes['icon'] = array( 
+	'title'=>__('Icon', 'bigcloudcms'), 
 	'attr'=>array(
 		'icon'=>array(
 			'type'=>'icon-select', 
-			'title'=>__('Choose an Icon', 'virtue'),
+			'title'=>__('Choose an Icon', 'bigcloudcms'),
 			'values' => $icons
 		),
 		'size'=>array(
 			'type'=>'select', 
-			'title'=>__('Icon Size','virtue'),
+			'title'=>__('Icon Size','bigcloudcms'),
 			'default' => '14px',
 			'values' => array(
 				"5px" => "5px",
@@ -515,12 +515,12 @@ $virtue_shortcodes['icon'] = array(
 		),
 		'color'=>array(
 			'type'=>'color', 
-			'title'  => __('Icon Color','virtue'),
+			'title'  => __('Icon Color','bigcloudcms'),
 			'default' => '',
 		),
 		'float'=>array(
 			'type'=>'select', 
-			'title'=>__('Icon Float', 'virtue'),
+			'title'=>__('Icon Float', 'bigcloudcms'),
 			'default' => '',
 			'values' => array(
 				"" => "none",
@@ -530,34 +530,34 @@ $virtue_shortcodes['icon'] = array(
 		),
 		'style'=>array(
 			'type'=>'select', 
-			'title'=>__('Icon Style', 'virtue'),
+			'title'=>__('Icon Style', 'bigcloudcms'),
 			'default' => '',
 			'values' => array(
 				"" => "none",
-				"circle" => __('Circle', 'virtue'),
-				"smcircle" => __('Small Circle', 'virtue'),
-				"square" => __('Square', 'virtue'),
-				"smsquare" => __('Small Square', 'virtue'),
+				"circle" => __('Circle', 'bigcloudcms'),
+				"smcircle" => __('Small Circle', 'bigcloudcms'),
+				"square" => __('Square', 'bigcloudcms'),
+				"smsquare" => __('Small Square', 'bigcloudcms'),
 				)
 		),
 		'background'=>array(
 			'type'=>'color', 
-			'title'  => __('Background Color','virtue'),
+			'title'  => __('Background Color','bigcloudcms'),
 			'default' => '',
 		)
 	) 
 );
-$virtue_shortcodes['iconbox'] = array( 
-	'title'=>__('Icon Box', 'virtue'), 
+$bigcloudcms_shortcodes['iconbox'] = array( 
+	'title'=>__('Icon Box', 'bigcloudcms'), 
 	'attr'=>array(
 		'icon'=>array(
 			'type'=>'icon-select', 
-			'title'=>__('Choose an Icon', 'virtue'),
+			'title'=>__('Choose an Icon', 'bigcloudcms'),
 			'values' => $icons
 		),
 		'iconsize'=>array(
 			'type'=>'select', 
-			'title'=>__('Icon Size','virtue'),
+			'title'=>__('Icon Size','bigcloudcms'),
 			'default' => '48px',
 			'values' => array(
 				"5px" => "5px",
@@ -640,94 +640,94 @@ $virtue_shortcodes['iconbox'] = array(
 		),
 		'color'=>array(
 			'type'=>'color', 
-			'title'  => __('Icon/Font Color','virtue'),
+			'title'  => __('Icon/Font Color','bigcloudcms'),
 			'default' => '#ffffff',
 		),
 		'background'=>array(
 			'type'=>'color', 
-			'title'  => __('Background Color','virtue'),
+			'title'  => __('Background Color','bigcloudcms'),
 			'default' => '#dddddd',
 		),
 		'hcolor'=>array(
 			'type'=>'color', 
-			'title'  => __('Hover Icon/Font Color','virtue'),
+			'title'  => __('Hover Icon/Font Color','bigcloudcms'),
 			'default' => '#ffffff',
 		),
 		'hbackground'=>array(
 			'type'=>'color', 
-			'title'  => __('Hover Background Color','virtue'),
+			'title'  => __('Hover Background Color','bigcloudcms'),
 			'default' => '',
 		),
 		'link'=>array(
 			'type'=>'text', 
-			'title'=>__('Link URL', 'virtue')
+			'title'=>__('Link URL', 'bigcloudcms')
 		),
 		'title'=>array(
 			'type'=>'text', 
-			'title'=>__('Title', 'virtue')
+			'title'=>__('Title', 'bigcloudcms')
 		),
 		'description'=>array(
 			'type'=>'textarea', 
-			'title'=>__('Description', 'virtue')
+			'title'=>__('Description', 'bigcloudcms')
 		)
 
 	) 
 );
-$virtue_shortcodes['kt_typed'] = array( 
-	'title'=>__('Animated Typed Text', 'virtue'), 
+$bigcloudcms_shortcodes['kt_typed'] = array( 
+	'title'=>__('Animated Typed Text', 'bigcloudcms'), 
 	'attr'=>array(
 		'first_sentence'=>array(
 			'type'=>'text', 
-			'title'=>__('First Sentence', 'virtue')
+			'title'=>__('First Sentence', 'bigcloudcms')
 		),
 		'second_sentence'=>array(
 			'type'=>'text', 
-			'title'=>__('Second Sentence (optional)', 'virtue')
+			'title'=>__('Second Sentence (optional)', 'bigcloudcms')
 		),
 		'third_sentence'=>array(
 			'type'=>'text', 
-			'title'=>__('Third Sentence (optional)', 'virtue')
+			'title'=>__('Third Sentence (optional)', 'bigcloudcms')
 		),
 		'fourth_sentence'=>array(
 			'type'=>'text', 
-			'title'=>__('Fourth Sentence (optional)', 'virtue')
+			'title'=>__('Fourth Sentence (optional)', 'bigcloudcms')
 		),
 		'loop'=>array(
 			'type'=>'checkbox', 
-			'title'=>__('Loop','virtue')
+			'title'=>__('Loop','bigcloudcms')
 		)
 	) 
 );
 
-$virtue_shortcodes['kad_youtube'] = array( 
-	'title'=>__('YouTube', 'virtue'), 
+$bigcloudcms_shortcodes['kad_youtube'] = array( 
+	'title'=>__('YouTube', 'bigcloudcms'), 
 	'attr'=>array(
 		'url'=>array(
 			'type'=>'text', 
-			'title'=>__('Video URL', 'virtue')
+			'title'=>__('Video URL', 'bigcloudcms')
 		),
 		'width'=>array(
 			'type'=>'text', 
-			'title'=>__('Video Width', 'virtue'),
-			'desc' =>__('Just a number e.g. = 600', 'virtue'), 
+			'title'=>__('Video Width', 'bigcloudcms'),
+			'desc' =>__('Just a number e.g. = 600', 'bigcloudcms'), 
 		),
 		'height'=>array(
 			'type'=>'text', 
-			'title'=>__('Video Height', 'virtue'),
-			'desc'=>__('Just a number e.g. = 400', 'virtue'), 
+			'title'=>__('Video Height', 'bigcloudcms'),
+			'desc'=>__('Just a number e.g. = 400', 'bigcloudcms'), 
 		),
 		'maxwidth'=>array(
 			'type'=>'text', 
-			'title'=>__('Video Max Width', 'virtue'),
-			'desc'=>__('Keeps the responsive video from getting too large', 'virtue'), 
+			'title'=>__('Video Max Width', 'bigcloudcms'),
+			'desc'=>__('Keeps the responsive video from getting too large', 'bigcloudcms'), 
 		),
 		'hidecontrols'=>array(
 			'type'=>'checkbox', 
-			'title'=>__('Hide Controls','virtue')
+			'title'=>__('Hide Controls','bigcloudcms')
 		),
 		'autoplay'=>array(
 			'type'=>'checkbox', 
-			'title'=>__('Auto Play','virtue')
+			'title'=>__('Auto Play','bigcloudcms')
 		),
 		'rel'=>array(
 			'type'=>'checkbox', 
@@ -735,35 +735,35 @@ $virtue_shortcodes['kad_youtube'] = array(
 		),
 		'modestbranding'=>array(
 			'type'=>'checkbox', 
-			'title'=>__('Modest Branding?','virtue')
+			'title'=>__('Modest Branding?','bigcloudcms')
 		)
 	) 
 );
-$virtue_shortcodes['kad_vimeo'] = array( 
-	'title'=>__('Vimeo', 'virtue'), 
+$bigcloudcms_shortcodes['kad_vimeo'] = array( 
+	'title'=>__('Vimeo', 'bigcloudcms'), 
 	'attr'=>array(
 		'url'=>array(
 			'type'=>'text', 
-			'title'=>__('Video URL', 'virtue')
+			'title'=>__('Video URL', 'bigcloudcms')
 		),
 		'width'=>array(
 			'type'=>'text', 
-			'title'=>__('Video Width', 'virtue'),
-			'desc' =>__('Just a number e.g. = 600', 'virtue'), 
+			'title'=>__('Video Width', 'bigcloudcms'),
+			'desc' =>__('Just a number e.g. = 600', 'bigcloudcms'), 
 		),
 		'height'=>array(
 			'type'=>'text', 
-			'title'=>__('Video Height', 'virtue'),
-			'desc'=>__('Just a number e.g. = 400', 'virtue'), 
+			'title'=>__('Video Height', 'bigcloudcms'),
+			'desc'=>__('Just a number e.g. = 400', 'bigcloudcms'), 
 		),
 		'maxwidth'=>array(
 			'type'=>'text', 
-			'title'=>__('Video Max Width', 'virtue'),
-			'desc'=>__('Keeps the responsive video from getting too large', 'virtue'), 
+			'title'=>__('Video Max Width', 'bigcloudcms'),
+			'desc'=>__('Keeps the responsive video from getting too large', 'bigcloudcms'), 
 		),
 		'autoplay'=>array(
 			'type'=>'checkbox', 
-			'title'=>__('Auto Play','virtue')
+			'title'=>__('Auto Play','bigcloudcms')
 		)
 	) 
 );
@@ -774,150 +774,150 @@ foreach ($postcategories as $cat) {
       $cat_options[$cat->slug] = $cat->name;
 }
 
-$virtue_shortcodes['blog_posts'] = array( 
-	'title'=>__('Blog Posts', 'virtue'), 
+$bigcloudcms_shortcodes['blog_posts'] = array( 
+	'title'=>__('Blog Posts', 'bigcloudcms'), 
 	'attr'=>array(
 		'orderby'=>array(
 			'type'=>'select', 
-			'title'=>__('Order By', 'virtue'),
+			'title'=>__('Order By', 'bigcloudcms'),
 			'default' => 'date',
 			'values' => array(
-				"date" => __('Date','virtue'),
-				"rand" => __('Random','virtue'),
-				"menu_order" => __('Menu Order','virtue'),
+				"date" => __('Date','bigcloudcms'),
+				"rand" => __('Random','bigcloudcms'),
+				"menu_order" => __('Menu Order','bigcloudcms'),
 				)
 		),
 		'cat'=>array(
 			'type'=>'select',
 			'default' => '',
-			'title'=>__('Category', 'virtue'),
+			'title'=>__('Category', 'bigcloudcms'),
 			'values' => $cat_options,
 		),
 		'items'=>array(
 			'type'=>'text', 
-			'title'=>__('Number of Posts', 'virtue')
+			'title'=>__('Number of Posts', 'bigcloudcms')
 		),
 	) 
 );
 	//Button
-$virtue_shortcodes['kad_modal'] = array( 
-	'title'=>__('Modal', 'virtue'), 
+$bigcloudcms_shortcodes['kad_modal'] = array( 
+	'title'=>__('Modal', 'bigcloudcms'), 
 	'attr'=>array(
 		'btntitle'=>array(
 			'type'=>'text', 
-			'title'=>__('Button Title', 'virtue')
+			'title'=>__('Button Title', 'bigcloudcms')
 		),
 		'btncolor'=>array(
 			'type'=>'color', 
-			'title'  => __('Button Font Color','virtue'),
+			'title'  => __('Button Font Color','bigcloudcms'),
 			'default' => '#ffffff',
 		),
 		'btnbackground'=>array(
 			'type'=>'color', 
-			'title'  => __('Button Background Color','virtue'),
+			'title'  => __('Button Background Color','bigcloudcms'),
 			'default' => '',
 		),
 		'btnsize'=>array(
 			'type'=>'select', 
-			'title'=>__('Button Size', 'virtue'),
+			'title'=>__('Button Size', 'bigcloudcms'),
 			'default' => '',
 			'values' => array(
-				"" => __('Default', 'virtue'),
-				"large" => __('Large', 'virtue'),
-				"small" => __('Small', 'virtue'),
+				"" => __('Default', 'bigcloudcms'),
+				"large" => __('Large', 'bigcloudcms'),
+				"small" => __('Small', 'bigcloudcms'),
 				)
 		),
 		'btnfont'=>array(
 			'type'=>'select', 
-			'title'=>__('Font Family', 'virtue'),
+			'title'=>__('Font Family', 'bigcloudcms'),
 			'default' => '',
 			'values' => array(
-				"" => __('Default', 'virtue'),
-				"h1-family" => __('H1 Family', 'virtue'),
+				"" => __('Default', 'bigcloudcms'),
+				"h1-family" => __('H1 Family', 'bigcloudcms'),
 				)
 		),
 		'title'=>array(
 			'type'=>'text', 
-			'title'=>__('Modal Title', 'virtue')
+			'title'=>__('Modal Title', 'bigcloudcms')
 		),
 		'content'=>array(
 			'type'=>'textarea', 
-			'title'=>__('Modal Content', 'virtue')
+			'title'=>__('Modal Content', 'bigcloudcms')
 		)
 	) 
 );
-$virtue_shortcodes['kad_testimonial_form'] = array( 
-	'title'=>__('Testimonial Form', 'virtue'), 
+$bigcloudcms_shortcodes['kad_testimonial_form'] = array( 
+	'title'=>__('Testimonial Form', 'bigcloudcms'), 
 	'attr'=>array(
 		'location'=>array(
 			'type'=>'checkbox', 
-			'title'=>__('Show Location Field?','virtue')
+			'title'=>__('Show Location Field?','bigcloudcms')
 		),
 		'position'=>array(
 			'type'=>'checkbox', 
-			'title'=>__('Show Position Field?','virtue')
+			'title'=>__('Show Position Field?','bigcloudcms')
 		),
 		'link'=>array(
 			'type'=>'checkbox', 
-			'title'=>__('Show Link Field?','virtue')
+			'title'=>__('Show Link Field?','bigcloudcms')
 		),
 		'name_label'=>array(
 			'type'=>'text', 
-			'title'=>__('Name Field Label', 'virtue'),
-			'desc'=>__('Default: Name', 'virtue')
+			'title'=>__('Name Field Label', 'bigcloudcms'),
+			'desc'=>__('Default: Name', 'bigcloudcms')
 		),
 		'testimonial_label'=>array(
 			'type'=>'text', 
-			'title'=>__('Testimonial Field Label','virtue'),
-			'desc'=>__('Default: Testimonial', 'virtue')
+			'title'=>__('Testimonial Field Label','bigcloudcms'),
+			'desc'=>__('Default: Testimonial', 'bigcloudcms')
 		),
 		'location_label'=>array(
 			'type'=>'text', 
-			'title'=>__('Location Field Label', 'virtue'),
-			'desc'=>__('Default: Location - Optional', 'virtue')
+			'title'=>__('Location Field Label', 'bigcloudcms'),
+			'desc'=>__('Default: Location - Optional', 'bigcloudcms')
 		),
 		'position_label'=>array(
 			'type'=>'text', 
-			'title'=>__('Position Field Label', 'virtue'),
-			'desc'=>__('Default: Position or Company - optional', 'virtue')
+			'title'=>__('Position Field Label', 'bigcloudcms'),
+			'desc'=>__('Default: Position or Company - optional', 'bigcloudcms')
 		),
 		'link_label'=>array(
 			'type'=>'text', 
-			'title'=>__('Link Field Label','virtue'),
-			'desc'=>__('Default: Link - optional', 'virtue')
+			'title'=>__('Link Field Label','bigcloudcms'),
+			'desc'=>__('Default: Link - optional', 'bigcloudcms')
 		),
 		'submit_label'=>array(
 			'type'=>'text', 
-			'title'=>__('Submit Field Label', 'virtue'),
-			'desc'=>__('Default: Submit', 'virtue')
+			'title'=>__('Submit Field Label', 'bigcloudcms'),
+			'desc'=>__('Default: Submit', 'bigcloudcms')
 		),
 		'success_message'=>array(
 			'type'=>'text', 
-			'title'=>__('Success Message','virtue'),
-			'desc'=>__('Default: Thank you for submitting your testimonial! It is now awaiting approval from the site admnistator. Thank you!', 'virtue')
+			'title'=>__('Success Message','bigcloudcms'),
+			'desc'=>__('Default: Thank you for submitting your testimonial! It is now awaiting approval from the site admnistator. Thank you!', 'bigcloudcms')
 		),
 	) 
 );
 
 	ob_start(); ?>
-	<div id="kadence-shortcode-container">
-		<div id="kadence-shortcode-innercontainer" class="mfp-hide mfp-with-anim">
-		 	<div class="kadenceshortcode-content">
+	<div id="bigcloudcms-shortcode-container">
+		<div id="bigcloudcms-shortcode-innercontainer" class="mfp-hide mfp-with-anim">
+		 	<div class="bigcloudcmsshortcode-content">
 		 		<div class="shortcodes-header">
-					<div class="kadshort-header"><h3><?php echo __('Virtue Shortcodes', 'virtue'); ?></h3></div>
-					<div class="kadshort-select"><select id="kadence-shortcodes" data-placeholder="<?php _e("Choose a shortcode", 'virtue'); ?>">
+					<div class="kadshort-header"><h3><?php echo __('BigCloudCMS Shortcodes', 'bigcloudcms'); ?></h3></div>
+					<div class="kadshort-select"><select id="bigcloudcms-shortcodes" data-placeholder="<?php _e("Choose a shortcode", 'bigcloudcms'); ?>">
 				    <option></option>
 					
 					<?php $kad_sc_html = ''; $kad_options_html = '';
-					$virtue_shortcodes = apply_filters('kadence_shortcodes', $virtue_shortcodes);
-					foreach( $virtue_shortcodes as $shortcode => $options ){
+					$bigcloudcms_shortcodes = apply_filters('bigcloudcms_shortcodes', $bigcloudcms_shortcodes);
+					foreach( $bigcloudcms_shortcodes as $shortcode => $options ){
 						
 							$kad_sc_html .= '<option value="'.$shortcode.'">'.$options['title'].'</option>';
 							$kad_options_html .= '<div class="shortcode-options" id="options-'.$shortcode.'" data-name="'.$shortcode.'">';
 							
 								if( !empty($options['attr']) ){
 									 foreach( $options['attr'] as $name => $attr_option ){
-										$kad_options_html .= virtue_shortcode_option( $name, $attr_option, $shortcode );
+										$kad_options_html .= bigcloudcms_shortcode_option( $name, $attr_option, $shortcode );
 									 }
 								}
 			
@@ -932,7 +932,7 @@ $virtue_shortcodes['kad_testimonial_form'] = array(
 
  				
 			<div class="kad_shortcode_insert">	
-				<a href="javascript:void(0);" id="kad-shortcode-insert" class="kad-addshortcode-btn" style=""><?php _e("Add Shortcode", "virtue"); ?></a>
+				<a href="javascript:void(0);" id="kad-shortcode-insert" class="kad-addshortcode-btn" style=""><?php _e("Add Shortcode", "bigcloudcms"); ?></a>
 			</div>
 	</div> 
 	</div>

@@ -74,15 +74,15 @@ add_filter( 'woocommerce_related_products_args', 'kad_woo_related_products_limit
 
 add_filter( 'woocommerce_product_tabs', 'kad_product_video_tab');
 function kad_product_video_tab_content() {
-  global $post,$virtue_premium; if($videocode = get_post_meta( $post->ID, '_kad_product_video', true )) {
-  if(!empty($virtue_premium['video_title_text'])) {$product_video_title = $virtue_premium['video_title_text'];} else {$product_video_title = __('Product Video', 'virtue');}
+  global $post,$bigcloudcms_premium; if($videocode = get_post_meta( $post->ID, '_kad_product_video', true )) {
+  if(!empty($bigcloudcms_premium['video_title_text'])) {$product_video_title = $bigcloudcms_premium['video_title_text'];} else {$product_video_title = __('Product Video', 'bigcloudcms');}
  echo '<h2>'.$product_video_title.'</h2>';
  echo '<div class="videofit product_video_case">'.$videocode.'</div>';
 }
 }
 function kad_product_video_tab($tabs) {
-  global $post, $virtue_premium; if($videocode = get_post_meta( $post->ID, '_kad_product_video', true )) {
-    if(!empty($virtue_premium['video_tab_text'])) {$product_video_title = $virtue_premium['video_tab_text'];} else {$product_video_title = __('Product Video', 'virtue');}
+  global $post, $bigcloudcms_premium; if($videocode = get_post_meta( $post->ID, '_kad_product_video', true )) {
+    if(!empty($bigcloudcms_premium['video_tab_text'])) {$product_video_title = $bigcloudcms_premium['video_tab_text'];} else {$product_video_title = __('Product Video', 'bigcloudcms');}
  $tabs['video_tab'] = array(
  'title' => $product_video_title,
  'priority' => 50,
@@ -95,9 +95,9 @@ function kad_product_video_tab($tabs) {
 // Number of products per page
 add_filter('loop_shop_per_page', 'kt_wooframework_products_per_page');
   function kt_wooframework_products_per_page() {
-    global $virtue_premium;
-    if ( isset( $virtue_premium['products_per_page'] ) && !empty($virtue_premium['products_per_page']) ) {
-      return $virtue_premium['products_per_page'];
+    global $bigcloudcms_premium;
+    if ( isset( $bigcloudcms_premium['products_per_page'] ) && !empty($bigcloudcms_premium['products_per_page']) ) {
+      return $bigcloudcms_premium['products_per_page'];
     }
 }
 
@@ -105,8 +105,8 @@ add_filter('loop_shop_per_page', 'kt_wooframework_products_per_page');
 add_action('wp_head','wooframework_tab_check');
 if ( ! function_exists( 'wooframework_tab_check' ) ) {
   function wooframework_tab_check() {
-    global $virtue_premium;
-    if ( isset( $virtue_premium[ 'product_tabs' ] ) && $virtue_premium[ 'product_tabs' ] == "0" ) {
+    global $bigcloudcms_premium;
+    if ( isset( $bigcloudcms_premium[ 'product_tabs' ] ) && $bigcloudcms_premium[ 'product_tabs' ] == "0" ) {
       remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10);
     }
   }
@@ -116,8 +116,8 @@ if ( ! function_exists( 'wooframework_tab_check' ) ) {
 add_action('wp_head','wooframework_related_products');
 if ( ! function_exists( 'wooframework_related_products' ) ) {
   function wooframework_related_products() {
-    global $virtue_premium;
-    if ( isset( $virtue_premium[ 'related_products' ] ) && $virtue_premium[ 'related_products' ] == "0" ) {
+    global $bigcloudcms_premium;
+    if ( isset( $bigcloudcms_premium[ 'related_products' ] ) && $bigcloudcms_premium[ 'related_products' ] == "0" ) {
       remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20);
     }
   }
@@ -126,35 +126,35 @@ if ( ! function_exists( 'wooframework_related_products' ) ) {
 // Change the tab title
 add_filter( 'woocommerce_product_tabs', 'kad_woo_rename_tabs', 98 );
 function kad_woo_rename_tabs( $tabs ) {
- global $virtue_premium; 
-  if(!empty($virtue_premium['description_tab_text']) && !empty($tabs['description']['title'])) {$tabs['description']['title'] = $virtue_premium['description_tab_text'];}
-  if(!empty($virtue_premium['additional_information_tab_text']) && !empty($tabs['additional_information']['title'])) {$tabs['additional_information']['title'] = $virtue_premium['additional_information_tab_text'];}
-  if(!empty($virtue_premium['reviews_tab_text']) && !empty($tabs['reviews']['title'])) {$tabs['reviews']['title'] = $virtue_premium['reviews_tab_text'];}
+ global $bigcloudcms_premium; 
+  if(!empty($bigcloudcms_premium['description_tab_text']) && !empty($tabs['description']['title'])) {$tabs['description']['title'] = $bigcloudcms_premium['description_tab_text'];}
+  if(!empty($bigcloudcms_premium['additional_information_tab_text']) && !empty($tabs['additional_information']['title'])) {$tabs['additional_information']['title'] = $bigcloudcms_premium['additional_information_tab_text'];}
+  if(!empty($bigcloudcms_premium['reviews_tab_text']) && !empty($tabs['reviews']['title'])) {$tabs['reviews']['title'] = $bigcloudcms_premium['reviews_tab_text'];}
  
   return $tabs;
 }
 // Change the tab description heading
 add_filter( 'woocommerce_product_description_heading', 'kad_description_tab_heading', 10, 1 );
 function kad_description_tab_heading( $title ) {
-  global $virtue_premium; 
-  if(!empty($virtue_premium['description_header_text'])) {$title = $virtue_premium['description_header_text'];}
+  global $bigcloudcms_premium; 
+  if(!empty($bigcloudcms_premium['description_header_text'])) {$title = $bigcloudcms_premium['description_header_text'];}
   return $title;
 }
 // Change the tab aditional info heading
 add_filter( 'woocommerce_product_additional_information_heading', 'kad_additional_information_tab_heading', 10, 1 );
 function kad_additional_information_tab_heading( $title ) {
-  global $virtue_premium; 
-  if(!empty($virtue_premium['additional_information_header_text'])) {$title = $virtue_premium['additional_information_header_text'];}
+  global $bigcloudcms_premium; 
+  if(!empty($bigcloudcms_premium['additional_information_header_text'])) {$title = $bigcloudcms_premium['additional_information_header_text'];}
   return $title;
 }
 
 add_filter( 'woocommerce_product_tabs', 'kad_woo_reorder_tabs', 98 );
 function kad_woo_reorder_tabs( $tabs ) {
-  global $virtue_premium; 
-  if(isset($virtue_premium['ptab_description'])) {$dpriority = $virtue_premium['ptab_description'];} else {$dpriority = 10;}
-  if(isset($virtue_premium['ptab_additional'])) {$apriority = $virtue_premium['ptab_additional'];} else {$apriority = 20;}
-  if(isset($virtue_premium['ptab_reviews'])) {$rpriority = $virtue_premium['ptab_reviews'];} else {$rpriority = 30;}
-  if(isset($virtue_premium['ptab_video'])) {$vpriority = $virtue_premium['ptab_video'];} else {$vpriority = 40;}
+  global $bigcloudcms_premium; 
+  if(isset($bigcloudcms_premium['ptab_description'])) {$dpriority = $bigcloudcms_premium['ptab_description'];} else {$dpriority = 10;}
+  if(isset($bigcloudcms_premium['ptab_additional'])) {$apriority = $bigcloudcms_premium['ptab_additional'];} else {$apriority = 20;}
+  if(isset($bigcloudcms_premium['ptab_reviews'])) {$rpriority = $bigcloudcms_premium['ptab_reviews'];} else {$rpriority = 30;}
+  if(isset($bigcloudcms_premium['ptab_video'])) {$vpriority = $bigcloudcms_premium['ptab_video'];} else {$vpriority = 40;}
  
   if(!empty($tabs['description'])) $tabs['description']['priority'] = $dpriority;      // Description
   if(!empty($tabs['additional_information'])) $tabs['additional_information']['priority'] = $apriority; // Additional information 
@@ -166,9 +166,9 @@ function kad_woo_reorder_tabs( $tabs ) {
 
 add_filter('loop_shop_columns', 'kad_loop_columns');
   function kad_loop_columns() {
-    global $virtue_premium;
-    if(isset($virtue_premium['product_shop_layout']) && !empty($virtue_premium['product_shop_layout'])) {
-      return $virtue_premium['product_shop_layout'];
+    global $bigcloudcms_premium;
+    if(isset($bigcloudcms_premium['product_shop_layout']) && !empty($bigcloudcms_premium['product_shop_layout'])) {
+      return $bigcloudcms_premium['product_shop_layout'];
     } else {
       return 4;
     }
@@ -176,14 +176,14 @@ add_filter('loop_shop_columns', 'kad_loop_columns');
 // Turning off for the time being, causing issues with cart widget
 add_filter('add_to_cart_fragments', 'kad_woocommerce_header_add_to_cart_fragment');
 function kad_woocommerce_header_add_to_cart_fragment( $fragments ) {
-    global $woocommerce, $virtue_premium;
+    global $woocommerce, $bigcloudcms_premium;
     ob_start(); ?>
-    <a class="cart-contents" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('View your shopping cart', 'virtue'); ?>">
+    <a class="cart-contents" href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('View your shopping cart', 'bigcloudcms'); ?>">
         <i class="icon-basket" style="padding-right:5px;"></i> 
-        <?php if(!empty($virtue_premium['cart_placeholder_text'])) {
-            echo $virtue_premium['cart_placeholder_text'];
+        <?php if(!empty($bigcloudcms_premium['cart_placeholder_text'])) {
+            echo $bigcloudcms_premium['cart_placeholder_text'];
           } else {
-            echo __('Your Cart', 'virtue');
+            echo __('Your Cart', 'bigcloudcms');
             }  ?> 
             <span class="kad-cart-dash">-</span>
             <?php if ( WC()->cart->tax_display_cart == 'incl' ) {
@@ -203,15 +203,15 @@ function kad_woocommerce_header_add_to_cart_fragment( $fragments ) {
 
 function kad_custom_tab_01($tabs) {
   global $post; 
-  $tab_content = apply_filters('kadence_custom_woo_tab_01_content', get_post_meta( $post->ID, '_kad_tab_content_01', true ) );
+  $tab_content = apply_filters('bigcloudcms_custom_woo_tab_01_content', get_post_meta( $post->ID, '_kad_tab_content_01', true ) );
   if(!empty( $tab_content) ) {
     $tab_title = get_post_meta( $post->ID, '_kad_tab_title_01', true );
     $tab_priority = get_post_meta( $post->ID, '_kad_tab_priority_01', true ); 
-    if(!empty($tab_title)) {$product_tab_title = $tab_title;} else {$product_tab_title = __('Custom Tab', 'virtue');}
+    if(!empty($tab_title)) {$product_tab_title = $tab_title;} else {$product_tab_title = __('Custom Tab', 'bigcloudcms');}
     if(!empty($tab_priority)) {$product_tab_priority = esc_attr($tab_priority);} else {$product_tab_priority = 45;}
    $tabs['kad_custom_tab_01'] = array(
-   'title' => apply_filters('kadence_custom_woo_tab_01_title', $product_tab_title),
-   'priority' => apply_filters('kadence_custom_woo_tab_01_priority', $product_tab_priority),
+   'title' => apply_filters('bigcloudcms_custom_woo_tab_01_title', $product_tab_title),
+   'priority' => apply_filters('bigcloudcms_custom_woo_tab_01_priority', $product_tab_priority),
    'callback' => 'kad_product_custom_tab_content_01'
    );
   }
@@ -220,19 +220,19 @@ function kad_custom_tab_01($tabs) {
 }
 function kad_product_custom_tab_content_01() {
    global $post; $tab_content_01 = wpautop(get_post_meta( $post->ID, '_kad_tab_content_01', true ));
-   echo do_shortcode('<div class="product_custom_content_case">'.apply_filters('kadence_custom_woo_tab_01_content', __($tab_content_01) ).'</div>');
+   echo do_shortcode('<div class="product_custom_content_case">'.apply_filters('bigcloudcms_custom_woo_tab_01_content', __($tab_content_01) ).'</div>');
 }
 function kad_custom_tab_02($tabs) {
   global $post;
-  $tab_content = apply_filters('kadence_custom_woo_tab_02_content', get_post_meta( $post->ID, '_kad_tab_content_02', true ) );
+  $tab_content = apply_filters('bigcloudcms_custom_woo_tab_02_content', get_post_meta( $post->ID, '_kad_tab_content_02', true ) );
    if(!empty($tab_content) ) {
     $tab_title = get_post_meta( $post->ID, '_kad_tab_title_02', true );
     $tab_priority = get_post_meta( $post->ID, '_kad_tab_priority_02', true ); 
-    if(!empty($tab_title)) {$product_tab_title = $tab_title;} else {$product_tab_title = __('Custom Tab', 'virtue');}
+    if(!empty($tab_title)) {$product_tab_title = $tab_title;} else {$product_tab_title = __('Custom Tab', 'bigcloudcms');}
     if(!empty($tab_priority)) {$product_tab_priority = esc_attr($tab_priority);} else {$product_tab_priority = 50;}
    $tabs['kad_custom_tab_02'] = array(
-   'title' => apply_filters('kadence_custom_woo_tab_02_title', $product_tab_title),
-   'priority' => apply_filters('kadence_custom_woo_tab_02_priority', $product_tab_priority),
+   'title' => apply_filters('bigcloudcms_custom_woo_tab_02_title', $product_tab_title),
+   'priority' => apply_filters('bigcloudcms_custom_woo_tab_02_priority', $product_tab_priority),
    'callback' => 'kad_product_custom_tab_content_02'
    );
   }
@@ -241,20 +241,20 @@ function kad_custom_tab_02($tabs) {
 }
 function kad_product_custom_tab_content_02() {
    global $post; $tab_content_02 = wpautop(get_post_meta( $post->ID, '_kad_tab_content_02', true ));
-   echo do_shortcode('<div class="product_custom_content_case">'.apply_filters('kadence_custom_woo_tab_02_content', __($tab_content_02) ).'</div>');
+   echo do_shortcode('<div class="product_custom_content_case">'.apply_filters('bigcloudcms_custom_woo_tab_02_content', __($tab_content_02) ).'</div>');
 
 }
 function kad_custom_tab_03($tabs) {
   global $post;
-  $tab_content = apply_filters('kadence_custom_woo_tab_03_content', get_post_meta( $post->ID, '_kad_tab_content_03', true ) );
+  $tab_content = apply_filters('bigcloudcms_custom_woo_tab_03_content', get_post_meta( $post->ID, '_kad_tab_content_03', true ) );
   if(!empty( $tab_content) ) {
     $tab_title = get_post_meta( $post->ID, '_kad_tab_title_03', true );
     $tab_priority = get_post_meta( $post->ID, '_kad_tab_priority_03', true ); 
-    if(!empty($tab_title)) {$product_tab_title = $tab_title;} else {$product_tab_title = __('Custom Tab', 'virtue');}
+    if(!empty($tab_title)) {$product_tab_title = $tab_title;} else {$product_tab_title = __('Custom Tab', 'bigcloudcms');}
     if(!empty($tab_priority)) {$product_tab_priority = esc_attr($tab_priority);} else {$product_tab_priority = 55;}
    $tabs['kad_custom_tab_03'] = array(
-   'title' => apply_filters('kadence_custom_woo_tab_03_title', $product_tab_title ),
-   'priority' => apply_filters('kadence_custom_woo_tab_03_priority', $product_tab_priority),
+   'title' => apply_filters('bigcloudcms_custom_woo_tab_03_title', $product_tab_title ),
+   'priority' => apply_filters('bigcloudcms_custom_woo_tab_03_priority', $product_tab_priority),
    'callback' => 'kad_product_custom_tab_content_03'
    );
   }
@@ -263,20 +263,20 @@ function kad_custom_tab_03($tabs) {
 }
 function kad_product_custom_tab_content_03() {
    global $post; $tab_content_03 = wpautop(get_post_meta( $post->ID, '_kad_tab_content_03', true ));
-   echo do_shortcode('<div class="product_custom_content_case">'.apply_filters('kadence_custom_woo_tab_03_content', __($tab_content_03) ).'</div>');
+   echo do_shortcode('<div class="product_custom_content_case">'.apply_filters('bigcloudcms_custom_woo_tab_03_content', __($tab_content_03) ).'</div>');
 }
 
 
 add_action( 'init', 'kt_woo_custom_tab_init' );
 function kt_woo_custom_tab_init() {
-global $virtue_premium;
- if ( isset( $virtue_premium['custom_tab_01'] ) && $virtue_premium['custom_tab_01'] == 1 ) {
+global $bigcloudcms_premium;
+ if ( isset( $bigcloudcms_premium['custom_tab_01'] ) && $bigcloudcms_premium['custom_tab_01'] == 1 ) {
 add_filter( 'woocommerce_product_tabs', 'kad_custom_tab_01');
 }
-if ( isset( $virtue_premium['custom_tab_02'] ) && $virtue_premium['custom_tab_02'] == 1 ) {
+if ( isset( $bigcloudcms_premium['custom_tab_02'] ) && $bigcloudcms_premium['custom_tab_02'] == 1 ) {
 add_filter( 'woocommerce_product_tabs', 'kad_custom_tab_02');
 }
-if ( isset( $virtue_premium['custom_tab_03'] ) && $virtue_premium['custom_tab_03'] == 1 ) {
+if ( isset( $bigcloudcms_premium['custom_tab_03'] ) && $bigcloudcms_premium['custom_tab_03'] == 1 ) {
 add_filter( 'woocommerce_product_tabs', 'kad_custom_tab_03');
 }
 }
@@ -368,7 +368,7 @@ if ( ! function_exists( 'kt_woocommerce_single_variation' ) ) {
 remove_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_thumbnail', 10 );
 add_action( 'woocommerce_before_shop_loop_item_title', 'kt_woocommerce_template_loop_product_thumbnail', 10 );
 function kt_woocommerce_template_loop_product_thumbnail() {
-global $product, $woocommerce_loop, $virtue_premium, $post;
+global $product, $woocommerce_loop, $bigcloudcms_premium, $post;
 
 $product_column = $woocommerce_loop['columns'];
 if ($product_column == '1') {$productimgwidth = 300;}
@@ -378,11 +378,11 @@ if ($product_column == '1') {$productimgwidth = 300;}
                     else if ($product_column == '5'){ $productimgwidth = 240;} 
                     else { $productimgwidth = 300;}
 
-  if(isset($virtue_premium['product_img_resize']) && $virtue_premium['product_img_resize'] == 0) {
+  if(isset($bigcloudcms_premium['product_img_resize']) && $bigcloudcms_premium['product_img_resize'] == 0) {
   $resizeimage = 0;
 } else {
   $resizeimage = 1;
-    if(isset($virtue_premium['shop_img_ratio'])) {$img_ratio = $virtue_premium['shop_img_ratio'];} else {$img_ratio = 'square';}
+    if(isset($bigcloudcms_premium['shop_img_ratio'])) {$img_ratio = $bigcloudcms_premium['shop_img_ratio'];} else {$img_ratio = 'square';}
     if($img_ratio == 'portrait') {
           $tempproductimgheight = $productimgwidth * 1.35;
           $productimgheight = floor($tempproductimgheight);
@@ -396,7 +396,7 @@ if ($product_column == '1') {$productimgwidth = 300;}
           $productimgheight = $productimgwidth;
     }
 }
-if(isset($virtue_premium['product_img_flip']) && $virtue_premium['product_img_flip'] == 0) {
+if(isset($bigcloudcms_premium['product_img_flip']) && $bigcloudcms_premium['product_img_flip'] == 0) {
   $productimgflip = 0;
 } else {
   $productimgflip = 1;

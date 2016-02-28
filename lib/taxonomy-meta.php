@@ -52,7 +52,7 @@ function kad_register_taxonomy_meta_boxes()
 		'fields' => array(                             // List of meta fields
 			// TEXT
 			array(
-					    'name' => __('Category Image', 'virtue' ),
+					    'name' => __('Category Image', 'bigcloudcms' ),
 					    'id' => 'category_image',
 					    'type' => 'image',
 					),

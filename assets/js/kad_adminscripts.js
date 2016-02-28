@@ -75,7 +75,7 @@ jQuery(document).on( "widget-updated", function() {
   }); 
 });
  jQuery(document).ready(function($) {
-  $('select#kadence-shortcodes').select2();
+  $('select#bigcloudcms-shortcodes').select2();
 	$('select.kad-sc-select').select2();
   $('select.kad-icon-select').fontIconPicker({
 	emptyIcon:true,

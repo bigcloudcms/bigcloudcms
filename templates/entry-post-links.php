@@ -1,7 +1,7 @@
 <?php 
-global $virtue_premium;
+global $bigcloudcms_premium;
 
-if(isset($virtue_premium['postlinks_in_cat']) && $virtue_premium['postlinks_in_cat'] == "cat"){
+if(isset($bigcloudcms_premium['postlinks_in_cat']) && $bigcloudcms_premium['postlinks_in_cat'] == "cat"){
 	$cat_setting = true;
 } else {
 	$cat_setting = false;
@@ -9,9 +9,9 @@ if(isset($virtue_premium['postlinks_in_cat']) && $virtue_premium['postlinks_in_c
 ?>
 <div class="kad-post-navigation clearfix">
         <div class="alignleft kad-previous-link">
-        <?php previous_post_link('%link', __('Previous Post', 'virtue'), $in_same_term = $cat_setting); ?> 
+        <?php previous_post_link('%link', __('Previous Post', 'bigcloudcms'), $in_same_term = $cat_setting); ?> 
         </div>
         <div class="alignright kad-next-link">
-        <?php next_post_link('%link', __('Next Post', 'virtue'), $in_same_term = $cat_setting); ?> 
+        <?php next_post_link('%link', __('Next Post', 'bigcloudcms'), $in_same_term = $cat_setting); ?> 
         </div>
  </div> <!-- end navigation -->

@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the 4.2.x package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Virtue Wordpress Theme\n"
+"Project-Id-Version: BigCloudCMS Wordpress Theme\n"
 "POT-Creation-Date: 2016-02-10 00:14-0700\n"
-"PO-Revision-Date: 2016-02-10 00:14-0700\n"
+"PO-Revision-Date: 2016-02-28 20:10+0530\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: da_DK\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 1.8.6\n"
+"X-Generator: Poedit 1.8.7\n"
 
 #: ../404.php:11
 msgid "Sorry, but the page you were trying to view does not exist."
@@ -166,8 +166,8 @@ msgstr ""
 #: ../lib/class-tgm-plugin-activation.php:402
 #, php-format
 msgid ""
-"Plugin not activated. A higher version of %s is needed for this theme. "
-"Please update the plugin."
+"Plugin not activated. A higher version of %s is needed for this theme. Please "
+"update the plugin."
 msgstr ""
 
 #: ../lib/class-tgm-plugin-activation.php:403
@@ -390,7 +390,7 @@ msgid "Insert Shortcode"
 msgstr ""
 
 #: ../lib/cleanup.php:202 ../lib/kad_shortcodes.php:907
-msgid "Virtue Shortcodes"
+msgid "BigCloudCMS Shortcodes"
 msgstr ""
 
 #: ../lib/cmb/helpers/cmb_Meta_Box_ajax.php:47
@@ -1462,13 +1462,13 @@ msgstr ""
 msgid "Filter Projects"
 msgstr ""
 
-#: ../lib/kad_shortcodes/shortcodes.php:95
-#: ../woocommerce/archive-product.php:63 ../woocommerce/archive-product.php:69
+#: ../lib/kad_shortcodes/shortcodes.php:95 ../woocommerce/archive-product.php:63
+#: ../woocommerce/archive-product.php:69
 msgid "Grid View"
 msgstr "Gittervisning"
 
-#: ../lib/kad_shortcodes/shortcodes.php:95
-#: ../woocommerce/archive-product.php:60 ../woocommerce/archive-product.php:72
+#: ../lib/kad_shortcodes/shortcodes.php:95 ../woocommerce/archive-product.php:60
+#: ../woocommerce/archive-product.php:72
 msgid "List View"
 msgstr "Listevisning"
 
@@ -1658,8 +1658,8 @@ msgstr ""
 
 #: ../lib/metaboxes.php:167
 msgid ""
-"Default is: 770 or 1140 on fullwidth posts (Note: just input number, "
-"example: 650, does not apply to carousel slider)"
+"Default is: 770 or 1140 on fullwidth posts (Note: just input number, example: "
+"650, does not apply to carousel slider)"
 msgstr ""
 
 #: ../lib/metaboxes.php:172
@@ -1721,9 +1721,8 @@ msgstr ""
 #: ../lib/metaboxes.php:453 ../lib/metaboxes.php:526 ../lib/metaboxes.php:584
 #: ../lib/metaboxes.php:636 ../lib/metaboxes.php:665 ../lib/metaboxes.php:722
 #: ../lib/metaboxes.php:774 ../lib/metaboxes.php:806 ../lib/metaboxes.php:999
-#: ../lib/metaboxes.php:1068 ../lib/metaboxes.php:1139
-#: ../lib/metaboxes.php:1165 ../lib/metaboxes.php:1181
-#: ../lib/metaboxes.php:1192 ../lib/metaboxes.php:1289
+#: ../lib/metaboxes.php:1068 ../lib/metaboxes.php:1139 ../lib/metaboxes.php:1165
+#: ../lib/metaboxes.php:1181 ../lib/metaboxes.php:1192 ../lib/metaboxes.php:1289
 msgid "Yes"
 msgstr "Ja"
 
@@ -1731,16 +1730,14 @@ msgstr "Ja"
 #: ../lib/metaboxes.php:337 ../lib/metaboxes.php:452 ../lib/metaboxes.php:525
 #: ../lib/metaboxes.php:585 ../lib/metaboxes.php:637 ../lib/metaboxes.php:664
 #: ../lib/metaboxes.php:723 ../lib/metaboxes.php:773 ../lib/metaboxes.php:807
-#: ../lib/metaboxes.php:1000 ../lib/metaboxes.php:1069
-#: ../lib/metaboxes.php:1138 ../lib/metaboxes.php:1166
-#: ../lib/metaboxes.php:1182 ../lib/metaboxes.php:1191
+#: ../lib/metaboxes.php:1000 ../lib/metaboxes.php:1069 ../lib/metaboxes.php:1138
+#: ../lib/metaboxes.php:1166 ../lib/metaboxes.php:1182 ../lib/metaboxes.php:1191
 #: ../lib/metaboxes.php:1290
 msgid "No"
 msgstr "Nej"
 
 #: ../lib/metaboxes.php:221 ../lib/metaboxes.php:530 ../lib/metaboxes.php:1073
-#: ../lib/metaboxes.php:1143 ../lib/metaboxes.php:1294
-#: ../lib/metaboxes.php:1312
+#: ../lib/metaboxes.php:1143 ../lib/metaboxes.php:1294 ../lib/metaboxes.php:1312
 msgid "Choose Sidebar"
 msgstr ""
 
@@ -1815,7 +1812,7 @@ msgstr ""
 
 #: ../lib/metaboxes.php:290 ../lib/metaboxes.php:949
 #: ../themeoptions/options.php:632
-msgid "Kadence Slider"
+msgid "BigCloudCMS Slider"
 msgstr ""
 
 #: ../lib/metaboxes.php:291 ../lib/metaboxes.php:950
@@ -1870,7 +1867,7 @@ msgid "Six Column"
 msgstr ""
 
 #: ../lib/metaboxes.php:313
-msgid "If Revolution, Cyclone or Kadence Slider"
+msgid "If Revolution, Cyclone or BigCloudCMS Slider"
 msgstr ""
 
 #: ../lib/metaboxes.php:314
@@ -2252,7 +2249,7 @@ msgid "Paste Revolution slider alias here (example: slider1)"
 msgstr ""
 
 #: ../lib/metaboxes.php:962
-msgid "If Cyclone or Kadence Slider"
+msgid "If Cyclone or BigCloudCMS Slider"
 msgstr ""
 
 #: ../lib/metaboxes.php:963
@@ -2372,8 +2369,7 @@ msgstr ""
 msgid "Default is 300"
 msgstr ""
 
-#: ../lib/metaboxes.php:1257 ../lib/metaboxes.php:1263
-#: ../lib/metaboxes.php:1269
+#: ../lib/metaboxes.php:1257 ../lib/metaboxes.php:1263 ../lib/metaboxes.php:1269
 msgid "Enter a Location"
 msgstr ""
 
@@ -2402,45 +2398,39 @@ msgid "Optimal Length: Roughly 155 Characters"
 msgstr ""
 
 #: ../lib/metaboxes.php:1347
-msgid "Virtue Custom Tab 01"
+msgid "BigCloudCMS Custom Tab 01"
 msgstr ""
 
-#: ../lib/metaboxes.php:1354 ../lib/metaboxes.php:1386
-#: ../lib/metaboxes.php:1418
+#: ../lib/metaboxes.php:1354 ../lib/metaboxes.php:1386 ../lib/metaboxes.php:1418
 msgid "Tab Title"
 msgstr ""
 
-#: ../lib/metaboxes.php:1355 ../lib/metaboxes.php:1387
-#: ../lib/metaboxes.php:1419
+#: ../lib/metaboxes.php:1355 ../lib/metaboxes.php:1387 ../lib/metaboxes.php:1419
 msgid "This will show on the tab"
 msgstr ""
 
-#: ../lib/metaboxes.php:1360 ../lib/metaboxes.php:1392
-#: ../lib/metaboxes.php:1424
+#: ../lib/metaboxes.php:1360 ../lib/metaboxes.php:1392 ../lib/metaboxes.php:1424
 msgid "Tab Content"
 msgstr ""
 
-#: ../lib/metaboxes.php:1361 ../lib/metaboxes.php:1393
-#: ../lib/metaboxes.php:1425
+#: ../lib/metaboxes.php:1361 ../lib/metaboxes.php:1393 ../lib/metaboxes.php:1425
 msgid "Add Tab Content"
 msgstr ""
 
-#: ../lib/metaboxes.php:1367 ../lib/metaboxes.php:1399
-#: ../lib/metaboxes.php:1431
+#: ../lib/metaboxes.php:1367 ../lib/metaboxes.php:1399 ../lib/metaboxes.php:1431
 msgid "Tab priority"
 msgstr ""
 
-#: ../lib/metaboxes.php:1368 ../lib/metaboxes.php:1400
-#: ../lib/metaboxes.php:1432
+#: ../lib/metaboxes.php:1368 ../lib/metaboxes.php:1400 ../lib/metaboxes.php:1432
 msgid "This will determine where the tab is shown (e.g. 20)"
 msgstr ""
 
 #: ../lib/metaboxes.php:1379
-msgid "Virtue Custom Tab 02"
+msgid "BigCloudCMS Custom Tab 02"
 msgstr ""
 
 #: ../lib/metaboxes.php:1411
-msgid "Virtue Custom Tab 03"
+msgid "BigCloudCMS Custom Tab 03"
 msgstr ""
 
 #: ../lib/post-types.php:5 ../lib/post-types.php:17 ../lib/widgets.php:1021
@@ -2632,8 +2622,8 @@ msgstr ""
 msgid "New Group Name"
 msgstr ""
 
-#: ../lib/post-types.php:145 ../lib/post-types.php:146
-#: ../lib/post-types.php:157 ../lib/post-types.php:178
+#: ../lib/post-types.php:145 ../lib/post-types.php:146 ../lib/post-types.php:157
+#: ../lib/post-types.php:178
 msgid "Staff"
 msgstr ""
 
@@ -2678,7 +2668,7 @@ msgid "Adds a gallery to any widget area."
 msgstr ""
 
 #: ../lib/premium_widgets.php:11
-msgid "Virtue: Gallery"
+msgid "BigCloudCMS: Gallery"
 msgstr ""
 
 #: ../lib/premium_widgets.php:63
@@ -2799,7 +2789,7 @@ msgid "Adds a carousel to any widget area"
 msgstr ""
 
 #: ../lib/premium_widgets.php:149
-msgid "Virtue: Carousel"
+msgid "BigCloudCMS: Carousel"
 msgstr ""
 
 #: ../lib/premium_widgets.php:208 ../themeoptions/options.php:3639
@@ -2870,7 +2860,7 @@ msgid "Adds a info box with icon options"
 msgstr ""
 
 #: ../lib/premium_widgets.php:317
-msgid "Virtue: Info Box"
+msgid "BigCloudCMS: Info Box"
 msgstr ""
 
 #: ../lib/premium_widgets.php:386 ../lib/premium_widgets.php:673
@@ -2927,7 +2917,7 @@ msgid "Adds a google map to a widget area"
 msgstr ""
 
 #: ../lib/premium_widgets.php:466
-msgid "Virtue: Google Map"
+msgid "BigCloudCMS: Google Map"
 msgstr ""
 
 #: ../lib/premium_widgets.php:523
@@ -2980,8 +2970,8 @@ msgstr ""
 
 #: ../lib/premium_widgets.php:590
 msgid ""
-"Load Core Google Scripts? (Only turn this off if this is the second+ map on "
-"a page)"
+"Load Core Google Scripts? (Only turn this off if this is the second+ map on a "
+"page)"
 msgstr ""
 
 #: ../lib/premium_widgets.php:601
@@ -2989,7 +2979,7 @@ msgid "Adds a simple call to action"
 msgstr ""
 
 #: ../lib/premium_widgets.php:602
-msgid "Virtue: Call to Action"
+msgid "BigCloudCMS: Call to Action"
 msgstr ""
 
 #: ../lib/premium_widgets.php:671
@@ -3045,7 +3035,7 @@ msgid "Adds an image background with text, link and hover effect."
 msgstr ""
 
 #: ../lib/premium_widgets.php:750
-msgid "Virtue: Image Menu Item"
+msgid "BigCloudCMS: Image Menu Item"
 msgstr ""
 
 #: ../lib/premium_widgets.php:813
@@ -3073,7 +3063,7 @@ msgid "Adds an column with an image beside a content field."
 msgstr ""
 
 #: ../lib/premium_widgets.php:867
-msgid "Virtue: Split Content"
+msgid "BigCloudCMS: Split Content"
 msgstr ""
 
 #: ../lib/premium_widgets.php:946
@@ -3235,7 +3225,7 @@ msgid "Use this widget to add a Vcard to your site"
 msgstr ""
 
 #: ../lib/widgets.php:206
-msgid "Virtue: Contact/Vcard"
+msgid "BigCloudCMS: Contact/Vcard"
 msgstr ""
 
 #: ../lib/widgets.php:286
@@ -3279,7 +3269,7 @@ msgid "Simple way to add Social Icons"
 msgstr ""
 
 #: ../lib/widgets.php:331
-msgid "Virtue: Social Links"
+msgid "BigCloudCMS: Social Links"
 msgstr ""
 
 #: ../lib/widgets.php:446
@@ -3359,7 +3349,7 @@ msgid "This shows the most recent posts on your site with a thumbnail"
 msgstr ""
 
 #: ../lib/widgets.php:530
-msgid "Virtue: Recent Posts"
+msgid "BigCloudCMS: Recent Posts"
 msgstr ""
 
 #: ../lib/widgets.php:543 ../templates/recentblog-carousel.php:8
@@ -3383,7 +3373,7 @@ msgid "This shows a slider with your testimonials"
 msgstr ""
 
 #: ../lib/widgets.php:635
-msgid "Virtue: Testimonial Carousel"
+msgid "BigCloudCMS: Testimonial Carousel"
 msgstr ""
 
 #: ../lib/widgets.php:802
@@ -3436,7 +3426,7 @@ msgid ""
 msgstr ""
 
 #: ../lib/widgets.php:912
-msgid "Virtue: Post Grid"
+msgid "BigCloudCMS: Post Grid"
 msgstr ""
 
 #: ../lib/widgets.php:1018
@@ -3460,7 +3450,7 @@ msgid "This allows for an image and a simple about text."
 msgstr ""
 
 #: ../lib/widgets.php:1042
-msgid "Virtue: Image"
+msgid "BigCloudCMS: Image"
 msgstr ""
 
 #: ../lib/widgets.php:1101
@@ -3646,8 +3636,8 @@ msgstr ""
 
 #: ../themeoptions/options.php:74
 msgid ""
-"Thank you for using the Virtue Theme by <a href=\"http://kadencethemes.com/"
-"\" target=\"_blank\">Kadence Themes</a>."
+"Thank you for using the BigCloudCMS Theme by <a href=\"http://bigcloudcms.com/"
+"\" target=\"_blank\">BigCloudCMS</a>."
 msgstr ""
 
 #: ../themeoptions/options.php:127
@@ -3655,7 +3645,7 @@ msgid "Main Settings"
 msgstr ""
 
 #: ../themeoptions/options.php:130
-msgid "Welcome to Virtue Theme Options"
+msgid "Welcome to BigCloudCMS Theme Options"
 msgstr ""
 
 #: ../themeoptions/options.php:131
@@ -4001,11 +3991,11 @@ msgid "Choose your Revolution Slider Here"
 msgstr ""
 
 #: ../themeoptions/options.php:649
-msgid "If Kadence Slider"
+msgid "If BigCloudCMS Slider"
 msgstr ""
 
 #: ../themeoptions/options.php:650
-msgid "Choose your Kadence Slider Here"
+msgid "Choose your BigCloudCMS Slider Here"
 msgstr ""
 
 #: ../themeoptions/options.php:660
@@ -4608,8 +4598,8 @@ msgstr ""
 #: ../themeoptions/options.php:1544
 msgid ""
 "This adds an dynamic filter to the shop page. NOTE this filter is only "
-"designed to filter what is visible on the page. It does not act as a menu "
-"and query products from multiple pages."
+"designed to filter what is visible on the page. It does not act as a menu and "
+"query products from multiple pages."
 msgstr ""
 
 #: ../themeoptions/options.php:1550
@@ -4619,8 +4609,8 @@ msgstr ""
 #: ../themeoptions/options.php:1551
 msgid ""
 "This adds an dynamic filter to Category pages. NOTE this filter is only "
-"designed to filter what is visible on the page. It does not act as a menu "
-"and query products from multiple pages."
+"designed to filter what is visible on the page. It does not act as a menu and "
+"query products from multiple pages."
 msgstr ""
 
 #: ../themeoptions/options.php:1557
@@ -4636,8 +4626,7 @@ msgid "Show toggle buttons for list/grid on shop page"
 msgstr ""
 
 #: ../themeoptions/options.php:1565
-msgid ""
-"Adds two icons for toggling between a grid and list layout on shop page."
+msgid "Adds two icons for toggling between a grid and list layout on shop page."
 msgstr ""
 
 #: ../themeoptions/options.php:1571
@@ -4836,8 +4825,7 @@ msgstr ""
 
 #: ../themeoptions/options.php:1833
 msgid ""
-"This determines if the image and product title layout on single product "
-"pages."
+"This determines if the image and product title layout on single product pages."
 msgstr ""
 
 #: ../themeoptions/options.php:1843
@@ -5071,8 +5059,8 @@ msgstr ""
 
 #: ../themeoptions/options.php:2157
 msgid ""
-"Choose to show or hide previous and next post links in the footer of a "
-"single post."
+"Choose to show or hide previous and next post links in the footer of a single "
+"post."
 msgstr ""
 
 #: ../themeoptions/options.php:2163
@@ -5825,8 +5813,8 @@ msgstr ""
 
 #: ../themeoptions/options.php:3337
 msgid ""
-"This sets the link for your main blog page, for breadcrumbs. Use only if "
-"your blog page is not your home page."
+"This sets the link for your main blog page, for breadcrumbs. Use only if your "
+"blog page is not your home page."
 msgstr ""
 
 #: ../themeoptions/options.php:3342
@@ -5990,7 +5978,7 @@ msgid "Wordpress Galleries"
 msgstr ""
 
 #: ../themeoptions/options.php:3493
-msgid "Enable Virtue Galleries to override Wordpress"
+msgid "Enable BigCloudCMS Galleries to override Wordpress"
 msgstr ""
 
 #: ../themeoptions/options.php:3494
@@ -6000,7 +5988,7 @@ msgid ""
 msgstr ""
 
 #: ../themeoptions/options.php:3500
-msgid "Use Masonry Feature on Virtue Galleries"
+msgid "Use Masonry Feature on BigCloudCMS Galleries"
 msgstr ""
 
 #: ../themeoptions/options.php:3501
@@ -6008,7 +5996,7 @@ msgid "This allows for dynamic gallery grids with images of different height"
 msgstr ""
 
 #: ../themeoptions/options.php:3507
-msgid "Show captions on Virtue Galleries"
+msgid "Show captions on BigCloudCMS Galleries"
 msgstr ""
 
 #: ../themeoptions/options.php:3508
@@ -6060,12 +6048,12 @@ msgid "Paste your Google Analytics Tracking ID Here. (example: UA-########-#)"
 msgstr ""
 
 #: ../themeoptions/options.php:3555
-msgid "Turn on Virtue SEO?"
+msgid "Turn on BigCloudCMS SEO?"
 msgstr ""
 
 #: ../themeoptions/options.php:3556
 msgid ""
-"Choose if you would like to use Virtue Theme SEO options, for full seo "
+"Choose if you would like to use BigCloudCMS Theme SEO options, for full seo "
 "support use a plugin"
 msgstr ""
 
@@ -6186,8 +6174,7 @@ msgstr ""
 msgid "Filter Products"
 msgstr ""
 
-#: ../woocommerce/archive-product.php:116
-#: ../woocommerce/archive-product.php:139
+#: ../woocommerce/archive-product.php:116 ../woocommerce/archive-product.php:139
 msgid "Show"
 msgstr ""
 
@@ -6230,8 +6217,7 @@ msgstr ""
 
 #~ msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
 #~ msgstr ""
-#~ "Du skal v&#230;re <a href=\"%s\">logget ind</a> for at skrive en "
-#~ "kommentar."
+#~ "Du skal v&#230;re <a href=\"%s\">logget ind</a> for at skrive en kommentar."
 
 #~ msgid "Log out of this account"
 #~ msgstr "Log ud fra denne konto"
@@ -6266,8 +6252,8 @@ msgstr ""
 #~ "You must first <a href=\"%s\">log in</a>, and then you can create a new "
 #~ "site."
 #~ msgstr ""
-#~ "Du skal først <a href=\"%s\">logge ind</a>. Derefter kan du oprette et "
-#~ "nyt websted."
+#~ "Du skal først <a href=\"%s\">logge ind</a>. Derefter kan du oprette et nyt "
+#~ "websted."
 
 #~ msgid "Registration has been disabled."
 #~ msgstr "Registrering er slået fra."
@@ -6278,8 +6264,8 @@ msgstr ""
 #~ "\">Options page</a>."
 #~ msgstr ""
 #~ "Hej, administrator! Du tillader i øjeblikket registreringer til &#8220;"
-#~ "%s&#8221;. For at ændre eller deaktivere registreringer, skal du gå til "
-#~ "<a href=\"%s\">Indstillinger</a>."
+#~ "%s&#8221;. For at ændre eller deaktivere registreringer, skal du gå til <a "
+#~ "href=\"%s\">Indstillinger</a>."
 
 #~ msgctxt "Multisite active signup type"
 #~ msgid "user"
@@ -6319,8 +6305,8 @@ msgstr ""
 #~ "grund af processer uden for vores kontrol."
 
 #~ msgid ""
-#~ "If you haven&#8217;t received your email yet, there are a number of "
-#~ "things you can do:"
+#~ "If you haven&#8217;t received your email yet, there are a number of things "
+#~ "you can do:"
 #~ msgstr ""
 #~ "Hvis du endnu ikke har modtaget din e-mail, er der forskellige ting, du "
 #~ "kan gøre:"
@@ -6329,8 +6315,8 @@ msgstr ""
 #~ msgstr "Venter du stadig på din e-mail?"
 
 #~ msgid ""
-#~ "If you do not activate your site within two days, you will have to sign "
-#~ "up again."
+#~ "If you do not activate your site within two days, you will have to sign up "
+#~ "again."
 #~ msgstr ""
 #~ "Hvis du ikke aktiverer dit websted indenfor to dage, skal du tilmelde dig "
 #~ "påny."
@@ -6339,8 +6325,8 @@ msgstr ""
 #~ "But, before you can start using your site, <strong>you must activate it</"
 #~ "strong>."
 #~ msgstr ""
-#~ "Men før du kan begynde at bruge dit websted, <strong>skal du aktivere "
-#~ "det</strong>."
+#~ "Men før du kan begynde at bruge dit websted, <strong>skal du aktivere det</"
+#~ "strong>."
 
 #~ msgid "Congratulations! Your new site, %s, is almost ready."
 #~ msgstr "Tillykke! Dit nye websted, %s, er næsten på plads."
@@ -6515,8 +6501,8 @@ msgstr ""
 #~ "Session expired. Please log in again. You will not move away from this "
 #~ "page."
 #~ msgstr ""
-#~ "Din session er udløbet. Log venligst ind igen. Du vil ikke blive sendt "
-#~ "væk fra denne side."
+#~ "Din session er udløbet. Log venligst ind igen. Du vil ikke blive sendt væk "
+#~ "fra denne side."
 
 #~ msgid "You have logged in successfully."
 #~ msgstr "Du er logget ind."
@@ -6537,9 +6523,9 @@ msgstr ""
 #~ "help, please see <a href=\"%1$s\">this documentation</a> or try the <a "
 #~ "href=\"%2$s\">support forums</a>."
 #~ msgstr ""
-#~ "<strong>FEJL</strong>: Cookies er blokeret på grund af uventet output. "
-#~ "For hjælp, se venligst <a href=\"%1$s\">denne dokumentation</a> eller "
-#~ "prøv <a href=\"%2$s\">support-forummet</a>."
+#~ "<strong>FEJL</strong>: Cookies er blokeret på grund af uventet output. For "
+#~ "hjælp, se venligst <a href=\"%1$s\">denne dokumentation</a> eller prøv <a "
+#~ "href=\"%2$s\">support-forummet</a>."
 
 #~ msgid "Lost your password?"
 #~ msgstr "Mistet din adgangskode?"
@@ -6587,8 +6573,8 @@ msgstr ""
 #~ "Please enter your username or email address. You will receive a link to "
 #~ "create a new password via email."
 #~ msgstr ""
-#~ "Indtast venligst dit brugernavn eller din e-mailadresse. Du vil modtage "
-#~ "et link til at oprette en ny adgangskode via e-mail."
+#~ "Indtast venligst dit brugernavn eller din e-mailadresse. Du vil modtage et "
+#~ "link til at oprette en ny adgangskode via e-mail."
 
 #~ msgid "Lost Password"
 #~ msgstr "Mistet adgangskode"
@@ -6610,8 +6596,7 @@ msgstr ""
 
 #~ msgid "To reset your password, visit the following address:"
 #~ msgstr ""
-#~ "Hvis du vil nulstille din adgangskode, skal du besøge den følgende "
-#~ "adresse:"
+#~ "Hvis du vil nulstille din adgangskode, skal du besøge den følgende adresse:"
 
 #~ msgid ""
 #~ "If this was a mistake, just ignore this email and nothing will happen."
@@ -6639,8 +6624,7 @@ msgstr ""
 #~ "mailadresse"
 
 #~ msgid "<strong>ERROR</strong>: Enter a username or e-mail address."
-#~ msgstr ""
-#~ "<strong>FEJL</strong>: Indtast et brugernavn eller en e-mailadresse."
+#~ msgstr "<strong>FEJL</strong>: Indtast et brugernavn eller en e-mailadresse."
 
 #~ msgid "&larr; Back to %s"
 #~ msgstr "&larr; Tilbage til %s"
@@ -6656,8 +6640,8 @@ msgstr ""
 
 #~ msgid ""
 #~ "You can create a <code>wp-config.php</code> file through a web interface, "
-#~ "but this doesn't work for all server setups. The safest way is to "
-#~ "manually create the file."
+#~ "but this doesn't work for all server setups. The safest way is to manually "
+#~ "create the file."
 #~ msgstr ""
 #~ "Du kan lave en <code>wp-config.php</code> via en onlineformular, men det "
 #~ "virker ikke på alle serveropsætninger. Den mest sikre måde er at lave "
@@ -6695,9 +6679,9 @@ msgstr ""
 #~ "\t<li>Are you sure that you have typed the correct hostname?</li>\n"
 #~ "\t<li>Are you sure that the database server is running?</li>\n"
 #~ "</ul>\n"
-#~ "<p>If you're unsure what these terms mean you should probably contact "
-#~ "your host. If you still need help you can always visit the <a "
-#~ "href='https://wordpress.org/support/'>WordPress Support Forums</a>.</p>\n"
+#~ "<p>If you're unsure what these terms mean you should probably contact your "
+#~ "host. If you still need help you can always visit the <a href='https://"
+#~ "wordpress.org/support/'>WordPress Support Forums</a>.</p>\n"
 #~ msgstr ""
 #~ "\n"
 #~ "<h1>Fejl ved etablering af forbindelse til database</h1>\n"
@@ -6711,9 +6695,9 @@ msgstr ""
 #~ "\t<li>Er du sikker på, at du har indtastet det rigtige hostname?</li>\n"
 #~ "\t<li>Er du sikker på, at databaseserveren kører?</li>\n"
 #~ "</ul>\n"
-#~ "<p>Hvis du er i tvivl om, hvad dette betyder, bør du kontakte din "
-#~ "udbyder. Hvis du stadig har brug for hjælp, kan du altid besøge<a "
-#~ "href='https://wordpress.org/support/'>WordPress Support Fora</a>.</p>\n"
+#~ "<p>Hvis du er i tvivl om, hvad dette betyder, bør du kontakte din udbyder. "
+#~ "Hvis du stadig har brug for hjælp, kan du altid besøge<a href='https://"
+#~ "wordpress.org/support/'>WordPress Support Fora</a>.</p>\n"
 
 #~ msgid "WordPress database error %1$s for query %2$s"
 #~ msgstr "WordPress-databasefejl %1$s for foresp&#248;rgslen %2$s"
@@ -6734,8 +6718,8 @@ msgstr ""
 #~ "code> database.</p>\n"
 #~ "<ul>\n"
 #~ "<li>Are you sure it exists?</li>\n"
-#~ "<li>Does the user <code>%2$s</code> have permission to use the <code>"
-#~ "%1$s</code> database?</li>\n"
+#~ "<li>Does the user <code>%2$s</code> have permission to use the <code>%1$s</"
+#~ "code> database?</li>\n"
 #~ "<li>On some systems the name of your database is prefixed with your "
 #~ "username, so it would be like <code>username_%1$s</code>. Could that be "
 #~ "the problem?</li>\n"
@@ -6745,9 +6729,9 @@ msgstr ""
 #~ "\"https://wordpress.org/support/\">WordPress Support Forums</a>.</p>"
 #~ msgstr ""
 #~ "<h1>Kan ikke vælge database</h1>\n"
-#~ "<p>Vi var i stand til at tilslutte til database serveren (det vil sige, "
-#~ "at brugernavn og password matcher), men ikke i stand til at vælge <code>"
-#~ "%1$s</code> databasen.</p>\n"
+#~ "<p>Vi var i stand til at tilslutte til database serveren (det vil sige, at "
+#~ "brugernavn og password matcher), men ikke i stand til at vælge <code>%1$s</"
+#~ "code> databasen.</p>\n"
 #~ "<ul>\n"
 #~ "<li>Er du sikker på den eksisterer?</li>\n"
 #~ "<li>Har brugeren <code>%2$s</code> rettigheder til at bruge <code>%1$s</"
@@ -6781,11 +6765,11 @@ msgstr ""
 #~ msgstr "Der er ingen indstillinger for denne widget."
 
 #~ msgid ""
-#~ "<strong>ERROR</strong>: Couldn&#8217;t register you&hellip; please "
-#~ "contact the <a href=\"mailto:%s\">webmaster</a> !"
+#~ "<strong>ERROR</strong>: Couldn&#8217;t register you&hellip; please contact "
+#~ "the <a href=\"mailto:%s\">webmaster</a> !"
 #~ msgstr ""
-#~ "<strong>FEJL</strong>: Kunne ikke registrere dig &hellip; kontakt "
-#~ "venligst <a href=\"mailto:%s\">webmasteren</a>!"
+#~ "<strong>FEJL</strong>: Kunne ikke registrere dig &hellip; kontakt venligst "
+#~ "<a href=\"mailto:%s\">webmasteren</a>!"
 
 #~ msgid ""
 #~ "<strong>ERROR</strong>: This email is already registered, please choose "
@@ -6801,8 +6785,8 @@ msgstr ""
 #~ msgstr "<strong>FEJL</strong>: Skriv venligst din e-mailadresse."
 
 #~ msgid ""
-#~ "<strong>ERROR</strong>: This username is already registered. Please "
-#~ "choose another one."
+#~ "<strong>ERROR</strong>: This username is already registered. Please choose "
+#~ "another one."
 #~ msgstr ""
 #~ "<strong>FEJL</strong>: Brugernavnet er optaget. Vælg venligst et andet."
 
@@ -6825,8 +6809,8 @@ msgstr ""
 #~ "\" ? $ % ^ &amp; )."
 #~ msgstr ""
 #~ "Tip: Denne adgangskode bør være på mindst syv tegn. For at gøre det "
-#~ "stærkere kan du bruge store og små bogstaver, tal og symboler såsom ! "
-#~ "\" ? $ % ^ &amp; )."
+#~ "stærkere kan du bruge store og små bogstaver, tal og symboler såsom ! \" ? "
+#~ "$ % ^ &amp; )."
 
 #~ msgid "Jabber / Google Talk"
 #~ msgstr "Jabber / Google Talk"
@@ -6855,8 +6839,8 @@ msgstr ""
 #~ "%1$s</strong> is incorrect. <a href=\"%2$s\">Lost your password?</a>"
 #~ msgstr ""
 #~ "<strong>FEJL</strong>: Adgangskoden, du indtastede for brugernavnet, "
-#~ "<strong>%1$s</strong>, er forkert. <a href=\"%2$s\">Mistet din "
-#~ "adgangskode?</a>"
+#~ "<strong>%1$s</strong>, er forkert. <a href=\"%2$s\">Mistet din adgangskode?"
+#~ "</a>"
 
 #~ msgid ""
 #~ "<strong>ERROR</strong>: Invalid username. <a href=\"%s\">Lost your "
@@ -6895,14 +6879,14 @@ msgstr ""
 #~ "Kontakt venligst den serveransvarlige.)"
 
 #~ msgid ""
-#~ "An unexpected error occurred. Something may be wrong with WordPress.org "
-#~ "or this server&#8217;s configuration. If you continue to have problems, "
+#~ "An unexpected error occurred. Something may be wrong with WordPress.org or "
+#~ "this server&#8217;s configuration. If you continue to have problems, "
 #~ "please try the <a href=\"https://wordpress.org/support/\">support forums</"
 #~ "a>."
 #~ msgstr ""
 #~ "Der opstod en uventet fejl. Der er måske noget galt med WordPress.org "
-#~ "eller denne servers konfiguration. Hvis fejlen fortsætter, så prøv <a "
-#~ "href=\"https://wordpress.org/support/\">support forummet</a>."
+#~ "eller denne servers konfiguration. Hvis fejlen fortsætter, så prøv <a href="
+#~ "\"https://wordpress.org/support/\">support forummet</a>."
 
 #~ msgid "Customizer"
 #~ msgstr "Tilpasser"
@@ -6933,8 +6917,8 @@ msgstr ""
 
 #~ msgid ""
 #~ "You have searched the <a href=\"%1$s/\">%2$s</a> blog archives for "
-#~ "<strong>&#8216;%3$s&#8217;</strong>. If you are unable to find anything "
-#~ "in these search results, you can try one of these links."
+#~ "<strong>&#8216;%3$s&#8217;</strong>. If you are unable to find anything in "
+#~ "these search results, you can try one of these links."
 #~ msgstr ""
 #~ "Du har søgt i <a href=\"%1$s/\">%2$s</a> blogarkiverne for <strong>&#8216;"
 #~ "%3$s&#8217;</strong>. Hvis din søgning ikke gav resultat, kan du prøve et "
@@ -7002,8 +6986,7 @@ msgstr ""
 #~ msgid "One Response to %s"
 #~ msgstr "Ét svar til %s"
 
-#~ msgid ""
-#~ "This post is password protected. Enter the password to view comments."
+#~ msgid "This post is password protected. Enter the password to view comments."
 #~ msgstr ""
 #~ "Dette indlæg er adgangskodebeskyttet. Indtast adgangskoden for at læse "
 #~ "kommentarer."
@@ -7045,12 +7028,11 @@ msgstr ""
 
 #~ msgid ""
 #~ "Line and paragraph breaks automatic, e-mail address never displayed, "
-#~ "<acronym title=\"Hypertext Markup Language\">HTML</acronym> allowed: "
-#~ "<code>%s</code>"
+#~ "<acronym title=\"Hypertext Markup Language\">HTML</acronym> allowed: <code>"
+#~ "%s</code>"
 #~ msgstr ""
 #~ "Linie og afsnit ombrydes automatisk, e-mailadresse vises aldrig, <acronym "
-#~ "title=\"Hypertext Markup Language\">HTML</acronym> tilladt: <code>%s</"
-#~ "code>"
+#~ "title=\"Hypertext Markup Language\">HTML</acronym> tilladt: <code>%s</code>"
 
 #~ msgid "Leave a comment"
 #~ msgstr "Skriv en kommentar"
@@ -7259,13 +7241,13 @@ msgstr ""
 #~ msgid ""
 #~ "Could not load the preview image. Please reload the page and try again."
 #~ msgstr ""
-#~ "Kunne ikke hente billedet til forhåndsvisning. Genindlæs venligst siden "
-#~ "og prøv igen."
+#~ "Kunne ikke hente billedet til forhåndsvisning. Genindlæs venligst siden og "
+#~ "prøv igen."
 
 #~ msgid "Plugin updates may not complete if you navigate away from this page."
 #~ msgstr ""
-#~ "Plugin-opdateringerne vil muligvis ikke gennemføres, hvis du navigerer "
-#~ "væk fra denne side."
+#~ "Plugin-opdateringerne vil muligvis ikke gennemføres, hvis du navigerer væk "
+#~ "fra denne side."
 
 #~ msgid "Update completed successfully."
 #~ msgstr "Opdatering færdig."
@@ -7480,8 +7462,7 @@ msgstr ""
 #~ msgstr "Der opstod en fejl under overførslen. Prøv venligst igen senere."
 
 #~ msgid "This is larger than the maximum size. Please try another."
-#~ msgstr ""
-#~ "Dette er større end den maksimale størrelse. Prøv venligst en anden."
+#~ msgstr "Dette er større end den maksimale størrelse. Prøv venligst en anden."
 
 #~ msgid "Memory exceeded. Please try another smaller file."
 #~ msgstr "Hukommelse overskredet. Prøv en anden og mindre fil."
@@ -7518,8 +7499,8 @@ msgstr ""
 #~ msgstr "Næste &gt;"
 
 #~ msgid ""
-#~ "Your session has expired. You can log in again from this page or go to "
-#~ "the login page."
+#~ "Your session has expired. You can log in again from this page or go to the "
+#~ "login page."
 #~ msgstr ""
 #~ "Din session er udløbet. Du kan logge ind igen fra denne side eller gå til "
 #~ "log-ind-siden."
@@ -7601,15 +7582,15 @@ msgstr ""
 #~ "In <code>%1$s</code>, use the <code>%2$s</code> method, not the <code>"
 #~ "%3$s</code> function. See %4$s."
 #~ msgstr ""
-#~ "I <code>%1$s</code>, brug metoden <code>%2$s</code>, ikke funktionen "
-#~ "<code>%3$s</code>. Se %4$s."
+#~ "I <code>%1$s</code>, brug metoden <code>%2$s</code>, ikke funktionen <code>"
+#~ "%3$s</code>. Se %4$s."
 
 #~ msgid ""
 #~ "Conditional query tags do not work before the query is run. Before then, "
 #~ "they always return false."
 #~ msgstr ""
-#~ "'Conditional query tags' virker ikke før en 'query' sættes i gang. Før "
-#~ "det vil de tolkes som falske."
+#~ "'Conditional query tags' virker ikke før en 'query' sættes i gang. Før det "
+#~ "vil de tolkes som falske."
 
 #~ msgctxt "tag delimiter"
 #~ msgid ","
@@ -7875,8 +7856,8 @@ msgstr ""
 #~ "This content is password protected. To view it please enter your password "
 #~ "below:"
 #~ msgstr ""
-#~ "Dette indhold er adgangskodebeskyttet. For at se det, indtast venligst "
-#~ "din adgangskode nedenfor:"
+#~ "Dette indhold er adgangskodebeskyttet. For at se det, indtast venligst din "
+#~ "adgangskode nedenfor:"
 
 #~ msgid "Home"
 #~ msgstr "Forside"
@@ -8068,8 +8049,7 @@ msgstr ""
 #~ "parameter."
 
 #~ msgid "<strong>ERROR</strong>: Invalid username or incorrect password."
-#~ msgstr ""
-#~ "<strong>FEJL</strong>: Ugyldigt brugernavn eller forkert adgangskode"
+#~ msgstr "<strong>FEJL</strong>: Ugyldigt brugernavn eller forkert adgangskode"
 
 #~ msgid "%s is a protected WP option and may not be modified"
 #~ msgstr "%s er en beskyttet WP-indstilling, som ikke m&#229; &#230;ndres"
@@ -8087,8 +8067,8 @@ msgstr ""
 #~ msgstr "Det angivne objekt-ID hører ikke til et menuelement."
 
 #~ msgid ""
-#~ "The menu name <strong>%s</strong> conflicts with another menu name. "
-#~ "Please try another."
+#~ "The menu name <strong>%s</strong> conflicts with another menu name. Please "
+#~ "try another."
 #~ msgstr ""
 #~ "Navnet på menuen <strong>%s</strong> er i konflikt med et eksisterende "
 #~ "menunavn. Prøv et andet."
@@ -8097,8 +8077,8 @@ msgstr ""
 #~ "If you&#8217;re still stuck with this message, then check that your "
 #~ "database contains the following tables:"
 #~ msgstr ""
-#~ "Hvis du stadigvæk får denne besked, så tjek, at din database indeholder "
-#~ "de følgende tabeller:"
+#~ "Hvis du stadigvæk får denne besked, så tjek, at din database indeholder de "
+#~ "følgende tabeller:"
 
 #~ msgid ""
 #~ "Read the <a target=\"_blank\" href=\"https://codex.wordpress.org/"
@@ -8120,9 +8100,9 @@ msgstr ""
 #~ "%2$s i databasen %3$s. Er dette korrekt?"
 
 #~ msgid ""
-#~ "<strong>Database tables are missing.</strong> This means that MySQL is "
-#~ "not running, WordPress was not installed properly, or someone deleted %s. "
-#~ "You really should look at your database now."
+#~ "<strong>Database tables are missing.</strong> This means that MySQL is not "
+#~ "running, WordPress was not installed properly, or someone deleted %s. You "
+#~ "really should look at your database now."
 #~ msgstr ""
 #~ "<strong>Database-tabeller mangler.</strong> Dette betyder, at MySQL ikke "
 #~ "kører, at WordPress ikke blev installeret korrekt, eller at %s er blevet "
@@ -8148,8 +8128,7 @@ msgstr ""
 #~ "activating your site, please contact <a href=\"mailto:%1$s\">%1$s</a>."
 #~ msgstr ""
 #~ "Dit websted er endnu ikke blevet aktiveret. Hvis du har problemer med at "
-#~ "aktivere dit websted, så kontakt venligst <a href=\"mailto:%1$s\">%1$s</"
-#~ "a>."
+#~ "aktivere dit websted, så kontakt venligst <a href=\"mailto:%1$s\">%1$s</a>."
 
 #~ msgid "This site is no longer available."
 #~ msgstr "Dette websted er ikke længere tilgængeligt."
@@ -8197,8 +8176,8 @@ msgstr ""
 #~ "An error occurred adding you to this site. Back to the <a href=\"%s"
 #~ "\">homepage</a>."
 #~ msgstr ""
-#~ "En fejl skete i forsøg på at tilføje dig til dette websted. Gå tilbage "
-#~ "til <a href=\"%s\">forsiden</a>."
+#~ "En fejl skete i forsøg på at tilføje dig til dette websted. Gå tilbage til "
+#~ "<a href=\"%s\">forsiden</a>."
 
 #~ msgid "This file is too big. Files must be less than %d KB in size."
 #~ msgstr ""
@@ -8332,8 +8311,7 @@ msgstr ""
 #~ "\n"
 #~ "%s\n"
 #~ "\n"
-#~ "Når du har aktiveret din blog, vil du få *endnu en e-mail* med dit "
-#~ "login.\n"
+#~ "Når du har aktiveret din blog, vil du få *endnu en e-mail* med dit login.\n"
 #~ "\n"
 #~ "Når du har aktiveret dit websted, kan du besøge det her:\n"
 #~ "\n"
@@ -8439,8 +8417,8 @@ msgstr ""
 #~ msgstr "Den anmodede bruger findes ikke."
 
 #~ msgid ""
-#~ "<strong>Conflicting values for the constants VHOST and SUBDOMAIN_INSTALL."
-#~ "</strong> The value of SUBDOMAIN_INSTALL will be assumed to be your "
+#~ "<strong>Conflicting values for the constants VHOST and SUBDOMAIN_INSTALL.</"
+#~ "strong> The value of SUBDOMAIN_INSTALL will be assumed to be your "
 #~ "subdomain configuration setting."
 #~ msgstr ""
 #~ "<strong>Der er værdier i konflikt for konstanterne VHOST og "
@@ -8449,9 +8427,9 @@ msgstr ""
 
 #~ msgid ""
 #~ "The constant <code>VHOST</code> <strong>is deprecated</strong>. Use the "
-#~ "boolean constant <code>SUBDOMAIN_INSTALL</code> in wp-config.php to "
-#~ "enable a subdomain configuration. Use is_subdomain_install() to check "
-#~ "whether a subdomain configuration is enabled."
+#~ "boolean constant <code>SUBDOMAIN_INSTALL</code> in wp-config.php to enable "
+#~ "a subdomain configuration. Use is_subdomain_install() to check whether a "
+#~ "subdomain configuration is enabled."
 #~ msgstr ""
 #~ "Konstanten <code>VHOST</code> <strong>er under udfasning</strong>. Brug "
 #~ "den booleske konstant <code>SUBDOMAIN_INSTALL</code> i wp-config.php til "
@@ -9135,8 +9113,8 @@ msgstr ""
 #~ "Kontakt venligst systemadministratoren."
 
 #~ msgid ""
-#~ "<strong>ERROR</strong>: <code>$table_prefix</code> in <code>wp-config."
-#~ "php</code> can only contain numbers, letters, and underscores."
+#~ "<strong>ERROR</strong>: <code>$table_prefix</code> in <code>wp-config.php</"
+#~ "code> can only contain numbers, letters, and underscores."
 #~ msgstr ""
 #~ "<strong>FEJL</strong>: <code>$table_prefix</code> i <code>wp-config.php</"
 #~ "code> m&#229; kun indeholde tal, bogstaver og underscores."
@@ -9287,8 +9265,8 @@ msgstr ""
 
 #~ msgid ""
 #~ "Rather than reaching for your mouse to click on the toolbar, use these "
-#~ "access keys. Windows and Linux use Ctrl + letter. Macintosh uses Command "
-#~ "+ letter."
+#~ "access keys. Windows and Linux use Ctrl + letter. Macintosh uses Command + "
+#~ "letter."
 #~ msgstr ""
 #~ "I stedet for at r&#230;kke ud efter musen n&#229;r du vil bruge v&#230;"
 #~ "rkt&#248;jslinjen, kan du bruge disse genvejstaster. Windows og Linux "
@@ -9452,15 +9430,15 @@ msgstr ""
 #~ "The %1$s option is deprecated for the family of %2$s functions. Use the "
 #~ "%3$s function instead."
 #~ msgstr ""
-#~ "Indstillingen %1$s er udfaset i familien af %2$s-funktioner. Brug i "
-#~ "stedet funktionen %3$s."
+#~ "Indstillingen %1$s er udfaset i familien af %2$s-funktioner. Brug i stedet "
+#~ "funktionen %3$s."
 
 #~ msgid ""
 #~ "The %1$s option is deprecated for the family of %2$s functions. Use the "
 #~ "%3$s option instead."
 #~ msgstr ""
-#~ "Indstillingen %1$s er udfaset i familien af %2$s-funktioner. Brug i "
-#~ "stedet indstillingen %3$s."
+#~ "Indstillingen %1$s er udfaset i familien af %2$s-funktioner. Brug i stedet "
+#~ "indstillingen %3$s."
 
 #~ msgid "Site Admin"
 #~ msgstr "Webstedsadministrator"
@@ -9519,8 +9497,8 @@ msgstr ""
 #~ "The login page will open in a new window. After logging in you can close "
 #~ "it and return to this page."
 #~ msgstr ""
-#~ "Log-ind-siden vil åbne i et nyt vindue. Når du er logget ind, kan du "
-#~ "lukke det og gå tilbage til denne side."
+#~ "Log-ind-siden vil åbne i et nyt vindue. Når du er logget ind, kan du lukke "
+#~ "det og gå tilbage til denne side."
 
 #~ msgid "Please log in again."
 #~ msgstr "Log venligst ind igen"
@@ -9551,22 +9529,22 @@ msgstr ""
 #~ msgstr "(Denne meddelelse blev tilføjet i version %s)."
 
 #~ msgid ""
-#~ "%1$s was called with an argument that is <strong>deprecated</strong> "
-#~ "since version %2$s with no alternative available."
+#~ "%1$s was called with an argument that is <strong>deprecated</strong> since "
+#~ "version %2$s with no alternative available."
 #~ msgstr ""
 #~ "%1$s blev kaldt med en parameter der er blevet <strong>udfaset</strong> "
 #~ "siden version %2$s uden noget alternativ."
 
 #~ msgid ""
-#~ "%1$s was called with an argument that is <strong>deprecated</strong> "
-#~ "since version %2$s! %3$s"
+#~ "%1$s was called with an argument that is <strong>deprecated</strong> since "
+#~ "version %2$s! %3$s"
 #~ msgstr ""
 #~ "%1$s blev kaldt med et argument der har været <strong>udfaset</strong> "
 #~ "siden version %2$s! %3$s"
 
 #~ msgid ""
-#~ "%1$s is <strong>deprecated</strong> since version %2$s with no "
-#~ "alternative available."
+#~ "%1$s is <strong>deprecated</strong> since version %2$s with no alternative "
+#~ "available."
 #~ msgstr ""
 #~ "%1$s har v&#230;ret <strong>for&#230;ldet</strong> siden version %2$s, og "
 #~ "der er ingen alternativer."
@@ -9635,8 +9613,7 @@ msgstr ""
 #~ msgstr "%s, %s"
 
 #~ msgid ""
-#~ "The timezone you have entered is not valid. Please select a valid "
-#~ "timezone."
+#~ "The timezone you have entered is not valid. Please select a valid timezone."
 #~ msgstr ""
 #~ "Den tidszone, du har indtastet, er ikke gyldig. Vælg venligst en gyldig "
 #~ "tidszone."
@@ -9649,11 +9626,11 @@ msgstr ""
 #~ "venligst en gyldig URL."
 
 #~ msgid ""
-#~ "The WordPress address you entered did not appear to be a valid URL. "
-#~ "Please enter a valid URL."
+#~ "The WordPress address you entered did not appear to be a valid URL. Please "
+#~ "enter a valid URL."
 #~ msgstr ""
-#~ "Den WordPress-adresse du anførte, er ikke en gyldig URL. Anfør venligst "
-#~ "en gyldig URL."
+#~ "Den WordPress-adresse du anførte, er ikke en gyldig URL. Anfør venligst en "
+#~ "gyldig URL."
 
 #~ msgid ""
 #~ "The email address entered did not appear to be a valid email address. "
@@ -10037,8 +10014,8 @@ msgstr ""
 #~ "This argument has changed to an array to match the behavior of the other "
 #~ "cron functions."
 #~ msgstr ""
-#~ "Dette argument er ændret til et array for at matche opførslen på den "
-#~ "anden cron-funktion."
+#~ "Dette argument er ændret til et array for at matche opførslen på den anden "
+#~ "cron-funktion."
 
 #~ msgid "Could not update comment status"
 #~ msgstr "Kunne ikke opdatere kommentarstatus"
@@ -10135,8 +10112,7 @@ msgstr ""
 #~ msgid "%1$s Comment<span class=\"screen-reader-text\"> on %2$s</span>"
 #~ msgid_plural ""
 #~ "%1$s Comments<span class=\"screen-reader-text\"> on %2$s</span>"
-#~ msgstr[0] ""
-#~ "%1$s kommentar<span class=\"screen-reader-text\"> til %2$s</span>"
+#~ msgstr[0] "%1$s kommentar<span class=\"screen-reader-text\"> til %2$s</span>"
 #~ msgstr[1] ""
 #~ "%1$s kommentarer<span class=\"screen-reader-text\"> til %2$s</span>"
 
@@ -10173,11 +10149,11 @@ msgstr ""
 #~ msgstr "Pingback fra %1$s til %2$s registreret. Lad webbet snakke! :-)"
 
 #~ msgid ""
-#~ "The source URL does not contain a link to the target URL, and so cannot "
-#~ "be used as a source."
+#~ "The source URL does not contain a link to the target URL, and so cannot be "
+#~ "used as a source."
 #~ msgstr ""
-#~ "Kilde-URL'en indeholder ikke et link til destinations-URL'en og kan "
-#~ "derfor ikke bruges som kilde."
+#~ "Kilde-URL'en indeholder ikke et link til destinations-URL'en og kan derfor "
+#~ "ikke bruges som kilde."
 
 #~ msgid "We cannot find a title on that page."
 #~ msgstr "Vi kan ikke finde en titel p&#229; den side."
@@ -10190,12 +10166,11 @@ msgstr ""
 
 #~ msgid ""
 #~ "The source URL and the target URL cannot both point to the same resource."
-#~ msgstr ""
-#~ "Kilde-URL og destinations-URL kan ikke pege p&#229; samme ressource."
+#~ msgstr "Kilde-URL og destinations-URL kan ikke pege p&#229; samme ressource."
 
 #~ msgid ""
-#~ "The specified target URL cannot be used as a target. It either "
-#~ "doesn&#8217;t exist, or it is not a pingback-enabled resource."
+#~ "The specified target URL cannot be used as a target. It either doesn&#8217;"
+#~ "t exist, or it is not a pingback-enabled resource."
 #~ msgstr ""
 #~ "Den angivne URL kan ikke bruges som mål. Enten eksisterer den ikke, eller "
 #~ "også er den ikke pingback klar."
@@ -10283,8 +10258,7 @@ msgstr ""
 #~ msgstr "Ugyldigt indlægs-ID"
 
 #~ msgid "Sorry, you are not allowed to edit this post type."
-#~ msgstr ""
-#~ "Beklager, du har ikke tilladelse til at redigere denne indholdstype."
+#~ msgstr "Beklager, du har ikke tilladelse til at redigere denne indholdstype."
 
 #~ msgid "You do not have permission to upload files."
 #~ msgstr "Du har ikke rettigheder til at uploade filer."
@@ -10321,8 +10295,7 @@ msgstr ""
 #~ msgstr "Ugyldigt kommentar-ID."
 
 #~ msgid "You are not allowed to moderate comments on this site."
-#~ msgstr ""
-#~ "Du har ikke tilladelse til at moderere kommentarer på dette websted."
+#~ msgstr "Du har ikke tilladelse til at moderere kommentarer på dette websted."
 
 #~ msgid ""
 #~ "Sorry, you must be able to edit posts on this site in order to view "
@@ -10448,8 +10421,8 @@ msgstr ""
 #~ msgid ""
 #~ "Sorry, you are not allowed to add a term to one of the given taxonomies."
 #~ msgstr ""
-#~ "Beklager, du har ikke tilladelse til at tilføje en term til en af de "
-#~ "givne taksonomier."
+#~ "Beklager, du har ikke tilladelse til at tilføje en term til en af de givne "
+#~ "taksonomier."
 
 #~ msgid ""
 #~ "Ambiguous term name used in a hierarchical taxonomy. Please use term ID "
@@ -10462,17 +10435,14 @@ msgstr ""
 #~ msgstr "Ugyldigt term-ID"
 
 #~ msgid ""
-#~ "Sorry, you are not allowed to assign a term to one of the given "
-#~ "taxonomies."
+#~ "Sorry, you are not allowed to assign a term to one of the given taxonomies."
 #~ msgstr ""
-#~ "Beklager, du har ikke tilladelse til at tildele en term til en af de "
-#~ "givne taksonomier."
+#~ "Beklager, du har ikke tilladelse til at tildele en term til en af de givne "
+#~ "taksonomier."
 
-#~ msgid ""
-#~ "Sorry, one of the given taxonomies is not supported by the post type."
+#~ msgid "Sorry, one of the given taxonomies is not supported by the post type."
 #~ msgstr ""
-#~ "Beklager, en af de givne taksonomier er ikke understøttet af "
-#~ "indholdstypen."
+#~ "Beklager, en af de givne taksonomier er ikke understøttet af indholdstypen."
 
 #~ msgid "Invalid attachment ID."
 #~ msgstr "Ugyldigt ID på vedhæftet fil."
@@ -10490,16 +10460,15 @@ msgstr ""
 #~ msgstr "Du har ikke tilladelse til at oprette indlæg som som denne bruger."
 
 #~ msgid ""
-#~ "Sorry, you are not allowed to create password protected posts in this "
-#~ "post type"
+#~ "Sorry, you are not allowed to create password protected posts in this post "
+#~ "type"
 #~ msgstr ""
 #~ "Beklager, du har ikke tilladelse til at oprette adgangskodebeskyttede "
 #~ "indlæg af denne indholdstype"
 
 #~ msgid "Sorry, you are not allowed to publish posts in this post type"
 #~ msgstr ""
-#~ "Beklager, du har ikke tilladelse til at udgive indlæg af denne "
-#~ "indholdstype"
+#~ "Beklager, du har ikke tilladelse til at udgive indlæg af denne indholdstype"
 
 #~ msgid "Sorry, you are not allowed to create private posts in this post type"
 #~ msgstr ""
@@ -10627,8 +10596,8 @@ msgstr ""
 #~ msgstr "Stylesheet'et kan ikke læses."
 
 #~ msgid ""
-#~ "ERROR: The themes directory is either empty or doesn&#8217;t exist. "
-#~ "Please check your installation."
+#~ "ERROR: The themes directory is either empty or doesn&#8217;t exist. Please "
+#~ "check your installation."
 #~ msgstr ""
 #~ "FEJL: Temaets mappe er enten tom eller ikke oprettet. Check venligst din "
 #~ "installation."
@@ -10805,12 +10774,12 @@ msgstr ""
 #~ "turning this option off. The editor will clean up text pasted from Word "
 #~ "automatically."
 #~ msgstr ""
-#~ "Hvis du vil indsætte indhold fra Microsoft Word, kan du slå denne "
-#~ "mulighed fra. Editoren vil automatisk formatere kopieret tekst fra Word."
+#~ "Hvis du vil indsætte indhold fra Microsoft Word, kan du slå denne mulighed "
+#~ "fra. Editoren vil automatisk formatere kopieret tekst fra Word."
 
 #~ msgid ""
-#~ "Paste is now in plain text mode. Contents will now be pasted as plain "
-#~ "text until you toggle this option off."
+#~ "Paste is now in plain text mode. Contents will now be pasted as plain text "
+#~ "until you toggle this option off."
 #~ msgstr ""
 #~ "Indsæt er nu i ren tekst tilstand. Indhold vil nu blive indsat som ren "
 #~ "tekst, indtil du slår denne indstilling fra."
@@ -11442,8 +11411,8 @@ msgstr ""
 #~ msgid_plural ""
 #~ "Your theme supports %s menus. Select which menu appears in each location."
 #~ msgstr[0] ""
-#~ "Dit tema understøtter %s menu. Vælg hvilken menu, der skal vises ved "
-#~ "hvert sted."
+#~ "Dit tema understøtter %s menu. Vælg hvilken menu, der skal vises ved hvert "
+#~ "sted."
 #~ msgstr[1] ""
 #~ "Dit tema understøtter %s menuer. Vælg hvilken menu, der skal vises ved "
 #~ "hvert sted."
@@ -11637,12 +11606,11 @@ msgstr ""
 #~ "There are no HTTP transports available which can complete the requested "
 #~ "request."
 #~ msgstr ""
-#~ "Der er ingen HTTP overførsler til rådighed, som kan gennemføre den "
-#~ "ønskede anmodning."
+#~ "Der er ingen HTTP overførsler til rådighed, som kan gennemføre den ønskede "
+#~ "anmodning."
 
 #~ msgid ""
-#~ "Destination directory for file streaming does not exist or is not "
-#~ "writable."
+#~ "Destination directory for file streaming does not exist or is not writable."
 #~ msgstr ""
 #~ "Mappen, der skal bruges til fil-streaming, eksisterer ikke eller også kan "
 #~ "der ikke skrives til den."
@@ -11699,8 +11667,8 @@ msgstr ""
 #~ "Use <code>get_the_author()</code> instead if you do not want the value "
 #~ "echoed."
 #~ msgstr ""
-#~ "Brug <code>get_the_author()</code> i stedet hvis du ikke ønsker at "
-#~ "værdien skrives til skærmen."
+#~ "Brug <code>get_the_author()</code> i stedet hvis du ikke ønsker at værdien "
+#~ "skrives til skærmen."
 
 #~ msgid "XML error: %s at line %d"
 #~ msgstr "XML-fejl: %s i linje %d"
@@ -11850,8 +11818,8 @@ msgstr ""
 #~ "Your account is now activated. <a href=\"%1$s\">View your site</a> or <a "
 #~ "href=\"%2$s\">Log in</a>"
 #~ msgstr ""
-#~ "Din konto er nu aktiveret. <a href=\"%1$s\">Besøg dit websted</a> eller "
-#~ "<a href=\"%2$s\">Log ind</a>"
+#~ "Din konto er nu aktiveret. <a href=\"%1$s\">Besøg dit websted</a> eller <a "
+#~ "href=\"%2$s\">Log ind</a>"
 
 #~ msgid "Password:"
 #~ msgstr "Adgangskode:"
@@ -11873,16 +11841,16 @@ msgstr ""
 #~ "Dit websted på <a href=\"%1$s\">%2$s</a> er aktivt. Du kan logge ind på "
 #~ "webstedet med dit valgte brugernavn &#8220;%3$s&#8221;. Tjek venligst din "
 #~ "e-mail-indbakke til %4$s for at få for instruktioner om brugernavn og "
-#~ "adgangskode. Hvis du ikke modtager en e-mail, så tjek dit spamfilter. "
-#~ "Hvis du stadig ikke har modtaget en e-mail efter en time, så kan du <a "
-#~ "href=\"%5$s\">nulstille din adgangskode</a>."
+#~ "adgangskode. Hvis du ikke modtager en e-mail, så tjek dit spamfilter. Hvis "
+#~ "du stadig ikke har modtaget en e-mail efter en time, så kan du <a href="
+#~ "\"%5$s\">nulstille din adgangskode</a>."
 
 #~ msgid ""
 #~ "Your account has been activated. You may now <a href=\"%1$s\">log in</a> "
-#~ "to the site using your chosen username of &#8220;%2$s&#8221;. Please "
-#~ "check your email inbox at %3$s for your password and login instructions. "
-#~ "If you do not receive an email, please check your junk or spam folder. If "
-#~ "you still do not receive an email within an hour, you can <a href=\"%4$s"
+#~ "to the site using your chosen username of &#8220;%2$s&#8221;. Please check "
+#~ "your email inbox at %3$s for your password and login instructions. If you "
+#~ "do not receive an email, please check your junk or spam folder. If you "
+#~ "still do not receive an email within an hour, you can <a href=\"%4$s"
 #~ "\">reset your password</a>."
 #~ msgstr ""
 #~ "Din konto er nu aktiveret. Du kan <a href=\"%1$s\">logge ind</a> på "

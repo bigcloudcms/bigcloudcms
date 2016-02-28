@@ -4,7 +4,7 @@
  *
  * @link http://twitter.github.com/bootstrap/components.html#media
  */
-class Kadence_Walker_Comment extends Walker_Comment {
+class BigCloudCMS_Walker_Comment extends Walker_Comment {
   function start_lvl(&$output, $depth = 0, $args = array()) {
     $GLOBALS['comment_depth'] = $depth + 1; ?>
     <ul <?php comment_class('media unstyled comment-' . get_comment_ID()); ?>>
@@ -35,18 +35,18 @@ class Kadence_Walker_Comment extends Walker_Comment {
         <h5 class="media-heading"><?php echo get_comment_author_link(); ?></h5>
         <div class="comment-meta">
         <time datetime="<?php echo comment_date('c'); ?>">
-          <?php printf(__('%1$s', 'virtue'), get_comment_date(),  get_comment_time()); ?>
+          <?php printf(__('%1$s', 'bigcloudcms'), get_comment_date(),  get_comment_time()); ?>
         </time>
         |
         <?php comment_reply_link(array_merge($args, array('depth' => $depth, 'max_depth' => $args['max_depth']))); ?>
         
-        <?php edit_comment_link(__('| (Edit)', 'virtue'), '', ''); ?>
+        <?php edit_comment_link(__('| (Edit)', 'bigcloudcms'), '', ''); ?>
         </div>
       </div>
 
       <?php if ($comment->comment_approved == '0') : ?>
         <div class="alert">
-          <?php _e('Your comment is awaiting moderation.', 'virtue'); ?>
+          <?php _e('Your comment is awaiting moderation.', 'bigcloudcms'); ?>
         </div>
       <?php endif; ?>
 
@@ -64,18 +64,18 @@ class Kadence_Walker_Comment extends Walker_Comment {
   }
 }
 
-function kadence_get_avatar($avatar) {
+function bigcloudcms_get_avatar($avatar) {
   $avatar = str_replace("class='avatar", "class='avatar pull-left media-object", $avatar);
   return $avatar;
 }
-add_filter('get_avatar', 'kadence_get_avatar');
+add_filter('get_avatar', 'bigcloudcms_get_avatar');
 
 
-function kadence_custom_comments_before_feilds() {
+function bigcloudcms_custom_comments_before_feilds() {
    echo '<div class="row">';
 }
-add_action ('comment_form_before_fields', 'Kadence_custom_comments_before_feilds', 5);
-function kadence_custom_comments_after_feilds() {
+add_action ('comment_form_before_fields', 'BigCloudCMS_custom_comments_before_feilds', 5);
+function bigcloudcms_custom_comments_after_feilds() {
    echo '</div>';
 }
-add_action ('comment_form_after_fields', 'kadence_custom_comments_after_feilds', 5);
+add_action ('comment_form_after_fields', 'bigcloudcms_custom_comments_after_feilds', 5);

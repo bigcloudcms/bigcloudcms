@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 <div id="content" class="container">
    		<div class="row">
-      <div class="main <?php echo kadence_main_class(); ?>" role="main">
+      <div class="main <?php echo bigcloudcms_main_class(); ?>" role="main">
 
       <?php
 		/**
@@ -30,7 +30,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 
 		<div class="product_header clearfix">
-			<?php if(kadence_display_product_breadcrumbs()) { kadence_breadcrumbs(); } ?>
+			<?php if(bigcloudcms_display_product_breadcrumbs()) { bigcloudcms_breadcrumbs(); } ?>
       	</div>
 		<?php while ( have_posts() ) : the_post(); ?>
 

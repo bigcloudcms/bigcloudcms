@@ -1,37 +1,37 @@
 <div class="sliderclass kad-desktop-slider kt-full-slider-container">
-  <?php  global $virtue_premium; 
-        if(isset($virtue_premium['slider_size'])) {
-          $slideheight = $virtue_premium['slider_size'];
+  <?php  global $bigcloudcms_premium; 
+        if(isset($bigcloudcms_premium['slider_size'])) {
+          $slideheight = $bigcloudcms_premium['slider_size'];
         } else {
           $slideheight = 400;
         }
-        if(isset($virtue_premium['slider_captions'])) {
-          $captions = $virtue_premium['slider_captions'];
+        if(isset($bigcloudcms_premium['slider_captions'])) {
+          $captions = $bigcloudcms_premium['slider_captions'];
         } else {
           $captions = '';
         }
-        if(isset($virtue_premium['home_slider'])) {
-          $slides = $virtue_premium['home_slider'];
+        if(isset($bigcloudcms_premium['home_slider'])) {
+          $slides = $bigcloudcms_premium['home_slider'];
         } else {
           $slides = '';
         }
-        if(isset($virtue_premium['trans_type'])) {
-          $transtype = $virtue_premium['trans_type'];
+        if(isset($bigcloudcms_premium['trans_type'])) {
+          $transtype = $bigcloudcms_premium['trans_type'];
         } else {
           $transtype = 'slide';
         }
-        if(isset($virtue_premium['slider_transtime'])) {
-          $transtime = $virtue_premium['slider_transtime'];
+        if(isset($bigcloudcms_premium['slider_transtime'])) {
+          $transtime = $bigcloudcms_premium['slider_transtime'];
         } else {
           $transtime = '300';
         }
-        if(isset($virtue_premium['slider_autoplay'])) {
-          $autoplay = $virtue_premium['slider_autoplay'];
+        if(isset($bigcloudcms_premium['slider_autoplay'])) {
+          $autoplay = $bigcloudcms_premium['slider_autoplay'];
         } else {
           $autoplay = 'true';
         }
-        if(isset($virtue_premium['slider_pausetime'])) {
-          $pausetime = $virtue_premium['slider_pausetime'];
+        if(isset($bigcloudcms_premium['slider_pausetime'])) {
+          $pausetime = $bigcloudcms_premium['slider_pausetime'];
         } else {
           $pausetime = '7000';
         } ?>

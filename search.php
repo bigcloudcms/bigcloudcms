@@ -3,20 +3,20 @@
       <?php get_template_part('templates/page', 'header');  ?>
     </div><!--container-->
   </div><!--titleclass-->
-  <?php global $virtue_premium; if(kadence_display_sidebar()) {$display_sidebar = true; $fullclass = '';} else {$display_sidebar = false; $fullclass = 'fullwidth';} ?>
+  <?php global $bigcloudcms_premium; if(bigcloudcms_display_sidebar()) {$display_sidebar = true; $fullclass = '';} else {$display_sidebar = false; $fullclass = 'fullwidth';} ?>
     <div id="content" class="container">
       <div class="row">
-      <div class="main <?php echo kadence_main_class(); ?>  <?php echo esc_attr($fullclass);?> postlist" id="ktmain" role="main">
+      <div class="main <?php echo bigcloudcms_main_class(); ?>  <?php echo esc_attr($fullclass);?> postlist" id="ktmain" role="main">
 
 <?php if (!have_posts()) : ?>
   <div class="alert">
-    <?php _e('Sorry, no results were found.', 'virtue'); ?>
+    <?php _e('Sorry, no results were found.', 'bigcloudcms'); ?>
   </div>
   <?php get_search_form(); ?>
 <?php endif; ?>
 
 <?php
-if(isset($virtue_premium['search_layout']) && $virtue_premium['search_layout'] == 'singlecolumn') {
+if(isset($bigcloudcms_premium['search_layout']) && $bigcloudcms_premium['search_layout'] == 'singlecolumn') {
   if($display_sidebar){
                while (have_posts()) : the_post();
                     get_template_part('templates/content', get_post_format());
@@ -26,8 +26,8 @@ if(isset($virtue_premium['search_layout']) && $virtue_premium['search_layout'] =
                     get_template_part('templates/content', 'fullwidth');
                 endwhile;
              }
-} else if(isset($virtue_premium['search_layout']) && $virtue_premium['search_layout'] == 'simple_grid') { 
-  if(isset($virtue_premium['virtue_animate_in']) && $virtue_premium['virtue_animate_in'] == 1) {$animate = 1;} else {$animate = 0;} ?>
+} else if(isset($bigcloudcms_premium['search_layout']) && $bigcloudcms_premium['search_layout'] == 'simple_grid') { 
+  if(isset($bigcloudcms_premium['bigcloudcms_animate_in']) && $bigcloudcms_premium['bigcloudcms_animate_in'] == 1) {$animate = 1;} else {$animate = 0;} ?>
   <div id="kad-blog-grid" class="clearfix init-isotope"  data-fade-in="<?php echo esc_attr($animate);?>"  data-iso-selector=".b_item" data-iso-style="masonry">
   <?php $itemsize = 'tcol-md-4 tcol-sm-4 tcol-xs-6 tcol-ss-12';?>
 <?php while (have_posts()) : the_post(); ?>
@@ -37,7 +37,7 @@ if(isset($virtue_premium['search_layout']) && $virtue_premium['search_layout'] =
 <?php endwhile; ?>
 </div> <!-- Blog Grid -->
 <?php } else { 
-   if(isset($virtue_premium['virtue_animate_in']) && $virtue_premium['virtue_animate_in'] == 1) {$animate = 1;} else {$animate = 0;} ?>
+   if(isset($bigcloudcms_premium['bigcloudcms_animate_in']) && $bigcloudcms_premium['bigcloudcms_animate_in'] == 1) {$animate = 1;} else {$animate = 0;} ?>
 <div id="kad-blog-grid" class="clearfix init-isotope"  data-fade-in="<?php echo esc_attr($animate);?>"  data-iso-selector=".b_item" data-iso-style="masonry">
   <?php $itemsize = 'tcol-md-4 tcol-sm-4 tcol-xs-6 tcol-ss-12';?>
 <?php while (have_posts()) : the_post(); ?>

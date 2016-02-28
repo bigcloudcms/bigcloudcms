@@ -3,7 +3,7 @@
  * Cleaner walker for wp_nav_menu()
  *
  */
-class kadence_Nav_Walker extends Walker_Nav_Menu {
+class bigcloudcms_Nav_Walker extends Walker_Nav_Menu {
   function check_current($classes) {
     return preg_match('/(current[-_])|active|dropdown/', $classes);
   }
@@ -89,28 +89,28 @@ add_filter('nav_menu_item_id', '__return_null');
  * Clean up wp_nav_menu_args
  *
  * Remove the container
- * Use kadence_Nav_Walker() by default
+ * Use bigcloudcms_Nav_Walker() by default
  */
-function kadence_nav_menu_args($args = '') {
-  $kadence_nav_menu_args['container'] = false;
+function bigcloudcms_nav_menu_args($args = '') {
+  $bigcloudcms_nav_menu_args['container'] = false;
 
   if (!$args['items_wrap']) {
-    $kadence_nav_menu_args['items_wrap'] = '<ul class="%2$s">%3$s</ul>';
+    $bigcloudcms_nav_menu_args['items_wrap'] = '<ul class="%2$s">%3$s</ul>';
   }
 
 
   if ((!$args['walker'])) {
-    $kadence_nav_menu_args['walker'] = new kadence_Nav_Walker();
+    $bigcloudcms_nav_menu_args['walker'] = new bigcloudcms_Nav_Walker();
   }
 
-  return array_merge($args, $kadence_nav_menu_args);
+  return array_merge($args, $bigcloudcms_nav_menu_args);
 }
-add_filter('wp_nav_menu_args', 'kadence_nav_menu_args', '10');
+add_filter('wp_nav_menu_args', 'bigcloudcms_nav_menu_args', '10');
 
 /**
  * Custom Menu Walker
  */
-class kadence_mobile_walker extends Walker_Nav_Menu {
+class bigcloudcms_mobile_walker extends Walker_Nav_Menu {
   function check_current($classes) {
     return preg_match('/(current[-_])|active|dropdown/', $classes);
   }

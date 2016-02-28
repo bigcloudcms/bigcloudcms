@@ -9,8 +9,8 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-global $product, $woocommerce, $woocommerce_loop, $virtue_premium;
-if(!empty($virtue_premium['related_item_column'])) {$product_related_column = $virtue_premium['related_item_column'];} else {$product_related_column = '4';}
+global $product, $woocommerce, $woocommerce_loop, $bigcloudcms_premium;
+if(!empty($bigcloudcms_premium['related_item_column'])) {$product_related_column = $bigcloudcms_premium['related_item_column'];} else {$product_related_column = '4';}
 $woocommerce_loop['columns'] = $product_related_column;
 						if ($product_related_column == '2') {$md = 2; $sm = 2; $xs = 1; $ss = 1;} 
 				        else if ($product_related_column == '3'){ $md = 3; $sm = 3; $xs = 2; $ss = 1;} 
@@ -40,7 +40,7 @@ $products = new WP_Query( $args );
 if ( $products->have_posts() ) : ?>
 
 	<div class="upsells products carousel_outerrim">
-		<h3><?php _e( 'You may also like&hellip;', 'virtue' ) ?></h3>
+		<h3><?php _e( 'You may also like&hellip;', 'bigcloudcms' ) ?></h3>
 	<div class="fredcarousel">
 		<div id="carouselcontainer" class="rowtight">
 			<div id="upsale-product-carousel" class="products clearfix">

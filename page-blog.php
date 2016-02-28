@@ -12,8 +12,8 @@ Template Name: Blog
 	
     <div id="content" class="container">
    		<div class="row">
-   			<?php global $post, $virtue_premium;
-   			if(kadence_display_sidebar()) {
+   			<?php global $post, $bigcloudcms_premium;
+   			if(bigcloudcms_display_sidebar()) {
    				$display_sidebar = true;
    				$fullclass = '';
    			} else {
@@ -27,12 +27,12 @@ Template Name: Blog
    				$summery = 'normal';
    				$postclass = 'postlist';
    			} ?>
-      		<div class="main <?php echo esc_attr(kadence_main_class());?> <?php echo esc_attr($postclass) .' '. esc_attr($fullclass); ?>" id="ktmain" role="main">
+      		<div class="main <?php echo esc_attr(bigcloudcms_main_class());?> <?php echo esc_attr($postclass) .' '. esc_attr($fullclass); ?>" id="ktmain" role="main">
       			<div class="entry-content" itemprop="mainContentOfPage">
 					<?php get_template_part('templates/content', 'page'); ?>
 				</div>
       			<?php $blog_category = get_post_meta( $post->ID, '_kad_blog_cat', true ); 
-      			if(isset($virtue_premium['blog_infinitescroll']) && $virtue_premium['blog_infinitescroll'] == 1) {
+      			if(isset($bigcloudcms_premium['blog_infinitescroll']) && $bigcloudcms_premium['blog_infinitescroll'] == 1) {
       				$infinitescroll = true;
       			} else {
       				$infinitescroll = false;
@@ -72,7 +72,7 @@ Template Name: Blog
 						 }
 						} 
                     endwhile; else: ?>
-						<li class="error-not-found"><?php _e('Sorry, no blog entries found.', 'virtue'); ?></li>
+						<li class="error-not-found"><?php _e('Sorry, no blog entries found.', 'bigcloudcms'); ?></li>
 					<?php endif; ?>
                 
 				<?php if ($wp_query->max_num_pages > 1) : ?>
@@ -108,5 +108,5 @@ $('.main').infinitescroll({
 });	
 </script>
 <?php } ?>
-<?php global $virtue_premium; if(isset($virtue_premium['page_comments']) && $virtue_premium['page_comments'] == '1') { comments_template('/templates/comments.php');} ?>
+<?php global $bigcloudcms_premium; if(isset($bigcloudcms_premium['page_comments']) && $bigcloudcms_premium['page_comments'] == '1') { comments_template('/templates/comments.php');} ?>
 </div><!-- /.main -->

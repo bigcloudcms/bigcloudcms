@@ -2,33 +2,33 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
-global $virtue_premium; ?>
+global $bigcloudcms_premium; ?>
 
 <div class="home_blog home-margin clearfix home-padding kad-animation" data-animation="fade-in" data-delay="0">
 	<?php $img_width = 360; $postwidthclass = 'col-md-12 col-sm-12';
-	$blog_title = $virtue_premium['blog_title'];
+	$blog_title = $bigcloudcms_premium['blog_title'];
 	if(!empty($blog_title)) {
 		$btitle = $blog_title;
 	} else { 
-		$btitle = __('Latest from the Blog', 'virtue');
+		$btitle = __('Latest from the Blog', 'bigcloudcms');
 	} ?>
 	<div class="clearfix">
 		<h3 class="hometitle"><?php echo esc_html($btitle); ?></h3>
 	</div>
 		<div class="row">
 			<?php 
-			if(isset($virtue_premium['home_post_count'])) {
-				$blogcount = $virtue_premium['home_post_count'];
+			if(isset($bigcloudcms_premium['home_post_count'])) {
+				$blogcount = $bigcloudcms_premium['home_post_count'];
 			} else {
 				$blogcount = '2';
 			} 
-			if(isset($virtue_premium['home_post_word_count'])) {
-				$blogwordcount = $virtue_premium['home_post_word_count'];
+			if(isset($bigcloudcms_premium['home_post_word_count'])) {
+				$blogwordcount = $bigcloudcms_premium['home_post_word_count'];
 			} else {
 				$blogwordcount = '34';
 			} 
-			if(!empty($virtue_premium['home_post_type'])) { 
-				$blog_cat = get_term_by ('id',$virtue_premium['home_post_type'],'category');
+			if(!empty($bigcloudcms_premium['home_post_type'])) { 
+				$blog_cat = get_term_by ('id',$bigcloudcms_premium['home_post_type'],'category');
 				$blog_cat_slug = $blog_cat -> slug;
 			} else {
 				$blog_cat_slug = '';
@@ -46,7 +46,7 @@ global $virtue_premium; ?>
 					<div class="<?php echo $postwidthclass; ?> clearclass<?php echo ($xyz++%2); ?>">
 				  		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	                    	<div class="rowtight">
-	                     	<?php if(isset($virtue_premium['post_summery_default']) && ($virtue_premium['post_summery_default'] != 'text')) {
+	                     	<?php if(isset($bigcloudcms_premium['post_summery_default']) && ($bigcloudcms_premium['post_summery_default'] != 'text')) {
 	                     			$textsize 	= 'tcol-md-8 tcol-sm-8 tcol-ss-12'; 
 	                     			$imagesize 	= 'tcol-md-4 tcol-sm-4 tcol-ss-12';
 	                    		if (has_post_thumbnail( $post->ID ) ) {
@@ -55,7 +55,7 @@ global $virtue_premium; ?>
 									$image = aq_resize($thumbnailURL, $img_width, 270, true);
 									if(empty($image)) { $image = $thumbnailURL; }
 							 	} else {
-								 		$thumbnailURL = virtue_post_default_placeholder();
+								 		$thumbnailURL = bigcloudcms_post_default_placeholder();
 										$image = aq_resize($thumbnailURL, $img_width, 270, true);
 										if(empty($image)) { $image = $thumbnailURL; }
 							 	} ?>
@@ -118,12 +118,12 @@ global $virtue_premium; ?>
 			                        </div>
 			                        </header>
 		                        	<div class="entry-content">
-		                          		<p><?php echo virtue_excerpt($blogwordcount); ?>
+		                          		<p><?php echo bigcloudcms_excerpt($blogwordcount); ?>
 			                          		<a href="<?php the_permalink() ?>">
-			                          			<?php if(!empty($virtue_premium['post_readmore_text'])) {
-			                          				$readmore = $virtue_premium['post_readmore_text'];
+			                          			<?php if(!empty($bigcloudcms_premium['post_readmore_text'])) {
+			                          				$readmore = $bigcloudcms_premium['post_readmore_text'];
 			                          				} else {
-			                          					$readmore = __('Read More', 'virtue');
+			                          					$readmore = __('Read More', 'bigcloudcms');
 			                          				} 
 			                          				echo $readmore; ?>
 			                          		</a>
@@ -137,7 +137,7 @@ global $virtue_premium; ?>
                 </div>
 
                     <?php endwhile; else: ?>
-						<li class="error-not-found"><?php _e('Sorry, no blog entries found.', 'virtue');?></li>
+						<li class="error-not-found"><?php _e('Sorry, no blog entries found.', 'bigcloudcms');?></li>
 					<?php endif; ?>
                 
 				
