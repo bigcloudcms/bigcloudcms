@@ -1,13 +1,13 @@
 <?php
-define( 'OPTIONS_SLUG', 'bigcloudcms_premium' );
-define( 'LANGUAGE_SLUG', 'bigcloudcms' );
-load_theme_textdomain('bigcloudcms', get_template_directory() . '/languages');
+define( 'OPTIONS_SLUG', 'virtue_premium' );
+define( 'LANGUAGE_SLUG', 'virtue' );
+load_theme_textdomain('virtue', get_template_directory() . '/languages');
 /*
  * Init Theme Options
  */
 require_once locate_template('/themeoptions/framework.php');          		// Options framework
 require_once locate_template('/themeoptions/options.php');          		// Options framework
-require_once locate_template('/themeoptions/options/bigcloudcms_extension.php'); // Options framework extension
+require_once locate_template('/themeoptions/options/virtue_extension.php'); // Options framework extension
 require_once locate_template('/kt_framework/extensions.php');        		// Remove options from the admin
 
 /*
@@ -72,14 +72,14 @@ require_once locate_template('/lib/custom_css.php'); 						// Fontend Custom CSS
  * Updater
  */
 //require_once locate_template('/lib/wp-updates-theme.php');
-//$KT_UpdateChecker = new ThemeUpdateChecker('bigcloudcms_premium', 'https://github.com/bigcloudcms/bigcloudcms/');
+//$KT_UpdateChecker = new ThemeUpdateChecker('virtue_premium', 'https://kernl.us/api/v1/theme-updates/567242b41c90572e711087ef/');
 
 /*
  * Admin Shortcode Btn
  */
-function bigcloudcms_shortcode_init() {
+function virtue_shortcode_init() {
 	if(is_admin()){ if(kad_is_edit_page()){require_once locate_template('/lib/kad_shortcodes.php');	}}
 }
-add_action('init', 'bigcloudcms_shortcode_init');
+add_action('init', 'virtue_shortcode_init');
 
 
