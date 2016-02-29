@@ -127,11 +127,11 @@ Redux::setSection( $opt_name, array(
     'title' => __('Main Settings', 'virtue'),
     'id' => 'main_settings',
     'header' => '',
-    'desc' => "<div class='redux-info-field'><h3>".__('Welcome to Virtue Theme Options', 'virtue')."</h3>
-        <p>".__('This theme was developed by', 'virtue')." <a href=\"http://kadencethemes.com/\" target=\"_blank\">Kadence Themes</a></p>
-        <p>".__('For theme documentation visit', 'virtue').": <a href=\"http://docs.kadencethemes.com/virtue/\" target=\"_blank\">docs.kadencethemes.com/virtue/</a>
+    'desc' => "<div class='redux-info-field'><h3>".__('Welcome to BigCloudCMS Theme Options', 'virtue')."</h3>
+        <p>".__('This theme was developed by', 'virtue')." <a href=\"http://bigcloudcms.com/\" target=\"_blank\">BigCloudCMS</a></p>
+        <p>".__('For theme documentation visit', 'virtue').": <a href=\"http://docs.bigcloudcms.com/bigcloudcms/\" target=\"_blank\">docs.bigcloudcms.com/bigcloudcms/</a>
         <br />
-        ".__('For support please visit', 'virtue').": <a href=\"http://kadencethemes.com/support/\" target=\"_blank\">kadencethemes.com/support/</a></p></div>",
+        ".__('For support please visit', 'virtue').": <a href=\"http://bigcloudcms.com/support/\" target=\"_blank\">bigcloudcms.com/support/</a></p></div>",
     'icon_class' => 'icon-large',
     'icon' => 'icon-equalizer2',
     'fields' => array(
