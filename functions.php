@@ -71,7 +71,7 @@ require_once locate_template('/lib/custom_css.php'); 						// Fontend Custom CSS
 /*
  * Updater
  */
-require_once locate_template('/lib/wp-updates-theme.php');
+//require_once locate_template('/lib/wp-updates-theme.php');
 //$KT_UpdateChecker = new ThemeUpdateChecker('bigcloudcms_premium', 'https://github.com/bigcloudcms/bigcloudcms/');
 
 /*
