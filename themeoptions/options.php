@@ -104,18 +104,18 @@ if ( ! class_exists( 'Redux' ) ) {
 
     // SOCIAL ICONS -> Setup custom links in the footer for quick links in your panel footer icons.
     $args['share_icons'][] = array(
-        'url' => 'https://www.facebook.com/KadenceThemes',
-        'title' => 'Follow Kadence Themes on Facebook', 
+        'url' => 'https://www.facebook.com/BigCloudCMS',
+        'title' => 'Follow BigCloudCMS on Facebook', 
         'icon' => 'icon-facebook2',
     );
     $args['share_icons'][] = array(
-        'url' => 'https://www.twitter.com/KadenceThemes',
-        'title' => 'Follow Kadence Themes on Twitter', 
+        'url' => 'https://www.twitter.com/BigCloudCMS',
+        'title' => 'Follow BigCloudCMS on Twitter', 
         'icon' => 'icon-twitter',
     );
     $args['share_icons'][] = array(
-        'url' => 'https://www.instagram.com/KadenceThemes',
-        'title' => 'Follow Kadence Themes on Instagram', 
+        'url' => 'https://www.instagram.com/BigCloudCMS',
+        'title' => 'Follow BigCloudCMS on Instagram', 
         'icon' => 'icon-instagram',
     );
 
