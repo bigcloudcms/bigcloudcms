@@ -72,7 +72,7 @@ require_once locate_template('/lib/custom_css.php'); 						// Fontend Custom CSS
  * Updater
  */
 require_once locate_template('/lib/wp-updates-theme.php');
-$KT_UpdateChecker = new ThemeUpdateChecker('bigcloudcms', 'https://github.com/bigcloudcms/bigcloudcms/');
+$KT_UpdateChecker = new ThemeUpdateChecker('bigcloudcms_premium', 'https://kernl.us/api/v1/theme-updates/567242b41c90572e711087ef/');
 
 /*
  * Admin Shortcode Btn
