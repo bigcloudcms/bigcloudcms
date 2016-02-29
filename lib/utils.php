@@ -4,15 +4,15 @@
  *
  * @link http://scribu.net/wordpress/theme-wrappers.html
  */
-function bigcloudcms_template_path() {
-  return BigCloudCMS_Wrapping::$main_template;
+function kadence_template_path() {
+  return Kadence_Wrapping::$main_template;
 }
 
-function bigcloudcms_sidebar_path() {
-  return new BigCloudCMS_Wrapping('templates/sidebar.php');
+function kadence_sidebar_path() {
+  return new Kadence_Wrapping('templates/sidebar.php');
 }
 
-class BigCloudCMS_Wrapping {
+class Kadence_Wrapping {
   // Stores the full path to the main template file
   static $main_template;
 
@@ -30,7 +30,7 @@ class BigCloudCMS_Wrapping {
   }
 
   public function __toString() {
-    $this->templates = apply_filters('bigcloudcms_wrap_' . $this->slug, $this->templates);
+    $this->templates = apply_filters('kadence_wrap_' . $this->slug, $this->templates);
     return locate_template($this->templates);
   }
 
@@ -42,20 +42,20 @@ class BigCloudCMS_Wrapping {
       self::$base = false;
     }
 
-    return new BigCloudCMS_Wrapping();
+    return new Kadence_Wrapping();
   }
 }
-add_filter('template_include', array('BigCloudCMS_Wrapping', 'wrap'), 101);
+add_filter('template_include', array('Kadence_Wrapping', 'wrap'), 101);
 
 /**
  * Page titles
  */
-function bigcloudcms_title() {
+function kadence_title() {
   if (is_home()) {
     if (get_option('page_for_posts', true)) {
       $title = get_the_title(get_option('page_for_posts', true));
     } else {
-     $title = __('Latest Posts', 'bigcloudcms');
+     $title = __('Latest Posts', 'virtue');
     }
   } elseif (is_archive()) {
     $term = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy'));
@@ -64,24 +64,24 @@ function bigcloudcms_title() {
     } elseif (is_post_type_archive()) {
       $title = get_queried_object()->labels->name;
     } elseif (is_day()) {
-      $title = sprintf(__('Daily Archives: %s', 'bigcloudcms'), get_the_date());
+      $title = sprintf(__('Daily Archives: %s', 'virtue'), get_the_date());
     } elseif (is_month()) {
-      $title = sprintf(__('Monthly Archives: %s', 'bigcloudcms'), get_the_date('F Y'));
+      $title = sprintf(__('Monthly Archives: %s', 'virtue'), get_the_date('F Y'));
     } elseif (is_year()) {
-      $title = sprintf(__('Yearly Archives: %s', 'bigcloudcms'), get_the_date('Y'));
+      $title = sprintf(__('Yearly Archives: %s', 'virtue'), get_the_date('Y'));
     } elseif (is_author()) {
-      $title = sprintf(__('Author Archives: %s', 'bigcloudcms'), get_the_author());
+      $title = sprintf(__('Author Archives: %s', 'virtue'), get_the_author());
     } else {
       $title = single_cat_title("", false);
     }
   } elseif (is_search()) {
-    $title = sprintf(__('Search Results for %s', 'bigcloudcms'), get_search_query());
+    $title = sprintf(__('Search Results for %s', 'virtue'), get_search_query());
   } elseif (is_404()) {
-    $title = __('Not Found', 'bigcloudcms');
+    $title = __('Not Found', 'virtue');
   } else {
     $title = get_the_title();
   }
-  return apply_filters('bigcloudcms_title', $title);
+  return apply_filters('kadence_title', $title);
 }
 
 /**
@@ -119,11 +119,11 @@ function is_element_empty($element) {
 }
 
 
-add_action( "after_setup_theme", 'bigcloudcms_permalinks');
-function bigcloudcms_permalinks() {
+add_action( "after_setup_theme", 'kadence_permalinks');
+function kadence_permalinks() {
 
-global $wp_rewrite, $bigcloudcms_premium;
-if(!empty($bigcloudcms_premium['portfolio_permalink'])) {$port_rewrite = $bigcloudcms_premium['portfolio_permalink'];} else {$port_rewrite = 'portfolio';}
+global $wp_rewrite, $virtue_premium;
+if(!empty($virtue_premium['portfolio_permalink'])) {$port_rewrite = $virtue_premium['portfolio_permalink'];} else {$port_rewrite = 'portfolio';}
 $portfolio_structure = '/'.$port_rewrite.'/%portfolio%';
 $wp_rewrite->add_rewrite_tag("%portfolio%", '([^/]+)', "portfolio=");
 $wp_rewrite->add_permastruct('portfolio', $portfolio_structure, false);

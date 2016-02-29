@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	
 	if ($form == 'yes') { ?>
 		<script type="text/javascript">
-			jQuery(document).ready(function($) {$.extend($.validator.messages, {required: "<?php echo __('This field is required.', 'bigcloudcms'); ?>", email: "<?php echo __('Please enter a valid email address.', 'bigcloudcms'); ?>",});$("#contactForm").validate();});
+			jQuery(document).ready(function($) {$.extend($.validator.messages, {required: "<?php echo __('This field is required.', 'virtue'); ?>", email: "<?php echo __('Please enter a valid email address.', 'virtue'); ?>",});$("#contactForm").validate();});
 		</script>
 		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery.validate-ck.js"></script>
 	<?php } 
@@ -101,33 +101,33 @@ if ( ! defined( 'ABSPATH' ) ) {
 			</script>
 		    <?php echo '<style type="text/css" media="screen">#map_address {height:'.esc_attr($mapheight).'px; margin-bottom:20px;}</style>'; ?>
     <?php } ?>
-<?php global $bigcloudcms_premium, $post;
+<?php global $virtue_premium, $post;
 if(isset($_POST['submitted'])) {
 	if(isset($form_math) && $form_math == 'yes') {
 		if(md5($_POST['kad_captcha']) != $_POST['hval']) {
-			$kad_captchaError = __('Check your math.', 'bigcloudcms');
+			$kad_captchaError = __('Check your math.', 'virtue');
 			$hasError = true;
 		}
 	}
 	if(trim($_POST['contactName']) === '') {
-		$nameError = __('Please enter your name.', 'bigcloudcms');
+		$nameError = __('Please enter your name.', 'virtue');
 		$hasError = true;
 	} else {
 		$name = trim($_POST['contactName']);
 	}
 
 	if(trim($_POST['email']) === '')  {
-		$emailError = __('Please enter your email address.', 'bigcloudcms');
+		$emailError = __('Please enter your email address.', 'virtue');
 		$hasError = true;
 	} else if (!is_email(trim($_POST['email']))) {
-		$emailError = __('You entered an invalid email address.', 'bigcloudcms');
+		$emailError = __('You entered an invalid email address.', 'virtue');
 		$hasError = true;
 	} else {
 		$email = trim($_POST['email']);
 	}
 
 	if(trim($_POST['comments']) === '') {
-		$commentError = __('Please enter a message.', 'bigcloudcms');
+		$commentError = __('Please enter a message.', 'virtue');
 		$hasError = true;
 	} else {
 		if(function_exists('stripslashes')) {
@@ -142,15 +142,15 @@ if(isset($_POST['submitted'])) {
 		$email = wp_filter_kses( $email );
 		$comments = wp_filter_kses( $comments );
 
-		if (isset($bigcloudcms_premium['contact_email'])) {
-			$emailTo = $bigcloudcms_premium['contact_email'];
+		if (isset($virtue_premium['contact_email'])) {
+			$emailTo = $virtue_premium['contact_email'];
 		} else {
 			$emailTo = get_option('admin_email');
 		}
 		$sitename = get_bloginfo('name');
-		$subject = '['.$sitename . '  '. __("Contact", "bigcloudcms").'] '. __("From ", "bigcloudcms"). $name;
-		$body = __('Name', 'bigcloudcms').": $name \n\nEmail: $email \n\nComments: $comments";
-		$headers = __("From", "bigcloudcms").': '.$name.' <'.$emailTo.'>' . "\r\n" . 'Reply-To: ' . $email;
+		$subject = '['.$sitename . '  '. __("Contact", "virtue").'] '. __("From ", "virtue"). $name;
+		$body = __('Name', 'virtue').": $name \n\nEmail: $email \n\nComments: $comments";
+		$headers = __("From", "virtue").': '.$name.' <'.$emailTo.'>' . "\r\n" . 'Reply-To: ' . $email;
 
 		wp_mail($emailTo, $subject, $body, $headers);
 		$emailSent = true;
@@ -192,30 +192,30 @@ if(isset($_POST['submitted'])) {
 					do_action('kt_contact_email_sent');
 					?>
 							<div class="thanks">
-								<p><?php _e('Thanks, your email was sent successfully.', 'bigcloudcms');?></p>
+								<p><?php _e('Thanks, your email was sent successfully.', 'virtue');?></p>
 							</div>
 				<?php } else { ?>
 							<?php if(isset($hasError)) { ?>
-								<p class="error"><?php _e('Sorry, an error occured.', 'bigcloudcms');?><p>
+								<p class="error"><?php _e('Sorry, an error occured.', 'virtue');?><p>
 							<?php } ?>
 
 						<form action="<?php the_permalink(); ?>" id="contactForm" method="post">
 							<div class="contactform">
 							<p>
-								<label for="contactName"><b><?php _e('Name:', 'bigcloudcms');?></b></label>
+								<label for="contactName"><b><?php _e('Name:', 'virtue');?></b></label>
 								<input type="text" name="contactName" id="contactName" value="<?php if(isset($_POST['contactName'])){ echo esc_attr($_POST['contactName']);}?>" class="required requiredField full" />
 								<?php if(isset($nameError)) { ?>
 									<label class="error"><?php esc_html($nameError);?></label>
 								<?php } ?>
 							</p>
 							<p>
-								<label for="email"><b><?php _e('Email:', 'bigcloudcms'); ?></b></label>
+								<label for="email"><b><?php _e('Email:', 'virtue'); ?></b></label>
 								<input type="text" name="email" id="email" value="<?php if(isset($_POST['email'])){ echo esc_attr($_POST['email']); }?>" class="required requiredField email full" />
 								<?php if(isset($emailError)) { ?>
 									<label class="error"><?php echo esc_html($emailError);?></label>
 								<?php } ?>
 							</p>
-							<p><label for="commentsText"><b><?php _e('Message: ', 'bigcloudcms'); ?></b></label>
+							<p><label for="commentsText"><b><?php _e('Message: ', 'virtue'); ?></b></label>
 								<textarea name="comments" id="commentsText" rows="10" class="required requiredField"><?php if(isset($_POST['comments'])) { if(function_exists('stripslashes')) { echo esc_textarea(stripslashes($_POST['comments'])); } else { echo esc_textarea($_POST['comments']); } } ?></textarea>
 								<?php if(isset($commentError)) { ?><label class="error"><?php echo esc_html($commentError);?></label><?php } ?>
 							</p>
@@ -233,7 +233,7 @@ if(isset($_POST['submitted'])) {
 								</p>
 							<?php } ?>
 							<p>
-								<input type="submit" class="kad-btn kad-btn-primary" id="submit" value="<?php _e('Send Email', 'bigcloudcms'); ?>" ></input>
+								<input type="submit" class="kad-btn kad-btn-primary" id="submit" value="<?php _e('Send Email', 'virtue'); ?>" ></input>
 							</p>
 						</div><!-- /.contactform-->
 						<input type="hidden" name="submitted" id="submitted" value="true" />

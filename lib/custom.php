@@ -12,29 +12,29 @@ add_action( 'after_switch_theme', 'kf_reflush_rules' );
 add_action( 'kt_beforeheader', 'revolutionslider_top', 1 );
 function revolutionslider_top() {
   if ( is_front_page() ){
-  global $bigcloudcms_premium;
-  if(isset($bigcloudcms_premium['above_header_slider']) && $bigcloudcms_premium['above_header_slider'] == 1) {
-    if(isset($bigcloudcms_premium['choose_slider']) && ($bigcloudcms_premium['choose_slider'] == 'ktslider' || $bigcloudcms_premium['choose_slider'] == 'cyclone' || $bigcloudcms_premium['choose_slider'] == 'rev')) {
-    if($bigcloudcms_premium['choose_slider'] == 'rev') {
+  global $virtue_premium;
+  if(isset($virtue_premium['above_header_slider']) && $virtue_premium['above_header_slider'] == 1) {
+    if(isset($virtue_premium['choose_slider']) && ($virtue_premium['choose_slider'] == 'ktslider' || $virtue_premium['choose_slider'] == 'cyclone' || $virtue_premium['choose_slider'] == 'rev')) {
+    if($virtue_premium['choose_slider'] == 'rev') {
       echo '<div class="kad_fullslider">';
       if( function_exists('putRevSlider') ) {
-      putRevSlider( $bigcloudcms_premium['rev_slider'] );
+      putRevSlider( $virtue_premium['rev_slider'] );
       }
     }
-    else if($bigcloudcms_premium['choose_slider'] == 'ktslider') {
+    else if($virtue_premium['choose_slider'] == 'ktslider') {
       echo '<div class="kad_fullslider">';
-      echo do_shortcode('[kadence_slider id='.$bigcloudcms_premium['kt_slider'].']');
+      echo do_shortcode('[kadence_slider id='.$virtue_premium['kt_slider'].']');
     } 
-    else if($bigcloudcms_premium['choose_slider'] == 'cyclone') {
+    else if($virtue_premium['choose_slider'] == 'cyclone') {
       echo '<div class="kad_fullslider">';
-      echo do_shortcode( $bigcloudcms_premium['home_cyclone_slider'] );
+      echo do_shortcode( $virtue_premium['home_cyclone_slider'] );
     }
-      if(isset($bigcloudcms_premium['above_header_slider_arrow']) && $bigcloudcms_premium['above_header_slider_arrow'] == 1) {
+      if(isset($virtue_premium['above_header_slider_arrow']) && $virtue_premium['above_header_slider_arrow'] == 1) {
         echo '<div class="kad_fullslider_arrow"><a href="#kad-banner"><i class="icon-arrow-down"></i></a></div>';
       }
       echo '</div>';
-      if(isset($bigcloudcms_premium['header_style']) && $bigcloudcms_premium['header_style'] == 'shrink') {
-        $head_height = $bigcloudcms_premium['header_height']/2;
+      if(isset($virtue_premium['header_style']) && $virtue_premium['header_style'] == 'shrink') {
+        $head_height = $virtue_premium['header_height']/2;
         echo '<style type="text/css" media="screen">@media (min-width: 992px) {.kad-header-style-three #kad-shrinkheader, .kad-header-style-three #logo a.brand, .kad-header-style-three #logo #thelogo, .kad-header-style-three #nav-main ul.sf-menu > li > a {height:'.$head_height.'px !important;line-height: '.$head_height.'px !important;}.kad-header-style-three #thelogo img {max-height: '.$head_height.'px !important;}}</style>';
       }
     }
@@ -44,7 +44,7 @@ function revolutionslider_top() {
 add_action( 'kt_beforeheader', 'featureslider_top', 1 );
 function featureslider_top() {
   if ( is_page_template('page-feature.php') || is_page_template('page-feature-sidebar.php') ){
-  global $post, $bigcloudcms_premium;
+  global $post, $virtue_premium;
   $slider = get_post_meta( $post->ID, '_kad_page_head', true ); 
   $above = get_post_meta( $post->ID, '_kad_shortcode_above_header', true );
   $arrow = get_post_meta( $post->ID, '_kad_shortcode_above_header_arrow', true ); 
@@ -66,8 +66,8 @@ function featureslider_top() {
         echo '<div class="kad_fullslider_arrow"><a href="#kad-banner"><i class="icon-arrow-down"></i></a></div>';
       }
       echo '</div>';
-      if(isset($bigcloudcms_premium['header_style']) && $bigcloudcms_premium['header_style'] == 'shrink') {
-        $head_height = $bigcloudcms_premium['header_height']/2;
+      if(isset($virtue_premium['header_style']) && $virtue_premium['header_style'] == 'shrink') {
+        $head_height = $virtue_premium['header_height']/2;
            echo '<style type="text/css" media="screen">@media (min-width: 992px) {.kad-header-style-three #kad-shrinkheader, .kad-header-style-three #logo a.brand, .kad-header-style-three #logo #thelogo, .kad-header-style-three #nav-main ul.sf-menu > li > a {height:'.$head_height.'px !important;line-height: '.$head_height.'px !important;}.kad-header-style-three #thelogo img {max-height: '.$head_height.'px !important;}}</style>';
       }
     }
@@ -109,88 +109,88 @@ function kadence_siteoriginpanels_row_attributes_content($attr, $row) {
 //add_filter('siteorigin_panels_row_attributes', 'kadence_siteoriginpanels_row_attributes_content', 10, 2);
 function kad_panels_row_background_styles($fields) {
   $fields['padding_top'] = array(
-        'name'      => __('Padding Top', 'bigcloudcms'),
+        'name'      => __('Padding Top', 'virtue'),
         'type'      => 'measurement',
         'group'     => 'layout',
         'priority'  => 8,
   );
   $fields['padding_bottom'] = array(
-        'name'      => __('Padding Bottom', 'bigcloudcms'),
+        'name'      => __('Padding Bottom', 'virtue'),
         'type'      => 'measurement',
         'group'     => 'layout',
         'priority'  => 8.5,
   );
   $fields['padding_left'] = array(
-        'name'      => __('Padding Left', 'bigcloudcms'),
+        'name'      => __('Padding Left', 'virtue'),
         'type'      => 'measurement',
         'group'     => 'layout',
         'priority'  => 9,
       );
   $fields['padding_right'] = array(
-        'name'      => __('Padding Right', 'bigcloudcms'),
+        'name'      => __('Padding Right', 'virtue'),
         'type'      => 'measurement',
         'group'     => 'layout',
         'priority'  => 9,
       );
   $fields['background_image'] = array(
-        'name'      => __('Background Image', 'bigcloudcms'),
+        'name'      => __('Background Image', 'virtue'),
         'group'     => 'design',
         'type'      => 'image',
         'priority'  => 5,
       );
   $fields['background_image_position'] = array(
-        'name'      => __('Background Image Position', 'bigcloudcms'),
+        'name'      => __('Background Image Position', 'virtue'),
         'type'      => 'select',
         'group'     => 'design',
         'default'   => 'center top',
         'priority'  => 6,
         'options'   => array(
-               "left top"       => __("Left Top", "bigcloudcms"),
-               "left center"    => __("Left Center", "bigcloudcms"),
-               "left bottom"    => __("Left Bottom", "bigcloudcms"),
-               "center top"     => __("Center Top", "bigcloudcms"),
-               "center center"  => __("Center Center", "bigcloudcms"),
-               "center bottom"  => __("Center Bottom", "bigcloudcms"),
-               "right top"      => __("Right Top", "bigcloudcms"),
-               "right center"   => __("Right Center", "bigcloudcms"),
-               "right bottom"   => __("Right Bottom", "bigcloudcms")
+               "left top"       => __("Left Top", "virtue"),
+               "left center"    => __("Left Center", "virtue"),
+               "left bottom"    => __("Left Bottom", "virtue"),
+               "center top"     => __("Center Top", "virtue"),
+               "center center"  => __("Center Center", "virtue"),
+               "center bottom"  => __("Center Bottom", "virtue"),
+               "right top"      => __("Right Top", "virtue"),
+               "right center"   => __("Right Center", "virtue"),
+               "right bottom"   => __("Right Bottom", "virtue")
                 ),
       );
   $fields['background_image_style'] = array(
-        'name'      => __('Background Image Style', 'bigcloudcms'),
+        'name'      => __('Background Image Style', 'virtue'),
         'type'      => 'select',
         'group'     => 'design',
         'default'   => 'center top',
         'priority'  => 6,
         'options'   => array(
-             "cover"      => __("Cover", "bigcloudcms"),
-             "parallax"   => __("Parallax", "bigcloudcms"),
-             "no-repeat"  => __("No Repeat", "bigcloudcms"),
-             "repeat"     => __("Repeat", "bigcloudcms"),
-             "repeat-x"   => __("Repeat-X", "bigcloudcms"),
-             "repeat-y"   => __("Repeat-y", "bigcloudcms"),
+             "cover"      => __("Cover", "virtue"),
+             "parallax"   => __("Parallax", "virtue"),
+             "no-repeat"  => __("No Repeat", "virtue"),
+             "repeat"     => __("Repeat", "virtue"),
+             "repeat-x"   => __("Repeat-X", "virtue"),
+             "repeat-y"   => __("Repeat-y", "virtue"),
               ),
         );
   $fields['border_top'] = array(
-        'name'      => __('Border Top Size', 'bigcloudcms'),
+        'name'      => __('Border Top Size', 'virtue'),
         'type'      => 'measurement',
         'group'     => 'design',
         'priority'  => 8,
   );
   $fields['border_top_color'] = array(
-        'name'      => __('Border Top Color', 'bigcloudcms'),
+        'name'      => __('Border Top Color', 'virtue'),
         'type'      => 'color',
         'group'     => 'design',
         'priority'  => 8.5,
       );
   $fields['border_bottom'] = array(
-        'name'      => __('Border Bottom Size', 'bigcloudcms'),
+        'name'      => __('Border Bottom Size', 'virtue'),
         'type'      => 'measurement',
         'group'     => 'design',
         'priority'  => 9,
   );
   $fields['border_bottom_color'] = array(
-        'name' => __('Border Bottom Color', 'bigcloudcms'),
+        'name' => __('Border Bottom Color', 'virtue'),
         'type' => 'color',
         'group' => 'design',
         'priority' => 9.5,
@@ -310,9 +310,9 @@ if ( is_plugin_active('qtranslate/qtranslate.php') || is_plugin_active('mqtransl
     add_filter('woocommerce_cart_item_name', 'qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage', 0);
 }
 
-function bigcloudcms_prebuilt_page_layouts($layouts){
+function virtue_prebuilt_page_layouts($layouts){
   $layouts['example-page'] = array (
-    'name' => __('Example Page', 'bigcloudcms'),
+    'name' => __('Example Page', 'virtue'),
     'widgets' =>
     array(
       0 =>
@@ -396,7 +396,7 @@ function bigcloudcms_prebuilt_page_layouts($layouts){
       ),
       5 =>
       array(
-        'title' => __('Latest Posts', 'bigcloudcms'),
+        'title' => __('Latest Posts', 'virtue'),
         'type' => 'post',
         'c_items' => '6',
         'c_columns' => '3',
@@ -489,7 +489,7 @@ function bigcloudcms_prebuilt_page_layouts($layouts){
     ),
   );
 $layouts['example-page-2'] = array (
-    'name' => __('Example Page 2', 'bigcloudcms'),
+    'name' => __('Example Page 2', 'virtue'),
     'widgets' =>
     array(
       0 =>
@@ -538,7 +538,7 @@ $layouts['example-page-2'] = array (
       ),
       4 =>
        array(
-        'title' => __('Featured Products', 'bigcloudcms'),
+        'title' => __('Featured Products', 'virtue'),
         'type' => 'featured-products',
         'c_items' => '8',
         'c_columns' => '4',
@@ -555,7 +555,7 @@ $layouts['example-page-2'] = array (
       ),
       5 =>
        array(
-        'title' => __('Featured Projects', 'bigcloudcms'),
+        'title' => __('Featured Projects', 'virtue'),
         'type' => 'portfolio',
         'c_items' => '6',
         'c_columns' => '3',
@@ -583,15 +583,15 @@ $layouts['example-page-2'] = array (
       ),
       7 =>
        array(
-        'title' => __('Want To See More', 'bigcloudcms'),
+        'title' => __('Want To See More', 'virtue'),
         'tcolor' => '#ffffff',
         'tsize' => '48',
-        'subtitle' => __('Check out the newest demo site', 'bigcloudcms'),
+        'subtitle' => __('Check out the newest demo site', 'virtue'),
         'scolor' => '#ffffff',
         'ssize' => '20',
         'align' => 'center',
         'btn_text' => 'View Now',
-        'btn_link' => 'http://themes.bigcloudcms.com/bigcloudcms-4/',
+        'btn_link' => 'http://themes.kadencethemes.com/virtue-premium-4/',
         'btn_target' => 'true',
         'info' =>
         array(
@@ -686,7 +686,7 @@ $layouts['example-page-2'] = array (
 
   return $layouts;
 }
-add_filter('siteorigin_panels_prebuilt_layouts', 'bigcloudcms_prebuilt_page_layouts');
+add_filter('siteorigin_panels_prebuilt_layouts', 'virtue_prebuilt_page_layouts');
 
 if(function_exists( 'set_revslider_as_theme' )) {
 add_action( 'init', 'kt_rev_slider_as_theme');
@@ -726,45 +726,45 @@ function kt_get_default_settings_cyclone() {
     return $defaults;
   }
 
-function bigcloudcms_img_placeholder_filter_init() {
-  global $bigcloudcms_premium;
-  function bigcloudcms_img_placeholder() {
+function virtue_img_placeholder_filter_init() {
+  global $virtue_premium;
+  function virtue_img_placeholder() {
     return apply_filters('kadence_placeholder_image', get_template_directory_uri() . '/assets/img/post_standard.jpg');
   }
-  function bigcloudcms_img_placeholder_cat() {
+  function virtue_img_placeholder_cat() {
     return apply_filters('kadence_placeholder_image_cat', get_template_directory_uri() . '/assets/img/placement.jpg');
   }
-  function bigcloudcms_img_placeholder_small() {
+  function virtue_img_placeholder_small() {
     return apply_filters('kadence_placeholder_image_small', get_template_directory_uri() . '/assets/img/post_standard-80x50.jpg');
   }
-  function bigcloudcms_post_default_placeholder() {
+  function virtue_post_default_placeholder() {
     return apply_filters('kadence_post_default_placeholder_image', get_template_directory_uri() . '/assets/img/post_standard.jpg');
   }
 
-  function bigcloudcms_post_default_placeholder_override() {
-    global $bigcloudcms_premium;
-    $custom_image = $bigcloudcms_premium['post_summery_default_image']['url'];
+  function virtue_post_default_placeholder_override() {
+    global $virtue_premium;
+    $custom_image = $virtue_premium['post_summery_default_image']['url'];
     return $custom_image;
   }
 
-  if (isset($bigcloudcms_premium['post_summery_default_image']) && !empty($bigcloudcms_premium['post_summery_default_image']['url'])) {
-  add_filter('kadence_placeholder_image_small', 'bigcloudcms_post_default_placeholder_override');
-  add_filter('kadence_post_default_placeholder_image', 'bigcloudcms_post_default_placeholder_override');
+  if (isset($virtue_premium['post_summery_default_image']) && !empty($virtue_premium['post_summery_default_image']['url'])) {
+  add_filter('kadence_placeholder_image_small', 'virtue_post_default_placeholder_override');
+  add_filter('kadence_post_default_placeholder_image', 'virtue_post_default_placeholder_override');
   }
 }
-add_action('init', 'bigcloudcms_img_placeholder_filter_init');
+add_action('init', 'virtue_img_placeholder_filter_init');
 
 function kad_lightbox_text() {
-  global $bigcloudcms_premium; if(!empty($bigcloudcms_premium['lightbox_loading_text'])) {$loading_text = $bigcloudcms_premium['lightbox_loading_text'];} else {$loading_text = 'Loading...';}
-  if(!empty($bigcloudcms_premium['lightbox_of_text'])) {$of_text = $bigcloudcms_premium['lightbox_of_text'];} else {$of_text = 'of';}
-  if(!empty($bigcloudcms_premium['lightbox_error_text'])) {$error_text = $bigcloudcms_premium['lightbox_error_text'];} else {$error_text = 'The Image could not be loaded.';}
+  global $virtue_premium; if(!empty($virtue_premium['lightbox_loading_text'])) {$loading_text = $virtue_premium['lightbox_loading_text'];} else {$loading_text = 'Loading...';}
+  if(!empty($virtue_premium['lightbox_of_text'])) {$of_text = $virtue_premium['lightbox_of_text'];} else {$of_text = 'of';}
+  if(!empty($virtue_premium['lightbox_error_text'])) {$error_text = $virtue_premium['lightbox_error_text'];} else {$error_text = 'The Image could not be loaded.';}
   echo  '<script type="text/javascript">var light_error = "'.$error_text.'", light_of = "%curr% '.$of_text.' %total%", light_load = "'.$loading_text.'";</script>';
 }
 add_action('wp_head', 'kad_lightbox_text');
 
 function kad_lightbox_off() {
-  global $bigcloudcms_premium; 
-  if(isset($bigcloudcms_premium['kadence_lightbox']) && $bigcloudcms_premium['kadence_lightbox'] == 1 ) {
+  global $virtue_premium; 
+  if(isset($virtue_premium['kadence_lightbox']) && $virtue_premium['kadence_lightbox'] == 1 ) {
     echo  '<script type="text/javascript">jQuery(document).ready(function ($) {var magnificPopupEnabled = false;$.extend(true, $.magnificPopup.defaults, {disableOn: function() {return false;}});});</script>';
   }
 }
@@ -772,17 +772,17 @@ add_action('wp_footer', 'kad_lightbox_off');
 
 add_filter('wp_nav_menu_items', 'kt_add_search_form_to_menu', 10, 2);
 function kt_add_search_form_to_menu($items, $args) {
-  global $bigcloudcms_premium, $woocommerce;
+  global $virtue_premium, $woocommerce;
  
-    if( !($args->theme_location == 'primary_navigation') || (isset($bigcloudcms_premium['header_style']) && $bigcloudcms_premium['header_style'] == "center" ) )
+    if( !($args->theme_location == 'primary_navigation') || (isset($virtue_premium['header_style']) && $virtue_premium['header_style'] == "center" ) )
         return $items;
 
       ob_start();
       ?>
     <?php if (class_exists('woocommerce'))  {?>
-    <?php  if(isset($bigcloudcms_premium['menu_cart']) && $bigcloudcms_premium['menu_cart'] == '1') { ?>
+    <?php  if(isset($virtue_premium['menu_cart']) && $virtue_premium['menu_cart'] == '1') { ?>
     <li class="menu-cart-icon-kt sf-dropdown">
-    <a class="menu-cart-btn" title="<?php echo __('Your Cart', 'bigcloudcms');?>" href="<?php echo esc_url($woocommerce->cart->get_cart_url() ); ?>">
+    <a class="menu-cart-btn" title="<?php echo __('Your Cart', 'virtue');?>" href="<?php echo esc_url($woocommerce->cart->get_cart_url() ); ?>">
       <div class="kt-cart-container"><i class="icon-cart"></i><span class="kt-cart-total"><?php echo $woocommerce->cart->get_cart_contents_count(); ?></span></div>
     </a>
     <ul id="kad-head-cart-popup" class="sf-dropdown-menu kad-head-cart-popup">
@@ -793,14 +793,14 @@ function kt_add_search_form_to_menu($items, $args) {
     </li>
     <?php }
      }?>
-    <?php if(isset($bigcloudcms_premium['menu_search']) && $bigcloudcms_premium['menu_search'] == '1') { ?>
+    <?php if(isset($virtue_premium['menu_search']) && $virtue_premium['menu_search'] == '1') { ?>
     <li class="menu-search-icon-kt">
-      <a class="kt-menu-search-btn collapsed" title="<?php echo __('Search', 'bigcloudcms');?>" data-toggle="collapse" data-target="#kad-menu-search-popup">
+      <a class="kt-menu-search-btn collapsed" title="<?php echo __('Search', 'virtue');?>" data-toggle="collapse" data-target="#kad-menu-search-popup">
         <i class="icon-search"></i>
       </a>
         <div id="kad-menu-search-popup" class="search-container container collapse">
           <div class="kt-search-container">
-          <?php if(isset($bigcloudcms_premium['menu_search_woo']) && $bigcloudcms_premium['menu_search_woo'] == '1') { 
+          <?php if(isset($virtue_premium['menu_search_woo']) && $virtue_premium['menu_search_woo'] == '1') { 
             get_product_search_form();
           } else { 
               get_search_form();
@@ -915,8 +915,8 @@ function kadence_html_tag_schema() {
 
 // Ecerpt Length
 
-function bigcloudcms_excerpt($limit) {
-   global $bigcloudcms_premium; if(!empty($bigcloudcms_premium['post_readmore_text'])) {$readmore = $bigcloudcms_premium['post_readmore_text'];} else { $readmore =  __('Read More', 'bigcloudcms') ;}
+function virtue_excerpt($limit) {
+   global $virtue_premium; if(!empty($virtue_premium['post_readmore_text'])) {$readmore = $virtue_premium['post_readmore_text'];} else { $readmore =  __('Read More', 'virtue') ;}
    $readmore = '>'.$readmore.'<';
       $excerpt = explode(' ', get_the_excerpt(), $limit);
       if (count($excerpt)>=$limit) {
@@ -930,7 +930,7 @@ function bigcloudcms_excerpt($limit) {
       return $excerpt;
     }
 
-function bigcloudcms_content($limit) {
+function virtue_content($limit) {
       $content = explode(' ', get_the_content(), $limit);
       if (count($content)>=$limit) {
         array_pop($content);
@@ -1233,7 +1233,7 @@ function adjacent_post_link_plus($args = '', $format = '%link &raquo;', $previou
   foreach ( $posts as $post ) {
     $title = $post->post_title;
     if ( empty($post->post_title) )
-      $title = $previous ? __('Previous Post', 'bigcloudcms') : __('Next Post', 'bigcloudcms');
+      $title = $previous ? __('Previous Post', 'virtue') : __('Next Post', 'virtue');
 
     $title = apply_filters('the_title', $title, $post->ID);
     $date = mysql2date($r['date_format'], $post->post_date);
@@ -1334,80 +1334,80 @@ function kad_show_extra_profile_fields( $user ) { ?>
 
 <table class="form-table">
   <tr>
-    <th><label for="twitter"><?php _e('Occupation', 'bigcloudcms');?></label></th>
+    <th><label for="twitter"><?php _e('Occupation', 'virtue');?></label></th>
     <td>
       <input type="text" name="occupation" id="occupation" value="<?php echo esc_attr( get_the_author_meta( 'occupation', $user->ID ) ); ?>" class="regular-text" /><br />
-      <span class="description"><?php _e('Please enter your Occupation.', 'bigcloudcms');?></span>
+      <span class="description"><?php _e('Please enter your Occupation.', 'virtue');?></span>
     </td>
   </tr>
   <tr>
     <th><label for="twitter">Twitter</label></th>
     <td>
       <input type="text" name="twitter" id="twitter" value="<?php echo esc_attr( get_the_author_meta( 'twitter', $user->ID ) ); ?>" class="regular-text" /><br />
-      <span class="description"><?php _e('Please enter your Twitter username.', 'bigcloudcms'); ?></span>
+      <span class="description"><?php _e('Please enter your Twitter username.', 'virtue'); ?></span>
     </td>
   </tr>
     <tr>
     <th><label for="facebook">Facebook</label></th>
     <td>
       <input type="text" name="facebook" id="facebook" value="<?php echo esc_attr( get_the_author_meta( 'facebook', $user->ID ) ); ?>" class="regular-text" /><br />
-      <span class="description"><?php _e('Please enter your Facebook url. (be sure to include http://)', 'bigcloudcms'); ?></span>
+      <span class="description"><?php _e('Please enter your Facebook url. (be sure to include http://)', 'virtue'); ?></span>
     </td>
   </tr>
     <tr>
     <th><label for="google">Google Plus</label></th>
     <td>
       <input type="text" name="google" id="google" value="<?php echo esc_attr( get_the_author_meta( 'google', $user->ID ) ); ?>" class="regular-text" /><br />
-      <span class="description"><?php _e('Please enter your Google Plus url. (be sure to include http://)', 'bigcloudcms'); ?></span>
+      <span class="description"><?php _e('Please enter your Google Plus url. (be sure to include http://)', 'virtue'); ?></span>
     </td>
   </tr>
    <tr>
     <th><label for="youtube">YouTube</label></th>
     <td>
       <input type="text" name="youtube" id="youtube" value="<?php echo esc_attr( get_the_author_meta( 'youtube', $user->ID ) ); ?>" class="regular-text" /><br />
-      <span class="description"><?php _e('Please enter your YouTube url. (be sure to include http://)', 'bigcloudcms'); ?></span>
+      <span class="description"><?php _e('Please enter your YouTube url. (be sure to include http://)', 'virtue'); ?></span>
     </td>
   </tr>
     <tr>
     <th><label for="flickr">Flickr</label></th>
     <td>
       <input type="text" name="flickr" id="flickr" value="<?php echo esc_attr( get_the_author_meta( 'flickr', $user->ID ) ); ?>" class="regular-text" /><br />
-      <span class="description"><?php _e('Please enter your Flickr url. (be sure to include http://)', 'bigcloudcms'); ?></span>
+      <span class="description"><?php _e('Please enter your Flickr url. (be sure to include http://)', 'virtue'); ?></span>
     </td>
   </tr>
     <tr>
     <th><label for="vimeo">Vimeo</label></th>
     <td>
       <input type="text" name="vimeo" id="vimeo" value="<?php echo esc_attr( get_the_author_meta( 'vimeo', $user->ID ) ); ?>" class="regular-text" /><br />
-      <span class="description"><?php _e('Please enter your Vimeo url. (be sure to include http://)', 'bigcloudcms'); ?></span>
+      <span class="description"><?php _e('Please enter your Vimeo url. (be sure to include http://)', 'virtue'); ?></span>
     </td>
   </tr>
     <tr>
     <th><label for="linkedin">Linkedin</label></th>
     <td>
       <input type="text" name="linkedin" id="linkedin" value="<?php echo esc_attr( get_the_author_meta( 'linkedin', $user->ID ) ); ?>" class="regular-text" /><br />
-      <span class="description"><?php _e('Please enter your Linkedin url. (be sure to include http://)', 'bigcloudcms'); ?></span>
+      <span class="description"><?php _e('Please enter your Linkedin url. (be sure to include http://)', 'virtue'); ?></span>
     </td>
   </tr>
     <tr>
     <th><label for="dribbble">Dribbble</label></th>
     <td>
       <input type="text" name="dribbble" id="dribbble" value="<?php echo esc_attr( get_the_author_meta( 'dribbble', $user->ID ) ); ?>" class="regular-text" /><br />
-      <span class="description"><?php _e('Please enter your Dribbble url. (be sure to include http://)', 'bigcloudcms'); ?></span>
+      <span class="description"><?php _e('Please enter your Dribbble url. (be sure to include http://)', 'virtue'); ?></span>
     </td>
   </tr>
     <tr>
     <th><label for="pinterest">Pinterest</label></th>
     <td>
       <input type="text" name="pinterest" id="pinterest" value="<?php echo esc_attr( get_the_author_meta( 'pinterest', $user->ID ) ); ?>" class="regular-text" /><br />
-      <span class="description"><?php _e('Please enter your Pinterest url. (be sure to include http://)', 'bigcloudcms'); ?></span>
+      <span class="description"><?php _e('Please enter your Pinterest url. (be sure to include http://)', 'virtue'); ?></span>
     </td>
   </tr>
   <tr>
     <th><label for="instagram">Instagram</label></th>
     <td>
       <input type="text" name="instagram" id="instagram" value="<?php echo esc_attr( get_the_author_meta( 'instagram', $user->ID ) ); ?>" class="regular-text" /><br />
-      <span class="description"><?php _e('Please enter your Instagram url. (be sure to include http://)', 'bigcloudcms'); ?></span>
+      <span class="description"><?php _e('Please enter your Instagram url. (be sure to include http://)', 'virtue'); ?></span>
     </td>
   </tr>
 </table>

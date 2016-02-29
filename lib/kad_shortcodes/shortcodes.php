@@ -13,19 +13,19 @@ function kad_sitename_shortcode_function() {
 }
 function kad_themecredit_shortcode_function() {
 	$my_theme = wp_get_theme();
-	$output = '- Wordpress Theme by <a href="'.$my_theme->{'Author URI'}.'">BigCloudCMS</a>';
+	$output = '- Wordpress Theme by <a href="'.$my_theme->{'Author URI'}.'">Kadence Themes</a>';
 	return $output;
 }
 include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
-if ( is_plugin_active('bigcloudcms-toolkit/bigcloudcms_toolkit.php') ) {
-function bigcloudcms_plugin_admin_notice(){
-    echo '<div class="error"><p>Please <strong>Disable</strong> the BigCloudCMS ToolKit Plugin. It is not needed with BigCloudCMS .</p></div>';
+if ( is_plugin_active('virtue-toolkit/virtue_toolkit.php') ) {
+function virtue_plugin_admin_notice(){
+    echo '<div class="error"><p>Please <strong>Disable</strong> the Virtue ToolKit Plugin. It is not needed with Virtue Premium.</p></div>';
 }
-add_action('admin_notices', 'bigcloudcms_plugin_admin_notice');
+add_action('admin_notices', 'virtue_plugin_admin_notice');
 }
 
 //Shortcode for accordion
-function bigcloudcms_accordion_shortcode_function($atts, $content ) {
+function kadence_accordion_shortcode_function($atts, $content ) {
 	extract(shortcode_atts(array(
 'id' => rand(1, 99)
 ), $atts));
@@ -44,7 +44,7 @@ $return = "\n".'<div class="panel-group" id="accordionname'.$id.'">'.implode( "\
 return $return;
 }
 
-function bigcloudcms_accordion_pane_function($atts, $content ) {
+function kadence_accordion_pane_function($atts, $content ) {
 	extract(shortcode_atts(array(
 'title' => 'Pane %d',
 'start' => ''
@@ -57,7 +57,7 @@ $GLOBALS['panes'][$x] = array( 'title' => $title, 'open' => $open, 'in' => $in, 
 
 $GLOBALS['pane_count']++;
 }
-function bigcloudcms_tab_shortcode_function($atts, $content ) {
+function kadence_tab_shortcode_function($atts, $content ) {
 	extract(shortcode_atts(array(
 'id' => rand(1, 99)
 ), $atts));
@@ -78,7 +78,7 @@ $return = "\n".'<ul class="nav nav-tabs sc_tabs">'.implode( "\n", $tabnav ).'</u
 }
 return $return;
 }
-function bigcloudcms_tab_pane_function($atts, $content ) {
+function kadence_tab_pane_function($atts, $content ) {
 	extract(shortcode_atts(array(
 'title' => 'Tab %d',
 'start' => ''
@@ -91,18 +91,18 @@ $GLOBALS['tabs'][$x] = array( 'title' => $title, 'active' => $active, 'link' => 
 $GLOBALS['tab_count']++;
 }
 //product toggle
-function bigcloudcms_product_toggle_shortcode_function( $atts) {
-	return '<div class="kt_product_toggle_container"><div title="'.__("Grid View", "bigcloudcms").'" class="toggle_grid toggle_active" data-toggle="product_grid"><i class="icon-grid5"></i></div> <div title="'.__("List View", "bigcloudcms").'" class="toggle_list" data-toggle="product_list"><i class="icon-menu4"></i></div></div>';
+function kadence_product_toggle_shortcode_function( $atts) {
+	return '<div class="kt_product_toggle_container"><div title="'.__("Grid View", "virtue").'" class="toggle_grid toggle_active" data-toggle="product_grid"><i class="icon-grid5"></i></div> <div title="'.__("List View", "virtue").'" class="toggle_list" data-toggle="product_list"><i class="icon-menu4"></i></div></div>';
 }
 
 //Shortcode for columns
-function bigcloudcms_column_shortcode_function( $atts, $content ) {
+function kadence_column_shortcode_function( $atts, $content ) {
 	return '<div class="row">'.do_shortcode($content).'</div>';
 }
-function bigcloudcms_hcolumn_shortcode_function( $atts, $content ) {
+function kadence_hcolumn_shortcode_function( $atts, $content ) {
 	return '<div class="row">'.do_shortcode($content).'</div>';
 }
-function bigcloudcms_column11_function( $atts, $content ) {
+function kadence_column11_function( $atts, $content ) {
 	extract(shortcode_atts(array(
 			'tablet' => '',
 			'phone' => ''
@@ -111,7 +111,7 @@ function bigcloudcms_column11_function( $atts, $content ) {
 		if(empty($phone)) {$pclass = "";} else if ($phone == 'span2') {$pclass = "col-ss-2";} else if ($phone == 'span3') {$pclass = "col-ss-3";} else if ($phone == 'span4') {$pclass = "col-ss-4";} else if ($phone == 'span6') {$pclass = "col-ss-6";} else if ($phone == 'span8') {$pclass = "col-ss-8";} else {$tclass = "";}
 	return '<div class="col-md-11 '.$tclass.' '.$pclass.'">'.do_shortcode($content).'</div>';
 }
-function bigcloudcms_column10_function( $atts, $content ) {
+function kadence_column10_function( $atts, $content ) {
 	extract(shortcode_atts(array(
 			'tablet' => '',
 			'phone' => ''
@@ -120,7 +120,7 @@ function bigcloudcms_column10_function( $atts, $content ) {
 		if(empty($phone)) {$pclass = "";} else if ($phone == 'span2') {$pclass = "col-ss-2";} else if ($phone == 'span3') {$pclass = "col-ss-3";} else if ($phone == 'span4') {$pclass = "col-ss-4";} else if ($phone == 'span6') {$pclass = "col-ss-6";} else if ($phone == 'span8') {$pclass = "col-ss-8";} else {$tclass = "";}
 	return '<div class="col-md-10 '.$tclass.' '.$pclass.'">'.do_shortcode($content).'</div>';
 }
-function bigcloudcms_column9_function( $atts, $content ) {
+function kadence_column9_function( $atts, $content ) {
 	extract(shortcode_atts(array(
 			'tablet' => '',
 			'phone' => ''
@@ -129,7 +129,7 @@ function bigcloudcms_column9_function( $atts, $content ) {
 		if(empty($phone)) {$pclass = "";} else if ($phone == 'span2') {$pclass = "col-ss-2";} else if ($phone == 'span3') {$pclass = "col-ss-3";} else if ($phone == 'span4') {$pclass = "col-ss-4";} else if ($phone == 'span6') {$pclass = "col-ss-6";} else if ($phone == 'span8') {$pclass = "col-ss-8";} else {$tclass = "";}
 	return '<div class="col-md-9 '.$tclass.' '.$pclass.'">'.do_shortcode($content).'</div>';
 }
-function bigcloudcms_column8_function( $atts, $content ) {
+function kadence_column8_function( $atts, $content ) {
 	extract(shortcode_atts(array(
 			'tablet' => '',
 			'phone' => ''
@@ -138,7 +138,7 @@ function bigcloudcms_column8_function( $atts, $content ) {
 		if(empty($phone)) {$pclass = "";} else if ($phone == 'span2') {$pclass = "col-ss-2";} else if ($phone == 'span3') {$pclass = "col-ss-3";} else if ($phone == 'span4') {$pclass = "col-ss-4";} else if ($phone == 'span6') {$pclass = "col-ss-6";} else if ($phone == 'span8') {$pclass = "col-ss-8";} else {$tclass = "";}
 	return '<div class="col-md-8 '.$tclass.' '.$pclass.'">'.do_shortcode($content).'</div>';
 }
-function bigcloudcms_column7_function( $atts, $content ) {
+function kadence_column7_function( $atts, $content ) {
 	extract(shortcode_atts(array(
 			'tablet' => '',
 			'phone' => ''
@@ -147,7 +147,7 @@ function bigcloudcms_column7_function( $atts, $content ) {
 		if(empty($phone)) {$pclass = "";} else if ($phone == 'span2') {$pclass = "col-ss-2";} else if ($phone == 'span3') {$pclass = "col-ss-3";} else if ($phone == 'span4') {$pclass = "col-ss-4";} else if ($phone == 'span6') {$pclass = "col-ss-6";} else if ($phone == 'span8') {$pclass = "col-ss-8";} else {$tclass = "";}
 	return '<div class="col-md-7 '.$tclass.' '.$pclass.'">'.do_shortcode($content).'</div>';
 }
-function bigcloudcms_column6_function( $atts, $content ) {
+function kadence_column6_function( $atts, $content ) {
 	extract(shortcode_atts(array(
 			'tablet' => '',
 			'phone' => ''
@@ -156,7 +156,7 @@ function bigcloudcms_column6_function( $atts, $content ) {
 		if(empty($phone)) {$pclass = "";} else if ($phone == 'span2') {$pclass = "col-ss-2";} else if ($phone == 'span3') {$pclass = "col-ss-3";} else if ($phone == 'span4') {$pclass = "col-ss-4";} else if ($phone == 'span6') {$pclass = "col-ss-6";} else if ($phone == 'span8') {$pclass = "col-ss-8";} else {$tclass = "";}
 	return '<div class="col-md-6 '.$tclass.' '.$pclass.'">'.do_shortcode($content).'</div>';
 }
-function bigcloudcms_column5_function( $atts, $content ) {
+function kadence_column5_function( $atts, $content ) {
 	extract(shortcode_atts(array(
 			'tablet' => '',
 			'phone' => ''
@@ -165,7 +165,7 @@ function bigcloudcms_column5_function( $atts, $content ) {
 		if(empty($phone)) {$pclass = "";} else if ($phone == 'span2') {$pclass = "col-ss-2";} else if ($phone == 'span3') {$pclass = "col-ss-3";} else if ($phone == 'span4') {$pclass = "col-ss-4";} else if ($phone == 'span6') {$pclass = "col-ss-6";} else if ($phone == 'span8') {$pclass = "col-ss-8";} else {$tclass = "";}
 	return '<div class="col-md-5 '.$tclass.' '.$pclass.'">'.do_shortcode($content).'</div>';
 }
-function bigcloudcms_column4_function( $atts, $content ) {
+function kadence_column4_function( $atts, $content ) {
 	extract(shortcode_atts(array(
 			'tablet' => '',
 			'phone' => ''
@@ -174,7 +174,7 @@ function bigcloudcms_column4_function( $atts, $content ) {
 		if(empty($phone)) {$pclass = "";} else if ($phone == 'span2') {$pclass = "col-ss-2";} else if ($phone == 'span3') {$pclass = "col-ss-3";} else if ($phone == 'span4') {$pclass = "col-ss-4";} else if ($phone == 'span6') {$pclass = "col-ss-6";} else if ($phone == 'span8') {$pclass = "col-ss-8";} else {$tclass = "";}
 	return '<div class="col-md-4 '.$tclass.' '.$pclass.'">'.do_shortcode($content).'</div>';
 }
-function bigcloudcms_column3_function( $atts, $content ) {
+function kadence_column3_function( $atts, $content ) {
 	extract(shortcode_atts(array(
 			'tablet' => '',
 			'phone' => ''
@@ -183,7 +183,7 @@ function bigcloudcms_column3_function( $atts, $content ) {
 		if(empty($phone)) {$pclass = "";} else if ($phone == 'span2') {$pclass = "col-ss-2";} else if ($phone == 'span3') {$pclass = "col-ss-3";} else if ($phone == 'span4') {$pclass = "col-ss-4";} else if ($phone == 'span6') {$pclass = "col-ss-6";} else if ($phone == 'span8') {$pclass = "col-ss-8";} else {$tclass = "";}
 	return '<div class="col-md-3 '.$tclass.' '.$pclass.'">'.do_shortcode($content).'</div>';
 }
-function bigcloudcms_column2_function( $atts, $content ) {
+function kadence_column2_function( $atts, $content ) {
 	extract(shortcode_atts(array(
 			'tablet' => '',
 			'phone' => ''
@@ -192,7 +192,7 @@ function bigcloudcms_column2_function( $atts, $content ) {
 		if(empty($phone)) {$pclass = "";} else if ($phone == 'span2') {$pclass = "col-ss-2";} else if ($phone == 'span3') {$pclass = "col-ss-3";} else if ($phone == 'span4') {$pclass = "col-ss-4";} else if ($phone == 'span6') {$pclass = "col-ss-6";} else if ($phone == 'span8') {$pclass = "col-ss-8";} else {$tclass = "";}
 	return '<div class="col-md-2 '.$tclass.' '.$pclass.'">'.do_shortcode($content).'</div>';
 }
-function bigcloudcms_column25_function( $atts, $content ) {
+function kadence_column25_function( $atts, $content ) {
 	extract(shortcode_atts(array(
 			'tablet' => '',
 			'phone' => ''
@@ -201,7 +201,7 @@ function bigcloudcms_column25_function( $atts, $content ) {
 		if(empty($phone)) {$pclass = "";} else if ($phone == 'span2') {$pclass = "col-ss-2";} else if ($phone == 'span3') {$pclass = "col-ss-3";} else if ($phone == 'span4') {$pclass = "col-ss-4";} else if ($phone == 'span6') {$pclass = "col-ss-6";} else if ($phone == 'span8') {$pclass = "col-ss-8";} else {$tclass = "";}
 	return '<div class="col-md-25 '.$tclass.' '.$pclass.'">'.do_shortcode($content).'</div>';
 }
-function bigcloudcms_column1_function( $atts, $content ) {
+function kadence_column1_function( $atts, $content ) {
 	extract(shortcode_atts(array(
 			'tablet' => '',
 			'phone' => ''
@@ -211,7 +211,7 @@ function bigcloudcms_column1_function( $atts, $content ) {
 	return '<div class="col-md-1 '.$tclass.' '.$pclass.'">'.do_shortcode($content).'</div>';
 }
 //Shortcode for Icons
-function bigcloudcms_icon_shortcode_function( $atts) {
+function kadence_icon_shortcode_function( $atts) {
 	extract(shortcode_atts(array(
 		'icon' => '',
 		'size' => '',
@@ -239,7 +239,7 @@ function bigcloudcms_icon_shortcode_function( $atts) {
 	return $output;
 }
 //Shortcode for Info Boxes
-function bigcloudcms_info_boxes_shortcode_function( $atts, $content) {
+function kadence_info_boxes_shortcode_function( $atts, $content) {
 	extract(shortcode_atts(array(
 		'icon' => '',
 		'image' => '',
@@ -266,7 +266,7 @@ function bigcloudcms_info_boxes_shortcode_function( $atts, $content) {
 	return $output;
 }
 //Shortcode for Icons Boxes
-function bigcloudcms_icon_boxes_shortcode_function( $atts, $content) {
+function kadence_icon_boxes_shortcode_function( $atts, $content) {
 	extract(shortcode_atts(array(
 		'icon' => '',
 		'id' => (rand(10,100)),
@@ -303,7 +303,7 @@ function bigcloudcms_icon_boxes_shortcode_function( $atts, $content) {
 	return $output;
 }
 //Shortcode for modal
-function bigcloudcms_modal_shortcode_function( $atts, $content) {
+function kadence_modal_shortcode_function( $atts, $content) {
 	extract(shortcode_atts(array(
 		'title' => 'Modal Title',
 		'close' => 'true',
@@ -334,7 +334,7 @@ function bigcloudcms_modal_shortcode_function( $atts, $content) {
 	        <?php echo do_shortcode($content); ?>
 	      </div>
 	      <div class="modal-footer">
-	        <button type="button" class="kad-btn" data-dismiss="modal"><?php echo __('Close', 'bigcloudcms');?></button>
+	        <button type="button" class="kad-btn" data-dismiss="modal"><?php echo __('Close', 'virtue');?></button>
 	      </div>
 	    </div>
 	  </div>
@@ -345,7 +345,7 @@ function bigcloudcms_modal_shortcode_function( $atts, $content) {
 	return $output;
 }
 // Video Shortcode
-function bigcloudcms_video_shortcode_function( $atts, $content) {
+function kadence_video_shortcode_function( $atts, $content) {
 	extract(shortcode_atts(array(
 		'width' => '',
 		'height' => '',
@@ -360,7 +360,7 @@ function bigcloudcms_video_shortcode_function( $atts, $content) {
 	else { $output = '<div class="videofit">'.$content.'</div>'; }
 	return $output;
 }
-function bigcloudcms_youtube_shortcode_function( $atts, $content) {
+function kadence_youtube_shortcode_function( $atts, $content) {
 		// Prepare data
 		$return = array();
 		$params = array();
@@ -380,10 +380,10 @@ function bigcloudcms_youtube_shortcode_function( $atts, $content) {
 				'theme' => 'dark'
 		), $atts, 'kad_youtube' );
 
-		if ( !$atts['url'] ) return '<p class="error">YouTube: ' . __( 'please specify correct url', 'bigcloudcms' ) . '</p>';
+		if ( !$atts['url'] ) return '<p class="error">YouTube: ' . __( 'please specify correct url', 'virtue' ) . '</p>';
 		$id = ( preg_match( '%(?:youtube(?:-nocookie)?\.com/(?:[^/]+/.+/|(?:v|e(?:mbed)?)/|.*[?&]v=)|youtu\.be/)([^"&?/ ]{11})%i', $atts['url'], $match ) ) ? $match[1] : false;
 		// Check that url is specified
-		if ( !$id ) return '<p class="error">YouTube: ' . __( 'please specify correct url', 'bigcloudcms' ) . '</p>';
+		if ( !$id ) return '<p class="error">YouTube: ' . __( 'please specify correct url', 'virtue' ) . '</p>';
 		// Prepare params
 		if($atts['hidecontrols'] == 'true') {$atts['controls'] = 'false';}
 		foreach ( array('autoplay', 'controls', 'fs', 'modestbranding', 'theme', 'rel', 'loop' ) as $param ) $params[$param] = str_replace( array( 'false', 'true', 'alt' ), array( '0', '1', '2' ), $atts[$param] );
@@ -398,7 +398,7 @@ function bigcloudcms_youtube_shortcode_function( $atts, $content) {
 		// Return result
 		return implode( '', $return );
 }
-function bigcloudcms_vimeo_shortcode_function( $atts, $content) {
+function kadence_vimeo_shortcode_function( $atts, $content) {
 		$return = array();
 		$atts = shortcode_atts( array(
 				'url'        => false,
@@ -407,10 +407,10 @@ function bigcloudcms_vimeo_shortcode_function( $atts, $content) {
 				'maxwidth' => '',
 				'autoplay'   => 'no'
 			), $atts, 'vimeo' );
-		if ( !$atts['url'] ) return '<p class="error">Vimeo: ' . __( 'please specify correct url', 'bigcloudcms' ) . '</p>';
+		if ( !$atts['url'] ) return '<p class="error">Vimeo: ' . __( 'please specify correct url', 'virtue' ) . '</p>';
 		$id = ( preg_match( '~(?:<iframe [^>]*src=")?(?:https?:\/\/(?:[\w]+\.)*vimeo\.com(?:[\/\w]*\/videos?)?\/([0-9]+)[^\s]*)"?(?:[^>]*></iframe>)?(?:<p>.*</p>)?~ix', $atts['url'], $match ) ) ? $match[1] : false;
 		// Check that url is specified
-		if ( !$id ) return '<p class="error">Vimeo: ' . __( 'please specify correct url', 'bigcloudcms' ) . '</p>';
+		if ( !$id ) return '<p class="error">Vimeo: ' . __( 'please specify correct url', 'virtue' ) . '</p>';
 
 		if($atts['maxwidth']) {$maxwidth = 'style="max-width:'.$atts['maxwidth'].'px;"';} else{ $maxwidth = '';}
 		$autoplay = ( $atts['autoplay'] === 'yes' ) ? '&amp;autoplay=1' : '';
@@ -425,7 +425,7 @@ function bigcloudcms_vimeo_shortcode_function( $atts, $content) {
 	}
 
 //Image Split
-function bigcloudcms_image_split_shortcode_function( $atts, $content) {
+function kadence_image_split_shortcode_function( $atts, $content) {
 	extract(shortcode_atts(array(
 		'height' => '500',
 		'image' => '',
@@ -471,7 +471,7 @@ function bigcloudcms_image_split_shortcode_function( $atts, $content) {
 	return $output;
 }
 //Typed Text
-function bigcloudcms_typed_text_shortcode_function( $atts, $content) {
+function kadence_typed_text_shortcode_function( $atts, $content) {
 	extract(shortcode_atts(array(
 		'first_sentence' => 'typed text',
 		'second_sentence' => '',
@@ -505,7 +505,7 @@ $output = '<span class="kt_typed_element" data-first-sentence="'.$first_sentence
 }
 
 	//Simple Box
-function bigcloudcms_simple_box_shortcode_function( $atts, $content ) {
+function kadence_simple_box_shortcode_function( $atts, $content ) {
 	extract(shortcode_atts(array(
 		'padding_top' => '15',
 		'padding_bottom' => '15',
@@ -532,7 +532,7 @@ function bigcloudcms_simple_box_shortcode_function( $atts, $content ) {
 	return $output;
 }
 //Button
-function bigcloudcms_button_shortcode_function( $atts) {
+function kadence_button_shortcode_function( $atts) {
 	extract(shortcode_atts(array(
 		'id' => rand(1, 99),
 		'bcolor' => '',
@@ -561,7 +561,7 @@ function bigcloudcms_button_shortcode_function( $atts) {
 	$output .= '} </style>';
 return $output;
 }
-function bigcloudcms_blockquote_shortcode_function( $atts, $content) {
+function kadence_blockquote_shortcode_function( $atts, $content) {
 	extract(shortcode_atts(array(
 		'align' => 'center',
 ), $atts));
@@ -581,7 +581,7 @@ function bigcloudcms_blockquote_shortcode_function( $atts, $content) {
 	}
 	  return $output;
 }
-function bigcloudcms_pullquote_shortcode_function( $atts, $content) {
+function kadence_pullquote_shortcode_function( $atts, $content) {
    extract( shortcode_atts( array(
 	  'align' => 'center'
   ), $atts ));
@@ -603,7 +603,7 @@ function bigcloudcms_pullquote_shortcode_function( $atts, $content) {
 
    return $output;
 }
-function bigcloudcms_hrule_function($atts) {
+function kadence_hrule_function($atts) {
 	extract(shortcode_atts(array(
 		'color' => '',
 		'style' => 'line',
@@ -625,7 +625,7 @@ function bigcloudcms_hrule_function($atts) {
 
 	return $output;
 }
-function bigcloudcms_popover_function($atts, $content) {
+function kadence_popover_function($atts, $content) {
 	extract(shortcode_atts(array(
 		'direction' => 'top',
 		'text' => '',
@@ -637,7 +637,7 @@ function bigcloudcms_popover_function($atts, $content) {
 
 	return $output;
 }
-function bigcloudcms_hrule_dots_function($atts) {
+function kadence_hrule_dots_function($atts) {
 	extract(shortcode_atts(array(
 		'color' => '',
 		'size' => ''
@@ -649,91 +649,91 @@ function bigcloudcms_hrule_dots_function($atts) {
 
 	return $output;
 }
-function bigcloudcms_hrule_gradient_function() {
+function kadence_hrule_gradient_function() {
 	$output = '<div class="hrule_gradient"></div>';
 	return $output;
 }
-function bigcloudcms_hrpadding_function($atts ) {
+function kadence_hrpadding_function($atts ) {
 	extract(shortcode_atts(array(
 		'size' => ''
 ), $atts));
 	if(empty($size)) {$size = '10px';}
 	return '<div class="kad-spacer clearfix" style="height:'.$size.'"></div>';
 }
-function bigcloudcms_hrpadding_minus_10_function( ) {
+function kadence_hrpadding_minus_10_function( ) {
 	return '<div class="space_minus_10 clearfix"></div>';
 }
-function bigcloudcms_hrpadding_minus_20_function( ) {
+function kadence_hrpadding_minus_20_function( ) {
 	return '<div class="space_minus_20 clearfix"></div>';
 }
-function bigcloudcms_hrpadding10_function( ) {
+function kadence_hrpadding10_function( ) {
 	return '<div class="space_10 clearfix"></div>';
 }
-function bigcloudcms_hrpadding20_function( ) {
+function kadence_hrpadding20_function( ) {
 	return '<div class="space_20 clearfix"></div>';
 }
-function bigcloudcms_hrpadding40_function( ) {
+function kadence_hrpadding40_function( ) {
 	return '<div class="space_40 clearfix"></div>';
 }
-function bigcloudcms_hrpadding30_function( ) {
+function kadence_hrpadding30_function( ) {
 	return '<div class="space_30 clearfix"></div>';
 }
-function bigcloudcms_hrpadding80_function( ) {
+function kadence_hrpadding80_function( ) {
 	return '<div class="space_80 clearfix"></div>';
 }
-function bigcloudcms_clearfix_function( ) {
+function kadence_clearfix_function( ) {
 	return '<div class="clearfix"></div>';
 }
-function bigcloudcms_columnhelper_function( ) {
+function kadence_columnhelper_function( ) {
 	return '';
 }
-function bigcloudcms_bc_shortcode( ) {
+function kadence_bc_shortcode( ) {
 	ob_start(); ?>
 	<div class="kt_shortcode_breadcrumbs">
-	<?php bigcloudcms_breadcrumbs(); ?>
+	<?php kadence_breadcrumbs(); ?>
 	</div>
 	<?php  $output = ob_get_contents();
 		ob_end_clean();
 	return $output;
 }
-function bigcloudcms_extra_shortcodes(){
-add_shortcode('accordion', 'bigcloudcms_accordion_shortcode_function');
-   add_shortcode('pane', 'bigcloudcms_accordion_pane_function');
-   add_shortcode('tabs', 'bigcloudcms_tab_shortcode_function');
-   add_shortcode('tab', 'bigcloudcms_tab_pane_function');
-   add_shortcode('columns', 'bigcloudcms_column_shortcode_function');
-   add_shortcode('hcolumns', 'bigcloudcms_hcolumn_shortcode_function');
-   add_shortcode('span11', 'bigcloudcms_column11_function');
-   add_shortcode('span10', 'bigcloudcms_column10_function');
-   add_shortcode('span9', 'bigcloudcms_column9_function');
-   add_shortcode('span8', 'bigcloudcms_column8_function');
-   add_shortcode('span7', 'bigcloudcms_column7_function');
-   add_shortcode('span6', 'bigcloudcms_column6_function');
-   add_shortcode('span5', 'bigcloudcms_column5_function');
-   add_shortcode('span4', 'bigcloudcms_column4_function');
-   add_shortcode('span3', 'bigcloudcms_column3_function');
-   add_shortcode('span25', 'bigcloudcms_column25_function');
-   add_shortcode('span2', 'bigcloudcms_column2_function');
-   add_shortcode('span1', 'bigcloudcms_column1_function');
-   add_shortcode('columnhelper', 'bigcloudcms_columnhelper_function');
-   add_shortcode('icon', 'bigcloudcms_icon_shortcode_function');
-   add_shortcode('pullquote', 'bigcloudcms_pullquote_shortcode_function');
-   add_shortcode('blockquote', 'bigcloudcms_blockquote_shortcode_function');
-   add_shortcode('btn', 'bigcloudcms_button_shortcode_function');
-   add_shortcode('hr', 'bigcloudcms_hrule_function');
-   add_shortcode('hr_dots', 'bigcloudcms_hrule_dots_function');
-   add_shortcode('hr_gradient', 'bigcloudcms_hrule_gradient_function');
-   add_shortcode('minus_space_10', 'bigcloudcms_hrpadding_minus_10_function');
-   add_shortcode('minus_space_20', 'bigcloudcms_hrpadding_minus_20_function');
-   add_shortcode('space_10', 'bigcloudcms_hrpadding10_function');
-   add_shortcode('space_20', 'bigcloudcms_hrpadding20_function');
-   add_shortcode('space_30', 'bigcloudcms_hrpadding30_function');
-   add_shortcode('space_40', 'bigcloudcms_hrpadding40_function');
-   add_shortcode('space_80', 'bigcloudcms_hrpadding80_function');
-   add_shortcode('space', 'bigcloudcms_hrpadding_function');
-   add_shortcode('clear', 'bigcloudcms_clearfix_function');
-   add_shortcode('infobox', 'bigcloudcms_info_boxes_shortcode_function');
-   add_shortcode('iconbox', 'bigcloudcms_icon_boxes_shortcode_function');
+function kadence_extra_shortcodes(){
+add_shortcode('accordion', 'kadence_accordion_shortcode_function');
+   add_shortcode('pane', 'kadence_accordion_pane_function');
+   add_shortcode('tabs', 'kadence_tab_shortcode_function');
+   add_shortcode('tab', 'kadence_tab_pane_function');
+   add_shortcode('columns', 'kadence_column_shortcode_function');
+   add_shortcode('hcolumns', 'kadence_hcolumn_shortcode_function');
+   add_shortcode('span11', 'kadence_column11_function');
+   add_shortcode('span10', 'kadence_column10_function');
+   add_shortcode('span9', 'kadence_column9_function');
+   add_shortcode('span8', 'kadence_column8_function');
+   add_shortcode('span7', 'kadence_column7_function');
+   add_shortcode('span6', 'kadence_column6_function');
+   add_shortcode('span5', 'kadence_column5_function');
+   add_shortcode('span4', 'kadence_column4_function');
+   add_shortcode('span3', 'kadence_column3_function');
+   add_shortcode('span25', 'kadence_column25_function');
+   add_shortcode('span2', 'kadence_column2_function');
+   add_shortcode('span1', 'kadence_column1_function');
+   add_shortcode('columnhelper', 'kadence_columnhelper_function');
+   add_shortcode('icon', 'kadence_icon_shortcode_function');
+   add_shortcode('pullquote', 'kadence_pullquote_shortcode_function');
+   add_shortcode('blockquote', 'kadence_blockquote_shortcode_function');
+   add_shortcode('btn', 'kadence_button_shortcode_function');
+   add_shortcode('hr', 'kadence_hrule_function');
+   add_shortcode('hr_dots', 'kadence_hrule_dots_function');
+   add_shortcode('hr_gradient', 'kadence_hrule_gradient_function');
+   add_shortcode('minus_space_10', 'kadence_hrpadding_minus_10_function');
+   add_shortcode('minus_space_20', 'kadence_hrpadding_minus_20_function');
+   add_shortcode('space_10', 'kadence_hrpadding10_function');
+   add_shortcode('space_20', 'kadence_hrpadding20_function');
+   add_shortcode('space_30', 'kadence_hrpadding30_function');
+   add_shortcode('space_40', 'kadence_hrpadding40_function');
+   add_shortcode('space_80', 'kadence_hrpadding80_function');
+   add_shortcode('space', 'kadence_hrpadding_function');
+   add_shortcode('clear', 'kadence_clearfix_function');
+   add_shortcode('infobox', 'kadence_info_boxes_shortcode_function');
+   add_shortcode('iconbox', 'kadence_icon_boxes_shortcode_function');
    add_shortcode('carousel', 'kad_carousel_shortcode_function');
    add_shortcode('blog_posts', 'kad_blog_shortcode_function');
    add_shortcode('testimonial_posts', 'kad_testimonial_shortcode_function');
@@ -744,45 +744,45 @@ add_shortcode('accordion', 'bigcloudcms_accordion_shortcode_function');
    add_shortcode('portfolio_posts', 'kad_portfolio_shortcode_function');
    add_shortcode('portfolio_types', 'kad_portfolio_type_shortcode_function');
    add_shortcode('staff_posts', 'kad_staff_shortcode_function');
-   add_shortcode('kad_youtube', 'bigcloudcms_youtube_shortcode_function');
-   add_shortcode('kad_vimeo', 'bigcloudcms_vimeo_shortcode_function');
-   add_shortcode('kad_popover', 'bigcloudcms_popover_function');
-   add_shortcode('kad_modal', 'bigcloudcms_modal_shortcode_function');
+   add_shortcode('kad_youtube', 'kadence_youtube_shortcode_function');
+   add_shortcode('kad_vimeo', 'kadence_vimeo_shortcode_function');
+   add_shortcode('kad_popover', 'kadence_popover_function');
+   add_shortcode('kad_modal', 'kadence_modal_shortcode_function');
    add_shortcode('kad_blog', 'kad_blog_simple_shortcode_function');
    add_shortcode('blog_grid', 'kad_blog_grid_shortcode_function');
-   add_shortcode('kt_box', 'bigcloudcms_simple_box_shortcode_function');
-   add_shortcode('kt_imgsplit', 'bigcloudcms_image_split_shortcode_function');
-   add_shortcode('kt_product_toggle', 'bigcloudcms_product_toggle_shortcode_function');
-   add_shortcode('kt_breadcrumbs', 'bigcloudcms_bc_shortcode');
-   add_shortcode('kt_typed', 'bigcloudcms_typed_text_shortcode_function');
+   add_shortcode('kt_box', 'kadence_simple_box_shortcode_function');
+   add_shortcode('kt_imgsplit', 'kadence_image_split_shortcode_function');
+   add_shortcode('kt_product_toggle', 'kadence_product_toggle_shortcode_function');
+   add_shortcode('kt_breadcrumbs', 'kadence_bc_shortcode');
+   add_shortcode('kt_typed', 'kadence_typed_text_shortcode_function');
 }
-add_action( 'init', 'bigcloudcms_extra_shortcodes');
+add_action( 'init', 'kadence_extra_shortcodes');
 
-function bigcloudcms_add_plugin( $plugin_array ) {
+function kadence_add_plugin( $plugin_array ) {
    $plugin_array['kadcolumns'] = get_template_directory_uri() . '/lib/shortcodes/columns/columns_shortgen.js';
    return $plugin_array;
 }
-function bigcloudcms_tinymce_shortcode_button() {
+function kadence_tinymce_shortcode_button() {
 
    if ( ! current_user_can('edit_posts') && ! current_user_can('edit_pages') ) {
       return;
    }
 
    if ( get_user_option('rich_editing') == 'true' ) {
-      add_filter( 'mce_external_plugins', 'bigcloudcms_add_plugin' );
+      add_filter( 'mce_external_plugins', 'kadence_add_plugin' );
    }
 
 }
-add_action('init', 'bigcloudcms_tinymce_shortcode_button');
+add_action('init', 'kadence_tinymce_shortcode_button');
 
 
-function bigcloudcms_register_shortcodes(){
+function kadence_register_shortcodes(){
 	add_shortcode('the-year', 'kad_year_shortcode_function');
 	add_shortcode('copyright', 'kad_copyright_shortcode_function');
 	add_shortcode('site-name', 'kad_sitename_shortcode_function');
 	add_shortcode('theme-credit', 'kad_themecredit_shortcode_function');
 }
-add_action( 'init', 'bigcloudcms_register_shortcodes');
+add_action( 'init', 'kadence_register_shortcodes');
 //    Clean up Shortcodes
 
 function kad_content_clean_shortcodes($content){   

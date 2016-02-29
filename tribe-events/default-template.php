@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	die( '-1' );
 }
 
-add_filter('bigcloudcms_display_sidebar', 'kt_tribe_sidebar');
+add_filter('kadence_display_sidebar', 'kt_tribe_sidebar');
 
 function kt_tribe_sidebar($sidebar) {
   if (tribe_is_event_query()) {
@@ -27,7 +27,7 @@ function kt_tribe_sidebar($sidebar) {
 <!-- kt-event-code -->
 <div id="content" class="container">
    	<div class="row">
-     	<div class="main <?php echo bigcloudcms_main_class(); ?>" id="ktmain" role="main">
+     	<div class="main <?php echo kadence_main_class(); ?>" id="ktmain" role="main">
 <!-- stop kt-event-code -->
 <div id="tribe-events-pg-template">
 	<?php tribe_events_before_html(); ?>

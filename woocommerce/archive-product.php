@@ -11,14 +11,14 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
- global $bigcloudcms_premium, $woocommerce_loop;  
+ global $virtue_premium, $woocommerce_loop;  
 
  if ( empty( $woocommerce_loop['columns'] ) )
 	$woocommerce_loop['columns'] = apply_filters( 'loop_shop_columns', 4 );
 
- if(isset($bigcloudcms_premium['shop_slider'])) {$shop_slider = $bigcloudcms_premium['shop_slider'];} else {$shop_slider = 0;} 
+ if(isset($virtue_premium['shop_slider'])) {$shop_slider = $virtue_premium['shop_slider'];} else {$shop_slider = 0;} 
 		if (is_shop() and ($shop_slider == '1')) { 
-			$choose_shop_slider = $bigcloudcms_premium['choose_shop_slider'];
+			$choose_shop_slider = $virtue_premium['choose_shop_slider'];
 					if ($choose_shop_slider == "rev") {
 					get_template_part('templates/shop/rev', 'slider');
 					}
@@ -34,7 +34,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 				
 		<div id="content" class="container">
    		<div class="row">
-      <div class="main <?php echo bigcloudcms_main_class(); ?>" role="main">
+      <div class="main <?php echo kadence_main_class(); ?>" role="main">
 
 		<?php
 			/**
@@ -54,28 +54,28 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 						<?php woocommerce_result_count(); ?>
 					</div>
 					<div class="col-md-6 col-sm-6">
-					<?php if(isset($bigcloudcms_premium['shop_toggle']) && $bigcloudcms_premium['shop_toggle'] == 1) {
-						if(isset($bigcloudcms_premium['product_shop_layout']) && $bigcloudcms_premium['product_shop_layout'] == '1') { ?>
+					<?php if(isset($virtue_premium['shop_toggle']) && $virtue_premium['shop_toggle'] == 1) {
+						if(isset($virtue_premium['product_shop_layout']) && $virtue_premium['product_shop_layout'] == '1') { ?>
 						<div class="kt_product_toggle_container_list single_to_grid">
-							<div title="<?php echo __('List View', 'bigcloudcms');?>" class="toggle_list toggle_active" data-toggle="product_list">
+							<div title="<?php echo __('List View', 'virtue');?>" class="toggle_list toggle_active" data-toggle="product_list">
 							<i class="icon-menu4"></i>
 							</div>
-							<div title="<?php echo __('Grid View', 'bigcloudcms');?>" class="toggle_grid" data-toggle="product_grid">
+							<div title="<?php echo __('Grid View', 'virtue');?>" class="toggle_grid" data-toggle="product_grid">
 								<i class="icon-grid5"></i>
 							</div>
 						</div>
 						<?php } else { ?>
 						<div class="kt_product_toggle_container">
-							<div title="<?php echo __('Grid View', 'bigcloudcms');?>" class="toggle_grid toggle_active" data-toggle="product_grid">
+							<div title="<?php echo __('Grid View', 'virtue');?>" class="toggle_grid toggle_active" data-toggle="product_grid">
 								<i class="icon-grid5"></i>
 							</div>
-							<div title="<?php echo __('List View', 'bigcloudcms');?>" class="toggle_list" data-toggle="product_list">
+							<div title="<?php echo __('List View', 'virtue');?>" class="toggle_list" data-toggle="product_list">
 							<i class="icon-menu4"></i>
 							</div>
 						</div>
 					<?php } } ?>
 					<?php woocommerce_catalog_ordering(); ?>
-					<?php if(bigcloudcms_display_shop_breadcrumbs()) { bigcloudcms_breadcrumbs(); } ?>
+					<?php if(kadence_display_shop_breadcrumbs()) { kadence_breadcrumbs(); } ?>
 					</div>
 				</div>
 			</div>
@@ -96,10 +96,10 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 				 */
 				do_action( 'woocommerce_before_shop_loop' );
 			?>
-			<?php global $bigcloudcms_premium; $shop_filter = $bigcloudcms_premium['shop_filter']; 
-			 $cat_filter = $bigcloudcms_premium['cat_filter']; 
-			 if(!empty($bigcloudcms_premium['filter_all_text'])) {$alltext = $bigcloudcms_premium['filter_all_text'];} else {$alltext = __('All', 'bigcloudcms');}
-			 if(!empty($bigcloudcms_premium['shop_filter_text'])) {$shopfiltertext = $bigcloudcms_premium['shop_filter_text'];} else {$shopfiltertext = __('Filter Products', 'bigcloudcms');}
+			<?php global $virtue_premium; $shop_filter = $virtue_premium['shop_filter']; 
+			 $cat_filter = $virtue_premium['cat_filter']; 
+			 if(!empty($virtue_premium['filter_all_text'])) {$alltext = $virtue_premium['filter_all_text'];} else {$alltext = __('All', 'virtue');}
+			 if(!empty($virtue_premium['shop_filter_text'])) {$shopfiltertext = $virtue_premium['shop_filter_text'];} else {$shopfiltertext = __('Filter Products', 'virtue');}
 	  		if (is_shop() && $shop_filter == 1 && !is_search()) { ?>
       		<section id="options" class="clearfix">
 			<?php 
@@ -113,7 +113,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 							$termname = strtolower($category->slug);
 							$termname = preg_replace("/[^a-zA-Z 0-9]+/", " ", $termname);
 							$termname = str_replace(' ', '-', $termname);	
-							echo '<li class="postclass"><a href="#" data-filter=".'.$termname.'" title="'.__("Show", "bigcloudcms").' '.$category->name.'" rel="'.$termname.'"><h5>'.$category->name.'</h5><div class="arrow-up"></div></a></li>';
+							echo '<li class="postclass"><a href="#" data-filter=".'.$termname.'" title="'.__("Show", "virtue").' '.$category->name.'" rel="'.$termname.'"><h5>'.$category->name.'</h5><div class="arrow-up"></div></a></li>';
 								}
 				 		}
 				 		echo "</ul>"; ?>
@@ -136,14 +136,14 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 							$termname = strtolower($category->slug);
 							$termname = preg_replace("/[^a-zA-Z 0-9]+/", " ", $termname);
 							$termname = str_replace(' ', '-', $termname);
-							echo '<li class="postclass"><a href="#" data-filter=".'.$termname.'" title="'.__("Show", "bigcloudcms").' '.$category->name.'" rel="'.$termname.'"><h5>'.$category->name.'</h5><div class="arrow-up"></div></a></li>';
+							echo '<li class="postclass"><a href="#" data-filter=".'.$termname.'" title="'.__("Show", "virtue").' '.$category->name.'" rel="'.$termname.'"><h5>'.$category->name.'</h5><div class="arrow-up"></div></a></li>';
 								}
 						echo "</ul>"; 
 				 	} ?>
 			</section>
             <?php } ?>
 
-            <div class="clearfix <?php echo bigcloudcms_category_layout_css(); ?> rowtight product_category_padding"> 
+            <div class="clearfix <?php echo kadence_category_layout_css(); ?> rowtight product_category_padding"> 
             <?php woocommerce_product_subcategories(); ?> 
             </div>
 

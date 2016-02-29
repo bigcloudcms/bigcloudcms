@@ -11,15 +11,15 @@ Template Name: Portfolio Grid
 	
     <div id="content" class="container">
    		<div class="row">
-      		<div class="main <?php echo bigcloudcms_main_class(); ?>" id="ktmain" role="main">
+      		<div class="main <?php echo kadence_main_class(); ?>" id="ktmain" role="main">
       	  	<?php if ( ! post_password_required() ) { ?>
 				<div class="entry-content" itemprop="mainContentOfPage">
 					<?php get_template_part('templates/content', 'page'); ?>
 				</div>
       			<?php 
-      			global $post, $bigcloudcms_premium; 
+      			global $post, $virtue_premium; 
       			
-      			if(isset($bigcloudcms_premium['bigcloudcms_animate_in']) && $bigcloudcms_premium['bigcloudcms_animate_in'] == 1) {
+      			if(isset($virtue_premium['virtue_animate_in']) && $virtue_premium['virtue_animate_in'] == 1) {
       				$animate = 1;
       			} else {
       				$animate = 0;
@@ -57,8 +57,8 @@ Template Name: Portfolio Grid
 	  			if ($portfolio_filter == 'yes') { ?>
 		      		<section id="options" class="clearfix">
 						<?php 
-						if(!empty($bigcloudcms_premium['filter_all_text'])) {$alltext = $bigcloudcms_premium['filter_all_text'];} else {$alltext = __('All', 'bigcloudcms');}
-						if(!empty($bigcloudcms_premium['portfolio_filter_text'])) {$portfoliofiltertext = $bigcloudcms_premium['portfolio_filter_text'];} else {$portfoliofiltertext = __('Filter Projects', 'bigcloudcms');}
+						if(!empty($virtue_premium['filter_all_text'])) {$alltext = $virtue_premium['filter_all_text'];} else {$alltext = __('All', 'virtue');}
+						if(!empty($virtue_premium['portfolio_filter_text'])) {$portfoliofiltertext = $virtue_premium['portfolio_filter_text'];} else {$portfoliofiltertext = __('Filter Projects', 'virtue');}
 							$termtypes = array( 'child_of' => $portfolio_cat_ID,);
 							$categories= get_terms('portfolio-type', $termtypes);
 							$count = count($categories);
@@ -147,14 +147,14 @@ Template Name: Portfolio Grid
 						endif;
 						?>
 					<div class="<?php echo esc_attr($itemsize); ?> <?php echo strtolower($tax); ?> all p-item">
-                	<?php do_action('bigcloudcms_portfolio_loop_start');
+                	<?php do_action('kadence_portfolio_loop_start');
 							get_template_part('templates/content', 'loop-portfolio'); 
-						  do_action('bigcloudcms_portfolio_loop_end');
+						  do_action('kadence_portfolio_loop_end');
 					?>
                     </div>
 					<?php endwhile; else: ?>
 					 
-					<li class="error-not-found"><?php _e('Sorry, no portfolio entries found.', 'bigcloudcms');?></li>
+					<li class="error-not-found"><?php _e('Sorry, no portfolio entries found.', 'virtue');?></li>
 						
 				<?php endif; ?>
                 </div> <!--portfoliowrapper-->
@@ -167,7 +167,7 @@ Template Name: Portfolio Grid
                     $wp_query = $temp;  // Reset
                     wp_reset_query(); ?>
 
-                    <?php global $bigcloudcms_premium; if(isset($bigcloudcms_premium['page_comments']) && $bigcloudcms_premium['page_comments'] == '1') { comments_template('/templates/comments.php');} ?>
+                    <?php global $virtue_premium; if(isset($virtue_premium['page_comments']) && $virtue_premium['page_comments'] == '1') { comments_template('/templates/comments.php');} ?>
 
 <?php } else { ?>
       <?php echo get_the_password_form();

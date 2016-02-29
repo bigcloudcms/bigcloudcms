@@ -3,30 +3,30 @@
       <?php get_template_part('templates/page', 'header'); ?>
     </div><!--container-->
   </div><!--titleclass-->
- <?php if(bigcloudcms_display_sidebar()) {$display_sidebar = true; $fullclass = '';} else {$display_sidebar = false; $fullclass = 'fullwidth';}
-   global $bigcloudcms_premium; 
-   if(isset($bigcloudcms_premium['blog_cat_infinitescroll']) && $bigcloudcms_premium['blog_cat_infinitescroll'] == 1) {
+ <?php if(kadence_display_sidebar()) {$display_sidebar = true; $fullclass = '';} else {$display_sidebar = false; $fullclass = 'fullwidth';}
+   global $virtue_premium; 
+   if(isset($virtue_premium['blog_cat_infinitescroll']) && $virtue_premium['blog_cat_infinitescroll'] == 1) {
               $infinitescroll = true;
             } else {
               $infinitescroll = false;
             }
-   if(isset($bigcloudcms_premium['category_post_summary']) && $bigcloudcms_premium['category_post_summary'] == 'full') {
+   if(isset($virtue_premium['category_post_summary']) && $virtue_premium['category_post_summary'] == 'full') {
     $summary = 'full'; $postclass = "single-article fullpost";
-  } else if (isset($bigcloudcms_premium['category_post_summary']) && $bigcloudcms_premium['category_post_summary'] == 'grid'){
+  } else if (isset($virtue_premium['category_post_summary']) && $virtue_premium['category_post_summary'] == 'grid'){
       $summary = 'grid'; $postclass = "grid-postlist";
   }else {$summary = 'normal'; $postclass = 'postlist';} 
-  if(isset($bigcloudcms_premium['bigcloudcms_animate_in']) && $bigcloudcms_premium['bigcloudcms_animate_in'] == 1) {$animate = 1;} else {$animate = 0;} 
-  if(isset($bigcloudcms_premium['category_post_grid_column'])) {$blog_grid_column = $bigcloudcms_premium['category_post_grid_column'];} else {$blog_grid_column = '3';} 
+  if(isset($virtue_premium['virtue_animate_in']) && $virtue_premium['virtue_animate_in'] == 1) {$animate = 1;} else {$animate = 0;} 
+  if(isset($virtue_premium['category_post_grid_column'])) {$blog_grid_column = $virtue_premium['category_post_grid_column'];} else {$blog_grid_column = '3';} 
   if ($blog_grid_column == '2') {$itemsize = 'tcol-md-6 tcol-sm-6 tcol-xs-12 tcol-ss-12'; $slidewidth = 559; $slideheight = 559;} 
         else if ($blog_grid_column == '3'){ $itemsize = 'tcol-md-4 tcol-sm-4 tcol-xs-6 tcol-ss-12'; $slidewidth = 366; $slideheight = 366;} 
         else {$itemsize = 'tcol-md-3 tcol-sm-4 tcol-xs-6 tcol-ss-12'; $slidewidth = 269; $slideheight = 269;}?>
     <div id="content" class="container">
       <div class="row">
-      <div class="main <?php echo esc_attr(bigcloudcms_main_class()); ?>  <?php echo esc_attr($postclass) .' '. esc_attr($fullclass); ?>" role="main">
+      <div class="main <?php echo esc_attr(kadence_main_class()); ?>  <?php echo esc_attr($postclass) .' '. esc_attr($fullclass); ?>" role="main">
 
 <?php if (!have_posts()) : ?>
   <div class="alert">
-    <?php _e('Sorry, no results were found.', 'bigcloudcms'); ?>
+    <?php _e('Sorry, no results were found.', 'virtue'); ?>
   </div>
   <?php get_search_form(); ?>
 <?php endif; ?>

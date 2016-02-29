@@ -12,7 +12,7 @@ function kad_testimonial_shortcode_function( $atts, $content) {
 		'wordcount' => '25',
 		'link' => false,
 		'isostyle' => 'masonry',
-		'linktext' => __('Read More', 'bigcloudcms'),
+		'linktext' => __('Read More', 'virtue'),
 		'items' => '3'
 ), $atts));
 	if(empty($orderby)) {
@@ -40,8 +40,8 @@ function kad_testimonial_shortcode_function( $atts, $content) {
 		} else {
 			$itemsize = 'tcol-md-3 tcol-sm-4 tcol-xs-6 tcol-ss-12';
 		}
-		global $bigcloudcms_premium; 
-		if(isset($bigcloudcms_premium['bigcloudcms_animate_in']) && $bigcloudcms_premium['bigcloudcms_animate_in'] == 1) {
+		global $virtue_premium; 
+		if(isset($virtue_premium['virtue_animate_in']) && $virtue_premium['virtue_animate_in'] == 1) {
 			$animate = 1;
 		} else {
 			$animate = 0;
@@ -84,7 +84,7 @@ function kad_testimonial_shortcode_function( $atts, $content) {
 			                            <?php 
 
 			                            if($limit_text) {
-                                			echo esc_attr(strip_tags(bigcloudcms_content($wordcount))); 
+                                			echo esc_attr(strip_tags(virtue_content($wordcount))); 
 		                                } else {
 					                         the_content(); 
 					                     }
@@ -107,7 +107,7 @@ function kad_testimonial_shortcode_function( $atts, $content) {
 			            </div>
                 	</div>
 					<?php endwhile; else: ?>
-					<li class="error-not-found"><?php _e('Sorry, no testimonial entries found.', 'bigcloudcms');?></li>
+					<li class="error-not-found"><?php _e('Sorry, no testimonial entries found.', 'virtue');?></li>
 				<?php endif; ?>
                 </div> <!-- testimonialwrapper -->
                     <?php $wp_query = null; wp_reset_query(); ?>

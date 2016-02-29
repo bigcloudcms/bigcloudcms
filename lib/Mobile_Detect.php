@@ -25,7 +25,7 @@
  * @version     2.8.11
  */
 
-class Mobile_Detect_BigCloudCMS
+class Mobile_Detect_Virtue
 {
     /**
      * Mobile detection type.

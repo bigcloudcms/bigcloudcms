@@ -1,52 +1,52 @@
 <?php 
-function bigcloudcms_display_page_breadcrumbs() {
-  global $bigcloudcms_premium;
-   if(isset($bigcloudcms_premium['show_breadcrumbs_page'])) {
-  if($bigcloudcms_premium['show_breadcrumbs_page'] == 1 ) {$showbreadcrumbs = true;} else { $showbreadcrumbs = false;}
+function kadence_display_page_breadcrumbs() {
+  global $virtue_premium;
+   if(isset($virtue_premium['show_breadcrumbs_page'])) {
+  if($virtue_premium['show_breadcrumbs_page'] == 1 ) {$showbreadcrumbs = true;} else { $showbreadcrumbs = false;}
 } else {$showbreadcrumbs = true;}
   return $showbreadcrumbs;
 }
 
-function bigcloudcms_display_post_breadcrumbs() {
-  global $bigcloudcms_premium;
-   if(isset($bigcloudcms_premium['show_breadcrumbs_post'])) {
-  if($bigcloudcms_premium['show_breadcrumbs_post'] == 1 ) {$showbreadcrumbs = true;} else { $showbreadcrumbs = false;}
+function kadence_display_post_breadcrumbs() {
+  global $virtue_premium;
+   if(isset($virtue_premium['show_breadcrumbs_post'])) {
+  if($virtue_premium['show_breadcrumbs_post'] == 1 ) {$showbreadcrumbs = true;} else { $showbreadcrumbs = false;}
 } else {$showbreadcrumbs = true;}
   return $showbreadcrumbs;
 }
-function bigcloudcms_display_shop_breadcrumbs() {
-  global $bigcloudcms_premium;
-   if(isset($bigcloudcms_premium['show_breadcrumbs_shop'])) {
-  if($bigcloudcms_premium['show_breadcrumbs_shop'] == 1 ) {$showbreadcrumbs = true;} else { $showbreadcrumbs = false;}
+function kadence_display_shop_breadcrumbs() {
+  global $virtue_premium;
+   if(isset($virtue_premium['show_breadcrumbs_shop'])) {
+  if($virtue_premium['show_breadcrumbs_shop'] == 1 ) {$showbreadcrumbs = true;} else { $showbreadcrumbs = false;}
 } else {$showbreadcrumbs = true;}
   return $showbreadcrumbs;
 }
-function bigcloudcms_display_product_breadcrumbs() {
-  global $bigcloudcms_premium;
-   if(isset($bigcloudcms_premium['show_breadcrumbs_product'])) {
-  if($bigcloudcms_premium['show_breadcrumbs_product'] == 1 ) {$showbreadcrumbs = true;} else { $showbreadcrumbs = false;}
+function kadence_display_product_breadcrumbs() {
+  global $virtue_premium;
+   if(isset($virtue_premium['show_breadcrumbs_product'])) {
+  if($virtue_premium['show_breadcrumbs_product'] == 1 ) {$showbreadcrumbs = true;} else { $showbreadcrumbs = false;}
 } else {$showbreadcrumbs = true;}
   return $showbreadcrumbs;
 }
-function bigcloudcms_display_portfolio_breadcrumbs() {
-  global $bigcloudcms_premium;
-   if(isset($bigcloudcms_premium['show_breadcrumbs_portfolio'])) {
-  if($bigcloudcms_premium['show_breadcrumbs_portfolio'] == 1 ) {$showbreadcrumbs = true;} else { $showbreadcrumbs = false;}
+function kadence_display_portfolio_breadcrumbs() {
+  global $virtue_premium;
+   if(isset($virtue_premium['show_breadcrumbs_portfolio'])) {
+  if($virtue_premium['show_breadcrumbs_portfolio'] == 1 ) {$showbreadcrumbs = true;} else { $showbreadcrumbs = false;}
 } else {$showbreadcrumbs = true;}
   return $showbreadcrumbs;
 }
 
-function bigcloudcms_breadcrumbs() {
-  global $post, $wp_query, $bigcloudcms_premium;
+function kadence_breadcrumbs() {
+  global $post, $wp_query, $virtue_premium;
   
   $delimiter = '&raquo;'; // delimiter between crumbs
-  if(!empty($bigcloudcms_premium['home_breadcrumb_text'])) {$home = $bigcloudcms_premium['home_breadcrumb_text'];} else {$home = 'Home';}
+  if(!empty($virtue_premium['home_breadcrumb_text'])) {$home = $virtue_premium['home_breadcrumb_text'];} else {$home = 'Home';}
   $showCurrent = 1; // 1 - show current post/page title in breadcrumbs, 0 - don't show
   $before = '<span class="kad-breadcurrent">'; // tag before the current crumb
   $after = '</span>'; // tag after the current crumb
 
 $prepend = '';
-if (class_exists('woocommerce') && isset($bigcloudcms_premium['shop_breadcrumbs']) && $bigcloudcms_premium['shop_breadcrumbs'] == 1) {
+if (class_exists('woocommerce') && isset($virtue_premium['shop_breadcrumbs']) && $virtue_premium['shop_breadcrumbs'] == 1) {
     $shop_page_id = woocommerce_get_page_id( 'shop' );
     $shop_page    = get_post( $shop_page_id );
       if (get_option( 'page_on_front' ) !== $shop_page_id ) {
@@ -65,8 +65,8 @@ if (class_exists('woocommerce') && isset($bigcloudcms_premium['shop_breadcrumbs'
     echo '<div id="kadbreadcrumbs" class="color_gray"><span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="' . $homeLink . '"><span itemprop="title">' . $home . '</span></a></span> ' . $delimiter . ' ';
   
     if ( is_category() ) {
-       if( !empty($bigcloudcms_premium['blog_link'])){ 
-              $bparentpagelink = get_page_link($bigcloudcms_premium['blog_link']); $bparenttitle = get_the_title($bigcloudcms_premium['blog_link']);
+       if( !empty($virtue_premium['blog_link'])){ 
+              $bparentpagelink = get_page_link($virtue_premium['blog_link']); $bparenttitle = get_the_title($virtue_premium['blog_link']);
               echo '<span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="'.$bparentpagelink. '"><span itemprop="title">' . $bparenttitle . '</span></a></span> ' . $delimiter . ' ';
             } 
       $thisCat = get_category(get_query_var('cat'), false);
@@ -74,7 +74,7 @@ if (class_exists('woocommerce') && isset($bigcloudcms_premium['shop_breadcrumbs'
       echo $before . ' &ldquo;' . single_cat_title('', false) . '&ldquo;' . $after;
   
     } elseif ( is_search() ) {
-      echo $before . __('Search results for', 'bigcloudcms'). ' "' . get_search_query() . '"' . $after;
+      echo $before . __('Search results for', 'virtue'). ' "' . get_search_query() . '"' . $after;
   
     } elseif ( is_day() ) {
       echo '<span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="' . get_year_link(get_the_time('Y')) . '"><span itemprop="title">' . get_the_time('Y') . '</span></a></span> ' . $delimiter . ' ';
@@ -92,8 +92,8 @@ if (class_exists('woocommerce') && isset($bigcloudcms_premium['shop_breadcrumbs'
         if ( get_post_type() != 'post' ) {
           $post_type = get_post_type();
               if($post_type == "portfolio") {
-                  if( !empty($bigcloudcms_premium['portfolio_link']) ) { 
-                    $parentpagelink = get_page_link($bigcloudcms_premium['portfolio_link']); $parenttitle = get_the_title($bigcloudcms_premium['portfolio_link']);
+                  if( !empty($virtue_premium['portfolio_link']) ) { 
+                    $parentpagelink = get_page_link($virtue_premium['portfolio_link']); $parenttitle = get_the_title($virtue_premium['portfolio_link']);
                     echo '<span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="'.$parentpagelink. '"><span itemprop="title">' . $parenttitle . '</span></a></span> ' . $delimiter . ' ';
                   } 
                   if ( $terms = wp_get_post_terms( $post->ID, 'portfolio-type', array( 'orderby' => 'parent', 'order' => 'DESC' ) ) ) {
@@ -122,8 +122,8 @@ if (class_exists('woocommerce') && isset($bigcloudcms_premium['shop_breadcrumbs'
           }
        echo $before .' ' . get_the_title() . $after;
       } else {
-            if( !empty($bigcloudcms_premium['blog_link'])){ 
-              $bparentpagelink = get_page_link($bigcloudcms_premium['blog_link']); $bparenttitle = get_the_title($bigcloudcms_premium['blog_link']);
+            if( !empty($virtue_premium['blog_link'])){ 
+              $bparentpagelink = get_page_link($virtue_premium['blog_link']); $bparenttitle = get_the_title($virtue_premium['blog_link']);
               echo '<span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="'.$bparentpagelink. '"><span itemprop="title">' . $bparenttitle . '</span></a></span> ' . $delimiter . ' ';
             } 
            if ( $terms = wp_get_post_terms( $post->ID, 'category', array( 'orderby' => 'parent', 'order' => 'DESC' ) ) ) {
@@ -141,17 +141,17 @@ if (class_exists('woocommerce') && isset($bigcloudcms_premium['shop_breadcrumbs'
             echo $before .' ' . get_the_title() . $after;
         }
      } elseif (is_tax('portfolio-type')) {
-            if( !empty($bigcloudcms_premium['portfolio_link']) ) { 
-              $parentpagelink = get_page_link($bigcloudcms_premium['portfolio_link']); $parenttitle = get_the_title($bigcloudcms_premium['portfolio_link']);
+            if( !empty($virtue_premium['portfolio_link']) ) { 
+              $parentpagelink = get_page_link($virtue_premium['portfolio_link']); $parenttitle = get_the_title($virtue_premium['portfolio_link']);
               echo '<span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="'.$parentpagelink. '"><span itemprop="title">' . $parenttitle . '</span></a></span> ' . $delimiter . ' ';
             } 
-            echo $before . bigcloudcms_title() . $after;
+            echo $before . kadence_title() . $after;
      } elseif (is_tax('portfolio-tag')) {
-            if( !empty($bigcloudcms_premium['portfolio_link']) ) { 
-              $parentpagelink = get_page_link($bigcloudcms_premium['portfolio_link']); $parenttitle = get_the_title($bigcloudcms_premium['portfolio_link']);
+            if( !empty($virtue_premium['portfolio_link']) ) { 
+              $parentpagelink = get_page_link($virtue_premium['portfolio_link']); $parenttitle = get_the_title($virtue_premium['portfolio_link']);
               echo '<span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="'.$parentpagelink. '"><span itemprop="title">' . $parenttitle . '</span></a></span> ' . $delimiter . ' ';
             } 
-            echo $before . bigcloudcms_title() . $after;
+            echo $before . kadence_title() . $after;
      } elseif ( is_tax('product_cat') ) {
         echo $prepend;
         $current_term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) );
@@ -194,8 +194,8 @@ if (class_exists('woocommerce') && isset($bigcloudcms_premium['shop_breadcrumbs'
       echo ' ' . $delimiter . ' ' . $before . get_the_title() . $after;
   
     } elseif ( is_tag() ) {
-      if( !empty($bigcloudcms_premium['blog_link'])){ 
-              $bparentpagelink = get_page_link($bigcloudcms_premium['blog_link']); $bparenttitle = get_the_title($bigcloudcms_premium['blog_link']);
+      if( !empty($virtue_premium['blog_link'])){ 
+              $bparentpagelink = get_page_link($virtue_premium['blog_link']); $bparenttitle = get_the_title($virtue_premium['blog_link']);
               echo '<span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="'.$bparentpagelink. '"><span itemprop="title">' . $bparenttitle . '</span></a></span> ' . $delimiter . ' ';
             } 
       echo $before . ' &ldquo;' . single_tag_title('', false) . '&ldquo;' . $after;
@@ -206,12 +206,12 @@ if (class_exists('woocommerce') && isset($bigcloudcms_premium['shop_breadcrumbs'
       echo $before . $userdata->display_name . $after;
   
     } elseif ( is_404() ) {
-      echo $before . __('Error 404', 'bigcloudcms') . $after;
+      echo $before . __('Error 404', 'virtue') . $after;
     }
   
     if ( get_query_var('paged') ) {
       if ( is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author() ) echo ' (';
-      echo ' - ' .__('Page', 'bigcloudcms') . ' ' . get_query_var('paged');
+      echo ' - ' .__('Page', 'virtue') . ' ' . get_query_var('paged');
       if ( is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author() ) echo ')';
     }
   

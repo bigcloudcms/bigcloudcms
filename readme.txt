@@ -1,14 +1,14 @@
 	
- Thank you for purchasing BigCloudCMS  Theme!
+ Thank you for purchasing Virtue Premium Theme!
 
 -------------------------------------------------------
-    BigCloudCMS Theme Licensing:
+    Virtue Theme Licensing:
 -------------------------------------------------------
 
-BigCloudCMS Theme itself is licensed under the General Public License V3
+Virtue Theme itself is licensed under the General Public License V3
 
-However the following premium plugins that are bundled with bigcloudcms are not licensed under the theme but have their own license. 
-These plugins have been purchased for the use in the BigCloudCMS Theme only. Refer to each license in the plugin files.
+However the following premium plugins that are bundled with virtue are not licensed under the theme but have their own license. 
+These plugins have been purchased for the use in the Virtue Theme only. Refer to each license in the plugin files.
 - The Revolution Slider (Licensed URL: http://codecanyon.net/licenses/regular) This slider can only be used on one domain per purchase of a theme. For more domains you can purchase another single site license here: http://codecanyon.net/item/slider-revolution-responsive-wordpress-plugin/
 - The Cylcone Slider 
 - Isotope Jquery Plugin
@@ -18,7 +18,7 @@ These plugins have been purchased for the use in the BigCloudCMS Theme only. Ref
     Changelog:
 -------------------------------------------------------
 
-= Theme Name: BigCloudCMS  =
+= Theme Name: Virtue Premium =
 
 = Version 3.5.0 | 18th February 2016 =
 * Update: related.php file.
@@ -29,7 +29,7 @@ These plugins have been purchased for the use in the BigCloudCMS Theme only. Ref
 * Update: Widget issue.
 * Update: Post grid widget. 
 * Add: Basic fullwidth Slider to theme options.
-* Add: Scripts to run bigcloudcms shortcodes button in category. 
+* Add: Scripts to run virtue shortcodes button in category. 
 
 = Version 3.4.8 | 10th February 2016 =
 * Update: Sensi support.
@@ -310,7 +310,7 @@ These plugins have been purchased for the use in the BigCloudCMS Theme only. Ref
 * Update: German logout translation.
 * Add: Title attributes for better accessibility.
 * Add: Filter for shop product description.
-* Add: Alt text option for bigcloudcms widget.
+* Add: Alt text option for virtue widget.
 * Add: Flush Permalinks on theme activate.
 
 = Version 3.0.3 | 13th April 2015 =
@@ -521,12 +521,12 @@ These plugins have been purchased for the use in the BigCloudCMS Theme only. Ref
 = Version 2.6.9 =
 * Parallax css fix for ipad.
 * Add soundcloud and yelp social icons
-* Update BigCloudCMS Slider
+* Update Kadence Slider
 
 = Version 2.6.8 =
 * Small css fix.
 * Feature image update.
-* Update revslider, BigCloudCMS slider
+* Update revslider, Kadence slider
 
 = Version 2.6.7 =
 * Small css fix.
@@ -653,7 +653,7 @@ These plugins have been purchased for the use in the BigCloudCMS Theme only. Ref
 * Make the home page title appear above the sidebar
 * Add class for topbar icon menu items
 * Update carousel widget, now choose category
-* Add a few icons to bigcloudcms icon font
+* Add a few icons to virtue icon font
 * Update Carousel shortcode
 * Update language files
 * Add image option to front end testimonial posting shortcode
@@ -693,7 +693,7 @@ These plugins have been purchased for the use in the BigCloudCMS Theme only. Ref
 * Fix CSS issue with portfolio slider images 
 
 = Version 2.4.0 =
-* Add new BigCloudCMS Slider
+* Add new Kadence Slider
 * Add option to turn select boxes off
 * Add link option to infobox widget and shortcode
 * Add option for slider above header on feature pages
@@ -753,7 +753,7 @@ These plugins have been purchased for the use in the BigCloudCMS Theme only. Ref
 = Version 2.3.4 =
 * Update Icon Font.
 * Add single post navigation.
-* Add new social icons to bigcloudcms:social widget.
+* Add new social icons to virtue:social widget.
 * Remove Custom Select, replace with Select2.
 * Fix Vimeo Shortcode.
 * Fix sticky header loading issue.
@@ -826,7 +826,7 @@ These plugins have been purchased for the use in the BigCloudCMS Theme only. Ref
 * Fixed issue with recent posts widget date.
 
 = Version 2.2.6 =
-* Added New BigCloudCMS Google Maps Widget
+* Added New Virtue Google Maps Widget
 * Added New Features for Smooth Scroll
 * Bug Fix Firefox search text.
 
@@ -977,7 +977,7 @@ These plugins have been purchased for the use in the BigCloudCMS Theme only. Ref
  * Add shortcode for slider of posts.
 
 = Version 2.0.6 =
- * Fix BigCloudCMS Toolkit issue.
+ * Fix Virtue Toolkit issue.
  * Updated Flexslider 2.2.2
  * Add Italian Language
 
@@ -1024,7 +1024,7 @@ These plugins have been purchased for the use in the BigCloudCMS Theme only. Ref
 
 = Version 1.9.9.9 =
  * Update Theme Options, Various Speed improvements
- * Add warning for BigCloudCMS Toolkit Plugin
+ * Add warning for Virtue Toolkit Plugin
  * Change shortcode gen to ajax.
  * Add shortcode to testimonials
  * Clean up css for cart in firefox
@@ -1158,7 +1158,7 @@ These plugins have been purchased for the use in the BigCloudCMS Theme only. Ref
 
 = Version 1.7.5 =
 * New Theme Options panel
-* Add options to disable bigcloudcms image sizing to product images
+* Add options to disable virtue image sizing to product images
 * Fix loading feature with carousel.
 * Add mobile filter options.
 * Fix breadcrumb issues.
@@ -1217,8 +1217,8 @@ These plugins have been purchased for the use in the BigCloudCMS Theme only. Ref
 * Add Page Template Blog Grid
 * Add Category Page Subtitle
 * Fix Pretty Photo Styling
-* Add to options: turning off BigCloudCMS Gallery
-* Add to options: BigCloudCMS Gallery Masonry
+* Add to options: turning off Virtue Gallery
+* Add to options: Virtue Gallery Masonry
 * Updated Styles in Admin Theme Options
 * Updates tab for Mobile
 
@@ -1391,7 +1391,7 @@ These plugins have been purchased for the use in the BigCloudCMS Theme only. Ref
 -------------------------------------------------------
     Credits:
 -------------------------------------------------------
-BigCloudCMS Theme Uses:
+Virtue Theme Uses:
 
 * Photos on example_slider by Benjamin Ritner (licensed under GNU General Public License v2.0 or later)
 * Icon Font & Icon images by Icomoon (Used with permission under purchased developer licenses:  http://icomoon.io/#icons/license)

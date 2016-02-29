@@ -9,13 +9,13 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-global $product, $woocommerce_loop, $bigcloudcms_premium;
+global $product, $woocommerce_loop, $virtue_premium;
 
 if ( empty( $product ) || ! $product->exists() ) {
 	return;
 }
 
-if(!empty($bigcloudcms_premium['related_item_column'])) {$product_related_column = $bigcloudcms_premium['related_item_column'];} else {$product_related_column = '4';}
+if(!empty($virtue_premium['related_item_column'])) {$product_related_column = $virtue_premium['related_item_column'];} else {$product_related_column = '4';}
 $woocommerce_loop['columns'] = $product_related_column;
 						if ($product_related_column == '2') {$md = 2; $sm = 2; $xs = 1; $ss = 1;} 
 				        else if ($product_related_column == '3'){ $md = 3; $sm = 3; $xs = 2; $ss = 1;} 
@@ -43,7 +43,7 @@ $products = new WP_Query( $args );
 if ( $products->have_posts() ) : ?>
 
 	<div class="related products carousel_outerrim">
-		<?php global $bigcloudcms_premium; if(!empty($bigcloudcms_premium['related_products_text'])) {$relatedtext = $bigcloudcms_premium['related_products_text'];} else {$relatedtext = __( 'Related Products', 'bigcloudcms');} ?>
+		<?php global $virtue_premium; if(!empty($virtue_premium['related_products_text'])) {$relatedtext = $virtue_premium['related_products_text'];} else {$relatedtext = __( 'Related Products', 'virtue');} ?>
 		<h3><?php echo $relatedtext; ?></h3>
 	<div class="fredcarousel">
 		<div id="carouselcontainer" class="rowtight">

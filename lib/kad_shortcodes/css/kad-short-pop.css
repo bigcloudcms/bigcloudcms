@@ -431,7 +431,7 @@ img.mfp-img {
   -webkit-box-shadow: 0 0 26px rgba(0, 0, 0, 0.4);
   -o-box-shadow: 0 0 26px rgba(0, 0, 0, 0.4);
 }
-#bigcloudcms-shortcode-innercontainer {
+#kadence-shortcode-innercontainer {
   width: 600px;
   position: relative;
   margin: 55px auto 20px auto;
@@ -448,7 +448,7 @@ img.mfp-img {
   -webkit-box-shadow: 0 0 26px rgba(0, 0, 0, 0.4);
   -o-box-shadow: 0 0 26px rgba(0, 0, 0, 0.4);
 }
-#bigcloudcms-shortcode-container {
+#kadence-shortcode-container {
   z-index: 100105;
 }
 .wp-admin .mfp-wrap {
@@ -485,11 +485,11 @@ img.mfp-img {
 .wp-customizer .select2-drop {
   z-index: 999999 !important;
 }
-#bigcloudcms-shortcode-innercontainer .select2-container {
+#kadence-shortcode-innercontainer .select2-container {
   width: 100%;
   margin-top: 8px;
 }
-#bigcloudcms-shortcode-innercontainer .shortcode-options {
+#kadence-shortcode-innercontainer .shortcode-options {
   clear: both;
   display: none;
 }
@@ -511,17 +511,17 @@ img.mfp-img {
   background: #000;
   color: #fff;
 }
-.bigcloudcmsshortcode-content div.label {
+.kadenceshortcode-content div.label {
   display: inline-block;
   width: 30%;
   float: left;
   margin: 10px 0px;
 }
-.bigcloudcmsshortcode-content div.content {
+.kadenceshortcode-content div.content {
   display: inline-block;
   width: 69%;
 }
-.bigcloudcmsshortcode-content input[type="text"],
+.kadenceshortcode-content input[type="text"],
 textarea {
   width: 100%;
   box-sizing: border-box;
@@ -529,39 +529,39 @@ textarea {
   -webkit-box-sizing: border-box;
   -o-box-sizing: border-box;
 }
-.bigcloudcmsshortcode-content .content > input[type="text"],
-.bigcloudcmsshortcode-content textarea,
-.bigcloudcmsshortcode-content select {
+.kadenceshortcode-content .content > input[type="text"],
+.kadenceshortcode-content textarea,
+.kadenceshortcode-content select {
   padding: 8px;
 }
-.bigcloudcmsshortcode-content .wp-picker-container {
+.kadenceshortcode-content .wp-picker-container {
   margin-top: 6px;
 }
-.bigcloudcmsshortcode-content input[type=checkbox] {
+.kadenceshortcode-content input[type=checkbox] {
   margin-top: 12px;
 }
-.bigcloudcmsshortcode-content .clear {
+.kadenceshortcode-content .clear {
   padding: 10px 0 0;
 }
-.bigcloudcmsshortcode-content #options-columns label {
+.kadenceshortcode-content #options-columns label {
   width: 100%;
   padding-left: 5px;
   display: block;
   line-height: 45px;
   vertical-align: middle;
 }
-.bigcloudcmsshortcode-content #options-columns label img {
+.kadenceshortcode-content #options-columns label img {
   vertical-align: middle;
   margin-right: 10px;
   border: 3px solid transparent;
 }
-.bigcloudcmsshortcode-content #options-columns .input_hidden {
+.kadenceshortcode-content #options-columns .input_hidden {
   position: absolute;
   left: -9999px;
 }
-.bigcloudcmsshortcode-content #options-columns label.selected {
+.kadenceshortcode-content #options-columns label.selected {
   background-color: #ccc;
 }
-.bigcloudcmsshortcode-content #options-columns label.selected img {
+.kadenceshortcode-content #options-columns label.selected img {
   border-color: #fff;
 }

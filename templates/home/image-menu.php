@@ -2,22 +2,22 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
-	global $bigcloudcms_premium; 
+	global $virtue_premium; 
 
-	if(!empty($bigcloudcms_premium['img_menu_height'])) {
-		$img_height = $bigcloudcms_premium['img_menu_height'];
+	if(!empty($virtue_premium['img_menu_height'])) {
+		$img_height = $virtue_premium['img_menu_height'];
 	} else {
 		$img_height = 110;
 	}
-	if(!empty($bigcloudcms_premium['img_menu_height_setting'])) {
-		$height_setting = $bigcloudcms_premium['img_menu_height_setting'];
+	if(!empty($virtue_premium['img_menu_height_setting'])) {
+		$height_setting = $virtue_premium['img_menu_height_setting'];
 	} else {
 		$height_setting = 'normal';
 	} 
-    $slides = $bigcloudcms_premium['home_image_menu'];
+    $slides = $virtue_premium['home_image_menu'];
 
-    if(!empty($bigcloudcms_premium['home_image_menu_column'])) {
-    	$columnsize = $bigcloudcms_premium['home_image_menu_column'];
+    if(!empty($virtue_premium['home_image_menu_column'])) {
+    	$columnsize = $virtue_premium['home_image_menu_column'];
     } else {
     	$columnsize = 3;
     }

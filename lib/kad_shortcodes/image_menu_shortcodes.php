@@ -12,7 +12,7 @@ function kad_image_menu_shortcode_function( $atts, $content) {
 		'description' => ''
 ), $atts));
 	if(!empty($target)) {$linktarget = 'target="'.$target.'"';} else {$linktarget = '';}
-	if(empty($image)) { $image = bigcloudcms_img_placeholder();}
+	if(empty($image)) { $image = virtue_img_placeholder();}
 
     if ($columns == '2') {
     	$itemsize = 'tcol-lg-6 tcol-md-6 tcol-sm-6 tcol-xs-12 tcol-ss-12'; $width = 559;

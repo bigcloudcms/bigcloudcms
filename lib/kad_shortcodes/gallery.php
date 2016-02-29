@@ -6,7 +6,7 @@
  *
  * @link http://twitter.github.com/bootstrap/components.html#thumbnails
  */
-function bigcloudcms_gallery($attr) {
+function kadence_gallery($attr) {
   $post = get_post();
   static $instance = 0;
   $instance++;
@@ -83,8 +83,8 @@ function bigcloudcms_gallery($attr) {
     return '';
   }
   if (empty($caption)) {
-    global $bigcloudcms_premium;
-    if(isset($bigcloudcms_premium['gallery_captions']) && $bigcloudcms_premium['gallery_captions'] == 1)  {
+    global $virtue_premium;
+    if(isset($virtue_premium['gallery_captions']) && $virtue_premium['gallery_captions'] == 1)  {
       $caption = 'true';
     } else {
       $caption = 'false';
@@ -232,7 +232,7 @@ ob_start(); ?>
     ob_end_clean();
     } else if(isset($type) && $type == 'mosaic') {
     // NORMAL
-  global $bigcloudcms_premium; if(isset($bigcloudcms_premium['bigcloudcms_animate_in']) && $bigcloudcms_premium['bigcloudcms_animate_in'] == 1) {$animate = 1;} else {$animate = 0;}
+  global $virtue_premium; if(isset($virtue_premium['virtue_animate_in']) && $virtue_premium['virtue_animate_in'] == 1) {$animate = 1;} else {$animate = 0;}
   $output .= '<div class="kad-mosaic-gallery-wrapper">';
   $output .= '<div id="kad-wp-gallery'.$gallery_id.'" class="kad-wp-gallery init-mosaic-isotope kad-light-mosaic-gallery clearfix" data-fade-in="'.$animate.'" data-iso-selector=".g_item" data-iso-style="packery" data-iso-filter="false">';
     if ($columns == '3') {
@@ -296,7 +296,7 @@ if(!empty($lightboxsize)) {$attachmentsize = $lightboxsize;} else {$attachmentsi
   $output .= '</div>';
   } else {
     // NORMAL
-  global $bigcloudcms_premium; if(isset($bigcloudcms_premium['bigcloudcms_animate_in']) && $bigcloudcms_premium['bigcloudcms_animate_in'] == 1) {$animate = 1;} else {$animate = 0;}
+  global $virtue_premium; if(isset($virtue_premium['virtue_animate_in']) && $virtue_premium['virtue_animate_in'] == 1) {$animate = 1;} else {$animate = 0;}
   $output .= '<div id="kad-wp-gallery'.$gallery_id.'" class="kad-wp-gallery init-isotope kad-light-wp-gallery clearfix rowtight" data-fade-in="'.$animate.'" data-iso-selector=".g_item" data-iso-style="'.$isostyle.'" data-iso-filter="false">';
     if ($columns == '2') {$itemsize = 'tcol-lg-6 tcol-md-6 tcol-sm-6 tcol-xs-12 tcol-ss-12'; $imgsize = 560; $md = 2; $sm = 2; $xs = 1; $ss = 1;} 
     else if ($columns == '1') {$itemsize = 'tcol-lg-12 tcol-md-12 tcol-sm-12 tcol-xs-12 tcol-ss-12'; $imgsize = 560; $md = 1; $sm = 1; $xs = 1; $ss = 1;} 
@@ -321,7 +321,7 @@ if(!empty($lightboxsize)) {$attachmentsize = $lightboxsize;} else {$attachmentsi
       }
 
     } else {
-          if(isset($bigcloudcms_premium['bigcloudcms_gallery_masonry']) && $bigcloudcms_premium['bigcloudcms_gallery_masonry'] ==  '1') {
+          if(isset($virtue_premium['virtue_gallery_masonry']) && $virtue_premium['virtue_gallery_masonry'] ==  '1') {
           $image = aq_resize($attachment_url, $imgsize, false);
         } else {
           $image = aq_resize($attachment_url, $imgsize, $imgheightsize, true);
@@ -355,9 +355,9 @@ if(!empty($lightboxsize)) {$attachmentsize = $lightboxsize;} else {$attachmentsi
 }
 add_action('init', 'kt_gallery_setup_init');
 function kt_gallery_setup_init() {
-  global $bigcloudcms_premium;
-  if(isset($bigcloudcms_premium['bigcloudcms_gallery']) && $bigcloudcms_premium['bigcloudcms_gallery'] == '1')  {
+  global $virtue_premium;
+  if(isset($virtue_premium['virtue_gallery']) && $virtue_premium['virtue_gallery'] == '1')  {
   remove_shortcode('gallery');
-  add_shortcode('gallery', 'bigcloudcms_gallery');
+  add_shortcode('gallery', 'kadence_gallery');
   }
 }

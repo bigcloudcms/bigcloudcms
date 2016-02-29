@@ -7,19 +7,19 @@ function kad_testimonial_form($atts, $content = null) {
 		'image' => false,
 		'login' => false,
 		'email' => '',
-		'name_label' => __('Name', 'bigcloudcms'),
-		'testimonial_label' => __('Testimonial', 'bigcloudcms'),
-		'location_label' => __('Location - optional', 'bigcloudcms'),
-		'position_label' => __('Position or Company - optional', 'bigcloudcms'),
-		'link_label' => __('Link - optional', 'bigcloudcms'),
-		'image_label' => __('Image Upload - optional', 'bigcloudcms'),
-		'submit_label' => __('Submit', 'bigcloudcms'),
-		'math_error' => __('Check your math.', 'bigcloudcms'),
-		'name_error' => __('Please enter your name.', 'bigcloudcms'),
-		'content_error' => __('Please add testimonial content.', 'bigcloudcms'),
-		'error_message' => __('Sorry, an error occured.', 'bigcloudcms'),
-		'login_message' => __('You must be logged in to submit an testimonial.', 'bigcloudcms'),
-		'success_message' => __('Thank you for submitting your testimonial! It is now awaiting approval from the site admnistator. Thank you!', 'bigcloudcms'),
+		'name_label' => __('Name', 'virtue'),
+		'testimonial_label' => __('Testimonial', 'virtue'),
+		'location_label' => __('Location - optional', 'virtue'),
+		'position_label' => __('Position or Company - optional', 'virtue'),
+		'link_label' => __('Link - optional', 'virtue'),
+		'image_label' => __('Image Upload - optional', 'virtue'),
+		'submit_label' => __('Submit', 'virtue'),
+		'math_error' => __('Check your math.', 'virtue'),
+		'name_error' => __('Please enter your name.', 'virtue'),
+		'content_error' => __('Please add testimonial content.', 'virtue'),
+		'error_message' => __('Sorry, an error occured.', 'virtue'),
+		'login_message' => __('You must be logged in to submit an testimonial.', 'virtue'),
+		'success_message' => __('Thank you for submitting your testimonial! It is now awaiting approval from the site admnistator. Thank you!', 'virtue'),
 ), $atts));
 	global $post;
 	ob_start();
@@ -27,8 +27,8 @@ function kad_testimonial_form($atts, $content = null) {
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
     	$.extend($.validator.messages, {
-	        required: "<?php echo __('This field is required.', 'bigcloudcms'); ?>",
-			email: "<?php echo __('Please enter a valid email address.', 'bigcloudcms'); ?>",
+	        required: "<?php echo __('This field is required.', 'virtue'); ?>",
+			email: "<?php echo __('Please enter a valid email address.', 'virtue'); ?>",
 		 });
 		$("#kad-feedback-new-post").validate();
 	});
@@ -82,9 +82,9 @@ function kad_testimonial_form($atts, $content = null) {
 			$emailTo = get_option('admin_email');
 		}
 		$sitename = get_bloginfo('name');
-		$subject = '['.$sitename . __(" Testimonial Post", "bigcloudcms").'] '. __("From ", "bigcloudcms"). $post_title;
-		$body = __('Name', 'bigcloudcms').": $post_title \n\nComments: $post_content";
-		$headers = __("From", "bigcloudcms").': '.$post_title;
+		$subject = '['.$sitename . __(" Testimonial Post", "virtue").'] '. __("From ", "virtue"). $post_title;
+		$body = __('Name', 'virtue').": $post_title \n\nComments: $post_content";
+		$headers = __("From", "virtue").': '.$post_title;
 
 		wp_mail($emailTo, $subject, $body, $headers);		
  		$postCreated = true;

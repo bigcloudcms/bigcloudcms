@@ -10,16 +10,16 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-global $post, $woocommerce, $product, $bigcloudcms_premium;
-if(isset($bigcloudcms_premium['product_simg_resize']) && $bigcloudcms_premium['product_simg_resize'] == 0) {
+global $post, $woocommerce, $product, $virtue_premium;
+if(isset($virtue_premium['product_simg_resize']) && $virtue_premium['product_simg_resize'] == 0) {
 	$presizeimage = 0;
 } else {
 	$presizeimage = 1;
-		if(isset($bigcloudcms_premium['shop_img_ratio'])) { $img_ratio = $bigcloudcms_premium['shop_img_ratio']; } else { $img_ratio = 'square';}
-		if(isset($bigcloudcms_premium['singleproduct_layout']) && $bigcloudcms_premium['singleproduct_layout'] == 'largeimg') { 
-				if(bigcloudcms_display_sidebar()) {$productimgwidth = 407; } else { $productimgwidth = 748;}
+		if(isset($virtue_premium['shop_img_ratio'])) { $img_ratio = $virtue_premium['shop_img_ratio']; } else { $img_ratio = 'square';}
+		if(isset($virtue_premium['singleproduct_layout']) && $virtue_premium['singleproduct_layout'] == 'largeimg') { 
+				if(kadence_display_sidebar()) {$productimgwidth = 407; } else { $productimgwidth = 748;}
 		} else {
-			if(bigcloudcms_display_sidebar()) { $productimgwidth = 334; } else { $productimgwidth = 456; }
+			if(kadence_display_sidebar()) { $productimgwidth = 334; } else { $productimgwidth = 456; }
 		}
 		if($img_ratio == 'portrait') {
 					$tempproductimgheight = $productimgwidth * 1.35;

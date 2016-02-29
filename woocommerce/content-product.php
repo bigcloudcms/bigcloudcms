@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-global $product, $woocommerce_loop, $bigcloudcms_premium;
+global $product, $woocommerce_loop, $virtue_premium;
 
 
 // Store loop count we're currently on
@@ -49,7 +49,7 @@ if ( 0 === ( $woocommerce_loop['loop'] - 1 ) % $woocommerce_loop['columns'] || 1
 if ( 0 === $woocommerce_loop['loop'] % $woocommerce_loop['columns'] ) {
 	$classes[] = 'last';
 }
-if(isset($bigcloudcms_premium['shop_hide_action']) && $bigcloudcms_premium['shop_hide_action'] == 1) {
+if(isset($virtue_premium['shop_hide_action']) && $virtue_premium['shop_hide_action'] == 1) {
 $classes[] = 'hidetheaction';
 }
 $classes[] = 'grid_item';
@@ -99,7 +99,7 @@ endif;
 				do_action( 'woocommerce_shop_loop_item_title' );
 				?>
 				</a>
-				<?php if(isset($bigcloudcms_premium['shop_excerpt']) && $bigcloudcms_premium['shop_excerpt'] == 1) {
+				<?php if(isset($virtue_premium['shop_excerpt']) && $virtue_premium['shop_excerpt'] == 1) {
 				} else { ?>
 					<div class="product_excerpt">
 						<?php global $post; 

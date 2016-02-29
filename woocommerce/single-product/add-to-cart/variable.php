@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-global $product, $bigcloudcms_premium;
+global $product, $virtue_premium;
 
 $attribute_keys = array_keys( $attributes );
 ?>
@@ -29,7 +29,7 @@ $attribute_keys = array_keys( $attributes );
 		<tbody>
 			<?php foreach ( $attributes as $attribute_name => $options ) : ?>
 				<tr>
-					<?php if(isset($bigcloudcms_premium['product_radio']) && $bigcloudcms_premium['product_radio'] == 1) { ?>
+					<?php if(isset($virtue_premium['product_radio']) && $virtue_premium['product_radio'] == 1) { ?>
 
 						<td class="product_label"><label for="<?php echo sanitize_title( $attribute_name ); ?>"><?php echo wc_attribute_label( $attribute_name ); ?> <span class="kad_required" title="required">*</span></label></td>
 						 <td class="value">

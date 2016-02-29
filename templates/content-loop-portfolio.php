@@ -83,7 +83,7 @@ $postsummery = get_post_meta( $post->ID, '_kad_post_summery', true );
                         <?php } 
                        	} 
                        	if($kt_portfolio_loop['showexcerpt'] == 'true') { ?> 
-                       		<p><?php echo bigcloudcms_excerpt(16); ?></p> 
+                       		<p><?php echo virtue_excerpt(16); ?></p> 
                        	<?php } ?>
                     </div>
                 </a>

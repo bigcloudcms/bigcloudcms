@@ -6,42 +6,42 @@
 	
     <div id="content" class="container">
    		<div class="row">
-      <div class="main <?php echo bigcloudcms_main_class(); ?>" role="main">
+      <div class="main <?php echo kadence_main_class(); ?>" role="main">
       	<?php echo category_description(); ?> 
       	<?php if (!have_posts()) : ?>
 		<div class="alert">
-		    <?php _e('Sorry, no results were found.', 'bigcloudcms'); ?>
+		    <?php _e('Sorry, no results were found.', 'virtue'); ?>
 		</div>
 		  <?php get_search_form(); ?>
 		<?php endif; ?>
-		 <?php global $bigcloudcms_premium, $kt_portfolio_loop;
-		 if(isset($bigcloudcms_premium['bigcloudcms_animate_in']) && $bigcloudcms_premium['bigcloudcms_animate_in'] == 1) {$animate = 1;} else {$animate = 0;}
-		 if(!empty($bigcloudcms_premium['portfolio_tax_items'])) {$portfolio_items = $bigcloudcms_premium['portfolio_tax_items'];} else {$portfolio_items = '12';}
-		 if(!empty($bigcloudcms_premium['portfolio_tax_column'])) {$portfolio_column = $bigcloudcms_premium['portfolio_tax_column'];} else {$portfolio_column = 4;}
+		 <?php global $virtue_premium, $kt_portfolio_loop;
+		 if(isset($virtue_premium['virtue_animate_in']) && $virtue_premium['virtue_animate_in'] == 1) {$animate = 1;} else {$animate = 0;}
+		 if(!empty($virtue_premium['portfolio_tax_items'])) {$portfolio_items = $virtue_premium['portfolio_tax_items'];} else {$portfolio_items = '12';}
+		 if(!empty($virtue_premium['portfolio_tax_column'])) {$portfolio_column = $virtue_premium['portfolio_tax_column'];} else {$portfolio_column = 4;}
 		                   if ($portfolio_column == '2') {$itemsize = 'tcol-md-6 tcol-sm-6 tcol-xs-12 tcol-ss-12'; $slidewidth = 559; $slideheight = 559; $md = 2; $sm = 2; $xs = 1; $ss = 1;} 
 		                   else if ($portfolio_column == '3'){ $itemsize = 'tcol-md-4 tcol-sm-4 tcol-xs-6 tcol-ss-12'; $slidewidth = 366; $slideheight = 366; $md = 3; $sm = 3; $xs = 2; $ss = 1;} 
 		                   else if ($portfolio_column == '6'){ $itemsize = 'tcol-md-2 tcol-sm-3 tcol-xs-4 tcol-ss-6'; $slidewidth = 240; $slideheight = 240; $md = 6; $sm = 4; $xs = 3; $ss = 2;} 
 		                   else if ($portfolio_column == '5'){ $itemsize = 'tcol-md-25 tcol-sm-3 tcol-xs-4 tcol-ss-6'; $slidewidth = 240; $slideheight = 240; $md = 5; $sm = 4; $xs = 3; $ss = 2;} 
 		                   else {$itemsize = 'tcol-md-3 tcol-sm-4 tcol-xs-6 tcol-ss-12'; $slidewidth = 269; $slideheight = 269; $md = 4; $sm = 3; $xs = 2; $ss = 1;}
-		if(isset($bigcloudcms_premium['portfolio_type_under_title']) && $bigcloudcms_premium['portfolio_type_under_title'] == '0') {
+		if(isset($virtue_premium['portfolio_type_under_title']) && $virtue_premium['portfolio_type_under_title'] == '0') {
 					$portfolio_item_types = 'false';
 				} else {
 					$portfolio_item_types = 'true';
 				}
-				if(isset($bigcloudcms_premium['portfolio_tax_show_excerpt']) && $bigcloudcms_premium['portfolio_tax_show_excerpt'] == '0') {
+				if(isset($virtue_premium['portfolio_tax_show_excerpt']) && $virtue_premium['portfolio_tax_show_excerpt'] == '0') {
 					$portfolio_excerpt = 'false';
 				} else {
 					$portfolio_excerpt = 'true';
 				}
-				if(isset($bigcloudcms_premium['portfolio_tax_lightbox']) && $bigcloudcms_premium['portfolio_tax_lightbox'] == '0') {
+				if(isset($virtue_premium['portfolio_tax_lightbox']) && $virtue_premium['portfolio_tax_lightbox'] == '0') {
 					$portfolio_lightbox = 'false';
 				} else {
 					$portfolio_lightbox = 'true';
 				}
-				if(!empty($bigcloudcms_premium['portfolio_tax_height'])) {
-						$slideheight = $bigcloudcms_premium['portfolio_tax_height'];
+				if(!empty($virtue_premium['portfolio_tax_height'])) {
+						$slideheight = $virtue_premium['portfolio_tax_height'];
 				}
-		    	if(isset($bigcloudcms_premium['portfolio_tax_masonry']) && $bigcloudcms_premium['portfolio_tax_masonry'] == 1) {
+		    	if(isset($virtue_premium['portfolio_tax_masonry']) && $virtue_premium['portfolio_tax_masonry'] == 1) {
 		    			$slideheight = null;
 		    	}
                  $kt_portfolio_loop = array(
@@ -60,9 +60,9 @@
 		query_posts(array( 'paged' => $paged, 'posts_per_page' => $portfolio_items, 'orderby' => 'menu_order', 'order' => 'ASC', 'post_type' => 'portfolio', 'portfolio-type' => $termslug) );
 		 while (have_posts()) : the_post(); ?>
 		<div class="<?php echo esc_attr($itemsize);?> p-item">
-                	<?php do_action('bigcloudcms_portfolio_loop_start');
+                	<?php do_action('kadence_portfolio_loop_start');
 								get_template_part('templates/content', 'loop-portfolio'); 
-						  		do_action('bigcloudcms_portfolio_loop_end');
+						  		do_action('kadence_portfolio_loop_end');
 							?>
             </div>
 		<?php endwhile; ?>

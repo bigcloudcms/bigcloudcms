@@ -11,12 +11,12 @@ Template Name: Testimonial Grid
 	
     <div id="content" class="container">
    		<div class="row">
-      		<div class="main <?php echo esc_attr(bigcloudcms_main_class()); ?>" id="ktmain" role="main">
+      		<div class="main <?php echo esc_attr(kadence_main_class()); ?>" id="ktmain" role="main">
 				<div class="entry-content" itemprop="mainContentOfPage">
 					<?php get_template_part('templates/content', 'page'); ?>
 				</div>
-	      	<?php global $post, $bigcloudcms_premium; 
-	      		if(isset($bigcloudcms_premium['bigcloudcms_animate_in']) && $bigcloudcms_premium['bigcloudcms_animate_in'] == 1) {
+	      	<?php global $post, $virtue_premium; 
+	      		if(isset($virtue_premium['virtue_animate_in']) && $virtue_premium['virtue_animate_in'] == 1) {
 	      			$animate = 1;
 	      		} else {
 	      			$animate = 0;
@@ -59,7 +59,7 @@ Template Name: Testimonial Grid
 					if(!empty($testimonial_link_text)) {
 						$thelinktext = $testimonial_link_text;
 					} else {
-						$thelinktext = __('Read More', 'bigcloudcms');
+						$thelinktext = __('Read More', 'virtue');
 					}
 					if(!empty($testimonial_orderby)) {
 						$torderby = $testimonial_orderby;
@@ -121,7 +121,7 @@ Template Name: Testimonial Grid
 	                                	</div>
 	                                <?php } 
 	                                if($limit_text) {
-	                                	echo esc_attr(strip_tags(bigcloudcms_content($wordcount))); 
+	                                	echo esc_attr(strip_tags(virtue_content($wordcount))); 
 	                                } else {
 				                         the_content(); 
 				                     }
@@ -142,7 +142,7 @@ Template Name: Testimonial Grid
 				            </div>
 	                	</div>
 						<?php endwhile; else: ?>
-						<li class="error-not-found"><?php _e('Sorry, no testimonial entries found.', 'bigcloudcms');?></li>
+						<li class="error-not-found"><?php _e('Sorry, no testimonial entries found.', 'virtue');?></li>
 					<?php endif; ?>
 	                </div> <!-- testimonialwrapper -->
 	                    <?php if ($wp_query->max_num_pages > 1) : ?>
@@ -151,5 +151,5 @@ Template Name: Testimonial Grid
 	                    <?php $wp_query = null; 
 	                      	  $wp_query = $temp; ?>
 	                    <?php wp_reset_query(); ?>
-	                    <?php if(isset($bigcloudcms_premium['page_comments']) && $bigcloudcms_premium['page_comments'] == '1') { comments_template('/templates/comments.php');} ?>
+	                    <?php if(isset($virtue_premium['page_comments']) && $virtue_premium['page_comments'] == '1') { comments_template('/templates/comments.php');} ?>
 </div><!-- /.main -->

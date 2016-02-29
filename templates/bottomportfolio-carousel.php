@@ -1,5 +1,5 @@
 <div id="portfolio_carousel_container" class="carousel_outerrim">
-        <?php global $post, $bigcloudcms_premium, $kt_portfolio_loop; 
+        <?php global $post, $virtue_premium, $kt_portfolio_loop; 
         $titletext 	= get_post_meta( $post->ID, '_kad_portfolio_carousel_title', true );  
         $bporder 	= get_post_meta( $post->ID, '_kad_portfolio_carousel_order', true );
         $bpgroup 	= get_post_meta( $post->ID, '_kad_portfolio_carousel_group', true );
@@ -13,7 +13,7 @@
 		} else {
 			$bp_order = 'DESC';
 		}
-		if(isset($bigcloudcms_premium['portfolio_type_under_title']) && $bigcloudcms_premium['portfolio_type_under_title'] == '0') {
+		if(isset($virtue_premium['portfolio_type_under_title']) && $virtue_premium['portfolio_type_under_title'] == '0') {
 					$portfolio_item_types = false;
 				} else {
 					$portfolio_item_types = true;
@@ -28,25 +28,25 @@
 		if(!empty($titletext)) {
 			echo '<h3 class="title">'.esc_html($titletext).'</h3>'; 
 		} else {
-			echo '<h3 class="title">'.__('Recent Projects', 'bigcloudcms').'</h3>';
+			echo '<h3 class="title">'.__('Recent Projects', 'virtue').'</h3>';
 		} ?> 
         <div class="portfolio-carouselcase fredcarousel">
-            <?php 	if(!empty($bigcloudcms_premium['portfolio_recent_car_column'])) {
-            			$portfolio_column = $bigcloudcms_premium['portfolio_recent_car_column'];
+            <?php 	if(!empty($virtue_premium['portfolio_recent_car_column'])) {
+            			$portfolio_column = $virtue_premium['portfolio_recent_car_column'];
             		} else {
             			$portfolio_column = 4;
             		}
-            		if(!empty($bigcloudcms_premium['portfolio_recent_car_items'])) {
-            			$portfolio_items = $bigcloudcms_premium['portfolio_recent_car_items'];
+            		if(!empty($virtue_premium['portfolio_recent_car_items'])) {
+            			$portfolio_items = $virtue_premium['portfolio_recent_car_items'];
             		} else {
             			$portfolio_items = 8;
             		}
-            		if(!empty($bigcloudcms_premium['portfolio_recent_carousel_speed'])) {
-            			$bport_speed = $bigcloudcms_premium['portfolio_recent_carousel_speed'].'000';
+            		if(!empty($virtue_premium['portfolio_recent_carousel_speed'])) {
+            			$bport_speed = $virtue_premium['portfolio_recent_carousel_speed'].'000';
             		} else {
             			$bport_speed = '9000';
             		}
-					if(isset($bigcloudcms_premium['portfolio_recent_carousel_scroll']) && $bigcloudcms_premium['portfolio_recent_carousel_scroll'] == 'all' ) {
+					if(isset($virtue_premium['portfolio_recent_carousel_scroll']) && $virtue_premium['portfolio_recent_carousel_scroll'] == 'all' ) {
 						$bport_scroll = 'null';
 					} else {
 						$bport_scroll = '1';
@@ -117,9 +117,9 @@
 						if ( $wp_query ) : 
 							while ( $wp_query->have_posts() ) : $wp_query->the_post(); ?>
 							<div class="<?php echo esc_attr($itemsize); ?> kad_portfolio_item">
-								<?php do_action('bigcloudcms_portfolio_loop_start');
+								<?php do_action('kadence_portfolio_loop_start');
 									get_template_part('templates/content', 'loop-portfolio'); 
-							  		do_action('bigcloudcms_portfolio_loop_end');
+							  		do_action('kadence_portfolio_loop_end');
 								?>
             				</div>
 					<?php endwhile;

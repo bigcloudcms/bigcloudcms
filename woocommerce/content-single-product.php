@@ -10,9 +10,9 @@
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
-global $bigcloudcms_premium;
-if(isset($bigcloudcms_premium['singleproduct_layout']) && $bigcloudcms_premium['singleproduct_layout'] == 'largeimg') {
-	if(bigcloudcms_display_sidebar()) {
+global $virtue_premium;
+if(isset($virtue_premium['singleproduct_layout']) && $virtue_premium['singleproduct_layout'] == 'largeimg') {
+	if(kadence_display_sidebar()) {
 		$imagecontainer = 'col-md-6'; $productcontainer = 'col-md-6';
 	} else {
 	$imagecontainer = 'col-md-8'; $productcontainer = 'col-md-4';

@@ -3,20 +3,20 @@
 // Footer
 
 function kt_sitewide_shortcode_output() {
-  global $bigcloudcms_premium;
+  global $virtue_premium;
 
-  if(isset($bigcloudcms_premium['sitewide_footer_shortcode_input']) && !empty($bigcloudcms_premium['sitewide_footer_shortcode_input'])) {
+  if(isset($virtue_premium['sitewide_footer_shortcode_input']) && !empty($virtue_premium['sitewide_footer_shortcode_input'])) {
     echo '<div class="clearfix kt_footer_sitewide_shortcode">';
-    echo do_shortcode($bigcloudcms_premium['sitewide_footer_shortcode_input']);
+    echo do_shortcode($virtue_premium['sitewide_footer_shortcode_input']);
     echo '</div>';
   }
 }
 add_action('kt_before_footer', 'kt_sitewide_shortcode_output', 10 );
 
 function kt_sitewide_calltoaction_output() {
-  global $bigcloudcms_premium;
+  global $virtue_premium;
 
-  if(isset($bigcloudcms_premium['sitewide_calltoaction']) && $bigcloudcms_premium['sitewide_calltoaction'] == 1) { 
+  if(isset($virtue_premium['sitewide_calltoaction']) && $virtue_premium['sitewide_calltoaction'] == 1) { 
     get_template_part('templates/sitewide', 'calltoaction'); 
   }
 }

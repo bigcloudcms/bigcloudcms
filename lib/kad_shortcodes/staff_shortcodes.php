@@ -60,8 +60,8 @@ function kad_staff_shortcode_function( $atts, $content) {
 	if(!empty($height)) {
 		$imgheight = $height;
 	}
-	global $bigcloudcms_premium;
-	if(isset($bigcloudcms_premium['bigcloudcms_animate_in']) && $bigcloudcms_premium['bigcloudcms_animate_in'] == 1) {
+	global $virtue_premium;
+	if(isset($virtue_premium['virtue_animate_in']) && $virtue_premium['virtue_animate_in'] == 1) {
 		$animate = 1;
 	} else {
 		$animate = 0;
@@ -71,15 +71,15 @@ ob_start(); ?>
 	<?php if ($filter == "true") {
 	  		$sft = "true"; ?>
       			<section id="options" class="clearfix">
-			<?php 	if(!empty($bigcloudcms_premium['filter_all_text'])) {
-						$alltext = $bigcloudcms_premium['filter_all_text'];
+			<?php 	if(!empty($virtue_premium['filter_all_text'])) {
+						$alltext = $virtue_premium['filter_all_text'];
 					} else {
-						$alltext = __('All', 'bigcloudcms');
+						$alltext = __('All', 'virtue');
 					}
-					if(!empty($bigcloudcms_premium['portfolio_filter_text'])) {
-						$stafffiltertext = $bigcloudcms_premium['portfolio_filter_text'];
+					if(!empty($virtue_premium['portfolio_filter_text'])) {
+						$stafffiltertext = $virtue_premium['portfolio_filter_text'];
 					} else {
-						$stafffiltertext = __('Filter Staff', 'bigcloudcms');
+						$stafffiltertext = __('Filter Staff', 'virtue');
 					}
 					$termtypes  = array( 'child_of' => $staff_cat_ID,);
 					$categories = get_terms('staff-group', $termtypes);
@@ -159,7 +159,7 @@ ob_start(); ?>
                 	</div>
                 </div>
 					<?php endwhile; else: ?>
-					<li class="error-not-found"><?php _e('Sorry, no staff entries found.', 'bigcloudcms');?></li>
+					<li class="error-not-found"><?php _e('Sorry, no staff entries found.', 'virtue');?></li>
 				<?php endif; ?>
                 </div> <!-- staffwrapper -->
                     <?php $wp_query = null; wp_reset_query(); ?>

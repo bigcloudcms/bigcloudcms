@@ -6,8 +6,8 @@
  * @package 	WooCommerce/Templates
  * @version     2.0.0
  */
-global $woocommerce, $woocommerce_loop, $bigcloudcms_premium;
-if(isset($bigcloudcms_premium['infinitescroll']) && $bigcloudcms_premium['infinitescroll'] == 1) {
+global $woocommerce, $woocommerce_loop, $virtue_premium;
+if(isset($virtue_premium['infinitescroll']) && $virtue_premium['infinitescroll'] == 1) {
 	$infinitescroll = true;
 } else {
 	$infinitescroll = false;

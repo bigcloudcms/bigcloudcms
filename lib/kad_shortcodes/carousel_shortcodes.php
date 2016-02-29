@@ -126,13 +126,13 @@ ob_start(); ?>
 						);
 						if ( $wp_query ) :  while ( $wp_query->have_posts() ) : $wp_query->the_post(); ?>
 							<div class="<?php echo esc_attr($itemsize); ?> kad_product">
-							<?php do_action('bigcloudcms_portfolio_loop_start');
+							<?php do_action('kadence_portfolio_loop_start');
 								get_template_part('templates/content', 'loop-portfolio'); 
-						  		do_action('bigcloudcms_portfolio_loop_end');
+						  		do_action('kadence_portfolio_loop_end');
 							?>
 				            </div>
 						<?php endwhile; else: ?>
-							<li class="error-not-found"><?php _e('Sorry, no portfolio entries found.', 'bigcloudcms');?></li>
+							<li class="error-not-found"><?php _e('Sorry, no portfolio entries found.', 'virtue');?></li>
 						<?php endif; $wp_query = null; wp_reset_query(); ?>
 
             	<?php } else if($type == "post") {
@@ -156,7 +156,7 @@ ob_start(); ?>
 										$image = aq_resize($thumbnailURL, $slidewidth, $slideheight, true); 
 										if(empty($image)) {$image = $thumbnailURL;}
 									} else {
-                               			$thumbnailURL = bigcloudcms_post_default_placeholder();
+                               			$thumbnailURL = virtue_post_default_placeholder();
                                   		$image = aq_resize($thumbnailURL, $slidewidth, $slideheight, true); 
                                   		if(empty($image)) { $image = $thumbnailURL; } 
                             		} ?>
@@ -175,14 +175,14 @@ ob_start(); ?>
 			                        	</header>
 		                        		<div class="entry-content color_body">
 		                          			<p>
-		                          				<?php echo strip_tags(bigcloudcms_excerpt(16)); ?><?php if($readmore) {global $bigcloudcms_premium; if(!empty($bigcloudcms_premium['post_readmore_text'])) {$readmoret = $bigcloudcms_premium['post_readmore_text'];} else {$readmoret = __('Read More', 'bigcloudcms');} echo $readmoret; }?>
+		                          				<?php echo strip_tags(virtue_excerpt(16)); ?><?php if($readmore) {global $virtue_premium; if(!empty($virtue_premium['post_readmore_text'])) {$readmoret = $virtue_premium['post_readmore_text'];} else {$readmoret = __('Read More', 'virtue');} echo $readmoret; }?>
 		                          			</p>
 		                        		</div>
                            			</a>
                		 		</div>
 						</div>
 					<?php endwhile; else: ?>
-						<div class="error-not-found"><?php _e('Sorry, no post entries found.', 'bigcloudcms');?></div>
+						<div class="error-not-found"><?php _e('Sorry, no post entries found.', 'virtue');?></div>
 					<?php wp_reset_postdata(); 
 					endif; 
 					$wp_query = null; 
